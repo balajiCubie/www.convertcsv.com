@@ -23,7 +23,7 @@
 <script src="js/csvdatesup.js"></script>
 <script src="js/spin.min.js"></script>
 <script src="js/spinit.js"></script>
-<script src="js/underscore-min.js"></script>
+<script src="../js/underscore-min.js"></script>
 <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 <script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@
 <script src="../cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
 <script src="js/pdfmake.min.js"></script>
 <script src="js/vfs_fonts.js"></script>
-<link rel="stylesheet" href="js/custom3860.css?v=1"/>
+<link rel="stylesheet" href="../js/custom3860.css?v=1"/>
 <script type="text/javascript">
     var _0x496d = ['delay', 'selPageOrientation', 'selFontSize', 'selPageSize', 'chkDownload', 'mySortNeeded', 'split', 'limit', 'length', 'table', 'slice', 'isFirstRowHeader', 'unshift', 'csvTableStyle', 'black', 'content', 'layout', 'noBorders', 'createPdf', 'convertcsv.html', 'defaultTabLink', 'chkHeader', 'btnColsReset', 'getElementById', 'chkReplaceAccents', 'checked', 'removeDiacritics', 'txt1', 'value', 'btnRun', 'click', 'divSpinner', 'stop', 'spin']; (function (_0x8641f0, _0x2a5376) { var _0xd978c = function (_0x1fc18c) { while (--_0x1fc18c) { _0x8641f0['push'](_0x8641f0['shift']()); } }; _0xd978c(++_0x2a5376); }(_0x496d, 0x149)); var _0x503f = function (_0x4dea53, _0x5e211d) { _0x4dea53 = _0x4dea53 - 0x0; var _0x585033 = _0x496d[_0x4dea53]; return _0x585033; }; var toWhatFormat = 0x0; function assignText(_0x381e7c) { if (document[_0x503f('0x0')](_0x503f('0x1')) && document['getElementById'](_0x503f('0x1'))[_0x503f('0x2')]) _0x381e7c = _0x381e7c[_0x503f('0x3')](); document[_0x503f('0x0')](_0x503f('0x4'))[_0x503f('0x5')] = _0x381e7c; parseAndOptions(CSV); setupSortDD(); document[_0x503f('0x0')](_0x503f('0x6'))[_0x503f('0x7')](); } function parseAndSort() { spinit['spin'](document['getElementById'](_0x503f('0x8'))); parseAndOptions(CSV); setupSortDD(); spinit[_0x503f('0x9')](document[_0x503f('0x0')](_0x503f('0x8'))); } function reprocessCsv() { spinit[_0x503f('0xa')](document[_0x503f('0x0')](_0x503f('0x8'))); _[_0x503f('0xb')](parseAndSort, 0x12c); } function run(_0x362824) { toWhatFormat = _0x362824; spinit['spin'](document[_0x503f('0x0')](_0x503f('0x8'))); _['delay'](runit, 0x12c); } function runit() { var _0x1334e0; var _0x35ab2b = !document[_0x503f('0x0')]('chkBorders')[_0x503f('0x2')]; var _0x3d1700 = document[_0x503f('0x0')](_0x503f('0xc'))[_0x503f('0x5')]; var _0x52ef61 = document[_0x503f('0x0')](_0x503f('0xd'))[_0x503f('0x5')] || 0x8; var _0x2d1250 = document[_0x503f('0x0')](_0x503f('0xe'))[_0x503f('0x5')]; var _0x43e5dc = document['getElementById'](_0x503f('0xf'))[_0x503f('0x2')]; spinit[_0x503f('0xa')](document[_0x503f('0x0')](_0x503f('0x8'))); if (CSV[_0x503f('0x10')]) parseAndOptions(CSV); saveCsv(); var _0x405639; if (toWhatFormat === 0x1) { _0x405639 = document[_0x503f('0x0')](_0x503f('0x4'))[_0x503f('0x5')][_0x503f('0x11')](/\r\n|\n|\r/); if (CSV[_0x503f('0x12')] * 0x1 > 0x0 && _0x405639[_0x503f('0x13')] > CSV[_0x503f('0x12')] * 0x1 + 0x1) _0x405639[_0x503f('0x13')] = CSV[_0x503f('0x12')] * 0x1 + 0x1; for (_0x1334e0 = 0x0; _0x1334e0 < _0x405639[_0x503f('0x13')]; _0x1334e0++) { _0x405639[_0x1334e0] = [_0x405639[_0x1334e0]]; } _0x35ab2b = !![]; } else { _0x405639 = CSV[_0x503f('0x14')][_0x503f('0x15')](); if (CSV[_0x503f('0x16')]) { _0x405639[_0x503f('0x17')](CSV['arHeaderRow']); } } if (CSV[_0x503f('0x16')] && _0x405639[_0x503f('0x13')] > 0x0) { for (_0x1334e0 = 0x0; _0x1334e0 < _0x405639[0x0][_0x503f('0x13')]; _0x1334e0++) { _0x405639[0x0][_0x1334e0] = { 'text': _0x405639[0x0][_0x1334e0], 'style': 'tableHeader' }; } } var _0x577e8a = { 'pageSize': _0x2d1250, 'pageOrientation': _0x3d1700, 'content': [{ 'style': _0x503f('0x18'), 'table': { 'headerRows': (CSV[_0x503f('0x16')] && toWhatFormat) === 0x0 ? 0x1 : 0x0, 'body': _0x405639 } }], 'styles': { 'csvTableStyle': { 'margin': [0x0, 0x5, 0x0, 0xf] }, 'tableHeader': { 'bold': !![], 'fontSize': _0x52ef61, 'color': _0x503f('0x19') } }, 'defaultStyle': { 'fontSize': _0x52ef61 } }; if (_0x35ab2b) { _0x577e8a[_0x503f('0x1a')][0x0][_0x503f('0x1b')] = _0x503f('0x1c'); } try { if (_0x405639 && _0x405639[_0x503f('0x13')] > 0x0) { if (_0x43e5dc) pdfMake[_0x503f('0x1d')](_0x577e8a)['download'](_0x503f('0x1e')); else pdfMake[_0x503f('0x1d')](_0x577e8a)['open'](); } } catch (_0x2323fa) { ; } spinit['stop'](document[_0x503f('0x0')](_0x503f('0x8'))); } function runExample() { if (document[_0x503f('0x0')](_0x503f('0x1f'))) document[_0x503f('0x0')](_0x503f('0x1f'))[_0x503f('0x7')](); clearAll(); document[_0x503f('0x0')](_0x503f('0x20'))[_0x503f('0x2')] = !![]; assignText(getExampleCsv()); if (document[_0x503f('0x0')](_0x503f('0x21'))) document[_0x503f('0x0')](_0x503f('0x21'))[_0x503f('0x7')](); }
 
@@ -268,7 +268,7 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
 	    <div class="col-md-12">
 
 	        <div class="panel-footer">
-                <script src="js/footer.js"></script>
+                <script src="../js/footer.js"></script>
             </div>
 	    </div>
     </div>	
