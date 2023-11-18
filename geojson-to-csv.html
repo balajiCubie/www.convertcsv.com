@@ -1,0 +1,350 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from www.convertcsv.com/geojson-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:17 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"920e611a-4a1a-472f-7158-671ecebaa5bd","response_size_orig":18143,"response_time_orig":73,"template_id":5,"url":"https://www.convertcsv.com/geojson-to-csv.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+<!-- Copyright 2013 - 2023 ConvertCsv.com -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Convert GeoJSON to CSV/Excel"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+
+<title>GeoJSON To CSV Converter</title>
+<script src="js/underscore-min.js"></script>
+<script src="js/blob.js"></script>
+<script src="js/filesaver.js"></script>
+<script src="json2e42d.js?version=1"></script>
+<script src="strsupbea6.js?v=7"></script>
+<script src="localreadc164.js?v=9"></script>
+<script src="csvparsebea6.js?v=7"></script>
+<script src="csvsup7893.js?v=24"></script>
+
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+<script src="../cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
+<link rel="stylesheet" href="js/custom3860.css?v=1"/>
+
+<script type="text/javascript">
+function assignText(s) {
+   document.getElementById('txt1').value = s;
+}
+function runit(s) {
+   var delimiter = radiovalue(document.forms[0].outsep);
+   var nobreaks = document.getElementById('chkNoBreaks').checked;
+   if (delimiter == "o") delimiter = document.getElementById("outSepOtherVal").value;
+   if(s.trim()!="") {
+       try{
+       document.getElementById('txta').value = geoJsonToCsv(s, delimiter, (document.getElementById('chkCsvHeader')).checked,(document.getElementById('chkCsvQuotes')).checked, nobreaks);
+       } catch(e) {
+           alert("Your GeoJSON input is not valid:" + e.message);
+       }
+       
+       CSV.isFirstRowHeader = (document.getElementById('chkCsvHeader')).checked;
+       CSV.parse(document.getElementById('txta').value);
+       document.getElementById('diva').innerHTML = csvToTable(CSV, (document.getElementById('chkCsvHeader')).checked, false,false);
+       if(document.getElementById('txta').value=="") alert("Your GeoJSON input isn't supported. You need a FeatureCollection.");
+       else if(document.getElementById('spnResultMsg')) document.getElementById('spnResultMsg').innerHTML = '# of data rows: ' + CSV.dataRowsFound;
+   }
+   
+}
+function runExample() {
+    if (document.getElementById("defaultTabLink")) document.getElementById("defaultTabLink").click();
+    document.getElementById('txt1').value = getExampleGeoJson(1);
+    document.getElementById('btnRun').click()
+}
+function prettify(text)
+{
+   return prettyJSON(text,3);
+}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110011798-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110011798-1');
+</script>
+<link rel='canonical' href='geojson-to-csv.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"920e611a-4a1a-472f-7158-671ecebaa5bd","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":18143,"response_time_orig":73,"serverid":"i-0ba1ebb2a7abb724f","state":"KA","t_epoch":1700314579,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/geojson-to-csv.htm","word_count":349,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head> 
+<body onload="document.getElementById(&#39;btnRun&#39;).click()">
+
+<div class="container-fluid">
+    <div class="row">
+	    <div class="jumbotron pageHeader">
+                <h1 class="text-center">GeoJSON to CSV Converter</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid pageSubheader">
+            <h2>Use this tool to convert GeoJSON into CSV (Comma Separated Values). </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+<div class="form-group small"><h4>From CSV/Excel</h4><ul>
+<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
+<li><a href="csv-to-json.html">CSV To JSON</a></li>
+<li><a href="csv-to-kml.html">CSV To KML</a></li>
+<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+<li><a href="csv-to-sql.html">CSV To SQL</a></li>
+<li><a href="csv-to-word.html">CSV To Word</a></li> 
+<li><a href="csv-to-xml.html">CSV To XML</a></li> 
+<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
+<li><a href="excel-to-jira.html">Excel To Jira</a></li>
+<li><a href="pivot-csv.html">Pivot CSV</a></li> 
+<li><a href="transpose-csv.html">Transpose CSV</a></li> 
+<li><a href="query-csv.html">Query CSV with SQL</a></li> 
+</ul><h4>To CSV/Excel</h4><ul>
+<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+<li><a href="json-to-csv.html">JSON To CSV</a></li> 
+<li><a href="kml-to-csv.html">KML To CSV</a></li> 
+<li><a href="sql-to-csv.html">SQL To CSV</a></li>
+<li><a href="xml-to-csv.html">XML To CSV</a></li>
+<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
+<h4>Data Tools</h4><ul>
+<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+<li><a href="sqlite-online.html">Sqlite Online</a></li>
+<li><a href="edatool/index.html">EDA Tool</a></li>
+<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+<li><a href="generate-test-data.html">Generate Test Data</a></li>
+<li><a href="email-extractor.html">Email Extractor</a></li>
+<li><a href="phone-extractor.html">Phone Extractor</a></li>
+<li><a href="text-split.html">Split Text or CSV Files</a></li>
+<li><a href="url-extractor.html">URL Extractor</a></li>
+<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
+<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+<li><a href="index.html">CSV Home</a></li>
+</ul></div>
+            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <!-- Downsides Wide -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410" data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+
+        </div>
+        <div class="col-md-9">
+
+            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <!-- ResponsiveAd -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+            <p>
+                You can also force double quotes around each field value or it will be determined for you.
+                The output CSV header row is optional.
+                <br/>See also <a href="csv-to-geojson.html">CSV to GeoJSON</a> and <a href="kml-to-csv.html">KML to CSV</a>
+            </p>
+
+            <small>This tool runs completely on the client-side using Javascript, so your data never leaves your computer.</small><br/>
+            <form name="frm1" id="frm1" class="form-inline" role="form" onsubmit="return false">
+
+                <h3 class="headerBlue">Step 1: Select your input</h3>
+                <div class="form-group w100">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
+                        <li class="nav-item"><a id="fileTabLink" data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
+                        <li class="nav-item"><a id="urlTabLink" data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+                    </ul>
+                    <br/>
+
+                    <div class="tab-content">
+                        <div id="inputtext" class="tab-pane active">
+                            <textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" wrap="off" onchange="showChoice()" placeholder="Enter or paste GeoJSON Data here" onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 10)"></textarea>
+                        </div>
+                        <div id="inputfile" class="tab-pane">
+                            <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local GeoJSON file"/></label>
+
+                            <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+                            <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                <option value="" selected="selected">-Default-</option>
+                                <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                                <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                                <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                                <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                                <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                                <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                                <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                                <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                                <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                                <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                                <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                                <option value="macintosh">Mac OS Roman</option>
+                                <option value="UTF-8">UTF-8</option>
+                                <option value="UTF-16">UTF-16</option>
+                                <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                                <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                                <option value="UTF-32">UTF-32</option>
+                                <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                                <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                                <option value="windows-1250">windows-1250 (Win East European)</option>
+                                <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                                <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                                <option value="windows-1253">windows-1253 (WinGreek)</option>
+                                <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                                <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                                <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                                <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                                <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                            </select>
+
+                        </div>
+                        <div id="inputurl" class="tab-pane">
+                            <label>
+                                Enter URL as data source
+                                <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning GeoJSON"/>
+                            </label>
+                            <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL" title="Load XML via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <input type="button" class="btn btn-primary" value="Clear Input" onclick="window.location.reload(true)"/>
+                           <input type="button" class="btn btn-primary" value="Example" title="Load and run example" onclick="runExample()"/>
+                          <input type="button" class="btn btn-primary" value="Format JSON" title="JSON Pretty" onclick="document.getElementById(&#39;txt1&#39;).value=prettify(document.getElementById(&#39;txt1&#39;).value)"/>
+
+                    </div>
+
+                </div>
+
+                <br/>
+
+                <h3 class="headerBlue">Step 2: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <hr class="noverticalspace"/>
+                <fieldset class="scheduler-border collapse" id="p4">
+                    <legend class="scheduler-border">Output Options</legend>
+                    Output Field Separator:
+                    <label><input type="radio" name="outsep" id="outSepComma" value="," checked="checked"/> ,</label>  
+                    <label><input type="radio" name="outsep" id="outSepSemicolon" value=";"/> ;</label>  
+                    <label><input type="radio" name="outsep" id="outSepColon" value=":"/> :</label>  
+                    <label><input type="radio" name="outsep" id="outSepPipe" value="|"/> Bar-|</label>  
+                    <label><input type="radio" name="outsep" id="outSepTab" value=" " onclick="this.value=&#39;\t&#39;"/> Tab</label>  
+                    <label><input type="radio" name="outsep" id="outSepOther" value="o"/> Other-Choose</label>
+                    <label><input type="text" size="2" id="outSepOtherVal" value="*"/></label>
+
+                    <br/>
+                    <label><input id="chkCsvQuotes" type="checkbox"/> Force Wrap values in double quotes</label>
+                    <br/>
+                    <label><input id="chkCsvHeader" type="checkbox" checked="checked"/> Include header in first row</label>
+                    <br/>
+                    <label><input type="checkbox" id="chkNoBreaks" value="Y"/> Suppress Line Breaks in Fields</label>
+                </fieldset>
+                <br/>
+
+                <h3 class="headerBlue">Step 3: Generate output</h3>
+                <br/>
+                <input type="button" id="btnRun" class="btn btn-primary" value="Convert GeoJSON To CSV" title="Convert GeoJSON To CSV" onclick="runit(document.getElementById(&#39;txt1&#39;).value);return false"/>
+                <input type="button" class="btn btn-primary" onclick="runit(document.getElementById(&#39;txt1&#39;).value);saveExcel(&#39;txta&#39;,false);return false" value="GeoJSON To Excel" title="Save output as an Excel file"/>
+
+            </form>
+            <div class="form-group-inline">
+                <label for="txta" class="control-label">Result Data:</label>
+                <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button>
+                <span id="spnResultMsg"></span><br/>
+                <textarea id="txta" rows="10" cols="80" style="width:90%" wrap="off" placeholder="Output Results" class="form-control"></textarea>
+            </div><br/><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+            <div class="form-group form-inline">
+                <label>Save your result:</label>
+                <input type="text" size="15" id="fn" value="convertcsv" class="form-control" title="Enter filename without extension"/>.csv
+                <button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false"><span class="glyphicon glyphicon-save-file"></span> Download Result</button>
+                <label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label>
+                <br/>
+            </div>
+
+            <div id="diva"></div>
+
+            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <!-- ResponsiveAd -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+        </div>
+
+    </div>
+    <div class="row">
+	    <div class="col-md-12">
+
+	        <div class="panel-footer">
+Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
+<span class="pull-right">
+  <a href="https://www.facebook.com/convertcsv">Facebook</a>
+   <a href="https://twitter.com/ConvertCsv">Twitter</a>
+   <a href="PrivacyPolicy.html">Privacy Policy</a>
+   <a href="contact.html">Contact Us</a>
+   <a href="changelog.html">Change Log</a>
+   <a href="terms-of-use.html">Terms of Use</a>
+   <a href="index-2.html">Home</a></span>
+            </div>
+	    </div>
+    </div>	
+</div>
+
+
+<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/geojson-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:18 GMT -->
+</html>

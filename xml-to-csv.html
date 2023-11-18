@@ -1,0 +1,473 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from www.convertcsv.com/xml-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:39 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"a804cef4-dd59-46f5-73f3-399cf5c23593","response_size_orig":35185,"response_time_orig":2,"template_id":5,"url":"https://www.convertcsv.com/xml-to-csv.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+    <!-- Copyright 2013 - 2023 ConvertCsv.com -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Convert XML to CSV and XML to Excel Spreadsheet"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <title>XML To CSV Converter</title>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/blob.js"></script>
+    <script src="js/filesaver.js"></script>
+    <script src="json2.js"></script>
+    <script src="strsupbea6.js?v=7"></script>
+    <script src="localreadc164.js?v=9"></script>
+    <script src="csvparsebea6.js?v=7"></script>
+    <script src="csvsup7893.js?v=24"></script>
+    <script src="js/x2js.js"></script>
+
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
+    <link rel="stylesheet" href="js/custom3860.css?v=1"/>
+    <script src="js/jQuery-csv.js"></script>
+
+    <script type="text/javascript" src="../cdn.thisiswaldo.com/static/js/9400.js"></script>
+    <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2674404638298268",
+            enable_page_level_ads: true
+        });
+    </script>
+    <script>
+        var _0x3d0f = ['nTpJZ', '79401HaFcDW', 'trim', 'nwzMh', 'isNormalInteger', '9peVpZG', 'isPivotable', '287879lyEmXZ', 'splice', '1nseLHs', 'lIGPm', 'unshift', 'filter', '\x22\x0d\x0a]', 'normalizedKey', 'foldMeta', 'DdyOz', 'stringify', 'isFirstRowHeader', 'GusVw', 'includes', 'split', 'length', 'rtrJV', 'outputQuote', 'FEMuc', '60231PKyRUl', 'push', 'pvMTI', '46ceeQQj', 'test', 'sort', 'fold', 'getPivotMetaData', '10oWjONV', '11202tnDvmP', 'startPosition', 'floor', '18372TXTIeG', 'columns', 'zpYHY', 'qefJY', 'search', 'zSSbP', 'removePositions', 'arHeaderRow', 'replace', 'sgxEs', 'lCrtf', '16ClSUdd', 'delimiter', '26599hITjCp', 'FtCOZ', '24610QArdOD', 'foldMetaSize', 'join', 'table']; var _0x57f0 = function (_0x3d8084, _0x38e571) { _0x3d8084 = _0x3d8084 - 0x83; var _0x3d0f69 = _0x3d0f[_0x3d8084]; return _0x3d0f69; }; var _0x1b17a4 = _0x57f0; (function (_0x2d9af0, _0x6d0cd3) { var _0x4907f2 = _0x57f0; while (!![]) { try { var _0xf5b78b = -parseInt(_0x4907f2(0xa5)) + -parseInt(_0x4907f2(0x9f)) + parseInt(_0x4907f2(0x8b)) * -parseInt(_0x4907f2(0x96)) + parseInt(_0x4907f2(0x98)) * -parseInt(_0x4907f2(0xa3)) + parseInt(_0x4907f2(0x88)) * -parseInt(_0x4907f2(0x87)) + -parseInt(_0x4907f2(0xb8)) * -parseInt(_0x4907f2(0xa7)) + parseInt(_0x4907f2(0x9a)) * parseInt(_0x4907f2(0xbb)); if (_0xf5b78b === _0x6d0cd3) break; else _0x2d9af0['push'](_0x2d9af0['shift']()); } catch (_0x201504) { _0x2d9af0['push'](_0x2d9af0['shift']()); } } }(_0x3d0f, 0x2bdc0), CSV[_0x1b17a4(0xa2)] = function (_0x2f2731) { var _0xb4e2ca = _0x1b17a4; _0x2f2731 = _0x2f2731[_0xb4e2ca(0xa0)](); if (!_0x2f2731) { if (_0xb4e2ca(0x8e) !== _0xb4e2ca(0x8e)) { function _0x1091c9() { return _0x1a62f1; } } else return ![]; } _0x2f2731 = _0x2f2731[_0xb4e2ca(0x93)](/^0+/, '') || '0'; var _0x58ceb2 = Math[_0xb4e2ca(0x8a)](Number(_0x2f2731)); return _0x58ceb2 !== Infinity && String(_0x58ceb2) === _0x2f2731 && _0x58ceb2 >= 0x0; }, CSV[_0x1b17a4(0xa4)] = function () { var _0x578a07 = _0x1b17a4; ret = ![]; for (j = 0x1; j < this[_0x578a07(0x92)][_0x578a07(0xb4)]; j++) { if (this[_0x578a07(0x92)][j][_0x578a07(0x8f)]('/0') >= 0x0) { if (_0x578a07(0x99) !== _0x578a07(0x99)) { function _0xb8a213() { var _0x476b56 = _0x578a07; _0x4f7b71 += _0x5b8471[_0x476b56(0x97)]; } } else { ret = !![]; break; } } } return ret; }, CSV[_0x1b17a4(0xac)] = function (_0x52e60e) { var _0xd7608b = _0x1b17a4; return parts = _0x52e60e[_0xd7608b(0xb3)]('index.html'), parts = parts[_0xd7608b(0xaa)](_0x2e3742 => !CSV[_0xd7608b(0xa2)](_0x2e3742)), parts[_0xd7608b(0x9c)]('index.html'); }, CSV[_0x1b17a4(0x86)] = function () { var _0x25ce5b = _0x1b17a4; foldMeta = { 'foldMetaSize': 0x0, 'columns': {} }; for (j = this[_0x25ce5b(0x92)][_0x25ce5b(0xb4)] - 0x1; j > 0x0; j--) { if (_0x25ce5b(0xb1) !== _0x25ce5b(0x8d)) { parts = this[_0x25ce5b(0x92)][j][_0x25ce5b(0xb3)]('index.html'); for (k = parts['length'] - 0x1; k >= 0x0; k--) { if (_0x25ce5b(0x94) === _0x25ce5b(0x94)) { if (CSV[_0x25ce5b(0xa2)](parts[k])) { n = 0x1 * parts[k]; if (n > foldMeta[_0x25ce5b(0x9b)]) foldMeta[_0x25ce5b(0x9b)] = n; parts = parts[_0x25ce5b(0xaa)](_0x1a2c27 => !CSV[_0x25ce5b(0xa2)](_0x1a2c27)), foldMeta[_0x25ce5b(0x8c)][parts[_0x25ce5b(0x9c)]('index.html')] = { 'removePositions': [], 'startPosition': null }; break; } } else { function _0x2973ee() { var _0x31f044 = _0x25ce5b; this[_0x31f044(0x9d)][_0x31f044(0xa6)](_0x175ab + 0x1, 0x0, this['table'][_0x15fadc]), _0x12210e++ , _0x253a80++; for (_0x579aec in this['foldMeta'][_0x31f044(0x8c)]) { if (_0x32def4 < this[_0x31f044(0xad)]['columns'][_0x2e4444][_0x31f044(0x91)][_0x31f044(0xb4)]) this[_0x31f044(0x9d)][_0x5afa5a][this[_0x31f044(0xad)][_0x31f044(0x8c)][_0x134afe][_0x31f044(0x89)]] = this[_0x31f044(0x9d)][_0x3dd520][this[_0x31f044(0xad)][_0x31f044(0x8c)][_0x2f2e70][_0x31f044(0x91)][_0x2efc49]]; else this[_0x31f044(0x9d)][_0x32716d][this[_0x31f044(0xad)][_0x31f044(0x8c)][_0x4f3acd][_0x31f044(0x89)]] = ''; } _0x23bf4f(this[_0x31f044(0x9d)][_0x454c32]['length'], _0x18ab5e); } } } } else { function _0x1dd51d() { var _0x4f43fc = _0x25ce5b; return _0x5d96b0 = _0x1d1f80['split']('index.html'), _0xad9127 = _0xd31713[_0x4f43fc(0xaa)](_0x24b895 => !_0x34d9be['isNormalInteger'](_0x24b895)), _0x123f6f[_0x4f43fc(0x9c)]('index.html'); } } } for (j = this[_0x25ce5b(0x92)][_0x25ce5b(0xb4)] - 0x1; j > 0x0; j--) { if (this[_0x25ce5b(0xac)](this[_0x25ce5b(0x92)][j]) in foldMeta[_0x25ce5b(0x8c)]) { key = this['normalizedKey'](this['arHeaderRow'][j]), parts = this[_0x25ce5b(0x92)][j][_0x25ce5b(0xb3)]('index.html'); for (k = parts['length'] - 0x1; k >= 0x0; k--) { if (_0x25ce5b(0x9e) === _0x25ce5b(0x9e)) { if (CSV[_0x25ce5b(0xa2)](parts[k])) { n = 0x1 * parts[k]; if (n == 0x0) { if (_0x25ce5b(0xba) === _0x25ce5b(0xba)) foldMeta[_0x25ce5b(0x8c)][key][_0x25ce5b(0x89)] = j; else { function _0x6b3f46() { var _0x97ad66 = _0x25ce5b; _0x386217[_0x97ad66(0x8c)][_0x2d5772][_0x97ad66(0x91)][_0x97ad66(0xb9)](_0xf72da1); } } } else foldMeta['columns'][key][_0x25ce5b(0x91)][_0x25ce5b(0xb9)](j); break; } } else { function _0xac77b() { var _0x11bf68 = _0x25ce5b; if (_0x5250a4 < this['foldMeta']['columns'][_0x356bb7]['removePositions']['length']) this[_0x11bf68(0x9d)][_0x5331b2][this[_0x11bf68(0xad)][_0x11bf68(0x8c)][_0x4c780c][_0x11bf68(0x89)]] = this[_0x11bf68(0x9d)][_0x9da652][this['foldMeta'][_0x11bf68(0x8c)][_0x52c0d4][_0x11bf68(0x91)][_0x355d6e]]; else this['table'][_0x10a9c1][this[_0x11bf68(0xad)][_0x11bf68(0x8c)][_0x30c2b1]['startPosition']] = ''; } } } } } return this[_0x25ce5b(0xad)] = foldMeta, foldMeta; }, CSV[_0x1b17a4(0xaf)] = function (_0x393f73, _0x14596d) { var _0x44b4b7 = _0x1b17a4; _0x14596d = _0x14596d || function (_0x3afa7b, _0x317d5e, _0x1e4b32) { return _0x1e4b32; }; var _0x464003 = '', _0x13a533, _0x3ffe45, _0x34de5b, _0x4772f3 = 0x0; _0x393f73 = _0x393f73 || '\x0a'; if (!(_0x44b4b7(0x85) in CSV)) CSV['fold'] = ![]; this[_0x44b4b7(0x9d)][_0x44b4b7(0xa9)](this[_0x44b4b7(0x92)]), _0x4772f3++; var _0xbc8268 = this[_0x44b4b7(0x9d)][_0x44b4b7(0xb4)], _0x241022 = new RegExp('[' + this[_0x44b4b7(0x97)] + _0x44b4b7(0xab), 'gmi'), _0x1426a6; function _0x207956(_0x2ba114, _0x3b567d) { var _0x1b628e = _0x44b4b7; for (_0x13a533 = 0x0; _0x13a533 < _0x2ba114; ++_0x13a533) { if (_0x1b628e(0xa8) === _0x1b628e(0xa8)) { if (CSV['fold'] && CSV[_0x1b628e(0xac)](CSV[_0x1b628e(0x92)][_0x13a533]) in CSV['foldMeta'][_0x1b628e(0x8c)] && CSV[_0x1b628e(0xad)]['columns'][CSV[_0x1b628e(0xac)](CSV[_0x1b628e(0x92)][_0x13a533])][_0x1b628e(0x91)][_0x1b628e(0xb2)](_0x13a533)) continue; if (_0x13a533) { if (_0x1b628e(0xb7) !== _0x1b628e(0xb7)) { function _0x4b7398() { var _0x25a36b = _0x1b628e; _0x243649 = _0x13da6f[_0x25a36b(0xa0)](); if (!_0x430ed5) return ![]; _0x5f07c6 = _0x54c1fa[_0x25a36b(0x93)](/^0+/, '') || '0'; var _0x432d19 = _0x348c9e[_0x25a36b(0x8a)](_0x334f5f(_0xd73bca)); return _0x432d19 !== _0x3823ec && _0x89aad8(_0x432d19) === _0x36b018 && _0x432d19 >= 0x0; } } else _0x464003 += CSV[_0x1b628e(0x97)]; } _0x1426a6 = _0x3b567d(_0x34de5b, _0x13a533, CSV[_0x1b628e(0x9d)][_0x34de5b][_0x13a533]); _0x241022[_0x1b628e(0x83)](_0x1426a6) && (_0x1426a6 = CSV['outputQuote'] + _0x1426a6[_0x1b628e(0x93)](/"/g, CSV[_0x1b628e(0xb6)] + CSV[_0x1b628e(0xb6)]) + CSV[_0x1b628e(0xb6)]); if (_0x2ba114 === 0x1 && _0x1426a6 === '') _0x1426a6 = '\x22\x22'; _0x464003 += _0x1426a6 || 0x0 === _0x1426a6 ? _0x1426a6 : ''; } else { function _0x49d43c() { return _0x5085c5 - _0x3ef46a; } } } _0x464003 += _0x393f73; } this[_0x44b4b7(0x86)](); for (_0x34de5b = 0x0; _0x34de5b < _0xbc8268; ++_0x34de5b) { if (_0x44b4b7(0x95) !== _0x44b4b7(0xb5)) { if (_0x34de5b === 0x0 && !this[_0x44b4b7(0xb0)]) continue; columnWidth = this[_0x44b4b7(0x9d)][_0x34de5b][_0x44b4b7(0xb4)], _0x207956(this[_0x44b4b7(0x9d)][_0x34de5b][_0x44b4b7(0xb4)], _0x14596d); if (_0x34de5b >= _0x4772f3 && this[_0x44b4b7(0x85)] && this[_0x44b4b7(0xad)][_0x44b4b7(0x9b)] > 0x0) { maxSize = 0x0; for (key in this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)]) { this[_0x44b4b7(0xad)]['columns'][key][_0x44b4b7(0x91)][_0x44b4b7(0x84)](function (_0x8ea1e, _0x4ba933) { var _0x2562ad = _0x44b4b7; if (_0x2562ad(0xae) === _0x2562ad(0x90)) { function _0x8ed1c5() { var _0x2767d4 = _0x2562ad; if (this[_0x2767d4(0x9d)][_0x4845aa][this[_0x2767d4(0xad)]['columns'][_0x277911]['removePositions'][_0x4b6f38]] != '') { if (_0x4521fd + 0x1 > _0x2a4ab9) _0x23bddb = _0x1ae2a6 + 0x1; } } } else return _0x8ea1e - _0x4ba933; }); for (j = 0x0; j < this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)][key][_0x44b4b7(0x91)]['length']; j++) { if (this[_0x44b4b7(0x9d)][_0x34de5b][this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)][key][_0x44b4b7(0x91)][j]] != '') { if (j + 0x1 > maxSize) maxSize = j + 0x1; } } } for (j = 0x0; j < maxSize; j++) { this['table'][_0x44b4b7(0xa6)](_0x34de5b + 0x1, 0x0, this[_0x44b4b7(0x9d)][_0x34de5b]), _0x34de5b++ , _0xbc8268++; for (key in this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)]) { if (_0x44b4b7(0xa1) === 'nwzMh') { if (j < this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)][key]['removePositions'][_0x44b4b7(0xb4)]) this[_0x44b4b7(0x9d)][_0x34de5b][this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)][key][_0x44b4b7(0x89)]] = this['table'][_0x34de5b][this[_0x44b4b7(0xad)][_0x44b4b7(0x8c)][key][_0x44b4b7(0x91)][j]]; else this[_0x44b4b7(0x9d)][_0x34de5b][this['foldMeta'][_0x44b4b7(0x8c)][key][_0x44b4b7(0x89)]] = ''; } else { function _0x42ce73() { var _0x38b621 = _0x44b4b7; this[_0x38b621(0xad)][_0x38b621(0x8c)][_0x563e08][_0x38b621(0x91)][_0x38b621(0x84)](function (_0x42725a, _0x2ebe28) { return _0x42725a - _0x2ebe28; }); for (_0x9c6958 = 0x0; _0x2c3cee < this[_0x38b621(0xad)][_0x38b621(0x8c)][_0x47c67b][_0x38b621(0x91)][_0x38b621(0xb4)]; _0x5446cd++) { if (this[_0x38b621(0x9d)][_0x20a571][this[_0x38b621(0xad)]['columns'][_0x40687d][_0x38b621(0x91)][_0x2144d4]] != '') { if (_0x3f1473 + 0x1 > _0x2e3613) _0xfdfdff = _0x1c0048 + 0x1; } } } } } _0x207956(this[_0x44b4b7(0x9d)][_0x34de5b][_0x44b4b7(0xb4)], _0x14596d); } } } else { function _0x1e0868() { var _0x3b3bbd = _0x44b4b7; _0x3af2fd['columns'][_0xe4967c][_0x3b3bbd(0x89)] = _0x5bf03b; } } } return _0x464003; });
+
+    </script>
+    <script type="text/javascript">
+        var config = {};//{"xmlElementsFilter":[function(obj,name,path){alert(name+'='+path);if(name!="xyz")return true;return false;}]};
+        config.enableToStringFunc = false;
+        config.arrayAccessFormPaths = [];
+        var x2js = new X2JS(config);
+        var didonce = false;
+
+        function assignText(s) {
+            document.getElementById('txt1').value = s;
+            document.getElementById('btnRun').click();
+        }
+
+        function runExample(n) {
+            if (n == "1" && document.getElementById("defaultTabLink")) document.getElementById("defaultTabLink").click();
+            if (n == "2" && document.getElementById("urlTabLink")) document.getElementById("urlTabLink").click();
+            clearAll();
+            if (n == "2") {
+                document.getElementById('url').value = 'http://www.w3schools.com/xml/simple.xml';
+                document.getElementById('btnUrl').click();
+            }
+            else {
+                document.getElementById('txt1').value = getExampleXml(1);
+            }
+            document.getElementById('btnRun').click();
+        }
+        function runit(s) {
+            var t;
+            var j, k;
+            var keys = {};
+            var objects = {};
+            var jason = {};
+            var jason2 = {};
+            var delimiter = radiovalue(document.forms[0].outsep);
+            var nobreaks = document.getElementById('chkNoBreaks').checked;
+            if (delimiter == "o") delimiter = document.getElementById("outSepOtherVal").value;
+            var forceQuotes = (document.getElementById('chkCsvQuotes')).checked;
+            CSV.fold = document.getElementById('chkPivot').checked;
+
+            //var params = _.object(_.compact(_.map(location.search.slice(1).split('&'), function (item) { if (item) return item.split('='); })));
+            //if (!didonce && 'url' in params && params.url) {
+            //    document.getElementById('url').value = params.url;
+            //    document.getElementById('btnUrl').click();
+            //    didonce = true;
+            //}
+            if (location.search && !didonce && location.search.startsWith('?url=')) {
+                var url = location.search.substr(5)
+                 document.getElementById('url').value = url;
+                 document.getElementById('btnUrl').click();
+                 didonce = true;
+            }
+
+            if (s.trim() != "") {
+                //try {
+                jason = x2js.xml_str2json(s);
+                if (document.getElementById("txtArrayName") && document.getElementById("txtArrayName").value != "") { // special path
+                    try {
+                        jason2 = jason;
+                        jason = eval("jason=eval(jason." + document.getElementById("txtArrayName").value + ")");
+                        if (jason === null || jason == undefined) { jason = jason2; }
+                        else if (!_.isArray(jason) && _.isObject(jason)) jason = [jason];
+                    } catch (e) { alert("XML path " + document.getElementById("txtArrayName").value + " not valid, ignoring"); }
+                }
+                t = JSON.stringify(jason, function (key, value) { if (_.isArray(value)) keys[key] = 1; if (_.isObject(value) && !_.isArray(value)) objects[key] = 1; return value; });
+                if (t == null) { alert("Invalid XML"); return false; }
+                //alert(t);
+                t = JSON.stringify(JSON.parse(t),
+                    function (key, value) {
+                        if (key === "__prefix") return undefined;
+                        else {
+                            if (key in keys && !_.isArray(value)) return [value];
+                            if (value === "" && key in objects && !(key in keys)) return undefined;
+                            return value;
+                        }
+                    }
+                    , 3);
+
+                var inArray = [];
+                inArray = arrayFrom(JSON.parse(t));
+                inArray = JSON.parse(JSON.stringify(inArray,
+                    function (key, value) {
+                        if (key in keys && !_.isArray(value)) return [value];
+                        return value;
+                    }
+                )
+                );
+                var outArray = [];
+                for (var row in inArray) {
+                    outArray[outArray.length] = parse_object(inArray[row]);
+                }
+                var csvoptions = {};
+                var options = {};
+                options.separator = delimiter;
+                options.headers = true;
+                options.noBreaks = nobreaks;
+                var t = $.csv.fromObjects(outArray, options);
+                CSV.isFirstRowHeader = true;
+                CSV.delimiter = delimiter;
+                CSV.autodetect = false;
+                CSV.parse(t);
+                var neverQuote = document.getElementById('chkNeverQuote').checked;
+                if (document.getElementById('chkSimplify').checked) {
+                    for (j = 0; j < CSV.table.length; j++) {
+                        for (k = 0; k < CSV.table[j].length; k++) {
+                            CSV.table[j][k] = CSV.table[j][k].replace(/"/gm, '').split(delimiter + " ").join(" ").replace(delimiter, "");
+                        }
+                    }
+                }
+                csvoptions.delimiter = delimiter;
+                csvoptions.headingSpecified = (document.getElementById('chkCsvHeader')).checked;
+                csvoptions.excelForceMode = false;
+                csvoptions.defaultHeader = false;
+                csvoptions.noMultiLines = nobreaks;
+                csvoptions.bQuotes = forceQuotes;
+                csvoptions.nullIsNull = true;
+                csvoptions.neverEnclose = neverQuote;
+                document.getElementById('txta').value = csvToCsv(CSV, csvoptions);
+                if (CSV.fold) {
+                    CSV.isFirstRowHeader = document.getElementById('chkCsvHeader').checked;
+                    document.getElementById('txta').value = CSV.stringify();
+                    CSV.parse(document.getElementById('txta').value);
+                }
+                if (document.getElementById('spnResultMsg')) document.getElementById('spnResultMsg').innerHTML = '# of data rows: ' + CSV.dataRowsFound;
+                document.getElementById('diva').innerHTML = csvToTable(CSV, (document.getElementById('chkCsvHeader')).checked, false, false, options);
+                t = "";
+                //}catch (e) {
+                //alert('Invalid XML entered. ' + e.Description);
+                //}
+            }
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110011798-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110011798-1');
+    </script>
+<link rel='canonical' href='xml-to-csv.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"a804cef4-dd59-46f5-73f3-399cf5c23593","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":35185,"response_time_orig":2,"serverid":"i-03d40ae8e7224d282","state":"KA","t_epoch":1700314581,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/xml-to-csv.htm","word_count":410,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head> 
+<body onload="document.getElementById(&#39;btnRun&#39;).click()">
+
+<div class="container-fluid">
+    <div class="row">
+	    <div class="jumbotron pageHeader">
+                <h1 class="text-center">XML To CSV Converter</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid pageSubheader">
+            <h2>Use this tool to convert XML into CSV (Comma Separated Values) or Excel.
+                <a href="https://ko-fi.com/J3J41CURI" target="_blank"><img height="36" style="border:0px;height:36px;" src="../az743702.vo.msecnd.net/cdn/kofi25e1f.png?v=2" border="0" alt="Buy ConvertCSV a Coffee at ko-fi.com"/></a>
+            </h2>
+        </div>
+    </div>
+	<div class="row">
+        <div class="col-md-3">
+            <!-- 300x250/336x280 --><div id="waldo-tag-14365"></div>
+<div class="form-group small"><h4>From CSV/Excel</h4><ul>
+<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
+<li><a href="csv-to-json.html">CSV To JSON</a></li>
+<li><a href="csv-to-kml.html">CSV To KML</a></li>
+<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+<li><a href="csv-to-sql.html">CSV To SQL</a></li>
+<li><a href="csv-to-word.html">CSV To Word</a></li> 
+<li><a href="csv-to-xml.html">CSV To XML</a></li> 
+<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
+<li><a href="excel-to-jira.html">Excel To Jira</a></li>
+<li><a href="pivot-csv.html">Pivot CSV</a></li> 
+<li><a href="transpose-csv.html">Transpose CSV</a></li> 
+<li><a href="query-csv.html">Query CSV with SQL</a></li> 
+</ul><h4>To CSV/Excel</h4><ul>
+<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+<li><a href="json-to-csv.html">JSON To CSV</a></li> 
+<li><a href="kml-to-csv.html">KML To CSV</a></li> 
+<li><a href="sql-to-csv.html">SQL To CSV</a></li>
+<li><a href="xml-to-csv.html">XML To CSV</a></li>
+<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
+<h4>Data Tools</h4><ul>
+<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+<li><a href="sqlite-online.html">Sqlite Online</a></li>
+<li><a href="edatool/index.html">EDA Tool</a></li>
+<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+<li><a href="generate-test-data.html">Generate Test Data</a></li>
+<li><a href="email-extractor.html">Email Extractor</a></li>
+<li><a href="phone-extractor.html">Phone Extractor</a></li>
+<li><a href="text-split.html">Split Text or CSV Files</a></li>
+<li><a href="url-extractor.html">URL Extractor</a></li>
+<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
+<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+<li><a href="index.html">CSV Home</a></li>
+</ul></div>
+            <br/>
+
+            <!-- 300x250/336x280 --><div id="waldo-tag-14366"></div>
+            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <br/>
+            <!-- Downsides Wide -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410" data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+
+        </div>
+        <div class="col-md-9">
+            <div class="alert alert-info">
+                This conversion is now available as an API at <a href="https://www.convertcsv.io/" target="_blank">ConvertCsv.io</a>
+            </div>
+            <a href="products/index.html"><img src="images/Final_ConvertCSV_Ad_Words_728x90.jpg" width="80%" title="ConvertCSV.com Desktop and Command Line Tools" alt="ConvertCSV products"/></a>
+
+            <p>
+                You can also force double quotes around each field value or it will be determined for you.
+                The output CSV header row is optional.
+                Your XML input should be record oriented in order to get good results.
+                You can also remove double quotes, line breaks, and field delimiters from you data.
+                <br/>See also <a href="csv-to-xml.html">CSV to XML</a> and
+                <a href="https://www.convertjson.com/xml-to-json.htm">XML to JSON</a>
+            </p>
+
+            <form id="frm1" name="frm1" class="form-inline" role="form" onsubmit="return false">
+                <h3 class="headerBlue">Step 1: Select your input</h3>
+                <div class="form-group w100">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
+                        <li class="nav-item"><a id="fileTabLink" data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
+                        <li class="nav-item"><a id="urlTabLink" data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+                    </ul>
+                    <br/>
+
+                    <div class="tab-content">
+                        <div id="inputtext" class="tab-pane active">
+<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" wrap="off" placeholder="Enter or paste here" onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 10)"></textarea>
+                        </div>
+                        <div id="inputfile" class="tab-pane">
+                            <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local XML file"/></label>
+
+                            <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+                            <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                <option value="" selected="selected">-Default-</option>
+                                <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                                <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                                <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                                <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                                <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                                <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                                <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                                <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                                <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                                <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                                <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                                <option value="macintosh">Mac OS Roman</option>
+                                <option value="UTF-8">UTF-8</option>
+                                <option value="UTF-16">UTF-16</option>
+                                <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                                <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                                <option value="UTF-32">UTF-32</option>
+                                <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                                <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                                <option value="windows-1250">windows-1250 (Win East European)</option>
+                                <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                                <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                                <option value="windows-1253">windows-1253 (WinGreek)</option>
+                                <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                                <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                                <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                                <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                                <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                            </select>
+
+                        </div>
+                        <div id="inputurl" class="tab-pane">
+                            <label>
+                                Enter URL as data source
+                                <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning XML"/>
+                            </label>
+                            <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL" title="Load XML via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <input type="button" class="btn btn-primary" value="Clear Input" onclick="window.location.reload(true)"/>
+                          Examples: <input type="button" class="btn btn-primary" value="1" title="Load and run example" onclick="runExample(this.value)"/>
+                         
+                        <input type="button" class="btn btn-primary" value="2" title="Load XML from web page" onclick="runExample(this.value)"/>
+                    </div>
+
+                </div>
+
+                <br/>
+                <h3 class="headerBlue">Step 2: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <hr class="noverticalspace"/>
+                <fieldset class="scheduler-border collapse" id="p4">
+                    <legend class="scheduler-border">Output Options</legend>
+                    Output Field Separator:
+                    <label><input type="radio" name="outsep" id="outSepComma" value="," checked="checked"/> ,</label>  
+                    <label><input type="radio" name="outsep" id="outSepSemicolon" value=";"/> ;</label>  
+                    <label><input type="radio" name="outsep" id="outSepColon" value=":"/> :</label>  
+                    <label><input type="radio" name="outsep" id="outSepPipe" value="|"/> Bar-|</label>  
+                    <label><input type="radio" name="outsep" id="outSepTab" value=" " onclick="this.value=&#39;\t&#39;"/> Tab</label>  
+                    <label><input type="radio" name="outsep" id="outSepOther" value="o"/> Other-Choose</label>
+                    <label><input type="text" size="2" id="outSepOtherVal" value="*"/></label>
+
+                    <br/>  Use this path to identify starting node to convert :
+                    <input type="text" id="txtArrayName" size="20" value="" title="ex. root.name"/> <small>Use . between nodes, ex. root.rows</small>
+                    <br/>
+                    <br/>
+                    <label><input id="chkCsvQuotes" type="checkbox"/> Force Wrap values in double quotes</label>
+                    <br/>
+                    <label><input type="checkbox" id="chkNeverQuote" value="Y"/> Never Wrap values in double quotes (use with caution)</label>
+                    <br/>
+                    <label><input id="chkCsvHeader" type="checkbox" checked="checked"/> Include header in first row</label>
+                    <br/>
+                    <label><input type="checkbox" id="chkNoBreaks" value="Y"/> Suppress Line Breaks in Fields</label>
+                    <br/>
+                    <label><input type="checkbox" id="chkSimplify" value="Y"/> Remove double quotes and field delimiters from data</label>
+                    <br/>
+                    <label><input type="checkbox" id="chkPivot" value="Y"/> Pivot data down instead of flattening</label>
+                </fieldset>
+                <h3 class="headerBlue">Step 3: Generate output</h3><br/>
+                <div class="form-group&gt;">
+                    <input type="button" id="btnRun" class="btn btn-primary" value="Convert XML To CSV" title="Convert XML To CSV" onclick="runit(document.getElementById(&#39;txt1&#39;).value);return false"/>
+                    <input type="button" class="btn btn-primary" onclick="runit(document.getElementById(&#39;txt1&#39;).value);saveExcel(&#39;txta&#39;,false);return false" value="XML To Excel" title="Convert XML to an Excel file"/>
+                </div>
+                <div class="form-group">
+                    <label for="txta" class="control-label">Result Data:</label>
+                    <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button>
+                    <span id="spnResultMsg"></span><br/>
+                    <textarea id="txta" rows="15" cols="100" wrap="off" placeholder="Output Results"></textarea><br/>
+                </div><br/>
+                <div class="form-group form-inline">
+                    <label>Save your result: <input type="text" size="15" id="fn" value="convertcsv" title="Enter filename without extension"/>.csv</label>
+                    <label><input type="button" class="btn btn-primary" value="Save to Disk" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;)"/></label>
+                    <label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label>
+                </div>
+                <br/>
+
+            </form>
+            <br/><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+            <div id="diva"></div>
+            <!-- 728x90/320x50 sticky footer -->
+            <div id="waldo-tag-9407"></div>
+            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <!-- ResponsiveAd -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+</div>
+    <div class="row">
+	    <div class="col-md-12">
+
+	        <div class="panel-footer">
+Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
+<span class="pull-right">
+  <a href="https://www.facebook.com/convertcsv">Facebook</a>
+   <a href="https://twitter.com/ConvertCsv">Twitter</a>
+   <a href="PrivacyPolicy.html">Privacy Policy</a>
+   <a href="contact.html">Contact Us</a>
+   <a href="changelog.html">Change Log</a>
+   <a href="terms-of-use.html">Terms of Use</a>
+   <a href="index-2.html">Home</a></span>
+            </div>
+	    </div>
+    </div>	
+</div>
+
+<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/xml-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:39 GMT -->
+</html>

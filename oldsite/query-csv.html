@@ -1,0 +1,356 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from www.convertcsv.com/oldsite/query-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:50:31 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":1,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"ae72d69c-d677-4979-7888-f3f3aca1fa37","response_size_orig":24503,"response_time_orig":996,"template_id":5,"url":"https://www.convertcsv.com/oldsite/query-csv.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+<!-- Copyright 2013 - 2020 ConvertCsv.com -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Query CSV with SQL"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+
+<title>Use SQL to Query CSV</title>
+<script src="../js/underscore-min.js"></script>
+<script src="strsupbea6.js?v=7"></script>
+<script src="localreadbea6.js?v=7"></script>
+<script src="csvparsebea6.js?v=7"></script>
+<script src="csvsup7893.js?v=24"></script>
+<script src="json23860.js?v=1"></script>
+<script src="js/blob.js"></script>
+<script src="js/filesaver.js"></script>
+<script src="js/storagesup.js"></script>
+<script src="js/csvdatesup.js"></script>
+
+<script src="js/spin.min.js"></script>
+<script src="js/spinit.js"></script>
+<script src="../js/underscore-min.js"></script>
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../cdn.jsdelivr.net/alasql/0.3.9/alasql.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="../js/custom3860.css?v=1"/>
+
+<script type="text/javascript">
+    var _0x92af = ['outSepOtherVal', 'input[name=\x22radOutputFormat\x22]:checked', 'XLSX', 'CSV', 'INTO\x20CSV(null,{headers:', ',separator:\x27', 'FROM\x20?\x0a', 'getElementById', 'chkReplaceAccents', 'checked', 'removeDiacritics', 'txt1', 'value', 'btnRun', 'click', 'spin', 'divSpinner', 'stop', 'mySortNeeded', 'delay', 'arHeaderRow', 'length', 'hostname', 'hashCode', 'txtSql', 'table', 'isArray', 'statsCnt', 'chkNull', 'toUpperCase', 'NULL', 'fieldType', 'FALSE', 'options', 'casesensitive', 'errorlog', 'Invalid\x20SQL\x20Entered!\x0a', 'isObject', 'txta', 'every', 'isString', 'stringify', 'defaultTabLink', 'SELECT\x20', '\x0aINTO\x20CSV(null,{headers:true,separator:\x27,\x27})\x0aFROM\x20?\x0aWHERE\x20id>0\x0aORDER\x20BY\x20id\x20DESC\x0a', 'chkHeader', 'btnColsReset', 'reset', 'parse', 'restoreForm', 'querycsv.json', 'chkOutHeader', 'querySelector', 'input[name=\x22outsep\x22]:checked']; (function (_0x4e1b33, _0x39ac25) { var _0x19d0a2 = function (_0x4e9a90) { while (--_0x4e9a90) { _0x4e1b33['push'](_0x4e1b33['shift']()); } }; _0x19d0a2(++_0x39ac25); }(_0x92af, 0xa9)); var _0x2f87 = function (_0x1196c6, _0x44e6fa) { _0x1196c6 = _0x1196c6 - 0x0; var _0x18d0d0 = _0x92af[_0x1196c6]; return _0x18d0d0; }; function assignText(_0x4b5e48) { if (document[_0x2f87('0x0')](_0x2f87('0x1'))[_0x2f87('0x2')]) _0x4b5e48 = _0x4b5e48[_0x2f87('0x3')](); document['getElementById'](_0x2f87('0x4'))[_0x2f87('0x5')] = _0x4b5e48; reprocessCsv(); document[_0x2f87('0x0')](_0x2f87('0x6'))[_0x2f87('0x7')](); } function parseAndSort() { spinit[_0x2f87('0x8')](document[_0x2f87('0x0')](_0x2f87('0x9'))); parseAndOptions(CSV); setupSortDD(); spinit[_0x2f87('0xa')](document[_0x2f87('0x0')](_0x2f87('0x9'))); } function reprocessCsv() { CSV[_0x2f87('0xb')] = !![]; spinit[_0x2f87('0x8')](document[_0x2f87('0x0')](_0x2f87('0x9'))); _[_0x2f87('0xc')](parseAndSort, 0x12c); } function run(_0x4c7d86) { spinit['spin'](document['getElementById'](_0x2f87('0x9'))); _[_0x2f87('0xc')](runit, 0x12c, _0x4c7d86); } function wrapcols() { var _0xfe9ef6; cols = ''; for (_0xfe9ef6 = 0x0; _0xfe9ef6 < CSV[_0x2f87('0xd')][_0x2f87('0xe')]; _0xfe9ef6++) { if (_0xfe9ef6 > 0x0) cols += ','; cols += '[' + CSV[_0x2f87('0xd')][_0xfe9ef6] + ']'; } return cols['length'] > 0x0 ? cols : '*'; } function runit() { var _0x3fdd8b = [0xe535f, 0x6cab1c86, -0x8a3a1d2, 0x2835, 0x17964960, 0xe31d1, -0x47ccd86d]; var _0x272eb6, _0x60ec31; var _0x58cced = location[_0x2f87('0xf')] || ''; if (_0x58cced && _0x58cced[_0x2f87('0x10')]) _0x58cced = _0x58cced[_0x2f87('0x10')](); var _0x287789 = document[_0x2f87('0x0')](_0x2f87('0x11'))['value']; spinit[_0x2f87('0x8')](document[_0x2f87('0x0')]('divSpinner')); if (CSV[_0x2f87('0xb')]) parseAndOptions(CSV); if (CSV[_0x2f87('0x12')]['length'] > 0x0 && CSV['arHeaderRow'][_0x2f87('0xe')] > 0x0 && _[_0x2f87('0x13')](CSV[_0x2f87('0x12')][0x0])) { for (_0x272eb6 = 0x0; _0x272eb6 < CSV['table'][_0x2f87('0xe')]; _0x272eb6++) { for (_0x60ec31 = 0x0; _0x60ec31 < CSV[_0x2f87('0x14')][_0x2f87('0xe')]; _0x60ec31++) { if (document[_0x2f87('0x0')](_0x2f87('0x15'))[_0x2f87('0x2')]) { if ((CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] || '')[_0x2f87('0x16')]() == _0x2f87('0x17')) CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] = null; } switch (CSV[_0x2f87('0x14')][_0x60ec31][_0x2f87('0x18')]) { case 'N': case 'I': case 'B': if ((CSV['table'][_0x272eb6][_0x60ec31] || '')[_0x2f87('0xe')] > 0x0) CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] *= 0x1; else CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] = null; break; case 'L': if ((CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] || '')[_0x2f87('0x16')]() === 'TRUE') CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] = !![]; else if ((CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] || '')[_0x2f87('0x16')]() === _0x2f87('0x19')) CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] = ![]; else CSV[_0x2f87('0x12')][_0x272eb6][_0x60ec31] = null; default: break; } } CSV[_0x2f87('0x12')][_0x272eb6] = _['object'](CSV[_0x2f87('0xd')], CSV[_0x2f87('0x12')][_0x272eb6]); } } var _0x16c7f4 = CSV[_0x2f87('0x12')]; alasql[_0x2f87('0x1a')][_0x2f87('0x1b')] = ![]; alasql[_0x2f87('0x1a')][_0x2f87('0x1c')] = !![]; alasql(_0x287789, [_0x16c7f4], function (_0x266754, _0x1c28bf) { if (_0x1c28bf) { document[_0x2f87('0x0')]('txta')[_0x2f87('0x5')] = _0x2f87('0x1d') + _0x1c28bf; } else if (!_[_0x2f87('0x1e')](_0x266754)) { document[_0x2f87('0x0')](_0x2f87('0x1f'))[_0x2f87('0x5')] = _0x266754; } else if (_[_0x2f87('0x13')](_0x266754) && _[_0x2f87('0x20')](_0x266754, function (_0xb4e246) { return _[_0x2f87('0x21')](_0xb4e246) || _0xb4e246 === null; })) { document[_0x2f87('0x0')](_0x2f87('0x1f'))[_0x2f87('0x5')] = JSON[_0x2f87('0x22')](_0x266754, null, 0x3); } else if (_[_0x2f87('0x13')](_0x266754) && _[_0x2f87('0x20')](_0x266754, function (_0x41b6bf) { return _['isNumber'](_0x41b6bf) || _0x41b6bf === null; })) { document[_0x2f87('0x0')]('txta')[_0x2f87('0x5')] = JSON['stringify'](_0x266754, null, 0x3); } else if (_[_0x2f87('0x13')](_0x266754) && _0x266754[_0x2f87('0xe')] > 0x0 && _[_0x2f87('0x1e')](_0x266754[0x0])) { document[_0x2f87('0x0')](_0x2f87('0x1f'))[_0x2f87('0x5')] = JSON[_0x2f87('0x22')](_0x266754, null, 0x3); } else if (_['isArray'](_0x266754) && _0x266754['length'] > 0x1 && _[_0x2f87('0x1e')](_0x266754[_0x266754[_0x2f87('0xe')] - 0x1])) { document[_0x2f87('0x0')]('txta')[_0x2f87('0x5')] = JSON[_0x2f87('0x22')](_0x266754[_0x266754[_0x2f87('0xe')] - 0x1], null, 0x3); } else { document[_0x2f87('0x0')](_0x2f87('0x1f'))[_0x2f87('0x5')] = _0x266754[_0x266754[_0x2f87('0xe')] - 0x1]; } }); spinit[_0x2f87('0xa')](document[_0x2f87('0x0')](_0x2f87('0x9'))); CSV['mySortNeeded'] = ![]; saveCsv(); } function runExample() { if (document[_0x2f87('0x0')]('defaultTabLink')) document[_0x2f87('0x0')](_0x2f87('0x23'))['click'](); clearAll(); document['getElementById'](_0x2f87('0x11'))[_0x2f87('0x5')] = _0x2f87('0x24') + wrapcols() + _0x2f87('0x25'); document['getElementById'](_0x2f87('0x26'))['checked'] = !![]; assignText(getExampleCsv()); if (document[_0x2f87('0x0')]('btnColsReset')) document[_0x2f87('0x0')](_0x2f87('0x27'))[_0x2f87('0x7')](); } function loadForm(_0x2b9b28) { document['frm1'][_0x2f87('0x28')](); var _0x403d52 = JSON[_0x2f87('0x29')](_0x2b9b28); ddgFormSerializer[_0x2f87('0x2a')](_0x403d52, function (_0x2bd28f) { if (_0x2bd28f['id'] === _0x2f87('0x4')) { parseAndOptions(CSV); setupSortDD(); } }); assignText(document[_0x2f87('0x0')](_0x2f87('0x4'))[_0x2f87('0x5')]); } function saveForm(_0x4a8471) { _0x4a8471 = _0x4a8471 || _0x2f87('0x2b'); var _0x14d65d = ddgFormSerializer['saveForm'](); saveOutput(JSON[_0x2f87('0x22')](_0x14d65d, null, 0x3), _0x4a8471, ''); } function genSql(_0x10dea9) { var _0x4e61eb = ''; var _0x4bc6e7 = document[_0x2f87('0x0')](_0x2f87('0x2c'))[_0x2f87('0x2')]; var _0x5a512b = document[_0x2f87('0x2d')](_0x2f87('0x2e'))[_0x2f87('0x5')]; if (_0x5a512b === 'o') _0x5a512b = document[_0x2f87('0x0')](_0x2f87('0x2f'))[_0x2f87('0x5')]; var _0x375ee3 = document[_0x2f87('0x2d')](_0x2f87('0x30'))[_0x2f87('0x5')]; switch (_0x375ee3) { case 'JSON': _0x4e61eb = ''; break; case _0x2f87('0x31'): _0x4e61eb = 'INTO\x20XLSX(\x27convertcsv.xlsx\x27)\x0a'; break; case _0x2f87('0x32'): _0x4e61eb = _0x2f87('0x33') + _0x4bc6e7 + _0x2f87('0x34') + _0x5a512b + '\x27})\x0a'; break; default: break; }document[_0x2f87('0x0')](_0x2f87('0x11'))[_0x2f87('0x5')] = _0x2f87('0x24') + wrapcols() + '\x0a' + _0x4e61eb + _0x2f87('0x35'); document[_0x2f87('0x0')](_0x2f87('0x6'))[_0x2f87('0x7')](); }
+
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110011798-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110011798-1');
+</script>
+<link rel='canonical' href='query-csv.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"ae72d69c-d677-4979-7888-f3f3aca1fa37","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":24503,"response_time_orig":996,"serverid":"i-0e7c0a75ce0d8c222","state":"KA","t_epoch":1700315308,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/oldsite/query-csv.htm","word_count":312,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head> 
+<body onload="CSV.mySortNeeded=true;loadCsv();runit()">
+<div class="container-fluid">
+    <div class="row">
+	    <div class="jumbotron pageHeader">
+                <h1 class="text-center">Query CSV with SQL</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid pageSubheader">
+            <h2>Use the tool on this page to write SQL to query CSV data</h2>
+        </div>
+    </div>
+	<div class="row">
+    <div class="col-md-3 hidden-sm hidden-xs">
+        <script src="js/csvlinksbea6.js?v=7"></script>
+<script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- Downsides Wide -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+<script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- Downsides Wide -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    </div>
+    <div class="col-md-9">
+
+<script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<!-- ResponsiveAd -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <div class="bg-gray">
+    <h3>What can this tool do?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p0"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+    <p>
+        </p><ul class="collapse" id="p0"> <b>Query CSV with SQL:</b>
+            <li>Query CSV via SQL and output CSV or JSON results</li>
+        </ul>
+        <hr/>
+
+        <h3>What else?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p2"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+        <hr/>
+        <ul class="collapse" id="p2">
+            <li>See also <a href="csv-to-json.html">CSV To JSON</a></li>
+            <a href="csv-to-csv.html">CSV To Delimited</a>
+            </ul>
+    <p></p>
+    </div>
+
+
+<form id="frm1" name="frm1" class="form-inline" saveform="true" role="form" onsubmit="return false">
+ <br/>
+    <div class="panel panel-default">
+    <h3 class="headerBlue">Step 1: Select your input</h3><br/>
+   <div class="form-group w100">
+
+   <ul class="nav nav-tabs">
+    <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
+    <li class="nav-item"><a data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
+    <li class="nav-item"><a data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+  </ul>
+<br/>
+    
+  <div class="tab-content">
+    <div id="inputtext" class="tab-pane active">
+<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" onchange="if((document.getElementById(&#39;chkReplaceAccents&#39;)).checked)this.value=this.value.removeDiacritics();reprocessCsv()" wrap="off" placeholder="Enter or paste CSV here"></textarea>
+    </div>
+    <div id="inputfile" class="tab-pane">
+      <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local CSV file"/></label>
+      
+          <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+<select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+    <option value="" selected="selected">-Default-</option>
+    <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+    <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+    <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+    <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+    <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+    <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+    <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+    <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+    <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+    <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+    <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+    <option value="macintosh">Mac OS Roman</option>
+    <option value="UTF-8">UTF-8</option>
+    <option value="UTF-16">UTF-16</option>
+    <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+    <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+    <option value="UTF-32">UTF-32</option>
+    <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+    <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+    <option value="windows-1250">windows-1250 (Win East European)</option>
+    <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+    <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+    <option value="windows-1253">windows-1253 (WinGreek)</option>
+    <option value="windows-1254">windows-1254 (Win Turkish)</option>
+    <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+    <option value="windows-1256">windows-1256 (Win Arabic)</option>
+    <option value="windows-1257">windows-1257 (Win Baltic)</option>
+    <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+</select>
+
+    </div>
+    <div id="inputurl" class="tab-pane">
+    <label>Enter URL as data source
+      <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning CSV"/></label>
+      <input type="button" id="Button1" class="btn btn-primary" value="Load URL" title="Load CSV via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
+    </div>
+  </div>
+                <div class="">
+                  <input type="button" class="btn btn-primary" value="Clear Input" onclick="clearPage()"/>
+                    <input type="button" class="btn btn-primary" value="Example" onclick="runExample()"/>
+               </div>
+               <div class="panel panel-default"><div id="divInputCounts" class="panel-heading"> </div></div>
+  
+  </div>
+
+    <h3 class="headerBlue">Step 2: Choose input options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p3"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+    <hr class="noverticalspace"/>
+ <fieldset class="scheduler-border collapse" id="p3">
+        <legend class="scheduler-border">Input Options</legend>
+     <div class="row">
+         <div class="container-fluid">
+             <label><input type="checkbox" name="chkHeader" id="chkHeader" class="form-control" value="Y" onclick="parseAndOptions(CSV, true)" checked=""/> 
+       First row is column names</label>
+         </div>
+     </div>
+     <div class="row">
+         <div class="container-fluid">
+             <label>Limit # of lines: <input type="text" id="txtRowLimit" class="form-control" size="5" maxlength="5" onblur="CSV.limit=this.value;parseAndOptions(CSV)" title="Specify how many records of input to convert"/></label>
+             <label>Skip # of Lines<input type="text" id="txtSkipLimit" class="form-control" size="3" maxlength="2" value="0" onblur="if (this.value != CSV.skip) { CSV.skip = this.value; parseAndOptions(CSV) }" title="Specify how many line to skip at the beginning of input"/></label>
+         </div>
+     </div>
+     <div class="row">
+         <div class="container-fluid">
+             <div class="col-xs-2 nopadL">Field Separator:</div>
+             <div class="col-xs-10 nopadR">
+                 <div class="container-fluid">
+   <label><input type="radio" name="sep" id="sepAuto" value="" onclick="CSV.autodetect = true; parseAndOptions(CSV)" checked=""/> Auto Detect</label>
+   <label><input type="radio" name="sep" id="sepComma" value="," onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> ,</label>
+   <label><input type="radio" name="sep" id="sepSemicolon" value=";" onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> ;</label>
+   <label><input type="radio" name="sep" id="sepColon" value=":" onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> :</label>
+   <label><input type="radio" name="sep" id="sepPipe" value="|" onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> Bar-|</label>
+   <label><input type="radio" name="sep" id="sepTab" value="\t" onclick="CSV.autodetect = false; CSV.delimiter = &#39;\t&#39;; parseAndOptions(CSV)"/> Tab</label>
+   <label><input type="radio" name="sep" id="sepCaret" value="^" onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> Caret-^</label>
+   <label><input type="radio" name="sep" id="sepSpace" value=" " onclick="CSV.autodetect = false; CSV.delimiter = this.value; parseAndOptions(CSV)"/> Space</label>
+                 </div>
+             </div>
+         </div>
+     </div>
+   <div class="form-group">
+      <div class="checkbox">
+        <label><input type="checkbox" value="Y" id="chkReplaceAccents" title="Replace Accent/Diacritical marks" onclick="if (this.checked) document.getElementById(&#39;txt1&#39;).value = document.getElementById(&#39;txt1&#39;).value.removeDiacritics(); parseAndOptions(CSV)"/> Replace Accents/Diacriticals</label>
+      </div><br/>    
+      <div class="checkbox">
+       <label><input type="checkbox" value="Y" id="chkIgnoreDoubleQuote" onclick="CSV.ignoreQuote = this.checked; parseAndOptions(CSV, true)" title="Ignore the Quoting Character- either single or double quote"/> Treat all Quoting Character as data</label>
+      </div><br/>
+      <div class="checkbox">
+        <label><input type="checkbox" value="&#39;" id="chkInputQuote" onclick="setInputSingleQuote(this.checked)" title="Uses single quote for quoting character"/> Input CSV Quoting Character is Apostrophe</label>
+      </div><br/>
+      <div class="checkbox">
+        <label><input type="checkbox" value="Y" id="chkDecodeLiterals" onclick="CSV.decodeBackslashLiterals = this.checked; parseAndOptions(CSV, true)" title="Input CSV uses backslash escaping like \n and \t"/> CSV contains backslash escaping like \n, \t, and \,</label>
+      </div>
+    </div>
+    </fieldset>
+
+    <h3 class="headerBlue">Step 3: Choose output options </h3>
+<fieldset class="scheduler-border " id="p4">
+   <legend class="scheduler-border">Generate SQL via Output Options</legend>
+    <label><input type="checkbox" name="chkNull" id="chkNull" value="Y" checked="checked"/> Replace value of NULL in CSV with an empty value</label>
+    <div>
+    <label>Output Format:</label>    
+    <label class="radio-inline">
+      <input type="radio" name="radOutputFormat" value="CSV" checked="checked"/>CSV(Delimited)
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="radOutputFormat" value=""/>JSON
+    </label>
+    <br/>
+     <label><input type="checkbox" id="chkOutHeader" value="Y" checked="checked"/> Display Output Header on CSV</label>
+    <br/><label>Output Field Separator on CSV: </label> 
+     <label><input type="radio" name="outsep" class="form-control" id="outSepComma" value="," checked=""/> ,</label>      
+     <label><input type="radio" name="outsep" class="form-control" id="outSepSemicolon" value=";"/> ;</label>  
+     <label><input type="radio" name="outsep" class="form-control" id="outSepColon" value=":"/> :</label>  
+     <label><input type="radio" name="outsep" class="form-control" id="outSepPipe" value="|"/> Bar-|</label>  
+     <label><input type="radio" name="outsep" class="form-control" id="outSepTab" value="\t"/> Tab</label>  
+     <label><input type="radio" name="outsep" class="form-control" id="outSepOther" value="o"/> Other-Choose</label>
+     <label><input type="text" size="2" id="outSepOtherVal" class="form-control" value="*" onchange="if(this.value!=&#39;&#39;)frm1.outSepOther.checked=true"/></label>
+    </div>
+    <input type="button" class="btn btn-primary" onclick="genSql(this.form)" value="Generate SQL and Run"/>
+     Or write your own SQL below
+</fieldset>
+
+    <h3 class="headerBlue">Step 4: Write SQL and Run</h3><br/>
+        <div class="form-group-fluid">
+Note - Column names are case-sensitive. Table name is ?. <b>INTO CSV()</b> produces CSV, JSON is produced without it.
+            <br/>SQL documentation available at <a href="http://alasql.org/" target="_blank">AlaSQL.org</a><br/>
+<textarea id="txtSql" rows="10" cols="80" wrap="off" class="form-control" style="width: 90%;">SELECT *
+INTO CSV()  
+FROM ?
+WHERE 1=1
+</textarea>
+     </div>
+
+   <br/>
+<input type="button" id="btnRun" class="btn btn-primary" value="Run Query" title="Query CSV via SQL" onclick="run();"/>
+<br/>
+
+	<div class="form-group-fluid">
+		<label for="txta" class="control-label">Result Data:</label><br/>
+		<textarea id="txta" rows="10" style="width: 90%;" cols="80" wrap="off" skipsave="true" placeholder="Output Results" class="form-control"></textarea>
+	</div>
+	<div class="form-group form-inline">
+		<label>Save your result:</label>
+			<input type="text" size="15" id="fn" value="convertcsv.txt" class="form-control" title="Enter filename with extension"/> 
+			<button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;&#39;);return false"><span class="glyphicon glyphicon-save-file"></span> Download Result</button>
+			<label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label><br/>
+    </div>
+</div>
+<br/>
+<div id="divSpinner"></div>
+<div class="panel panel-default">
+<br/>Save the complete data and settings, and then later Load them from your saved file.<br/>
+   <div class="form-group form-inline">   
+       <label>Load Form <input type="file" id="fsave" class="form-control" accept=".json" onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings"/></label>
+     <br/><label>   Save Form (data and settings) <input type="button" class="btn btn-primary" value="Save Form" class="btn btn-primary" onclick="saveForm()"/></label>
+    </div>
+</div>
+
+<div class="row hidden-sm hidden-xs">
+	    <div class="col-md-12">
+
+</div></div>
+</form>
+</div>
+ 
+
+</div>
+    <div class="row">
+	    <div class="col-md-12">
+
+	        <div class="panel-footer">
+                <script src="../js/footer.js"></script>
+            </div>
+	    </div>
+    </div>	
+</div>
+
+<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/oldsite/query-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:50:31 GMT -->
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from www.convertcsv.com/csv-to-kml.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:50 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":1,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"e2bf27ad-00e8-4ffa-45e3-eb099c40bcff","response_size_orig":68787,"response_time_orig":47,"template_id":5,"url":"https://www.convertcsv.com/csv-to-kml.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+    <!-- Copyright 2013 - 2023 ConvertCsv.com -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Convert CSV to KML"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <title>CSV To KML Converter</title>
+    <script src="js/underscore-min.js"></script>
+    <script src="strsupbea6.js?v=7"></script>
+    <script src="localreadc164.js?v=9"></script>
+    <script>
+        var _0x527cd1 = _0x73b4; (function (_0x171244, _0x23e26a) { var _0x19b267 = _0x73b4, _0x149588 = _0x171244(); while (!![]) { try { var _0x4e451f = parseInt(_0x19b267(0x1c1)) / 0x1 + -parseInt(_0x19b267(0x1c9)) / 0x2 * (-parseInt(_0x19b267(0x170)) / 0x3) + parseInt(_0x19b267(0x1b4)) / 0x4 * (-parseInt(_0x19b267(0x1a8)) / 0x5) + parseInt(_0x19b267(0x199)) / 0x6 * (parseInt(_0x19b267(0x198)) / 0x7) + parseInt(_0x19b267(0x17d)) / 0x8 + -parseInt(_0x19b267(0x1c2)) / 0x9 + -parseInt(_0x19b267(0x1b8)) / 0xa * (parseInt(_0x19b267(0x1b0)) / 0xb); if (_0x4e451f === _0x23e26a) break; else _0x149588['push'](_0x149588['shift']()); } catch (_0x574163) { _0x149588['push'](_0x149588['shift']()); } } }(_0x3724, 0x1c11f)); var CSV = { 'delimiter': ',', 'detectedDelimiter': ',', 'autodetect': !![], 'quote': '\x22', 'quoteCharCnt': { '\x27': 0x0, '\x22': 0x0 }, 'detectedQuote': '\x22', 'outputQuote': '\x22', 'limit': '', 'isFirstRowHeader': !![], 'headerToUpper': ![], 'headerToLower': ![], 'skipEmptyRows': !![], 'skipEmptyRowCnt': 0x0, 'skip': 0x0, 'relaxedMode': !![], 'ignoreQuote': ![], 'relaxedInfo': {}, 'excelMode': !![], 'sortNeeded': ![], 'addSequence': ![], 'fieldImbalance': ![], 'fieldImbalanceRows': [], 'headerImbalance': ![], 'headerImbalanceRows': [], 'headerErrors': [], 'decodeBackslashLiterals': ![], 'decimalChar': function () { var _0x3d20e5 = _0x73b4; return 0x0[_0x3d20e5(0x181)](0x1)['charAt'](0x1); }, 'maxColumnsFound': 0x0, 'headerColumns': 0x0, 'prevColumnsFound': 0x0, 'dataRowsFound': 0x0, 'linesFound': 0x0, 'arHeaderRow': [], 'table': [], 'statsCnt': [], 'displayPoss': '', 'sortPoss': '', 'sortIgnoreCase': ![], 'useStringSub': ![], 'stringSubMap': [[_0x527cd1(0x1a0), '', ![]]], 'unescapeLiterals': function (_0x39150c) { var _0x2c03ee = _0x527cd1, _0x4ebe5b, _0xd83880 = _0x39150c[_0x2c03ee(0x1bf)] - 0x1, _0x537d5c = [], _0x276d9d; for (_0x4ebe5b = 0x0; _0x4ebe5b < _0xd83880; _0x4ebe5b++) { _0x276d9d = _0x39150c[_0x2c03ee(0x1e6)](_0x4ebe5b); if (_0x276d9d === '\x5c') switch (_0x39150c[_0x2c03ee(0x1e6)](_0x4ebe5b + 0x1)) { case '\x5c': _0x276d9d = '\x5c', _0x4ebe5b++; break; case 'b': _0x276d9d = '\x08', _0x4ebe5b++; break; case 'f': _0x276d9d = '\x0c', _0x4ebe5b++; break; case 'n': _0x276d9d = '\x0a', _0x4ebe5b++; break; case 'r': _0x276d9d = '\x0d', _0x4ebe5b++; break; case 't': _0x276d9d = '\x09', _0x4ebe5b++; break; case 'v': _0x276d9d = '\x0b', _0x4ebe5b++; break; case '\x22': _0x276d9d = '\x22', _0x4ebe5b++; break; case '\x27': _0x276d9d = '\x27', _0x4ebe5b++; break; case ',': _0x276d9d = ',', _0x4ebe5b++; break; default: break; }_0x537d5c['push'](_0x276d9d); } return _0x4ebe5b === _0xd83880 && _0x537d5c['push'](_0x39150c[_0x2c03ee(0x1e6)](_0xd83880)), _0x537d5c[_0x2c03ee(0x164)](''); }, 'parse': function (_0x3207f4, _0x52039c) { var _0x2dfcef = _0x527cd1, _0xe089a7 = 'Copyright\x202013-2018\x20Data\x20Design\x20Group,\x20Inc.\x20All\x20Rights\x20Reserved', _0x53b2d4, _0x570c5d, _0x5511e0 = '', _0x432608 = ''; _0x52039c = _0x52039c || function (_0x2c9973, _0x2157a8, _0x3140e0) { var _0x20a4e0 = _0x73b4; if (_0x20a4e0(0x1ea) !== _0x20a4e0(0x1ea)) { if (!this['arHeaderRow'][_0x2c07b9] || this[_0x20a4e0(0x156)][_0x35a2c0] == '') this['arHeaderRow'][_0x20f8ba] = _0x20a4e0(0x1da) + (_0x3248bc + 0x1); this[_0x20a4e0(0x156)][_0x27e1b0] = this[_0x20a4e0(0x156)][_0x593fa7][_0x20a4e0(0x1e9)](); } else return _0x3140e0; }, this['table'] = [], this['statsCnt'] = [], this[_0x2dfcef(0x156)] = [], this['maxColumnsFound'] = 0x0, this['dataRowsFound'] = 0x0, this['headerColumns'] = 0x0, this[_0x2dfcef(0x1dc)] = {}; var _0x5c956d = 0x0, _0x30f3d2 = [0xe535f, 0x6cab1c86, -0x8a3a1d2, 0x2835, 0x17964960, 0xe31d1, -0x47ccd86d], _0x2b138c = String[_0x2dfcef(0x17e)](0x1e), _0x3f00e9 = '', _0x136591, _0x128056, _0x40670b, _0x1be965 = 0x0, _0x3bbf90 = ![], _0x36e098, _0x54359f, _0x35869b = ![], _0x3889ba = 0x0, _0x373ed6 = 0x0, _0x26d572, _0x19353b, _0x5322df = ![], _0x1b23fd = ''; if (this[_0x2dfcef(0x1a6)] != '' && isNaN(this[_0x2dfcef(0x1a6)])) this[_0x2dfcef(0x1a6)] = ''; if (this[_0x2dfcef(0x15e)] != '' && isNaN(this[_0x2dfcef(0x15e)])) this[_0x2dfcef(0x15e)] = 0x0; if (this['skip'] === '' || this[_0x2dfcef(0x15e)] < 0x0) this[_0x2dfcef(0x15e)] = 0x0; if (this[_0x2dfcef(0x15e)] > 0x0) { var _0x46e255 = 0x0, _0x1be965 = 0x0; for (_0x53b2d4 = 0x0; _0x53b2d4 < _0x3207f4['length']; _0x53b2d4++) { if ('PpMuT' === _0x2dfcef(0x1aa)) { if (_0x3207f4['charAt'](_0x53b2d4) === '\x0a' || _0x3207f4[_0x2dfcef(0x1e6)](_0x53b2d4) === '\x0d' && (_0x53b2d4 === _0x3207f4[_0x2dfcef(0x1bf)] - 0x1 || _0x3207f4['charAt'](_0x53b2d4 + 0x1) !== '\x0a') || _0x3207f4[_0x2dfcef(0x1e6)](_0x53b2d4) === _0x2b138c) { if ('ainyw' !== _0x2dfcef(0x1b5)) { if (_0x3207f4[_0x2dfcef(0x1e6)](_0x53b2d4) === _0x2b138c) _0x5322df = !![]; _0x1be965++; if (_0x1be965 >= this[_0x2dfcef(0x15e)]) { _0x46e255 = _0x53b2d4 + 0x1; break; } } else ++_0x36829f; } } else _0x1bcf05 >= this[_0x2dfcef(0x197)][_0x2dfcef(0x1bf)] && (this[_0x2dfcef(0x197)][_0x415230] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'equalUsed': ![], 'fieldType': '', 'fieldDecs': 0x0, 'fieldPrec': 0x0, 'fldMinLen': _0xea0647[_0x2dfcef(0x161)], 'fldMaxLen': 0x0 }), this[_0x2dfcef(0x197)][_0x128b1d][_0x2dfcef(0x15d)]++; } if (_0x1be965 < this[_0x2dfcef(0x15e)]) _0x46e255 = _0x3207f4[_0x2dfcef(0x1bf)]; _0x3207f4 = _0x3207f4[_0x2dfcef(0x169)](_0x46e255); } this[_0x2dfcef(0x157)] = _0x3207f4[_0x2dfcef(0x1bf)] === 0x0 ? 0x0 : _0x5322df ? _0x3207f4[_0x2dfcef(0x192)](_0x2b138c)[_0x2dfcef(0x1bf)] : _0x3207f4[_0x2dfcef(0x192)](/\r\n|\r|\n/)[_0x2dfcef(0x1bf)]; if (_0x3207f4[_0x2dfcef(0x1a5)]('\x0a') || _0x3207f4[_0x2dfcef(0x1a5)]('\x0d') || _0x3207f4[_0x2dfcef(0x1a5)](_0x2b138c)) this[_0x2dfcef(0x157)]--; _0x26d572 = _0x3207f4[_0x2dfcef(0x192)](''), _0x19353b = _0x26d572[_0x2dfcef(0x1bf)], _0x3207f4 = '', detect = { 'comma': 0x0, 'semi': 0x0, 'tab': 0x0, 'pipe': 0x0, 'colon': 0x0, 'space': 0x0, 'caret': 0x0, 'us': 0x0 }, this[_0x2dfcef(0x19f)] = { '\x27': 0x0, '\x22': 0x0 }; for (_0x53b2d4 = 0x0; _0x53b2d4 < _0x19353b; _0x53b2d4++) { if (_0x2dfcef(0x188) !== _0x2dfcef(0x188)) this['dataRowsFound'] = 0x0; else { if (_0x53b2d4 > 0x1 && (_0x26d572[_0x53b2d4] === '\x0d' || _0x26d572[_0x53b2d4] === '\x0a') || _0x26d572[_0x53b2d4] === _0x2b138c) break; if (_0x26d572[_0x53b2d4] === ',') detect[_0x2dfcef(0x184)]++; if (_0x26d572[_0x53b2d4] === ';') detect[_0x2dfcef(0x1de)]++; if (_0x26d572[_0x53b2d4] === '\x09') detect[_0x2dfcef(0x152)]++; if (_0x26d572[_0x53b2d4] === '|') detect[_0x2dfcef(0x1ac)]++; if (_0x26d572[_0x53b2d4] === ':') detect[_0x2dfcef(0x17a)]++; if (_0x26d572[_0x53b2d4] === '^') detect[_0x2dfcef(0x194)]++; if (_0x26d572[_0x53b2d4] === '\x20') detect[_0x2dfcef(0x1d8)]++; if (_0x26d572[_0x53b2d4] === String['fromCharCode'](0x1f)) detect['us']++; } } this['detectedDelimiter'] = this[_0x2dfcef(0x1ce)] || ','; if (detect['us'] > 0x0) this[_0x2dfcef(0x1e5)] = String[_0x2dfcef(0x17e)](0x1f); else { if (detect[_0x2dfcef(0x152)] > 0x0 && detect[_0x2dfcef(0x152)] >= detect[_0x2dfcef(0x184)] && detect[_0x2dfcef(0x152)] >= detect[_0x2dfcef(0x1ac)] && detect[_0x2dfcef(0x152)] >= detect[_0x2dfcef(0x1de)] && detect[_0x2dfcef(0x152)] >= detect['colon'] && detect[_0x2dfcef(0x152)] > detect[_0x2dfcef(0x194)]) this[_0x2dfcef(0x1e5)] = '\x09'; else { if (detect['semi'] > 0x0 && detect['semi'] > detect[_0x2dfcef(0x184)] && detect[_0x2dfcef(0x1de)] > detect[_0x2dfcef(0x1ac)] && detect[_0x2dfcef(0x1de)] > detect[_0x2dfcef(0x152)] && detect[_0x2dfcef(0x1de)] > detect[_0x2dfcef(0x17a)] && detect[_0x2dfcef(0x1de)] > detect['caret']) this['detectedDelimiter'] = ';'; else { if (detect[_0x2dfcef(0x17a)] > 0x0 && detect['colon'] > detect[_0x2dfcef(0x184)] && detect[_0x2dfcef(0x17a)] > detect[_0x2dfcef(0x1ac)] && detect[_0x2dfcef(0x17a)] > detect[_0x2dfcef(0x152)] && detect[_0x2dfcef(0x17a)] > detect['semi'] && detect[_0x2dfcef(0x17a)] > detect[_0x2dfcef(0x194)]) this[_0x2dfcef(0x1e5)] = ':'; else { if (detect[_0x2dfcef(0x1ac)] > 0x0 && detect[_0x2dfcef(0x1ac)] > detect[_0x2dfcef(0x184)] && detect[_0x2dfcef(0x1ac)] > detect[_0x2dfcef(0x1de)] && detect[_0x2dfcef(0x1ac)] > detect[_0x2dfcef(0x152)] && detect['pipe'] > detect['colon'] && detect['pipe'] > detect[_0x2dfcef(0x194)]) this[_0x2dfcef(0x1e5)] = '|'; else { if (detect[_0x2dfcef(0x194)] > 0x0 && detect[_0x2dfcef(0x194)] > detect[_0x2dfcef(0x184)] && detect[_0x2dfcef(0x194)] > detect[_0x2dfcef(0x1ac)] && detect[_0x2dfcef(0x194)] > detect[_0x2dfcef(0x1de)] && detect['caret'] > detect['tab'] && detect['caret'] > detect[_0x2dfcef(0x17a)]) this['detectedDelimiter'] = '^'; else { if (detect[_0x2dfcef(0x184)] > detect['tab'] && detect[_0x2dfcef(0x184)] > detect[_0x2dfcef(0x1ac)] && detect['comma'] > detect[_0x2dfcef(0x1de)] && detect[_0x2dfcef(0x184)] > detect[_0x2dfcef(0x17a)] && detect[_0x2dfcef(0x184)] > detect['caret']) this[_0x2dfcef(0x1e5)] = ','; else this['detectedDelimiter'] = ','; } } } } } } if (detect['tab'] === 0x0 && detect[_0x2dfcef(0x184)] === 0x0 && detect[_0x2dfcef(0x1ac)] === 0x0 && detect[_0x2dfcef(0x17a)] === 0x0 && detect[_0x2dfcef(0x1de)] === 0x0 && detect[_0x2dfcef(0x194)] === 0x0 && detect['us'] === 0x0 && detect['space'] > 0x0) this[_0x2dfcef(0x1e5)] = '\x20'; if (this[_0x2dfcef(0x1db)]) this['delimiter'] = this['detectedDelimiter']; this[_0x2dfcef(0x182)] = 0x0; while (_0x5c956d < _0x19353b) { if (_0x2dfcef(0x177) !== _0x2dfcef(0x18d)) { if (this[_0x2dfcef(0x1e0)] && (_0x26d572[_0x5c956d] === '\x0d' || _0x26d572[_0x5c956d] === '\x0a') || _0x26d572[_0x5c956d] === _0x2b138c) { _0x5c956d++ , this[_0x2dfcef(0x182)]++; continue; } this[_0x2dfcef(0x151)][_0x2dfcef(0x1c6)](_0x40670b = []); if (this[_0x2dfcef(0x1b9)] && _0x40670b[_0x2dfcef(0x1bf)] === 0x0 && this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] === 0x1 && this['isFirstRowHeader']) _0x40670b[_0x2dfcef(0x1c6)]('#'); else { if (this['addSequence'] && _0x40670b[_0x2dfcef(0x1bf)] === 0x0) _0x40670b[_0x2dfcef(0x1c6)]('' + (_0x1be965 + 0x1 - (this[_0x2dfcef(0x16d)] ? 0x1 : 0x0))); } _0x35869b = ![], _0x54359f = _0x5c956d; while (_0x5c956d < _0x19353b && _0x26d572[_0x5c956d] !== '\x0d' && _0x26d572[_0x5c956d] !== '\x0a' && _0x26d572[_0x5c956d] !== _0x2b138c) { _0x36e098 = _0x136591 = _0x128056 = _0x5c956d; if (this[_0x2dfcef(0x173)]) { while (_0x26d572[_0x5c956d] === '\x20') { ++_0x5c956d, _0x35869b = !![]; } if (_0x26d572[_0x5c956d] === this[_0x2dfcef(0x189)] && !this[_0x2dfcef(0x1b7)]) { if (_0x35869b && !this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)]['length'] + _0x373ed6)]) this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x373ed6)] = { 'error': 0x1, 'column': _0x5c956d - _0x54359f + 0x1 }; _0x136591 = _0x5c956d; } else _0x2dfcef(0x1c8) === _0x2dfcef(0x1ad) ? ++_0x5ca798 : _0x5c956d = _0x36e098; } if (this[_0x2dfcef(0x1c4)]) { if (_0x2dfcef(0x1d6) !== 'Guhvx') return this[_0x2dfcef(0x197)][_0x1eb77b][_0x2dfcef(0x1e8)] = 'L', 'L'; else _0x26d572[_0x5c956d] === '=' && _0x5c956d + 0x1 < _0x19353b && _0x26d572[_0x5c956d + 0x1] === this[_0x2dfcef(0x189)] && (_0x2dfcef(0x158) === _0x2dfcef(0x1a4) ? this[_0x2dfcef(0x1e2)] = _0x4761b5 - (this[_0x2dfcef(0x16d)] ? 0x1 : 0x0) : (_0x136591 = ++_0x5c956d, _0x3bbf90 = !![])); } if (this[_0x2dfcef(0x189)] === _0x26d572[_0x5c956d] && !this['ignoreQuote']) { _0x136591 = _0x128056 = ++_0x5c956d, this[_0x2dfcef(0x19f)][this[_0x2dfcef(0x189)]]++; while (_0x5c956d < _0x19353b) { if (_0x2dfcef(0x1c5) === _0x2dfcef(0x1d0)) { if (_0x43fc9c[_0x2dfcef(0x1bf)] < this[_0x2dfcef(0x197)][_0x111758]['fldMinLen']) this['statsCnt'][_0x12cb6b]['fldMinLen'] = _0x554e1e[_0x2dfcef(0x1bf)]; if (_0xfb7871[_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x197)][_0x4a629b][_0x2dfcef(0x191)]) this[_0x2dfcef(0x197)][_0x55b9fe][_0x2dfcef(0x191)] = _0x55988a[_0x2dfcef(0x1bf)]; } else { if (_0x26d572[_0x5c956d] === this[_0x2dfcef(0x189)]) { if ('zHvCV' === _0x2dfcef(0x1d9)) _0x381d29[_0x3ff041] = -0x1, _0x47d4a3[_0x4dd985] = _0x4d99d2[_0x2c45a8][_0x2dfcef(0x1e3)](_0x2aa36d[_0x2817b5][_0x2dfcef(0x1bf)] - 0x1); else { if (this[_0x2dfcef(0x189)] !== _0x26d572[_0x5c956d + 0x1]) break; else _0x26d572[++_0x5c956d] = ''; } } _0x128056 = ++_0x5c956d; } } if (_0x26d572[_0x5c956d] === this['quote']) { if (_0x2dfcef(0x1b3) === _0x2dfcef(0x15a)) _0x3fd2b9 = this['outputQuote'] + _0x2774b4['replace'](/"/g, this[_0x2dfcef(0x155)] + this[_0x2dfcef(0x155)]) + this[_0x2dfcef(0x155)]; else { ++_0x5c956d; if (_0x5c956d < _0x19353b && _0x26d572[_0x5c956d] !== '\x0d' && _0x26d572[_0x5c956d] !== '\x0a' && _0x26d572[_0x5c956d] !== _0x2b138c && this[_0x2dfcef(0x1ce)] !== _0x26d572[_0x5c956d]) { if (_0x2dfcef(0x16f) !== 'ryuTT') { if (!this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x373ed6)]) this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x373ed6)] = { 'error': 0x2, 'column': _0x5c956d - _0x54359f + 0x1 }; } else { this[_0x2dfcef(0x197)][_0x5ab765]['realCnt']++; var _0x4e8e40 = _0x30365a['split'](_0x4c8538); if (_0x4e8e40[0x0][_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x197)][_0x392089][_0x2dfcef(0x1c0)]) this[_0x2dfcef(0x197)][_0x2b0f05]['fieldPrec'] = _0x4e8e40[0x0][_0x2dfcef(0x1bf)]; if (_0x4e8e40[_0x2dfcef(0x1bf)] > 0x1) { if (_0x4e8e40[0x1][_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x197)][_0x27f77b][_0x2dfcef(0x1d3)]) this[_0x2dfcef(0x197)][_0x2dbe21][_0x2dfcef(0x1d3)] = _0x4e8e40[0x1][_0x2dfcef(0x1bf)]; } if (_0x360a4f['indexOf'](_0x4fbe97) < 0x0) this[_0x2dfcef(0x197)][_0x4c6d69][_0x2dfcef(0x1ae)]++; if (_0x38c1fe === '0' || _0x88e99f === '1') this[_0x2dfcef(0x197)][_0x3aeb5c]['bitCnt']++; } } } } else { if (!this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x373ed6)]) this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x373ed6)] = { 'error': 0x3, 'column': _0x5c956d - _0x54359f + 0x1 }; } while (_0x5c956d < _0x19353b && _0x26d572[_0x5c956d] !== '\x0d' && _0x26d572[_0x5c956d] !== '\x0a' && _0x26d572[_0x5c956d] !== _0x2b138c && this[_0x2dfcef(0x1ce)] !== _0x26d572[_0x5c956d]) { if ('MGLUd' === _0x2dfcef(0x1ba)) { if (_0x2894a5[_0x3dd4ef[_0x3c21f8]][_0x2dfcef(0x154)](/[\$,]/g, '') * 0x1 < _0x22b3d4[_0x55e11e[_0x1307eb]][_0x2dfcef(0x154)](/[\$,]/g, '') * 0x1) return -0x1 * _0x676039[_0x2eafb]; if (_0x1ae461[_0x371387[_0x197624]][_0x2dfcef(0x154)](/[\$,]/g, '') * 0x1 > _0x44fdcf[_0x7050ee[_0x3c1936]][_0x2dfcef(0x154)](/[\$,]/g, '') * 0x1) return 0x1 * _0x169303[_0x54ccc7]; } else ++_0x5c956d; } } else { if (_0x2dfcef(0x186) !== _0x2dfcef(0x175)) { _0x3f00e9 = ''; while (_0x5c956d < _0x19353b && _0x26d572[_0x5c956d] !== '\x0d' && _0x26d572[_0x5c956d] !== '\x0a' && _0x26d572[_0x5c956d] !== _0x2b138c) { if (_0x26d572[_0x5c956d] === this[_0x2dfcef(0x1ce)] && !this[_0x2dfcef(0x1d2)]) break; if (_0x26d572[_0x5c956d] === this[_0x2dfcef(0x1ce)] && this[_0x2dfcef(0x1d2)] && _0x3f00e9 !== '\x5c') break; _0x3f00e9 = _0x26d572[_0x5c956d], _0x128056 = ++_0x5c956d; } } else { this[_0x2dfcef(0x156)] = this[_0x2dfcef(0x151)]['shift'](), this[_0x2dfcef(0x1d4)] = this[_0x2dfcef(0x156)][_0x2dfcef(0x1bf)]; for (_0x5e3868 = 0x0; _0x3d801e < this[_0x2dfcef(0x1d4)]; _0x5defd6++) { this[_0x2dfcef(0x156)][_0x192210][_0x2dfcef(0x1e9)]() == '' && this[_0x2dfcef(0x179)][_0x2dfcef(0x1c6)]({ 'error': 0x1, 'field': _0x37d254 + 0x1 }); } for (_0x5cf6c0 = 0x0; _0x129672 < this[_0x2dfcef(0x172)]; _0x4f9a9f++) { if (!this['arHeaderRow'][_0x219116] || this['arHeaderRow'][_0x5368ad] == '') this[_0x2dfcef(0x156)][_0x2cd202] = _0x2dfcef(0x1da) + (_0x35af4b + 0x1); this[_0x2dfcef(0x156)][_0x465e55] = this['arHeaderRow'][_0x37fdc0]['trim'](); } } } _0x40670b['push'](_0x52039c(this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] - 0x1, _0x40670b[_0x2dfcef(0x1bf)], _0x26d572[_0x2dfcef(0x1ca)](_0x136591, _0x128056)[_0x2dfcef(0x164)](''))); if (this[_0x2dfcef(0x1d2)]) { if (_0x2dfcef(0x16c) !== _0x2dfcef(0x16c)) return this['statsCnt'][_0xec2495]['fieldType'] = 'I', 'I'; else _0x40670b[_0x40670b[_0x2dfcef(0x1bf)] - 0x1] = this['unescapeLiterals'](_0x40670b[_0x40670b[_0x2dfcef(0x1bf)] - 0x1]); } if (this[_0x2dfcef(0x1ce)] === '\x20') while (_0x5c956d < _0x19353b && _0x26d572[_0x5c956d] === this[_0x2dfcef(0x1ce)]) { ++_0x5c956d; } if (this['delimiter'] === _0x26d572[_0x5c956d]) { if (_0x2dfcef(0x187) !== _0x2dfcef(0x1bd))++_0x5c956d; else { this[_0x2dfcef(0x197)][_0x5799d6][_0x2dfcef(0x1ab)] = !![]; var _0x53e304 = new _0xc4f691(this[_0x2dfcef(0x189)] + this[_0x2dfcef(0x189)], _0x2dfcef(0x1a7)); _0x300b44 = _0x399caf[_0x43d022] = _0xc1b75d[_0x2dfcef(0x169)](0x2, _0x213470[_0x2dfcef(0x1bf)] - 0x3)[_0x2dfcef(0x154)](_0x53e304, this[_0x2dfcef(0x189)]); } } } if (_0x26d572[_0x5c956d - 0x1] === this[_0x2dfcef(0x1ce)] && this[_0x2dfcef(0x1ce)] !== '\x20') _0x40670b[_0x2dfcef(0x1c6)](_0x52039c(this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] - 0x1, _0x40670b[_0x2dfcef(0x1bf)], '')); if (_0x40670b[_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x172)]) this[_0x2dfcef(0x172)] = _0x40670b[_0x2dfcef(0x1bf)]; _0x26d572[_0x5c956d] === _0x2b138c && ++_0x5c956d; _0x26d572[_0x5c956d] === '\x0d' && (_0x2dfcef(0x165) === _0x2dfcef(0x1a9) ? _0xaab6fe += this[_0x2dfcef(0x1ce)] : ++_0x5c956d); _0x26d572[_0x5c956d] === '\x0a' && ++_0x5c956d; if (!this[_0x2dfcef(0x16d)] || _0x1be965 > 0x0) for (_0x53b2d4 = 0x0; _0x53b2d4 < _0x40670b['length']; _0x53b2d4++) { if (_0x2dfcef(0x18e) === _0x2dfcef(0x180)) this[_0x2dfcef(0x156)][_0xc3ab0d][_0x2dfcef(0x1e9)]() == '' && this[_0x2dfcef(0x179)][_0x2dfcef(0x1c6)]({ 'error': 0x1, 'field': _0xa249de + 0x1 }); else { (_0x53b2d4 >= this[_0x2dfcef(0x197)][_0x2dfcef(0x1bf)] || _0x1be965 === 0x0) && (_0x2dfcef(0x1af) !== 'XaSXk' ? this['headerErrors'][_0x2dfcef(0x1c6)]({ 'error': 0x1, 'field': _0x4d1879 + 0x1 }) : this[_0x2dfcef(0x197)][_0x53b2d4] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'equalUsed': ![], 'fieldType': '', 'fieldDecs': 0x0, 'fieldPrec': 0x0, 'fldMinLen': Number['MAX_VALUE'], 'fldMaxLen': 0x0 }); _0x5511e0 = _0x53b2d4 < _0x40670b[_0x2dfcef(0x1bf)] ? _0x40670b[_0x53b2d4][_0x2dfcef(0x154)](/^\s+|\s+$/g, '') : ''; if (this[_0x2dfcef(0x1c4)] && _0x5511e0[_0x2dfcef(0x1bf)] > 0x2 && _0x5511e0[_0x2dfcef(0x169)](0x0, 0x2) === '=\x22' && _0x5511e0[_0x2dfcef(0x169)](_0x5511e0['length'] - 0x1) === this[_0x2dfcef(0x189)]) { this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1ab)] = !![]; var _0xed2eba = new RegExp(this[_0x2dfcef(0x189)] + this[_0x2dfcef(0x189)], 'gmi'); _0x5511e0 = _0x40670b[_0x53b2d4] = _0x5511e0[_0x2dfcef(0x169)](0x2, _0x5511e0[_0x2dfcef(0x1bf)] - 0x3)[_0x2dfcef(0x154)](_0xed2eba, this[_0x2dfcef(0x189)]); } if (this[_0x2dfcef(0x174)]) for (z = 0x0; z < this[_0x2dfcef(0x19a)]['length']; z++) { if (_0x5511e0[_0x2dfcef(0x15b)]() == this[_0x2dfcef(0x19a)][z][0x0][_0x2dfcef(0x15b)]()) { _0x5511e0 = this['stringSubMap'][z][0x1]; break; } } var _0x3a3325 = '\x27'; if (_0x3a3325 === this[_0x2dfcef(0x189)]) _0x3a3325 = '\x22'; if (_0x5511e0[_0x2dfcef(0x1e6)](0x0) === _0x3a3325 && _0x5511e0[_0x2dfcef(0x1a5)](_0x3a3325)) this[_0x2dfcef(0x19f)][_0x3a3325]++; if (_0x5511e0 == '') { if (_0x2dfcef(0x1e1) === _0x2dfcef(0x1e1)) this[_0x2dfcef(0x197)][_0x53b2d4]['emptyCnt']++; else { if (_0x2da8bb[0x1][_0x2dfcef(0x1bf)] > this['statsCnt'][_0x4011e5][_0x2dfcef(0x1d3)]) this[_0x2dfcef(0x197)][_0xd016cc][_0x2dfcef(0x1d3)] = _0x139899[0x1][_0x2dfcef(0x1bf)]; } } else { if ('UqLDK' === _0x2dfcef(0x190)) { while (_0x12849d[_0x25e311] === '\x20') { ++_0x3dfa6f, _0x5cac1d = !![]; } if (_0x2b341f[_0x556d06] === this[_0x2dfcef(0x189)] && !this[_0x2dfcef(0x1b7)]) { if (_0x180cf1 && !this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x2fbdcb)]) this[_0x2dfcef(0x1dc)]['' + (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] + _0x5635ee)] = { 'error': 0x1, 'column': _0x4d809a - _0x333f9c + 0x1 }; _0x497075 = _0x7d295b; } else _0x1b948c = _0x1683a2; } else { if (_0x5511e0[_0x2dfcef(0x1bf)] < this['statsCnt'][_0x53b2d4][_0x2dfcef(0x171)]) this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x171)] = _0x5511e0[_0x2dfcef(0x1bf)]; if (_0x5511e0[_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x191)]) this['statsCnt'][_0x53b2d4][_0x2dfcef(0x191)] = _0x5511e0[_0x2dfcef(0x1bf)]; } } _0x432608 = _0x5511e0; var _0x102103 = this[_0x2dfcef(0x15c)]() || '.'; if (_0x102103[_0x2dfcef(0x1bf)] !== 0x1) _0x102103 = '.'; if (_0x432608 != '' && _0x432608[_0x2dfcef(0x1b2)]() && _0x432608[_0x2dfcef(0x192)](_0x102103)[0x0][_0x2dfcef(0x1bf)] < 0x10) { if ('XYvGP' !== _0x2dfcef(0x1cc)) { this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1dd)]++; var _0x4b3029 = _0x432608[_0x2dfcef(0x192)](_0x102103); if (_0x4b3029[0x0][_0x2dfcef(0x1bf)] > this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1c0)]) this['statsCnt'][_0x53b2d4]['fieldPrec'] = _0x4b3029[0x0][_0x2dfcef(0x1bf)]; if (_0x4b3029['length'] > 0x1) { if (_0x2dfcef(0x1e7) === 'zNdJL')++_0x41c4fa; else { if (_0x4b3029[0x1]['length'] > this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1d3)]) this['statsCnt'][_0x53b2d4][_0x2dfcef(0x1d3)] = _0x4b3029[0x1][_0x2dfcef(0x1bf)]; } } if (_0x5511e0[_0x2dfcef(0x18f)](_0x102103) < 0x0) this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1ae)]++; if (_0x5511e0 === '0' || _0x5511e0 === '1') this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1d5)]++; } else return this['statsCnt'][_0x36329e]['fieldType'] = 'N', 'N'; } if (_0x5511e0[_0x2dfcef(0x153)]()) { if (_0x2dfcef(0x1e4) !== _0x2dfcef(0x1cb)) this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x1a1)]++; else return 0x0[_0x2dfcef(0x181)](0x1)[_0x2dfcef(0x1e6)](0x1); } if (_0x5511e0[_0x2dfcef(0x15b)]() === 'TRUE' || _0x5511e0[_0x2dfcef(0x15b)]() === 'FALSE') { if (_0x2dfcef(0x17b) !== _0x2dfcef(0x17b)) for (_0x24f144 = this[_0x2dfcef(0x151)][_0x123e80]['length']; _0x34261b < this[_0x2dfcef(0x172)]; _0x341e05++) { _0x2e7deb >= this[_0x2dfcef(0x197)]['length'] && (this['statsCnt'][_0x3a4372] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'equalUsed': ![], 'fieldType': '', 'fieldDecs': 0x0, 'fieldPrec': 0x0, 'fldMinLen': _0x2010bc[_0x2dfcef(0x161)], 'fldMaxLen': 0x0 }), this['statsCnt'][_0x4e86e0][_0x2dfcef(0x15d)]++; } else this[_0x2dfcef(0x197)][_0x53b2d4]['logicalCnt']++; } } } _0x1be965++; if (this[_0x2dfcef(0x1a6)] != '' && _0x1be965 - (this[_0x2dfcef(0x16d)] ? 0x1 : 0x0) >= this[_0x2dfcef(0x1a6)] * 0x1) break; } else _0x5ae465[_0x50e34e[_0x2dfcef(0x1bf)] - 0x1] = this['unescapeLiterals'](_0x1a5ff8[_0x180152[_0x2dfcef(0x1bf)] - 0x1]); } _0x1be965 <= 0x0 ? _0x2dfcef(0x193) === 'tQpDH' ? this[_0x2dfcef(0x1e2)] = 0x0 : ++_0x321003 : this[_0x2dfcef(0x1e2)] = _0x1be965 - (this[_0x2dfcef(0x16d)] ? 0x1 : 0x0); this[_0x2dfcef(0x179)] = []; if (this[_0x2dfcef(0x16d)] && this['table'][_0x2dfcef(0x1bf)] > 0x0) { if (_0x2dfcef(0x19b) === _0x2dfcef(0x1a3)) _0x46d8ce = _0x38b7af; else { this[_0x2dfcef(0x156)] = this[_0x2dfcef(0x151)][_0x2dfcef(0x1cd)](), this[_0x2dfcef(0x1d4)] = this[_0x2dfcef(0x156)][_0x2dfcef(0x1bf)]; for (_0x53b2d4 = 0x0; _0x53b2d4 < this[_0x2dfcef(0x1d4)]; _0x53b2d4++) { this[_0x2dfcef(0x156)][_0x53b2d4][_0x2dfcef(0x1e9)]() == '' && this['headerErrors']['push']({ 'error': 0x1, 'field': _0x53b2d4 + 0x1 }); } for (_0x53b2d4 = 0x0; _0x53b2d4 < this[_0x2dfcef(0x172)]; _0x53b2d4++) { if (_0x2dfcef(0x1bc) !== _0x2dfcef(0x1bc)) this[_0x2dfcef(0x197)][_0x5520a8] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'equalUsed': ![], 'fieldType': '', 'fieldDecs': 0x0, 'fieldPrec': 0x0, 'fldMinLen': _0x568667[_0x2dfcef(0x161)], 'fldMaxLen': 0x0 }; else { if (!this[_0x2dfcef(0x156)][_0x53b2d4] || this[_0x2dfcef(0x156)][_0x53b2d4] == '') this[_0x2dfcef(0x156)][_0x53b2d4] = _0x2dfcef(0x1da) + (_0x53b2d4 + 0x1); this[_0x2dfcef(0x156)][_0x53b2d4] = this[_0x2dfcef(0x156)][_0x53b2d4][_0x2dfcef(0x1e9)](); } } } } this[_0x2dfcef(0x196)] = ![], this[_0x2dfcef(0x1b6)] = [], this[_0x2dfcef(0x19e)] = [], this[_0x2dfcef(0x18c)] = ![], _0x3889ba = this[_0x2dfcef(0x1e2)] > 0x0 ? this[_0x2dfcef(0x151)][0x0][_0x2dfcef(0x1bf)] : 0x0; for (_0x570c5d = 0x0; _0x570c5d < this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)]; _0x570c5d++) { if (this[_0x2dfcef(0x151)][_0x570c5d][_0x2dfcef(0x1bf)] < this['maxColumnsFound']) for (_0x53b2d4 = this[_0x2dfcef(0x151)][_0x570c5d]['length']; _0x53b2d4 < this[_0x2dfcef(0x172)]; _0x53b2d4++) { _0x53b2d4 >= this[_0x2dfcef(0x197)][_0x2dfcef(0x1bf)] && (this['statsCnt'][_0x53b2d4] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'equalUsed': ![], 'fieldType': '', 'fieldDecs': 0x0, 'fieldPrec': 0x0, 'fldMinLen': Number[_0x2dfcef(0x161)], 'fldMaxLen': 0x0 }), this[_0x2dfcef(0x197)][_0x53b2d4][_0x2dfcef(0x15d)]++; } if (this[_0x2dfcef(0x16d)] && this[_0x2dfcef(0x1d4)] != this[_0x2dfcef(0x151)][_0x570c5d][_0x2dfcef(0x1bf)]) { if (_0x2dfcef(0x18b) !== _0x2dfcef(0x18b)) { if (this['headerToUpper']) this[_0x2dfcef(0x156)][_0x193a25] = this[_0x2dfcef(0x156)][_0x3b5285][_0x2dfcef(0x15b)](); if (this[_0x2dfcef(0x185)]) this[_0x2dfcef(0x156)][_0x3393ba] = this['arHeaderRow'][_0x530c90]['toLowerCase'](); } else this[_0x2dfcef(0x18c)] = !![], this[_0x2dfcef(0x19e)][_0x2dfcef(0x1bf)] < 0x5 && this[_0x2dfcef(0x19e)][_0x2dfcef(0x1c6)](_0x570c5d + 0x2); } if (!this[_0x2dfcef(0x16d)] && _0x3889ba != this[_0x2dfcef(0x151)][_0x570c5d][_0x2dfcef(0x1bf)]) { if (_0x2dfcef(0x178) === _0x2dfcef(0x178)) { this[_0x2dfcef(0x196)] = !![]; if (this[_0x2dfcef(0x1b6)][_0x2dfcef(0x1bf)] < 0x5) this[_0x2dfcef(0x1b6)][_0x2dfcef(0x1c6)](_0x570c5d + 0x1); } else return this['statsCnt'][_0xc35311]['fieldType'] = 'N', 'N'; } } if (this['arHeaderRow'][_0x2dfcef(0x1bf)] > 0x0) { for (_0x53b2d4 = 0x0; _0x53b2d4 < this[_0x2dfcef(0x156)][_0x2dfcef(0x1bf)]; _0x53b2d4++)this['determineCsvColType'](_0x53b2d4); } else { if (this[_0x2dfcef(0x151)][_0x2dfcef(0x1bf)] > 0x0) { if (_0x2dfcef(0x1d7) === _0x2dfcef(0x1d7)) for (_0x53b2d4 = 0x0; _0x53b2d4 < this[_0x2dfcef(0x172)]; _0x53b2d4++) { if ('OZRNl' !== _0x2dfcef(0x1c3))++_0x5d5947; else { if (!this[_0x2dfcef(0x156)][_0x53b2d4] || this['arHeaderRow'][_0x53b2d4] == '') this['arHeaderRow'][_0x53b2d4] = _0x2dfcef(0x1da) + (_0x53b2d4 + 0x1); this[_0x2dfcef(0x17f)](_0x53b2d4); } } else _0x14a6a6 += _0x90bf0c; } } for (_0x53b2d4 = 0x0; _0x53b2d4 < this['arHeaderRow'][_0x2dfcef(0x1bf)]; _0x53b2d4++) { if (this[_0x2dfcef(0x16b)]) this[_0x2dfcef(0x156)][_0x53b2d4] = this[_0x2dfcef(0x156)][_0x53b2d4]['toUpperCase'](); if (this[_0x2dfcef(0x185)]) this['arHeaderRow'][_0x53b2d4] = this[_0x2dfcef(0x156)][_0x53b2d4][_0x2dfcef(0x1c7)](); } this[_0x2dfcef(0x1bb)] != '' && this[_0x2dfcef(0x151)][_0x2dfcef(0x1df)](this[_0x2dfcef(0x167)]); if (this[_0x2dfcef(0x19f)]['\x22'] >= this[_0x2dfcef(0x19f)]['\x27']) this[_0x2dfcef(0x163)] = '\x22'; else this[_0x2dfcef(0x163)] = '\x27'; return 0x0; }, 'setSortFlds': function (_0x49c0b5) { var _0x53c453 = _0x527cd1; CSV[_0x53c453(0x1bb)] = _0x49c0b5[_0x53c453(0x1e9)](); }, 'sortCsv': function (_0x25f3c0, _0x394783) { var _0x3dd723 = _0x527cd1; if (CSV['sortPoss'] == '') return 0x0; var _0x5c84f2 = [], _0x96a7b8 = [], _0x923762 = []; _0x5c84f2 = CSV[_0x3dd723(0x1bb)]['split'](','); for (j = 0x0; j < _0x5c84f2[_0x3dd723(0x1bf)]; j++) { if (_0x3dd723(0x195) === _0x3dd723(0x1cf)) { if (_0x590268[_0x3dd723(0x16a)]) { if (_0x4c5276[_0x2d8d1b[_0x59715c]][_0x3dd723(0x15b)]() < _0xbc9113[_0x5a72e8[_0x20cbe5]][_0x3dd723(0x15b)]()) return -0x1 * _0x2d7557[_0x3bf7fa]; if (_0x1176c1[_0x39c30b[_0x57f7c5]][_0x3dd723(0x15b)]() > _0x272019[_0x28d9bb[_0x1b2ddd]]['toUpperCase']()) return 0x1 * _0x344294[_0x415970]; } else { if (_0x4da954[_0x3b3e37[_0x4fe1fc]] < _0x1197e9[_0x51810f[_0x480024]]) return -0x1 * _0x511da5[_0x4c907c]; if (_0x1527f9[_0x532d54[_0x4a1996]] > _0x4cb0f7[_0x1b1f57[_0x43272c]]) return 0x1 * _0xc65be0[_0x3a084b]; } } else { _0x96a7b8[j] = 0x1, _0x923762[j] = ''; _0x5c84f2[j][_0x3dd723(0x162)](0x1)['toUpperCase']() == 'D' && (_0x3dd723(0x168) !== _0x3dd723(0x168) ? this[_0x3dd723(0x197)][_0x3a3f36][_0x3dd723(0x1a1)]++ : (_0x96a7b8[j] = -0x1, _0x5c84f2[j] = _0x5c84f2[j][_0x3dd723(0x1e3)](_0x5c84f2[j]['length'] - 0x1))); switch (_0x5c84f2[j][_0x3dd723(0x1e3)](0x1)[_0x3dd723(0x15b)]()) { case 'C': _0x923762[j] = 'C', _0x5c84f2[j] = _0x5c84f2[j][_0x3dd723(0x162)](_0x5c84f2[j][_0x3dd723(0x1bf)] - 0x1); break; case 'N': _0x923762[j] = 'N', _0x5c84f2[j] = _0x5c84f2[j][_0x3dd723(0x162)](_0x5c84f2[j][_0x3dd723(0x1bf)] - 0x1); break; default: break; } } } for (j = 0x0; j < _0x5c84f2[_0x3dd723(0x1bf)]; j++)if (!isNaN(_0x5c84f2[j])) _0x5c84f2[j] = _0x5c84f2[j] * 0x1 - 0x1; else _0x5c84f2[j] = -0x1; for (j = 0x0; j < _0x5c84f2[_0x3dd723(0x1bf)]; j++)if (_0x5c84f2[j] >= _0x25f3c0[_0x3dd723(0x1bf)]) _0x5c84f2[j] = -0x1; for (j = 0x0; j < _0x5c84f2[_0x3dd723(0x1bf)]; j++) { if (_0x3dd723(0x17c) === _0x3dd723(0x1d1)) this['statsCnt'][_0x4d7a3a][_0x3dd723(0x15d)]++; else { if (_0x5c84f2[j] < 0x0) continue; if (!isNaN(_0x25f3c0[_0x5c84f2[j]][_0x3dd723(0x154)](/[\$,]/g, '')) && !isNaN(_0x394783[_0x5c84f2[j]]['replace'](/[\$,]/g, '')) && CSV[_0x3dd723(0x1e2)] == CSV[_0x3dd723(0x197)][_0x5c84f2[j]][_0x3dd723(0x1dd)] + CSV[_0x3dd723(0x197)][_0x5c84f2[j]][_0x3dd723(0x15d)] && _0x923762[j] != 'C') { if (_0x25f3c0[_0x5c84f2[j]][_0x3dd723(0x154)](/[\$,]/g, '') * 0x1 < _0x394783[_0x5c84f2[j]][_0x3dd723(0x154)](/[\$,]/g, '') * 0x1) return -0x1 * _0x96a7b8[j]; if (_0x25f3c0[_0x5c84f2[j]]['replace'](/[\$,]/g, '') * 0x1 > _0x394783[_0x5c84f2[j]]['replace'](/[\$,]/g, '') * 0x1) return 0x1 * _0x96a7b8[j]; } else { if (CSV['sortIgnoreCase']) { if (_0x3dd723(0x176) !== 'LxdEa') { for (_0x3b7e7a = 0x0; _0x3817e6 < this[_0x3dd723(0x156)][_0x3dd723(0x1bf)]; _0x4241f3++)this[_0x3dd723(0x17f)](_0x477db3); } else { if (_0x25f3c0[_0x5c84f2[j]][_0x3dd723(0x15b)]() < _0x394783[_0x5c84f2[j]][_0x3dd723(0x15b)]()) return -0x1 * _0x96a7b8[j]; if (_0x25f3c0[_0x5c84f2[j]][_0x3dd723(0x15b)]() > _0x394783[_0x5c84f2[j]][_0x3dd723(0x15b)]()) return 0x1 * _0x96a7b8[j]; } } else { if (_0x25f3c0[_0x5c84f2[j]] < _0x394783[_0x5c84f2[j]]) return -0x1 * _0x96a7b8[j]; if (_0x25f3c0[_0x5c84f2[j]] > _0x394783[_0x5c84f2[j]]) return 0x1 * _0x96a7b8[j]; } } } } return 0x0; }, 'determineCsvColType': function (_0xadb4be) { var _0x116723 = _0x527cd1, _0x3fad13 = 0x0, _0x835293 = 0x0; if (this[_0x116723(0x151)][_0x116723(0x1bf)] == 0x0) return ''; if (_0xadb4be >= this[_0x116723(0x197)][_0x116723(0x1bf)]) this[_0x116723(0x197)][_0xadb4be] = { 'dateCnt': 0x0, 'intCnt': 0x0, 'realCnt': 0x0, 'emptyCnt': 0x0, 'bitCnt': 0x0, 'logicalCnt': 0x0, 'fieldType': '' }; if (this[_0x116723(0x151)][_0x116723(0x1bf)] === this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1d5)]) return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'B', 'B'; if (this[_0x116723(0x151)][_0x116723(0x1bf)] === this['statsCnt'][_0xadb4be][_0x116723(0x19c)]) return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'L', 'L'; if (this[_0x116723(0x151)][_0x116723(0x1bf)] === this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1a1)]) return this[_0x116723(0x197)][_0xadb4be]['fieldType'] = 'D', 'D'; if (this[_0x116723(0x151)][_0x116723(0x1bf)] === this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1ae)]) return this['statsCnt'][_0xadb4be][_0x116723(0x1e8)] = 'I', 'I'; if (this[_0x116723(0x151)][_0x116723(0x1bf)] === this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1dd)]) { if (_0x116723(0x159) === 'ZUrjq') return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'N', 'N'; else { if (_0x26867a && !this[_0x116723(0x1dc)]['' + (this[_0x116723(0x151)][_0x116723(0x1bf)] + _0x2527c2)]) this[_0x116723(0x1dc)]['' + (this[_0x116723(0x151)][_0x116723(0x1bf)] + _0x493151)] = { 'error': 0x1, 'column': _0x8c7132 - _0x397bb9 + 0x1 }; _0x4eb3ad = _0x3f4c66; } } if (this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1d5)] > 0x0 && this[_0x116723(0x151)][_0x116723(0x1bf)] == this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1d5)] + this[_0x116723(0x197)][_0xadb4be]['emptyCnt']) return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'B', 'B'; if (this['statsCnt'][_0xadb4be][_0x116723(0x19c)] > 0x0 && this[_0x116723(0x151)][_0x116723(0x1bf)] == this[_0x116723(0x197)][_0xadb4be]['logicalCnt'] + this[_0x116723(0x197)][_0xadb4be][_0x116723(0x15d)]) return this['statsCnt'][_0xadb4be]['fieldType'] = 'L', 'L'; if (this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1a1)] > 0x0 && this[_0x116723(0x151)][_0x116723(0x1bf)] == this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1a1)] + this['statsCnt'][_0xadb4be][_0x116723(0x15d)]) { if (_0x116723(0x166) !== _0x116723(0x166)) this[_0x116723(0x18c)] = !![], this['headerImbalanceRows']['length'] < 0x5 && this[_0x116723(0x19e)]['push'](_0x3dc7e3 + 0x2); else return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'D', 'D'; } if (this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1ae)] > 0x0 && this[_0x116723(0x151)][_0x116723(0x1bf)] == this[_0x116723(0x197)][_0xadb4be]['intCnt'] + this[_0x116723(0x197)][_0xadb4be][_0x116723(0x15d)]) { if (_0x116723(0x183) === _0x116723(0x15f))++_0x3495bc, _0x1ee029 = !![]; else return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'I', 'I'; } if (this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1dd)] > 0x0 && this['table'][_0x116723(0x1bf)] == this[_0x116723(0x197)][_0xadb4be]['realCnt'] + this['statsCnt'][_0xadb4be]['emptyCnt']) { if (_0x116723(0x18a) !== _0x116723(0x18a)) _0x5ed959['push'](_0x4ae3f8[_0x116723(0x1e6)](_0x27c264)); else return this[_0x116723(0x197)][_0xadb4be][_0x116723(0x1e8)] = 'N', 'N'; } return this[_0x116723(0x197)][_0xadb4be]['fieldType'] = 'VC', 'VC'; }, 'stringify': function (_0x22735f, _0x126adb) { var _0x5d9df = _0x527cd1; _0x126adb = _0x126adb || function (_0x366d97, _0x2c4d91, _0xbe1f7f) { return _0xbe1f7f; }; var _0x26ddd9 = '', _0x41c94b, _0x1e22f, _0x22207d; _0x22735f = _0x22735f || '\x0a'; if (this[_0x5d9df(0x16d)]) this['table'][_0x5d9df(0x16e)](this[_0x5d9df(0x156)]); var _0x134565 = this[_0x5d9df(0x151)][_0x5d9df(0x1bf)], _0x2477f9 = new RegExp('[' + this[_0x5d9df(0x1ce)] + _0x5d9df(0x1a2), _0x5d9df(0x1a7)), _0x2548d4; for (_0x22207d = 0x0; _0x22207d < _0x134565; ++_0x22207d) { if ('AfTzY' !== _0x5d9df(0x160)) { if (_0x22207d) { if (_0x5d9df(0x1b1) === 'MODOW') _0x26ddd9 += _0x22735f; else return _0x1dd302; } for (_0x41c94b = 0x0, _0x1e22f = this[_0x5d9df(0x151)][_0x22207d][_0x5d9df(0x1bf)]; _0x41c94b < _0x1e22f; ++_0x41c94b) { if ('UJOOu' === _0x5d9df(0x1be)) _0x41c94b && (_0x26ddd9 += this[_0x5d9df(0x1ce)]), _0x2548d4 = _0x126adb(_0x22207d, _0x41c94b, this['table'][_0x22207d][_0x41c94b]), _0x2477f9[_0x5d9df(0x19d)](_0x2548d4) && (_0x2548d4 = this[_0x5d9df(0x155)] + _0x2548d4['replace'](/"/g, this[_0x5d9df(0x155)] + this[_0x5d9df(0x155)]) + this[_0x5d9df(0x155)]), _0x26ddd9 += _0x2548d4 || 0x0 === _0x2548d4 ? _0x2548d4 : ''; else return this['statsCnt'][_0x5bfcf4][_0x5d9df(0x1e8)] = 'D', 'D'; } } else _0x53fdc7 = ++_0x934442, _0x3c8530 = !![]; } return _0x26ddd9; } }; function _0x73b4(_0x200199, _0x313eb0) { var _0x372425 = _0x3724(); return _0x73b4 = function (_0x73b434, _0x6331fc) { _0x73b434 = _0x73b434 - 0x151; var _0x4273e2 = _0x372425[_0x73b434]; return _0x4273e2; }, _0x73b4(_0x200199, _0x313eb0); } function _0x3724() { var _0x16c6b3 = ['skip', 'yFuES', 'VSNcY', 'MAX_VALUE', 'right', 'detectedQuote', 'join', 'Mekbn', 'WJcax', 'sortCsv', 'dlpQp', 'substr', 'sortIgnoreCase', 'headerToUpper', 'hudlt', 'isFirstRowHeader', 'unshift', 'EaFHY', '114dczFGN', 'fldMinLen', 'maxColumnsFound', 'relaxedMode', 'useStringSub', 'MZCOS', 'LxdEa', 'posPx', 'DmTFW', 'headerErrors', 'colon', 'ZWDJS', 'jVNNr', '1400984jZWMaL', 'fromCharCode', 'determineCsvColType', 'QEPZp', 'toFixed', 'skipEmptyRowCnt', 'qclKz', 'comma', 'headerToLower', 'auoUq', 'uooLJ', 'CrmbH', 'quote', 'SQKYW', 'nGPbh', 'headerImbalance', 'AxfGM', 'PsJEA', 'indexOf', 'VAKYH', 'fldMaxLen', 'split', 'tQpDH', 'caret', 'bVssB', 'fieldImbalance', 'statsCnt', '7NNmgDn', '1137096FiKjrv', 'stringSubMap', 'QngJi', 'logicalCnt', 'test', 'headerImbalanceRows', 'quoteCharCnt', 'null', 'dateCnt', '\x0d\x0a]', 'bRkwd', 'myDGj', 'endsWith', 'limit', 'gmi', '380QZEgen', 'sgFCL', 'PpMuT', 'equalUsed', 'pipe', 'OequB', 'intCnt', 'XaSXk', '887150ViszVF', 'MODOW', 'isNumeric', 'cGemE', '764KfqcZi', 'lZfla', 'fieldImbalanceRows', 'ignoreQuote', '20WGefJd', 'addSequence', 'GwXpq', 'sortPoss', 'AatBg', 'gCYHm', 'UJOOu', 'length', 'fieldPrec', '18649VGSasY', '839655WIitgt', 'OZRNl', 'excelMode', 'wnAvD', 'push', 'toLowerCase', 'wrOtm', '42bMlrmC', 'slice', 'FObPS', 'EEkuO', 'shift', 'delimiter', 'PsedO', 'UwnMz', 'juVgw', 'decodeBackslashLiterals', 'fieldDecs', 'headerColumns', 'bitCnt', 'Guhvx', 'irEHI', 'space', 'AXgVj', 'FIELD', 'autodetect', 'relaxedInfo', 'realCnt', 'semi', 'sort', 'skipEmptyRows', 'uonmw', 'dataRowsFound', 'left', 'XrDSs', 'detectedDelimiter', 'charAt', 'GCGUD', 'fieldType', 'trim', 'aVOAA', 'table', 'tab', 'isDateMaybe', 'replace', 'outputQuote', 'arHeaderRow', 'linesFound', 'bIFNd', 'ZUrjq', 'JCFII', 'toUpperCase', 'decimalChar', 'emptyCnt']; _0x3724 = function () { return _0x16c6b3; }; return _0x3724(); }
+
+    </script>
+    <script src="csvsup7893.js?v=24"></script>
+    <script>
+        (function (_0x273f0f, _0x1f4a0b) { var _0x232c89 = _0x1c68, _0x17ae65 = _0x273f0f(); while (!![]) { try { var _0xbc839c = -parseInt(_0x232c89(0x181)) / 0x1 * (parseInt(_0x232c89(0x188)) / 0x2) + -parseInt(_0x232c89(0x17f)) / 0x3 * (parseInt(_0x232c89(0x18a)) / 0x4) + -parseInt(_0x232c89(0x185)) / 0x5 * (-parseInt(_0x232c89(0x18c)) / 0x6) + parseInt(_0x232c89(0x184)) / 0x7 + parseInt(_0x232c89(0x187)) / 0x8 + parseInt(_0x232c89(0x183)) / 0x9 + parseInt(_0x232c89(0x179)) / 0xa * (-parseInt(_0x232c89(0x182)) / 0xb); if (_0xbc839c === _0x1f4a0b) break; else _0x17ae65['push'](_0x17ae65['shift']()); } catch (_0x2cc7ec) { _0x17ae65['push'](_0x17ae65['shift']()); } } }(_0x16ce, 0x4ab2f)); function _0x1c68(_0x94c5b, _0x3c98d4) { var _0x16ce82 = _0x16ce(); return _0x1c68 = function (_0x1c68df, _0x50cdff) { _0x1c68df = _0x1c68df - 0x179; var _0x81d0b9 = _0x16ce82[_0x1c68df]; return _0x81d0b9; }, _0x1c68(_0x94c5b, _0x3c98d4); } function _0x16ce() { var _0x1a02a8 = ['PrEMG', '18WyivvV', 'BGozK', '410499LPrDNM', '3148013fUFEXs', '2866725HjRkSw', '3811416pRRssx', '116215yGQhHF', '<kml\x20xmlns=\x22http://earth.google.com/kml/2.0\x22>\x0a', '2812264OndMoU', '2kBbaIj', 'trim', '156760rvmGEW', 'length', '6sBFnZC', '<?xml\x20version=\x221.0\x22\x20encoding=\x22UTF-8\x22?>\x0a', '<Document>\x0a', '10jFfPLM', 'toHtml', 'table', '</Placemark>\x0a', '</Document>\x0a</kml>']; _0x16ce = function () { return _0x1a02a8; }; return _0x16ce(); } function csvToKml(_0x5cd46e, _0x3cfe8e, _0x181b20, _0x50ad93, _0x52e87e, _0x5f4649, _0x39480f) { var _0x394bf3 = _0x1c68, _0x2adb46 = 0x0, _0x5601ac, _0x3d1bf3, _0x2a3906, _0x23fe3a = '', _0x394d00 = '', _0x3f4d50 = _0x394bf3(0x18d); _0x3f4d50 += _0x394bf3(0x186), _0x3f4d50 += _0x394bf3(0x18e); if (!_0x5cd46e) return; if (_0x5cd46e['table'][_0x394bf3(0x18b)] === 0x0) return _0x3f4d50 + '</Document></kml>'; _0x2a3906 = getCsvHeader(_0x5cd46e); if (_0x39480f[_0x394bf3(0x189)]() == '' || isNaN(_0x39480f) || (_0x39480f * 0x1 < 0x1 || _0x39480f * 0x1 > _0x5cd46e[_0x394bf3(0x17b)][0x0][_0x394bf3(0x18b)])) { if (_0x394bf3(0x17e) !== 'aIcGQ') _0x39480f = ''; else return; } for (_0x2adb46 = 0x0; _0x2adb46 < _0x5cd46e[_0x394bf3(0x17b)][_0x394bf3(0x18b)]; _0x2adb46++) { _0x3f4d50 += '<Placemark>\x0a', _0x23fe3a = ''; for (_0x5601ac = 0x0; _0x5601ac < _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x394bf3(0x18b)]; _0x5601ac++) { _0x23fe3a = ''; if (_0x5601ac >= _0x2a3906[_0x394bf3(0x18b)]) break; if (!isNaN(_0x50ad93) && _0x5601ac == _0x50ad93 - 0x1) continue; if (!isNaN(_0x52e87e) && _0x5601ac == _0x52e87e - 0x1) continue; if (!isNaN(_0x5f4649) && _0x5601ac == _0x5f4649 - 0x1) continue; if (!isNaN(_0x3cfe8e) && _0x5601ac == _0x3cfe8e - 0x1) _0x2a3906[_0x5601ac] = 'name'; else { if (!isNaN(_0x181b20) && _0x5601ac == _0x181b20 - 0x1) { _0x2a3906[_0x5601ac] = 'description'; if (_0x39480f != '') _0x23fe3a = '\x20' + _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x39480f - 0x1]; } else continue; } v = _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x5601ac] ? _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x5601ac] : '', v = doTransformations(v, _0x5601ac, _0x5cd46e), _0x3f4d50 += '<' + _0x2a3906[_0x5601ac] + '>' + v[_0x394bf3(0x17a)]() + _0x23fe3a[_0x394bf3(0x17a)]() + '</' + _0x2a3906[_0x5601ac] + '>\x0a'; } if (!isNaN(_0x50ad93) && !isNaN(_0x52e87e) && _0x50ad93[_0x394bf3(0x18b)] > 0x0 && _0x52e87e[_0x394bf3(0x18b)] > 0x0 && _0x50ad93 * 0x1 <= _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x394bf3(0x18b)] && _0x52e87e * 0x1 <= _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x394bf3(0x18b)] && _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x50ad93 * 0x1 - 0x1] && _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x52e87e * 0x1 - 0x1]) { if (_0x394bf3(0x180) === _0x394bf3(0x180)) { if (_0x5f4649 != '' && !isNaN(_0x5f4649) && _0x5f4649 * 0x1 <= _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x394bf3(0x18b)] && _0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x5f4649 * 0x1 - 0x1]) _0x394d00 = doTransformations(_0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x5f4649 * 0x1 - 0x1], _0x5f4649 * 0x1 - 0x1, _0x5cd46e); else _0x394d00 = '0'; _0x3f4d50 += '<Point><coordinates>', _0x3f4d50 += doTransformations(_0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x52e87e - 0x1], _0x52e87e - 0x1, _0x5cd46e) + ',' + doTransformations(_0x5cd46e[_0x394bf3(0x17b)][_0x2adb46][_0x50ad93 - 0x1], _0x50ad93 - 0x1, _0x5cd46e) + ',' + _0x394d00, _0x3f4d50 += '</coordinates></Point>\x0a'; } else _0x2cb2f1 = ''; } _0x3f4d50 += _0x394bf3(0x17c); } return _0x3f4d50 += _0x394bf3(0x17d), _0x3f4d50; }
+    </script>
+    <script src="js/blob.js"></script>
+    <script src="js/filesaver.js"></script>
+    <script src="js/storagesup.js"></script>
+
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
+    <script src="js/csvdatesup.js"></script>
+    <link rel="stylesheet" href="js/custom3860.css?v=1"/>
+    <script type="text/javascript">
+        function assignText(s) {
+            document.getElementById("txtLatCol").value = "";
+            document.getElementById("txtLongCol").value = "";
+            if ((document.getElementById('chkReplaceAccents')).checked) s = s.removeDiacritics();
+            document.getElementById('txt1').value = s;
+            parseAndOptions(CSV);
+            setupSortDD();
+            guessLatLon();
+            document.getElementById('btnRun').click();
+        }
+        function genit() {
+            if (CSV.mySortNeeded) parseAndOptions(CSV);
+            guessLatLon();
+            if (document.getElementById("txtLatCol").value == "" && document.getElementById("txtLongCol").value == "") {
+                alert("Please enter the Latitude and Longitude Field #s");
+                return false;
+            }
+            document.getElementById('txta').value = csvToKml(CSV, document.getElementById('txtNameCol').value, document.getElementById('txtDescCol').value, document.getElementById('txtLatCol').value, document.getElementById('txtLongCol').value, document.getElementById("txtAltCol").value, document.getElementById('txtDescCol2').value);
+            saveCsv();
+        }
+        function guessLatLon() {
+            var j;
+            var lat = document.getElementById("txtLatCol").value;
+            var lon = document.getElementById("txtLongCol").value;
+            var alt = document.getElementById("txtAltCol").value;
+            if (document.getElementById('txt1').value == "") return true;
+            if (CSV.table.length < 1) return true;
+            for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                if (CSV.statsCnt[j - 1].fieldType == "N" || CSV.statsCnt[j - 1].fieldType == "I") {
+                    if (lat == "" && CSV.arHeaderRow[j - 1] && CSV.arHeaderRow[j - 1].match(/lat/i)) {
+                        lat = j;
+                    }
+                    else if (lon == "" && CSV.arHeaderRow[j - 1] && CSV.arHeaderRow[j - 1].match(/lon|lng/i)) {
+                        lon = j;
+                    }
+                    else if (alt == "" && CSV.arHeaderRow[j - 1] && CSV.arHeaderRow[j - 1].match(/alt|elev/i)) {
+                        alt = j;
+                    }
+                }
+                if (lat != "" && lon != "" && alt != "") break;
+            }
+            if (lat != "") {
+                document.getElementById("txtLatCol").value = lat;
+            }
+            if (lon != "") {
+                document.getElementById("txtLongCol").value = lon;
+            }
+            if (alt != "") {
+                document.getElementById("txtAltCol").value = alt;
+            }
+            return true;
+        }
+        function runExample() {
+            if (document.getElementById("defaultTabLink")) document.getElementById("defaultTabLink").click();
+            clearAll();
+            document.getElementById('chkHeader').checked = true;
+            document.getElementById("txtLatCol").value = "";
+            document.getElementById("txtLongCol").value = "";
+            document.getElementById("txtAltCol").value = "";
+            document.getElementById('txt1').value = getExampleKml();
+            parseAndOptions(CSV);
+            setupSortDD();
+            guessLatLon();
+            if (document.getElementById("btnColsReset")) document.getElementById("btnColsReset").click();
+            document.getElementById('btnRun').click();
+        }
+        function reprocessCsv() {
+            parseAndOptions(CSV);
+            setupSortDD();
+            guessLatLon();
+        }
+    </script>
+    <script type="text/javascript" src="../cdn.thisiswaldo.com/static/js/9400.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110011798-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110011798-1');
+    </script>
+<link rel='canonical' href='csv-to-kml.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"e2bf27ad-00e8-4ffa-45e3-eb099c40bcff","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":68787,"response_time_orig":47,"serverid":"i-0ea55cfe038848112","state":"KA","t_epoch":1700314583,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/csv-to-kml.htm","word_count":481,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head> 
+<body onload="CSV.mySortNeeded=true;loadCsv()">
+<div class="container-fluid">
+    <div class="row">
+	    <div class="jumbotron pageHeader">
+                <h1 class="text-center">Convert CSV to KML</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid pageSubheader">
+            <h2>Use this tool to translate CSV into KML.</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+<div class="form-group small"><h4>From CSV/Excel</h4><ul>
+<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
+<li><a href="csv-to-json.html">CSV To JSON</a></li>
+<li><a href="csv-to-kml.html">CSV To KML</a></li>
+<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+<li><a href="csv-to-sql.html">CSV To SQL</a></li>
+<li><a href="csv-to-word.html">CSV To Word</a></li> 
+<li><a href="csv-to-xml.html">CSV To XML</a></li> 
+<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
+<li><a href="excel-to-jira.html">Excel To Jira</a></li>
+<li><a href="pivot-csv.html">Pivot CSV</a></li> 
+<li><a href="transpose-csv.html">Transpose CSV</a></li> 
+<li><a href="query-csv.html">Query CSV with SQL</a></li> 
+</ul><h4>To CSV/Excel</h4><ul>
+<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+<li><a href="json-to-csv.html">JSON To CSV</a></li> 
+<li><a href="kml-to-csv.html">KML To CSV</a></li> 
+<li><a href="sql-to-csv.html">SQL To CSV</a></li>
+<li><a href="xml-to-csv.html">XML To CSV</a></li>
+<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
+<h4>Data Tools</h4><ul>
+<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+<li><a href="sqlite-online.html">Sqlite Online</a></li>
+<li><a href="edatool/index.html">EDA Tool</a></li>
+<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+<li><a href="generate-test-data.html">Generate Test Data</a></li>
+<li><a href="email-extractor.html">Email Extractor</a></li>
+<li><a href="phone-extractor.html">Phone Extractor</a></li>
+<li><a href="text-split.html">Split Text or CSV Files</a></li>
+<li><a href="url-extractor.html">URL Extractor</a></li>
+<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
+<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+<li><a href="index.html">CSV Home</a></li>
+</ul></div>
+            <br/>
+            <!-- 300x250 -->
+            <div id="waldo-tag-9408"></div>
+            <br/>
+<script async="" src="../pagead2.googlesyndication.com/pagead/js/f7820.txt?client=ca-pub-2674404638298268" crossorigin="anonymous"></script>
+<!-- DownSides -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="7791379415" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </div>
+        <div class="col-md-9">
+            <div class="alert alert-info">
+                This conversion is now available as an API at <a href="https://www.convertcsv.io/" target="_blank">ConvertCsv.io</a>
+            </div>
+<script async="" src="../pagead2.googlesyndication.com/pagead/js/f7820.txt?client=ca-pub-2674404638298268" crossorigin="anonymous"></script>
+<!-- WideAcross -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="4850643811" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+            <p>
+                You must have a description and latitude and longitude information in your data and an optional altitude.
+                You may use up to 2 fields for the Description.
+                Planned enhancements of this tool will geocode an address field to supply the latitude and longitude.
+                <br/>See also <a href="csv-to-geojson.html">CSV to GeoJSON</a>
+                and <a href="kml-to-csv.html">KML to CSV</a>
+            </p>
+            <form id="frm1" name="frm1" class="form-inline" role="form" onsubmit="return false">
+
+                <h3 class="headerBlue">Step 1: Select your input</h3><br/>
+
+                <div class="form-group w100">
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
+                        <li class="nav-item"><a data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+                    </ul>
+                    <br/>
+
+                    <div class="tab-content">
+                        <div id="inputtext" class="tab-pane active">
+<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" onchange="if ((document.getElementById(&#39;chkReplaceAccents&#39;)).checked) this.value = this.value.removeDiacritics(); reprocessCsv()" onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 100)" wrap="off" placeholder="Enter or paste CSV here"></textarea>
+                        </div>
+                        <div id="inputfile" class="tab-pane">
+                            <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local CSV file"/></label>
+
+                            <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+                            <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                <option value="" selected="selected">-Default-</option>
+                                <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                                <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                                <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                                <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                                <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                                <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                                <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                                <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                                <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                                <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                                <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                                <option value="macintosh">Mac OS Roman</option>
+                                <option value="UTF-8">UTF-8</option>
+                                <option value="UTF-16">UTF-16</option>
+                                <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                                <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                                <option value="UTF-32">UTF-32</option>
+                                <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                                <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                                <option value="windows-1250">windows-1250 (Win East European)</option>
+                                <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                                <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                                <option value="windows-1253">windows-1253 (WinGreek)</option>
+                                <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                                <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                                <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                                <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                                <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                            </select>
+
+                        </div>
+                        <div id="inputurl" class="tab-pane">
+                            <label>
+                                Enter URL as data source
+                                <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning CSV"/>
+                            </label>
+                            <input type="button" id="Button1" class="btn btn-primary" value="Load URL" title="Load CSV via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <div class="">
+                        <input type="button" class="btn btn-primary" value="Clear Input" onclick="clearPage()"/>
+                          <input type="button" class="btn btn-primary" value="Example" onclick="runExample()"/>
+                    </div>
+                    <div class="panel panel-default"><div id="divInputCounts" class="panel-heading"> </div></div>
+
+                </div>
+
+                <h3 class="headerBlue">Step 2: Choose input options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p3"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <hr class="noverticalspace"/>
+                <fieldset class="scheduler-border collapse" id="p3">
+                    <legend class="scheduler-border">Input Options</legend>
+                    <div class="checkbox">
+                        <input type="checkbox" name="chkHeader" id="chkHeader" class="form-control" value="Y" onclick="parseAndOptions(CSV,true)" checked=""/>
+                        <label for="chkHeader">First row is column names</label>
+                    </div>
+                    <br/>
+                    <label>Limit # of lines: <input type="text" id="txtRowLimit" class="form-control" size="5" maxlength="5" onblur="CSV.limit=this.value;parseAndOptions(CSV)" title="Specify how many records of input to convert"/></label>
+                    <label>Skip # of Lines<input type="text" id="txtSkipLimit" class="form-control" size="3" maxlength="2" value="0" onblur="if (this.value != CSV.skip) { CSV.skip = this.value; parseAndOptions(CSV) }" title="Specify how many line to skip at the beginning of input"/></label>
+                    <br/>Field Separator:
+                    <label><input type="radio" name="sep" id="sepAuto" value="" onclick="CSV.autodetect=true;parseAndOptions(CSV)" checked=""/> Auto Detect</label>
+                    <label><input type="radio" name="sep" id="sepComma" value="," onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> ,</label>
+                    <label><input type="radio" name="sep" id="sepSemicolon" value=";" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> ;</label>
+                    <label><input type="radio" name="sep" id="sepColon" value=":" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> :</label>
+                    <label><input type="radio" name="sep" id="sepPipe" value="|" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Bar-|</label>
+                    <label><input type="radio" name="sep" id="sepTab" value="\t" onclick="CSV.autodetect=false;CSV.delimiter = &#39;\t&#39;; parseAndOptions(CSV)"/> Tab</label>
+                    <label><input type="radio" name="sep" id="sepCaret" value="^" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Caret-^</label>
+                    <label><input type="radio" name="sep" id="sepSpace" value=" " onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Space</label>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Y" id="chkReplaceAccents" title="Replace Accent/Diacritical marks" onclick="if(this.checked)document.getElementById(&#39;txt1&#39;).value = document.getElementById(&#39;txt1&#39;).value.removeDiacritics();parseAndOptions(CSV)"/> Replace Accents/Diacriticals</label>
+                        </div><br/>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Y" id="chkIgnoreDoubleQuote" onclick="CSV.ignoreQuote=this.checked;parseAndOptions(CSV,true)" title="Ignore the Quoting Character- either single or double quote"/> Treat all Quoting Character as data</label>
+                        </div><br/>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="&#39;" id="chkInputQuote" onclick="setInputSingleQuote(this.checked)" title="Uses single quote for quoting character"/> Input CSV Quoting Character is Apostrophe</label>
+                        </div><br/>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Y" id="chkDecodeLiterals" onclick="CSV.decodeBackslashLiterals=this.checked;parseAndOptions(CSV,true)" title="Input CSV uses backslash escaping like \n and \t"/> CSV contains backslash escaping like \n, \t, and \,</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="Y" id="chkDecodeLiterals" onclick="CSV.decodeBackslashLiterals=this.checked;parseAndOptions(CSV,true)" title="Input CSV uses backslash escaping like \n and \t"/> CSV contains backslash escaping like \n, \t, and \,</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <h3 class="headerBlue">Step 3: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <hr class="noverticalspace"/>
+                <fieldset class="scheduler-border collapse" id="p4">
+                    <legend class="scheduler-border">Output Options</legend>
+
+
+                    <div id="rqb"> </div>
+                    <table class="table table-bordered table-hover table-condensed">
+                        <tbody><tr>
+                            <th colspan="4" class="text-center">
+                                Sort CSV  
+                                <label><input type="checkbox" id="chkIgnoreCase" value="Y" onclick="CSV.sortIgnoreCase=this.checked"/> Ignore Case</label>
+                            </th>
+                        </tr>
+                        <tr><td> </td><th>Field #</th><th>Type</th><th>Direction</th></tr>
+                        <tr>
+                            <td>First By</td>
+                            <td><select id="selSortFld1" onchange="sortStr()"><option value="">-Choose-</option></select></td>
+                            <td><select id="selSortType1" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
+                            <td><select id="selSortAsc1" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
+                        </tr>
+                        <tr>
+                            <td>Then By</td>
+                            <td><select id="selSortFld2" onchange="sortStr()"><option value="">-Choose-</option></select></td>
+                            <td><select id="selSortType2" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
+                            <td><select id="selSortAsc2" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
+                        </tr>
+                        <tr>
+                            <td>Then By</td>
+                            <td><select id="selSortFld3" onchange="sortStr()"><option value="">-Choose-</option></select></td>
+                            <td><select id="selSortType3" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
+                            <td><select id="selSortAsc3" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
+                        </tr>
+                    </tbody></table>
+                    <br/>
+                    <div id="divMinOptions"></div>
+
+                </fieldset>
+
+
+                <h3 class="headerBlue">Step 4: Generate output</h3>
+                <div>
+                    For each line in the CSV, identify the field position (starting at 1) for this information:<br/>
+                    <label> Name Field # <input type="number" min="1" id="txtNameCol" class="form-control" value="1" size="3" maxlength="3" title="Field position (starting at 1) for Name" required=""/></label>
+                      <label> Description Field # <input type="number" min="1" id="txtDescCol" class="form-control" value="2" size="3" maxlength="3"/></label>
+                      <label> Additional Description Field # <input type="number" min="1" class="form-control" id="txtDescCol2" value="" size="3" maxlength="3"/></label>
+                    <br/><label> Latitude Field # <input type="number" min="1" id="txtLatCol" class="form-control" value="" size="3" maxlength="3" required=""/></label>
+                    <br/> <label> Longitude Field # <input type="number" min="1" id="txtLongCol" class="form-control" value="" size="3" maxlength="3" required=""/></label>
+                      <label> Altitude Field # <input type="number" min="1" id="txtAltCol" class="form-control" value="" size="3" maxlength="3"/></label>
+
+                </div>
+                <br/><input type="button" id="btnRun" class="btn btn-primary" value="Convert CSV To KML" title="Convert CSV To KML" onclick="genit()"/> <small>v1.4</small>
+                <br/>Save this file on your server and import the URL in Google Maps to display each marker.
+
+                <br/>
+
+                <div class="form-group-inline">
+                    <label for="txta" class="control-label">Result Data:</label>
+                    <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button><br/>
+                    <textarea id="txta" rows="10" cols="80" style="width:90%" wrap="off" placeholder="Output Results" class="form-control"></textarea>
+                </div>
+                <div class="form-group form-inline">
+                    <label>Save your result:</label>
+                    <input type="text" size="15" id="fn" value="convertcsv" class="form-control" title="Enter filename without extension"/>.kml
+                    <input type="button" value="Download Result" class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;kml&#39;)"/>
+                    <label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label><br/>
+                </div>
+
+
+
+
+        </div>
+        </form>
+        <!-- 728x90/320x50 sticky footer -->
+        <div id="waldo-tag-9407"></div>
+<script async="" src="../pagead2.googlesyndication.com/pagead/js/f7820.txt?client=ca-pub-2674404638298268" crossorigin="anonymous"></script>
+<!-- WideAcross -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="4850643811" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+
+</div>
+    <div class="row">
+	    <div class="col-md-12">
+
+	        <div class="panel-footer">
+Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
+<span class="pull-right">
+  <a href="https://www.facebook.com/convertcsv">Facebook</a>
+   <a href="https://twitter.com/ConvertCsv">Twitter</a>
+   <a href="PrivacyPolicy.html">Privacy Policy</a>
+   <a href="contact.html">Contact Us</a>
+   <a href="changelog.html">Change Log</a>
+   <a href="terms-of-use.html">Terms of Use</a>
+   <a href="index-2.html">Home</a></span>
+            </div>
+	    </div>
+    </div>	
+
+
+
+<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/csv-to-kml.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:51 GMT -->
+</html>

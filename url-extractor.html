@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from www.convertcsv.com/url-extractor.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:40:20 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"961316b8-51be-4675-7668-43d55e3850ba","response_size_orig":30621,"response_time_orig":5,"template_id":5,"url":"https://www.convertcsv.com/url-extractor.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Copyright 2014-2023 ConvertCsv.com -->
+<meta name="description" content="URL extractor for web pages and text"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<title>Extract URLs</title>
+<script src="js/underscore-min.js"></script>
+<script src="js/blob.js"></script>
+<script src="js/filesaver.js"></script>
+<script src="json2.js"></script>
+<script src="strsupbea6.js?v=7"></script>
+<script src="localreadc164.js?v=9"></script>
+<script src="csvparsebea6.js?v=7"></script>
+<script src="csvsup7893.js?v=24"></script>
+
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="js/custom3860.css?v=1"/>
+
+<script type="text/javascript">
+    var _0x3349 = ["\x64\x65\x6C\x69\x6D\x69\x74\x65\x72", "\x6F\x75\x74\x73\x65\x70", "\x66\x6F\x72\x6D\x73", "\x6F", "\x76\x61\x6C\x75\x65", "\x6F\x75\x74\x53\x65\x70\x4F\x74\x68\x65\x72\x56\x61\x6C", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x2C", "\x6C\x69\x6D\x69\x74", "\x63\x68\x65\x63\x6B\x65\x64", "\x63\x68\x6B\x4C\x69\x6D\x69\x74", "\x69\x73\x52\x65\x67\x65\x78", "\x63\x68\x6B\x49\x73\x52\x65\x67\x65\x78", "\x73\x6F\x63\x69\x61\x6C", "\x63\x68\x6B\x53\x6F\x63\x69\x61\x6C", "\x73\x6F\x63\x69\x61\x6C\x52\x65\x76\x65\x72\x73\x65", "\x72\x61\x64\x53\x68\x6F\x77", "\x61\x6E\x63\x68\x6F\x72", "\x63\x68\x6B\x41\x6E\x63\x68\x6F\x72", "\x6C\x69\x6D\x69\x74\x73\x74\x72", "\x74\x78\x74\x4C\x69\x6D\x69\x74", "\x61\x70\x70\x65\x6E\x64", "\x63\x68\x6B\x41\x70\x70\x65\x6E\x64", "\x68\x64\x72", "\x63\x68\x6B\x43\x73\x76\x48\x65\x61\x64\x65\x72", "\x66\x6F\x72\x63\x65\x43\x73\x76", "\x63\x68\x6B\x46\x6F\x72\x63\x65\x43\x73\x76", "\x64\x75\x70", "\x63\x68\x6B\x44\x75\x70", "\x6B\x65\x65\x70\x6F\x6E\x6C\x79\x64\x75\x70", "\x63\x68\x6B\x4B\x65\x65\x70\x44\x75\x70", "\x73\x6F\x72\x74\x65\x64", "\x63\x68\x6B\x53\x6F\x72\x74", "\x69\x73\x4C\x69\x73\x74", "\x63\x68\x6B\x4C\x69\x73\x74", "\x69\x6E\x63\x6C\x75\x64\x65\x46\x72\x6F\x6D\x55\x72\x6C", "\x63\x68\x6B\x49\x6E\x63\x6C\x75\x64\x65\x46\x72\x6F\x6D\x55\x72\x6C", "\x68\x65\x61\x64\x69\x6E\x67", "\x55\x52\x4C", "\x52\x65\x67\x45\x78\x70\x53\x74\x72\x69\x6E\x67", "\x74\x72\x69\x6D", "\x74\x78\x74\x52\x65\x67\x45\x78\x70", "\x74\x78\x74\x31", "\x3F", "\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x63\x6F\x6E\x76\x65\x72\x74\x63\x73\x76\x2E\x63\x6F\x6D\x2F\x63\x67\x69\x2D\x62\x69\x6E\x2F\x75\x72\x6C\x2D\x74\x6F\x2D\x6A\x73\x6F\x6E\x2E\x70\x68\x70", "\x75\x72\x6C", "", "\x0A", "\x6A\x6F\x69\x6E", "\x68\x74\x6D\x6C", "\x3F\x63\x61\x6C\x6C\x62\x61\x63\x6B\x3D\x6C\x6F\x61\x64\x44\x61\x74\x61\x41\x6E\x64\x52\x75\x6E\x52\x65\x70\x65\x61\x74\x26\x75\x72\x6C\x3D", "\x74\x78\x74\x61", "\x73\x70\x6C\x69\x74", "\x6C\x65\x6E\x67\x74\x68", "\x73\x70\x6C\x69\x63\x65", "\x68\x74\x74\x70", "\x66\x74\x70", "\x2F\x2F", "\x68\x74\x74\x70\x3A", "\x68\x74\x74\x70\x3A\x2F\x2F", "\x63\x6E\x74", "\x74\x78\x74\x4E\x75\x6D\x43\x6F\x6C\x73", "\x2F", "\x65\x6E\x64\x73\x57\x69\x74\x68", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\x6D\x69\x67", "\x52\x65\x67\x75\x6C\x61\x72\x20\x45\x78\x70\x72\x65\x73\x73\x69\x6F\x6E\x20\x69\x73\x20\x69\x6E\x76\x61\x6C\x69\x64", "\x6D\x61\x74\x63\x68", "\x74\x78\x74\x53\x6F\x63\x69\x61\x6C", "\x66\x69\x6C\x74\x65\x72", "\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65", "\x69\x6E\x64\x65\x78\x4F\x66", "\x72\x65\x6A\x65\x63\x74", "\x69", "\x74\x65\x73\x74", "\x65\x76\x65\x72\x79", "\x61\x6E\x79", "\x73\x6F\x72\x74", "\x75\x6E\x69\x71", "\x31", "\x70\x75\x73\x68", "\x46\x52\x4F\x4D\x55\x52\x4C", "\x3C\x61\x20\x68\x72\x65\x66\x3D\x22", "\x22\x3E", "\x3C\x2F\x61\x3E", "\x74\x6F\x43\x73\x76"]; var res = { "\x75\x72\x6C": /((?:https?|ftp):\/\/[\-A-zÀ-ú0-9+\u0026\u2019@#\/%?=()~_|!:,.;]*[\-A-zÀ-ú0-9+\u0026@#\/%=~()_|])/gmi }; var opt = {}; var listcnt = 0; var toExcel = 0; function initOpt() { opt[_0x3349[0]] = radiovalue(document[_0x3349[2]][0][_0x3349[1]]); if (opt[_0x3349[0]] == _0x3349[3]) { opt[_0x3349[0]] = document[_0x3349[6]](_0x3349[5])[_0x3349[4]] }; if (!opt[_0x3349[0]]) { opt[_0x3349[0]] = _0x3349[7] }; opt[_0x3349[8]] = document[_0x3349[6]](_0x3349[10])[_0x3349[9]]; opt[_0x3349[11]] = document[_0x3349[6]](_0x3349[12]) ? document[_0x3349[6]](_0x3349[12])[_0x3349[9]] : false; opt[_0x3349[13]] = document[_0x3349[6]](_0x3349[14])[_0x3349[9]]; opt[_0x3349[15]] = document[_0x3349[6]](_0x3349[16])[_0x3349[9]]; opt[_0x3349[17]] = document[_0x3349[6]](_0x3349[18])[_0x3349[9]]; opt[_0x3349[19]] = document[_0x3349[6]](_0x3349[20])[_0x3349[4]]; opt[_0x3349[21]] = document[_0x3349[6]](_0x3349[22])[_0x3349[9]]; opt[_0x3349[23]] = document[_0x3349[6]](_0x3349[24])[_0x3349[9]]; opt[_0x3349[25]] = document[_0x3349[6]](_0x3349[26])[_0x3349[9]]; opt[_0x3349[27]] = document[_0x3349[6]](_0x3349[28])[_0x3349[9]]; opt[_0x3349[29]] = document[_0x3349[6]](_0x3349[30]) ? document[_0x3349[6]](_0x3349[30])[_0x3349[9]] : false; opt[_0x3349[31]] = document[_0x3349[6]](_0x3349[32])[_0x3349[9]]; opt[_0x3349[33]] = document[_0x3349[6]](_0x3349[34])[_0x3349[9]]; opt[_0x3349[35]] = document[_0x3349[6]](_0x3349[36]) ? document[_0x3349[6]](_0x3349[36])[_0x3349[9]] : true; opt[_0x3349[37]] = _0x3349[38]; opt[_0x3349[39]] = document[_0x3349[6]](_0x3349[41])[_0x3349[4]][_0x3349[40]]() } function assignText(_0xe13cx7) { document[_0x3349[6]](_0x3349[42])[_0x3349[4]] = _0xe13cx7 } function loadScriptAndRunRepeat(_0xe13cx9) { if (!_0xe13cx9[_0x3349[44]](_0x3349[43])) { _0xe13cx9 = _0x3349[43] + _0xe13cx9 }; loadScript(_0x3349[45] + _0xe13cx9) } function loadDataAndRunRepeat(_0xe13cxb) { opt[_0x3349[46]] = (_0xe13cxb[_0x3349[46]] || _0x3349[47]); runit(_0xe13cxb[_0x3349[50]][_0x3349[49]](_0x3349[48]), opt) } function loadURLRepeat(_0xe13cx9) { if (_0xe13cx9[_0x3349[40]]() == _0x3349[47]) { return false }; loadScriptAndRunRepeat(_0x3349[51] + encodeURIComponent(_0xe13cx9)) } function runitonce(_0xe13cx7, _0xe13cxe) { var _0xe13cxf = 0; var _0xe13cx10 = []; initOpt(); listcnt = 0; toExcel = _0xe13cxe; if (!opt[_0x3349[21]]) { document[_0x3349[6]](_0x3349[52])[_0x3349[4]] = _0x3349[47] }; if (opt[_0x3349[33]]) { _0xe13cx10 = _0xe13cx7[_0x3349[53]]((/\r\n|\r|\n/)); if (_0xe13cx10[_0x3349[54]] > 0 && _0xe13cx10[_0xe13cx10[_0x3349[54]] - 1][_0x3349[40]]() === _0x3349[47]) { _0xe13cx10[_0x3349[55]](-1, 1) }; for (_0xe13cxf = 0; _0xe13cxf < _0xe13cx10[_0x3349[54]]; _0xe13cxf++) { if (_0xe13cx10[_0xe13cxf] == _0x3349[47]) { continue }; if (_0xe13cx10[_0xe13cxf][_0x3349[44]](_0x3349[56])) { continue }; if (_0xe13cx10[_0xe13cxf][_0x3349[44]](_0x3349[57])) { continue }; if (_0xe13cx10[_0xe13cxf][_0x3349[44]](_0x3349[58])) { _0xe13cx10[_0xe13cxf] = _0x3349[59] + _0xe13cx10[_0xe13cxf] } else { _0xe13cx10[_0xe13cxf] = _0xe13cx10[_0xe13cxf] = _0x3349[60] + _0xe13cx10[_0xe13cxf] } } }; opt[_0x3349[61]] = _0xe13cx10[_0x3349[54]]; if (opt[_0x3349[33]] && _0xe13cx10[_0x3349[54]] > 0) { loadURLRepeat(_0xe13cx10[0]); opt[_0x3349[21]] = true; for (_0xe13cxf = 1; _0xe13cxf < _0xe13cx10[_0x3349[54]]; _0xe13cxf++) { if (_0xe13cx10[_0xe13cxf][_0x3349[40]]() === _0x3349[47]) { continue }; loadURLRepeat(_0xe13cx10[_0xe13cxf]) } } else { runit(_0xe13cx7, opt) } } function runit(_0xe13cx7, opt) { var _0xe13cx12, _0xe13cxf, _0xe13cx13, _0xe13cx14; var _0xe13cx15 = []; var _0xe13cx16 = opt[_0x3349[37]]; var _0xe13cx17 = document[_0x3349[6]](_0x3349[62])[_0x3349[4]] * 1 || 1; if (_0xe13cx17 < 1) { _0xe13cx17 = 1 }; var _0xe13cx18 = res[_0x3349[46]]; if (opt[_0x3349[39]]) { if (opt[_0x3349[39]][_0x3349[44]](_0x3349[63]) && opt[_0x3349[39]][_0x3349[64]](_0x3349[63])) { opt[_0x3349[39]] = opt[_0x3349[39]][_0x3349[65]](1, opt[_0x3349[39]][_0x3349[54]] - 1) }; try { _0xe13cx18 = new RegExp(opt.RegExpString, _0x3349[66]) } catch (e) { alert(_0x3349[67]); _0xe13cx18 = res[_0x3349[46]] } }; var _0xe13cx15 = _0xe13cx7[_0x3349[68]](_0xe13cx18) || []; var _0xe13cx19 = document[_0x3349[6]](_0x3349[69])[_0x3349[4]][_0x3349[53]](/[ ,]/); _0xe13cx19 = _[_0x3349[70]](_0xe13cx19, function (_0xe13cx1a) { return _0xe13cx1a[_0x3349[40]]()[_0x3349[54]] > 0 }); if (opt[_0x3349[8]] && opt[_0x3349[19]][_0x3349[54]] > 0) { if (!opt[_0x3349[11]]) { _0xe13cx15 = _[_0x3349[73]](_0xe13cx15, function (_0xe13cx9) { return _0xe13cx9[_0x3349[71]]()[_0x3349[72]](opt[_0x3349[19]][_0x3349[40]]()[_0x3349[71]]()) == -1 }) } else { _0xe13cx18 = null; try { _0xe13cx18 = new RegExp(opt[_0x3349[19]], _0x3349[74]) } catch (e) { ; }; if (_0xe13cx18) { _0xe13cx15 = _[_0x3349[73]](_0xe13cx15, function (_0xe13cx9) { return !_0xe13cx18[_0x3349[75]](_0xe13cx9) }) } else { _0xe13cx15 = _[_0x3349[73]](_0xe13cx15, function (_0xe13cx9) { return _0xe13cx9[_0x3349[71]]()[_0x3349[72]](opt[_0x3349[19]][_0x3349[40]]()[_0x3349[71]]()) == -1 }) } } }; if (opt[_0x3349[13]]) { { _0xe13cx15 = _[_0x3349[73]](_0xe13cx15, function (_0xe13cx9) { if (opt[_0x3349[15]]) { return _[_0x3349[76]](_0xe13cx19, function (_0xe13cx1b) { return _0xe13cx9[_0x3349[71]]()[_0x3349[72]](_0xe13cx1b[_0x3349[40]]()[_0x3349[71]]()) == -1 }) } else { return _[_0x3349[77]](_0xe13cx19, function (_0xe13cx1b) { return _0xe13cx9[_0x3349[71]]()[_0x3349[72]](_0xe13cx1b[_0x3349[40]]()[_0x3349[71]]()) >= 0 }) } }) } }; if (opt[_0x3349[31]] || opt[_0x3349[29]]) { _0xe13cx15 = _0xe13cx15[_0x3349[78]]() }; if (opt[_0x3349[27]]) { _0xe13cx15 = _[_0x3349[79]](_0xe13cx15, true) } else { if (opt[_0x3349[29]]) { _0xe13cx15 = findDuplicates(_0xe13cx15) } }; var _0xe13cx1c = []; if (opt[_0x3349[23]] && _0xe13cx17 > 1 && document[_0x3349[6]](_0x3349[52])[_0x3349[4]] === _0x3349[47]) { _0xe13cx1c[_0x3349[81]](_0xe13cx16 + _0x3349[80]); for (_0xe13cxf = 2; _0xe13cxf <= _0xe13cx17; _0xe13cxf++) { _0xe13cx1c[_0x3349[81]](_0xe13cx16 + _0xe13cxf) }; _0xe13cx16 = _0xe13cx1c[_0x3349[49]](opt[_0x3349[0]]) }; if (opt[_0x3349[23]] && document[_0x3349[6]](_0x3349[52])[_0x3349[4]] === _0x3349[47]) { document[_0x3349[6]](_0x3349[52])[_0x3349[4]] = _0xe13cx16; if (opt[_0x3349[33]] && _0xe13cx17 == 1 && document[_0x3349[6]](_0x3349[36])[_0x3349[9]]) { document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += opt[_0x3349[0]] + _0x3349[82] }; document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += _0x3349[48] }; for (_0xe13cxf = 0; _0xe13cxf < _0xe13cx15[_0x3349[54]];) { for (_0xe13cx13 = 0; _0xe13cx13 < _0xe13cx17; _0xe13cx13++, _0xe13cxf++) { if (_0xe13cxf < _0xe13cx15[_0x3349[54]]) { _0xe13cx14 = _0xe13cx15[_0xe13cxf]; if (opt[_0x3349[17]]) { _0xe13cx14 = _0x3349[83] + _0xe13cx14 + _0x3349[84] + _0xe13cx14 + _0x3349[85] }; if (opt[_0x3349[25]]) { _0xe13cx14 = _0xe13cx14[_0x3349[86]](opt[_0x3349[0]]) }; document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += _0xe13cx14 }; if (_0xe13cx13 < _0xe13cx17 - 1) { document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += opt[_0x3349[0]] } }; if (opt[_0x3349[33]] && _0xe13cx17 == 1 && opt[_0x3349[35]]) { document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += opt[_0x3349[0]] + (opt[_0x3349[46]] || _0x3349[47]) }; document[_0x3349[6]](_0x3349[52])[_0x3349[4]] += _0x3349[48] }; if (opt[_0x3349[33]]) { listcnt++ }; if (toExcel && (!opt[_0x3349[33]] || listcnt >= opt[_0x3349[61]])) { saveExcel(_0x3349[52], false) } } function findDuplicates(_0xe13cx1e) { let _0xe13cx1f = []; for (let _0xe13cx20 = 0; _0xe13cx20 < _0xe13cx1e[_0x3349[54]] - 1; _0xe13cx20++) { if (_0xe13cx1e[_0xe13cx20 + 1] == _0xe13cx1e[_0xe13cx20]) { _0xe13cx1f[_0x3349[81]](_0xe13cx1e[_0xe13cx20]) } }; return _0xe13cx1f }
+
+
+</script>
+<script type="text/javascript" src="../cdn.thisiswaldo.com/static/js/9400.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110011798-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110011798-1');
+</script>
+<link rel='canonical' href='url-extractor.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"961316b8-51be-4675-7668-43d55e3850ba","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":30621,"response_time_orig":5,"serverid":"i-0d07a376e1987af5b","state":"KA","t_epoch":1700314590,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/url-extractor.htm","word_count":503,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head> 
+<body onload="document.getElementById(&#39;btnRun&#39;).click()">
+
+<div class="container-fluid">
+    <div class="row">
+	    <div class="jumbotron pageHeader">
+                <h1 class="text-center">URL Extractor For Web Pages and Text</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid pageSubheader">
+            <h2>
+                Use this tool to extract URLs in web pages, data files, text and more.
+                <sup>New</sup> Supply list of web pages to scan.
+                <a href="https://ko-fi.com/J3J41CURI" target="_blank"><img height="36" style="border:0px;height:36px;" src="../az743702.vo.msecnd.net/cdn/kofi25e1f.png?v=2" border="0" alt="Buy ConvertCSV a Coffee at ko-fi.com"/></a>
+            </h2>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <!-- 300x250/336x280 --><div id="waldo-tag-14365"></div>
+<div class="form-group small"><h4>From CSV/Excel</h4><ul>
+<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
+<li><a href="csv-to-json.html">CSV To JSON</a></li>
+<li><a href="csv-to-kml.html">CSV To KML</a></li>
+<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+<li><a href="csv-to-sql.html">CSV To SQL</a></li>
+<li><a href="csv-to-word.html">CSV To Word</a></li> 
+<li><a href="csv-to-xml.html">CSV To XML</a></li> 
+<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
+<li><a href="excel-to-jira.html">Excel To Jira</a></li>
+<li><a href="pivot-csv.html">Pivot CSV</a></li> 
+<li><a href="transpose-csv.html">Transpose CSV</a></li> 
+<li><a href="query-csv.html">Query CSV with SQL</a></li> 
+</ul><h4>To CSV/Excel</h4><ul>
+<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+<li><a href="json-to-csv.html">JSON To CSV</a></li> 
+<li><a href="kml-to-csv.html">KML To CSV</a></li> 
+<li><a href="sql-to-csv.html">SQL To CSV</a></li>
+<li><a href="xml-to-csv.html">XML To CSV</a></li>
+<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
+<h4>Data Tools</h4><ul>
+<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+<li><a href="sqlite-online.html">Sqlite Online</a></li>
+<li><a href="edatool/index.html">EDA Tool</a></li>
+<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+<li><a href="generate-test-data.html">Generate Test Data</a></li>
+<li><a href="email-extractor.html">Email Extractor</a></li>
+<li><a href="phone-extractor.html">Phone Extractor</a></li>
+<li><a href="text-split.html">Split Text or CSV Files</a></li>
+<li><a href="url-extractor.html">URL Extractor</a></li>
+<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
+<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+<li><a href="index.html">CSV Home</a></li>
+</ul></div>
+        <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+        <!-- Downsides Wide -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410" data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <!-- 300x250/336x280 --><div id="waldo-tag-14366"></div>
+
+    </div>
+    <div class="col-md-9">
+
+        <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+        <!-- ResponsiveAd -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+        <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <div class="bg-gray">
+            <h3>What can this tool do?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p0"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+            <p>
+                </p><ul class="collapse" id="p0">
+                    <li>Use this tool to extract fully qualified URL addresses from web pages and data files.</li>
+                    <li>Search a list of web pages for URLs</li>
+                    <li>The output is 1 or more columns of the URL addresses. You can see the output below or as an Excel file</li>
+                </ul>
+                <hr/>
+                <h3>What are my options?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p1"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                <hr/>
+                <ul class="collapse" id="p1">
+                    <li>Optionally input list of web pages to scan</li>
+                    <li>You can choose the number of URLs per line (default 1)</li>
+                    <li>You may choose the output delimiter if multi-column output or default is the comma.</li>
+                    <li>Remove duplicate URLs.</li>
+                    <li>Only display duplicate URLs.</li>
+                    <li>Sort the URLs found.</li>
+                    <li>Extract URLs (not) containing a string</li>
+                    <li>You can add a heading or no heading.</li>
+                </ul>
+                <br/>See also <a href="html-links-to-csv.html">HTML Links to CSV</a> (Only extracts anchor tag information)
+                <br/>and... <a href="html-table-to-csv.html">HTML Table to CSV</a>
+                           <a href="text-extractor.html">Regex Text Extractor</a>
+            <p></p>
+        </div>
+
+        <form id="frm1" name="frm1" class="form-inline" role="form" onsubmit="return false">
+            <h3 class="headerBlue">Step 1: Select your input</h3>
+            <br/>
+
+            <div class="form-group w100">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
+                    <li class="nav-item"><a id="fileTabLink" data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
+                    <li class="nav-item"><a id="urlTabLink" data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+                </ul>
+                    <label><input id="chkList" type="checkbox" value="Y" title="Enter text to scan or list of web addresses"/> Scan list of web pages</label><br/>
+                <label>Use this Regular Expression instead <input name="txtRegExp" id="txtRegExp" type="text" size="30" value="" title="Ex \S*www\.\S+  Do not use front and end slashes"/></label><br/>
+                <div class="tab-content">
+                    <div id="inputtext" class="tab-pane active">
+
+<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" wrap="off" placeholder="Enter or paste here" onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 10)"></textarea>
+                    </div>
+                    <div id="inputfile" class="tab-pane">
+                        <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local HTML file"/></label>
+
+                        <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+                        <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                            <option value="" selected="selected">-Default-</option>
+                            <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                            <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                            <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                            <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                            <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                            <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                            <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                            <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                            <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                            <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                            <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                            <option value="macintosh">Mac OS Roman</option>
+                            <option value="UTF-8">UTF-8</option>
+                            <option value="UTF-16">UTF-16</option>
+                            <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                            <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                            <option value="UTF-32">UTF-32</option>
+                            <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                            <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                            <option value="windows-1250">windows-1250 (Win East European)</option>
+                            <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                            <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                            <option value="windows-1253">windows-1253 (WinGreek)</option>
+                            <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                            <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                            <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                            <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                            <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                        </select>
+
+                    </div>
+                    <div id="inputurl" class="tab-pane">
+                        <label>
+                            Enter URL as data source
+                            <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning HTML with a table"/>
+                        </label>
+                        <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL" title="Load HTML via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
+                    </div>
+                </div>
+
+                <div class="">
+                    <input type="button" class="btn btn-primary" value="Clear Input" onclick="window.location.reload(true)"/>
+                      <input type="button" value="Example" class="btn btn-primary" title="Load and run example" onclick="document.getElementById(&#39;url&#39;).value=&#39;https://www.ddginc-usa.com/&#39;;document.getElementById(&#39;btnUrl&#39;).click()"/>
+                </div>
+
+            </div>
+
+            <br/>
+
+            <h3 class="headerBlue">Step 2: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+            <hr class="noverticalspace"/>
+            <fieldset class="scheduler-border collapse" id="p4">
+                <legend class="scheduler-border">Output Options</legend>
+                Output Field Separator:
+                <label><input type="radio" name="outsep" id="outSepComma" value="," checked="checked"/> ,</label>  
+                <label><input type="radio" name="outsep" id="outSepSemicolon" value=";"/> ;</label>  
+                <label><input type="radio" name="outsep" id="outSepColon" value=":"/> :</label>  
+                <label><input type="radio" name="outsep" id="outSepPipe" value="|"/> Bar-|</label>  
+                <label><input type="radio" name="outsep" id="outSepTab" value=" " onclick="this.value=&#39;\t&#39;"/> Tab</label>  
+                <label><input type="radio" name="outsep" id="outSepOther" value="o"/> Other-Choose</label>
+                <label><input type="text" size="2" id="outSepOtherVal" value="*"/></label>
+                <br/>
+                <label><input id="chkCsvHeader" type="checkbox"/> Include header in first row</label>
+                <br/>
+                <label> # of Columns Per Line: <input type="text" id="txtNumCols" value="1" class="form-control"/></label>
+                <br/>
+                <label><input id="chkSort" type="checkbox" value="Y" checked="checked"/> Sort URL addresses</label>
+                <br/>
+                <label><input id="chkDup" type="checkbox" value="Y" checked="checked" onclick="if(this.checked)document.getElementById(&#39;chkKeepDup&#39;).checked=false"/> Remove duplicate URL addresses</label>
+                <br/>
+                <label><input id="chkKeepDup" type="checkbox" value="Y" onclick="if(this.checked)document.getElementById(&#39;chkDup&#39;).checked=false"/> Only Display duplicate URL addresses</label>
+                <br/>
+                <label><input id="chkLimit" type="checkbox" value="Y"/></label>
+                <label>URL contains this string <input name="txtLimit" id="txtLimit" type="text" size="30" value="" onblur="if(this.value.length&gt;0)this.form.chkLimit.checked=true;else this.form.chkLimit.checked=false"/></label>
+                <label> <input type="checkbox" value="Y" id="chkIsRegex" name="chkIsRegex"/>Is regular expression</label>
+                <br/>
+                <label><input id="chkSocial" type="checkbox" value="Y"/></label>
+                <label><input type="radio" name="radShow" id="radShow" checked="checked"/>Only show</label>
+                <label><input type="radio" name="radShow" id="radNotShow"/>Do not show</label> - URLs of these sites: <small>(i.e. social media)</small>
+                <br/> <input type="text" id="txtSocial" size="50" value="facebook.com,twitter.com,instagram.com,youtube.com,youtu.be,plus.google.com"/>
+
+                <br/>
+                <label><input id="chkForceCsv" type="checkbox"/> Force CSV style output</label>
+                <br/>
+                <label><input id="chkAnchor" type="checkbox"/> Output as Anchor tag</label>
+                <br/>
+                <label><input id="chkAppend" type="checkbox"/> Append results</label>
+                <br/>
+                <label><input id="chkIncludeFromUrl" type="checkbox" checked="checked"/> If scanning a list of web pages, output the From URL also</label>
+            </fieldset>
+
+            <h3 class="headerBlue">Step 3: Extract URLs</h3><br/>
+            <input type="button" id="btnRun" class="btn btn-primary" value="Extract" title="Find URLs in Text" onclick="runitonce(document.getElementById(&#39;txt1&#39;).value,false);return false"/>
+            <input type="button" class="btn btn-primary" onclick="runitonce(document.getElementById(&#39;txt1&#39;).value,true);return false" value="Extract To Excel" title="Extract URLs to an Excel file"/>
+
+        </form>
+
+        <div class="form-group">
+            <label for="txta" class="control-label">Result Data:</label>
+            <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button><br/>
+            <textarea id="txta" rows="10" cols="80" style="width:90%" wrap="off" placeholder="Output Results" class="form-control"></textarea>
+        </div>
+        <div class="form-group form-inline">
+            <label>Save your result:</label>
+            <input type="text" size="15" id="fn" value="convertcsv" class="form-control" title="Enter filename without extension"/>.csv
+            <button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false"><span class="glyphicon glyphicon-save-file"></span> Download Result</button><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-1280x720-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+            <label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label>
+            <br/>
+        </div>
+        <!-- 728x90/320x50 sticky footer -->
+        <div id="waldo-tag-9407"></div>
+        <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+        <!-- ResponsiveAd -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+
+    </div>
+    <div class="row">
+	    <div class="col-md-12">
+
+	        <div class="panel-footer">
+Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
+<span class="pull-right">
+  <a href="https://www.facebook.com/convertcsv">Facebook</a>
+   <a href="https://twitter.com/ConvertCsv">Twitter</a>
+   <a href="PrivacyPolicy.html">Privacy Policy</a>
+   <a href="contact.html">Contact Us</a>
+   <a href="changelog.html">Change Log</a>
+   <a href="terms-of-use.html">Terms of Use</a>
+   <a href="index-2.html">Home</a></span>
+            </div>
+	    </div>
+    </div>	
+
+</div>
+
+
+<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/url-extractor.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:40:20 GMT -->
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html><html>
+<!-- Mirrored from www.convertcsv.com/docs/desktop/json_gui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:49:31 GMT -->
+<head><meta charset="utf-8"/>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../../detroitchicago/boise.js', '../../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../../parsonsmaize/abilene.js', '../../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":1,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"9a776c6c-c0a6-4d65-77bc-e7b14ed1f725","response_size_orig":13167,"response_time_orig":961,"template_id":5,"url":"https://www.convertcsv.com/docs/desktop/json_gui.html","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../../parsonsmaize/mulvane.js', '../../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../../parsonsmaize/olathe.js', '../../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../../porpoiseant/et.js', '../../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../../detroitchicago/raleigh.js', '../../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../../detroitchicago/vista.js', '../../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../../detroitchicago/tampa.js', '../../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JSON to CSV Desktop Converter — ConvertCSV Desktop  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.html"></script>
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css"/>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9"/>
+
+  <link rel='canonical' href='json_gui.html' />
+<script type='text/javascript'>
+var ezoTemplate = 'orig_site';
+var ezouid = '1';
+var ezoFormfactor = '1';
+</script><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 423391;
+var ezdomain = 'convertcsv.com';
+var ezoicSearchable = 1;
+</script>
+<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"9a776c6c-c0a6-4d65-77bc-e7b14ed1f725","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":13167,"response_time_orig":961,"serverid":"i-06d060e752132f407","state":"KA","t_epoch":1700315259,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/docs/desktop/json_gui.html","word_count":940,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
+<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+	var d = new Date();
+	d.setTime(d.getTime() + (365*24*60*60*1000));
+	var expires = "expires="+d.toUTCString();
+	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+}
+function attach_ezolpl() {
+	if (document.readyState === "complete") {
+		create_ezolpl();
+		return;
+	}
+	window.addEventListener("load", create_ezolpl);
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script></head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="json-to-csv-desktop-converter">
+<h1>JSON to CSV Desktop Converter<a class="headerlink" href="#json-to-csv-desktop-converter" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Use this desktop application to convert JSON to CSV and/or CSV to JSON. This application can load files from your local
+computer or load files from the world wide web.</p>
+<div class="section" id="json-to-csv">
+<h3>JSON to CSV<a class="headerlink" href="#json-to-csv" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/json2csv.PNG"><img alt="JSON2CSV Converter" class="align-center" src="_images/json2csv.PNG" style="width: 500px; height: 400px;"/></a>
+<div class="section" id="convert-json-to-csv">
+<h4>Convert JSON To CSV<a class="headerlink" href="#convert-json-to-csv" title="Permalink to this headline">¶</a></h4>
+<p>
+    Using our tool is simple </p><ul>
+        <li>You must choose an input file as either a local file on your hard-drive or a web address.</li>
+        <li>Choose Input and Output settings</li>
+        <li>Press the Convert to CSV button</li>
+    </ul>
+<p></p>
+</div>
+<div class="section" id="click-anywhere-in-box-to-load-local-file">
+<h4>Click Anywhere in Box to Load Local File<a class="headerlink" href="#click-anywhere-in-box-to-load-local-file" title="Permalink to this headline">¶</a></h4>
+<p>Click your mouse in this area to choose a local file as input.</p>
+</div>
+<div class="section" id="load-file-from-the-web">
+<h4>Load File from the Web<a class="headerlink" href="#load-file-from-the-web" title="Permalink to this headline">¶</a></h4>
+<p>Enter a web address here that identifies the input file.</p>
+</div>
+<div class="section" id="settings-input-options">
+<h4>Settings- Input Options<a class="headerlink" href="#settings-input-options" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="choose-json-array">
+<h4>Choose Json Array<a class="headerlink" href="#choose-json-array" title="Permalink to this headline">¶</a></h4>
+<p>This allows the user to either choose the First array, the Largest array, or specify a Key to use while converting.
+The application’s default value is the use the First array it finds. However, sometimes if this fails, it may be optimal
+to allow the program to convert based off the Largest array. For complex or deeply nested JSON, it is recommended to
+specify the JSON keyword or Key for which to base the conversion.</p>
+</div>
+<div class="section" id="json-lines-format">
+<h4>Json Lines Format<a class="headerlink" href="#json-lines-format" title="Permalink to this headline">¶</a></h4>
+<p>If your JSON file is using a JSON lines format, please select this option. More on <a class="reference external" href="http://jsonlines.org/examples/">Json Lines Format</a></p>
+</div>
+<div class="section" id="encoding-type">
+<h4>Encoding Type<a class="headerlink" href="#encoding-type" title="Permalink to this headline">¶</a></h4>
+<p>The default value of Auto-Detect should be used in almost all cases. If this does not work, please specify the encoding
+type of the JSON file.</p>
+</div>
+<div class="section" id="settings-output-options">
+<h4>Settings- Output Options<a class="headerlink" href="#settings-output-options" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="filename-and-folder">
+<h4>FileName and Folder<a class="headerlink" href="#filename-and-folder" title="Permalink to this headline">¶</a></h4>
+<p>These parameters will allow you to choose the conversion filename and where to save the output file. You must have write
+access to the output directory to save the converted file, or the application will raise an error message.</p>
+</div>
+<div class="section" id="include-headers-in-csv">
+<h4>Include Headers in CSV<a class="headerlink" href="#include-headers-in-csv" title="Permalink to this headline">¶</a></h4>
+<p>This option is self explanatory; but will create a header row as first row of CSV file. Including headers is the default value</p>
+</div>
+<div class="section" id="suppress-line-breaks">
+<h4>Suppress Line Breaks<a class="headerlink" href="#suppress-line-breaks" title="Permalink to this headline">¶</a></h4>
+<p>This option will remove any carriage returns and line feeds from the data as it is written to the CSV file</p>
+</div>
+<div class="section" id="limit-of-lines">
+<h4>Limit # of Lines<a class="headerlink" href="#limit-of-lines" title="Permalink to this headline">¶</a></h4>
+<p>This option will only create the specified number of rows in the CSV file</p>
+</div>
+<div class="section" id="create-xlsx-document">
+<h4>Create XLSX Document<a class="headerlink" href="#create-xlsx-document" title="Permalink to this headline">¶</a></h4>
+<p>This option will create a .xlsx file as the output file.</p>
+</div>
+<div class="section" id="launch-on-completion">
+<h4>Launch on Completion<a class="headerlink" href="#launch-on-completion" title="Permalink to this headline">¶</a></h4>
+<p>This option is checked as the default; and will use the system default program to open the CSV file</p>
+</div>
+</div>
+<div class="section" id="csv-to-json">
+<h3>CSV to JSON<a class="headerlink" href="#csv-to-json" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="_images/csv2json.PNG"><img alt="CSV2JSON Converter" class="align-center" src="_images/csv2json.PNG" style="width: 500px; height: 400px;"/></a>
+<div class="section" id="convert-csv-to-json">
+<h4>Convert CSV To JSON<a class="headerlink" href="#convert-csv-to-json" title="Permalink to this headline">¶</a></h4>
+<p>
+    Using our tool is simple </p><ul>
+    <li>You must choose an input file as either a local file on your hard-drive or a web address.</li>
+    <li>Choose Input and Output settings</li>
+    <li>Press the Convert to JSON button</li>
+</ul>
+<p></p>
+</div>
+<div class="section" id="id2">
+<h4>Click Anywhere in Box to Load Local File<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Click your mouse in this area to choose a local file as input.</p>
+</div>
+<div class="section" id="id3">
+<h4>Load File from the Web<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>Enter a web address here that identifies the input file.</p>
+</div>
+<div class="section" id="conversion-input-options">
+<h4>Conversion Input Options<a class="headerlink" href="#conversion-input-options" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="field-separator">
+<h4>Field Separator<a class="headerlink" href="#field-separator" title="Permalink to this headline">¶</a></h4>
+<p>Default setting is to auto-detect the field separator in the CSV
+file. However, you can explicitly set it with this option.</p>
+</div>
+<div class="section" id="no-header-row-in-csv">
+<h4>No Header Row in CSV<a class="headerlink" href="#no-header-row-in-csv" title="Permalink to this headline">¶</a></h4>
+<p>Use this option if the first row in the CSV file consists of values and not header names</p>
+</div>
+<div class="section" id="skip-number-of-lines">
+<h4>Skip Number of Lines<a class="headerlink" href="#skip-number-of-lines" title="Permalink to this headline">¶</a></h4>
+<p>This option will skip a set # of lines before beginning to read input from the CSV file</p>
+</div>
+<div class="section" id="auto-detect-encoding-type">
+<h4>Auto-Detect Encoding Type<a class="headerlink" href="#auto-detect-encoding-type" title="Permalink to this headline">¶</a></h4>
+<p>The default option is to auto-detect the CSV encoding type; However, you may specify a
+choice in the input box.</p>
+</div>
+<div class="section" id="conversion-output-options">
+<h4>Conversion Output Options<a class="headerlink" href="#conversion-output-options" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="id4">
+<h4>FileName and Folder<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>These parameters will allow you to choose the conversion filename and where to save the output file. You must have write
+access to the output directory to save the converted file, or the application will raise an error message.</p>
+</div>
+<div class="section" id="id5">
+<h4>Limit # of Lines<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>This option will limit the total number of JSON lines that are written.</p>
+</div>
+<div class="section" id="use-pretty-format">
+<h4>Use Pretty Format<a class="headerlink" href="#use-pretty-format" title="Permalink to this headline">¶</a></h4>
+<p>Pretty format makes it easier to read the JSON structure in a text file for human consumption.</p>
+</div>
+<div class="section" id="generate-json-arrays">
+<h4>Generate JSON Arrays<a class="headerlink" href="#generate-json-arrays" title="Permalink to this headline">¶</a></h4>
+<p>JSON output will be written in an array of arrays structure; Each row of data will be in an Arra.
+Ex.  [[a, b, c, 1, 2, 3], [d, e, f, 4, 5, 6]]</p>
+</div>
+<div class="section" id="generate-keyed-json-based-on-column">
+<h4>Generate Keyed JSON based on Column #<a class="headerlink" href="#generate-keyed-json-based-on-column" title="Permalink to this headline">¶</a></h4>
+<p>This option will create a JSON structure that uses Column # (position starting from 0) passed to it as
+the main key. This option will also allow you to type in the specific name of the column to use
+as the key. If the column name does not exist, the program will raise an error.</p>
+</div>
+<div class="section" id="fields-to-include">
+<h4>Fields to Include<a class="headerlink" href="#fields-to-include" title="Permalink to this headline">¶</a></h4>
+<p>This option allows you to specifically set which field columns to include.
+You can either specify the column number (starting at 1) or the field name based on the header.
+You can use a range with field numbers, i.e. <strong>2-6</strong> , which indicates fields 2 through 6. Default value is blank to
+include all fields.</p>
+</div>
+<div class="section" id="fields-to-exclude">
+<h4>Fields to Exclude<a class="headerlink" href="#fields-to-exclude" title="Permalink to this headline">¶</a></h4>
+<p>This option allows you to specifically set which field columns to exclude.
+The field list starts with 1. In the example below, we are excluding field 3,4, and 5. Default value is blank to not
+exclude any fields.</p>
+</div>
+<div class="section" id="launch-file-on-completion">
+<h4>Launch File on Completion<a class="headerlink" href="#launch-file-on-completion" title="Permalink to this headline">¶</a></h4>
+<p>This option will use the system default program to open the JSON file. If no default is set, it will not open. Try to open
+the resulting file with any text editor or notepad.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+          <div class="sphinxsidebarwrapper">
+              <h1 class="logo"><a href="index-2.html">ConvertCSV Desktop</a></h1>
+
+              <ul>
+                  <li><a href="json_gui.html">JSON to/from CSV Converter</a></li>
+                  <li><a href="xml_gui.html">XML to/from CSV Converter</a></li>
+              </ul>
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      ©2020, Data Design Group, Inc..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+  
+<script>__ez.queue.addFile('../../tardisrocinante/vitals.js', '../../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
+<script>__ez.queue.addFile('../../beardeddragon/drake.js', '../../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
+		var setCookie = function( name, content, expiry ) {
+			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
+		};
+		var ffid = 1;
+		var oh = window.screen.height;
+		var ow = window.screen.width;
+		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+	})();</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../../parsonsmaize/chanute.js', '../../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../../porpoiseant/jellyfish.js', '../../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+<!-- Mirrored from www.convertcsv.com/docs/desktop/json_gui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:49:32 GMT -->
+</html>
