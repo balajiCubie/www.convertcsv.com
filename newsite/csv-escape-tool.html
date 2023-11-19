@@ -1,19 +1,29 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <!-- Mirrored from www.convertcsv.com/newsite/csv-escape-tool.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:41:50 GMT -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":1,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"df90d485-65cd-4fd5-776f-52c2a0aa0649","response_size_orig":16270,"response_time_orig":821,"template_id":5,"url":"https://www.convertcsv.com/newsite/csv-escape-tool.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 1, "domain_id": 423391, "ezcache_level": 1, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "df90d485-65cd-4fd5-776f-52c2a0aa0649", "response_size_orig": 16270, "response_time_orig": 821, "template_id": 5, "url": "https://www.convertcsv.com/newsite/csv-escape-tool.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("../detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("../index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("../index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("../porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("../index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Copyright 2013 - 2020 ConvertCsv.com -->
-    <meta name="description" content="Convert String(s) to CSV"/>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
+    <meta name="description" content="Convert String(s) to CSV" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Free Online CSV Escape Tool</title>
-    <script type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+    <script
+        type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
     <script src="JS/strsup.js"></script>
     <script src="JS/csvparse.js"></script>
     <script src="JS/csvsup5e1f.js?v=2"></script>
@@ -29,7 +39,7 @@
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -37,9 +47,10 @@
         gtag('config', 'UA-110011798-1');
     </script>
 
-    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="Styles/main.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css"/>
+    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css" />
     <script type="text/javascript">
         function doToCsv() {
             var t = "";
@@ -59,48 +70,54 @@
         }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<link rel='canonical' href='csv-escape-tool.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":1,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"df90d485-65cd-4fd5-776f-52c2a0aa0649","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":16270,"response_time_orig":821,"serverid":"i-0ea55cfe038848112","state":"KA","t_epoch":1700314735,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/newsite/csv-escape-tool.htm","word_count":285,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel='canonical' href='csv-escape-tool.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 1, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 1, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "df90d485-65cd-4fd5-776f-52c2a0aa0649", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 16270, "response_time_orig": 821, "serverid": "i-0ea55cfe038848112", "state": "KA", "t_epoch": 1700314735, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/newsite/csv-escape-tool.htm", "word_count": 285, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head>
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
+
 <body onload="document.getElementById(&#39;btnRun&#39;).click()" cz-shortcut-listen="true">
 
     <form onsubmit="return false" id="frm1" name="frm1" role="form" class="form" saveform="true">
         <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="tool-nav" role="navigation">
             <a class="navbar-brand text-center text-sm-left mr-0" href="../index.html" id="logo">
-                <img class="mb-3 mb-sm-0" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo"/>
+                <img class="mb-3 mb-sm-0" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo" />
             </a>
             <div class="tool-nav-button-wrap d-flex justify-content-center">
                 <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert CSV to another format">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        title="Convert CSV to another format">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">CSV to File</span>
-                            <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon"/>
+                            <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -118,10 +135,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     </div>
                 </div>
                 <div class="btn-group mx-1 mx-md-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">File to CSV</span>
-                            <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon"/>
+                            <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -137,10 +155,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     </div>
                 </div>
                 <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">CSV Tools</span>
-                            <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon"/>
+                            <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -159,29 +178,34 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                 </div>
             </div>
             <div class="btn-group btn-save-restore d-flex mt-2 mt-sm-0 justify-content-center justify-content-sm-end">
-                <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()" title="Save settings and data on page to local file">
+                <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()"
+                    title="Save settings and data on page to local file">
                     <span class="d-inline d-sm-none d-md-inline">Save</span>
                     <i class="far fa-save"></i>
                 </button>
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal" title="Restore settings and data from file">
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal"
+                    title="Restore settings and data from file">
                     <span class="d-inline d-sm-none d-md-inline">Restore</span>
                     <i class="far fa-window-restore"></i>
                 </button>
             </div>
         </nav>
-        <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Restore Data</h5>
-                        <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal"
+                            aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <p>You can save the complete data and settings, and then load them from your saved file.</p>
                         <label class="fsave" for="fsave">Choose File <i class="fas fa-file-upload"></i></label>
-                        <input type="file" id="fsave" class="form-control" accept=".json" onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings"/>
+                        <input type="file" id="fsave" class="form-control" accept=".json"
+                            onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings" />
                     </div>
                 </div>
             </div>
@@ -189,10 +213,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
         <center>
             <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
             <!-- ResponsiveAd -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </center>
-      
+
         <div id="step-text" class="mt-4 mb-4">
             <h1 class="text-center">Escape Text to CSV Tool</h1>
             <h2 class="text-center">Use this tool to escape plain text to CSV text.</h2>
@@ -211,11 +236,14 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                         The conversion to CSV compatible format follows these rules:
                     </p>
                     <ul>
-                        <li>A string is enclosed in double quotes if it contains a double quote, comma, or spans multiple lines</li>
-                        <li>Each double quote within a string is converted to two double quotes. This is known as &#34;Escaping&#34;.</li>
+                        <li>A string is enclosed in double quotes if it contains a double quote, comma, or spans
+                            multiple lines</li>
+                        <li>Each double quote within a string is converted to two double quotes. This is known as
+                            &#34;Escaping&#34;.</li>
                         <li>See <a href="http://tools.ietf.org/html/rfc4180">RFC 4180 CSV standard</a></li>
                         <li>Use our other tools to convert CSV to other formats</li>
-                        <li>Visit <a href="http://www.reformattext.com/">ReformatText.com</a> for other Text Conversion Tools</li>
+                        <li>Visit <a href="http://www.reformattext.com/">ReformatText.com</a> for other Text Conversion
+                            Tools</li>
                     </ul>
                 </div>
                 <div class="output-content-wrap mb-3">
@@ -223,9 +251,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                         <label for="txt1">
                             Enter Text Here and Press the Escape Text button
                         </label>
-                        <textarea id="txt1" rows="5" cols="60" wrap="off" class="form-control text-area-shadow">Jones, Smith, and Company</textarea>
+                        <textarea id="txt1" rows="5" cols="60" wrap="off"
+                            class="form-control text-area-shadow">Jones, Smith, and Company</textarea>
                         <div class="button-wrap d-block d-sm-flex justify-content-between my-3">
-                            <input type="button" id="btnRun" value="Escape Text to CSV Text" onclick="doToCsv()" title="Escape Plain Text - single value or list of values" class="btn btn-primary"/>
+                            <input type="button" id="btnRun" value="Escape Text to CSV Text" onclick="doToCsv()"
+                                title="Escape Plain Text - single value or list of values" class="btn btn-primary" />
                         </div>
                         <label for="selSingle">Choose:</label>
                         <select class="custom-select" id="selSingle">
@@ -234,7 +264,8 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                         </select>
                     </div>
                 </div>
-        </div></section>
+            </div>
+        </section>
         <section class="escape-section">
             <div class="container content-container">
                 <div class="output-content-wrap">
@@ -247,8 +278,9 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
             <footer id="footer">
                 <div class="container-fluid d-flex align-items-center">
                     <div class="text-left d-flex flex-column w-25">
-                        <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo"/>
-                        <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All rights reserved.</small></span>
+                        <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo" />
+                        <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                                rights reserved.</small></span>
                     </div>
                     <div class="d-none d-lg-flex justify-content-center w-50">
                         <a class="nav-item nav-link" href="privacypolicy.html">Privacy Policy</a>
@@ -256,8 +288,10 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                         <a class="nav-item nav-link" href="terms-of-use.html">Terms of Use</a>
                     </div>
                     <div class="d-flex justify-content-end w-25">
-                        <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i class="fab fa-twitter"></i></a>
-                        <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i class="fab fa-facebook-f"></i></a>
+                        <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i
+                                class="fab fa-facebook-f"></i></a>
                         <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
@@ -267,28 +301,43 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
 
 
 
-  <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="JS/main-ui3860.js?v=1"></script>
-<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="JS/main-ui3860.js?v=1"></script>
+    <script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/newsite/csv-escape-tool.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:41:50 GMT -->
+
 </html>

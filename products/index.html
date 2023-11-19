@@ -1,30 +1,43 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <!-- Mirrored from www.convertcsv.com/products/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:38:09 GMT -->
-<head><meta charset="UTF-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"a1e39732-cdff-49c9-503c-e948f1d687b1","response_size_orig":24233,"response_time_orig":73,"template_id":5,"url":"https://www.convertcsv.com/products/","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-    <!-- Copyright 2013 - 2023 ConvertCsv.com -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta content="CSV Data Conversion Tools for Windows"/>
-    <meta name="description" content="Data Tools for converting data into various formats"/>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
-    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-    <script type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
 
-    
+<head>
+    <meta charset="UTF-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 2, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "a1e39732-cdff-49c9-503c-e948f1d687b1", "response_size_orig": 24233, "response_time_orig": 73, "template_id": 5, "url": "https://www.convertcsv.com/products/", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("../detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("../index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("../index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("../porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("../index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+    <!-- Copyright 2013 - 2023 ConvertCsv.com -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="CSV Data Conversion Tools for Windows" />
+    <meta name="description" content="Data Tools for converting data into various formats" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script
+        type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
-    
 
-    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
-    <link rel="stylesheet" type="text/css" href="js/main.css"/>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css"
+        href="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/main.css" />
     <style>
         .console {
             font-family: 'Fira Mono';
@@ -34,66 +47,72 @@
             margin: auto;
         }
 
-            .console header {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                background-color: #555;
-                height: 45px;
-                line-height: 45px;
-                text-align: center;
-                color: #DDD;
-            }
+        .console header {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: #555;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #DDD;
+        }
 
-            .console .consolebody {
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                box-sizing: border-box;
-                padding: 10px;
-                height: calc(100% - 40px);
-                overflow: scroll;
-                background-color: #000;
-                color: #63de00;
-            }
+        .console .consolebody {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+            height: calc(100% - 40px);
+            overflow: scroll;
+            background-color: #000;
+            color: #63de00;
+        }
 
-                .console .consolebody pre {
-                    line-height: 1.5rem;
-                }
+        .console .consolebody pre {
+            line-height: 1.5rem;
+        }
     </style>
     <title>Products for Data</title>
-<link rel='canonical' href='index.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"a1e39732-cdff-49c9-503c-e948f1d687b1","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":24233,"response_time_orig":73,"serverid":"i-0b17fa0f4fb9118bc","state":"KA","t_epoch":1700314575,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/products/","word_count":708,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel='canonical' href='index.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 2, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "a1e39732-cdff-49c9-503c-e948f1d687b1", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 24233, "response_time_orig": 73, "serverid": "i-0b17fa0f4fb9118bc", "state": "KA", "t_epoch": 1700314575, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/products/", "word_count": 708, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head>
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="topNav" role="navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html" id="logo"><img src="../Images/ConvertCSVlogo.png" alt="ConvertCSV.com logo" title="ConvertCSV.com Home"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" id="logo"><img src="../Images/ConvertCSVlogo.png"
+                    alt="ConvertCSV.com logo" title="ConvertCSV.com Home" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon my-toggler"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -117,37 +136,47 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
             <h2 class="text-center">Same Online Tools Now Available for Enterprise and Personal Use</h2>
         </header>
         <div class="alert alert-info">
-                Our converters are now available as an API at <a href="https://www.convertcsv.io/" target="_blank">ConvertCsv.io</a>
-            </div>
+            Our converters are now available as an API at <a href="https://www.convertcsv.io/"
+                target="_blank">ConvertCsv.io</a>
+        </div>
         <div class="container-fluid mb-4 mb-lg-0">
             There is no need to write custom data conversions our troubleshoot someone else&#39;s code.
             Our powerful converters will quickly and correctly convert CSV, JSON, XML, YAML into various formats.
-            There are also NO privacy or security issues as the data stays on your computer and does not need the internet to operate.
-            If your data exists on the internet, we include the ability to download and convert data directly from the web or REST API.
-            Easy to use tools will solve your data conversion problems within minutes. We have both command line (CLI) tools and Windows desktop tools.
+            There are also NO privacy or security issues as the data stays on your computer and does not need the
+            internet to operate.
+            If your data exists on the internet, we include the ability to download and convert data directly from the
+            web or REST API.
+            Easy to use tools will solve your data conversion problems within minutes. We have both command line (CLI)
+            tools and Windows desktop tools.
         </div>
-        <br/>
+        <br />
         <div class="container text-center mb-4 mb-md-0">
             <div class="row no-gutters">
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top2" src="../images/Final_ConvertCSV_Product1.png" alt="JSON/CSV Image"/>
+                        <img class="card-img-top2" src="../images/Final_ConvertCSV_Product1.png" alt="JSON/CSV Image" />
                         <div class="card-body">
                             <p class="card-text">
                                 <b> Converter License - $399</b>
-                                <br/>- Perpetual License for Small Business
-                                <br/>- Unlimited Conversions
-                                <br/>- Fully Customizable Output
-                                <br/>- Setup Support Available
-                                <br/>- Microsoft Windows Only
-                                <br/>Desktop- <a href="https://transactions.sendowl.com/products/78292980/D50E4531/purchase" rel="nofollow">
-                                    <img src="../images/buynow.png" alt="Buy Now - Desktop" title="Buy Now - Desktop"/>
+                                <br />- Perpetual License for Small Business
+                                <br />- Unlimited Conversions
+                                <br />- Fully Customizable Output
+                                <br />- Setup Support Available
+                                <br />- Microsoft Windows Only
+                                <br />Desktop- <a
+                                    href="https://transactions.sendowl.com/products/78292980/D50E4531/purchase"
+                                    rel="nofollow">
+                                    <img src="../images/buynow.png" alt="Buy Now - Desktop" title="Buy Now - Desktop" />
                                 </a>
-                                <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
-                                <br/>Command Line- <a href="https://transactions.sendowl.com/products/78247928/D72B3143/purchase" rel="nofollow" role="button">
-                                    <img src="../images/buynow.png" alt="Buy Now - CLI" title="Buy Now -  CLI"/>
+                                <script type="text/javascript"
+                                    src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                                <br />Command Line- <a
+                                    href="https://transactions.sendowl.com/products/78247928/D72B3143/purchase"
+                                    rel="nofollow" role="button">
+                                    <img src="../images/buynow.png" alt="Buy Now - CLI" title="Buy Now -  CLI" />
                                 </a>
-                                <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                                <script type="text/javascript"
+                                    src="../../transactions.sendowl.com/assets/sendowl.js"></script>
 
                             </p>
 
@@ -156,25 +185,29 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top2" src="../images/Final_ConvertCSV_Product2.png" alt="XML/CSV Image"/>
+                        <img class="card-img-top2" src="../images/Final_ConvertCSV_Product2.png" alt="XML/CSV Image" />
                         <div class="card-body">
                             <p class="card-text">
                                 <b>Converter License - $399</b>
-                                <br/>- Perpetual License for Small Business
-                                <br/>- Unlimited Conversions
-                                <br/>- Fully Customizable Output
-                                <br/>- Setup Support Available
-                                <br/>- Microsoft Windows Only
-                                <br/>Desktop-
-                                <a href="https://transactions.sendowl.com/products/78302118/D52D5028/purchase" rel="nofollow">
-                                    <img src="../images/buynow.png" alt="Buy Now" title="Buy Now"/>
+                                <br />- Perpetual License for Small Business
+                                <br />- Unlimited Conversions
+                                <br />- Fully Customizable Output
+                                <br />- Setup Support Available
+                                <br />- Microsoft Windows Only
+                                <br />Desktop-
+                                <a href="https://transactions.sendowl.com/products/78302118/D52D5028/purchase"
+                                    rel="nofollow">
+                                    <img src="../images/buynow.png" alt="Buy Now" title="Buy Now" />
                                 </a>
-                                <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
-                                <br/>Command Line-
-                                <a href="https://transactions.sendowl.com/products/78256452/DD538E35/purchase" rel="nofollow">
-                                    <img src="../images/buynow.png" alt="Buy Now" title="Buy Now"/>
+                                <script type="text/javascript"
+                                    src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                                <br />Command Line-
+                                <a href="https://transactions.sendowl.com/products/78256452/DD538E35/purchase"
+                                    rel="nofollow">
+                                    <img src="../images/buynow.png" alt="Buy Now" title="Buy Now" />
                                 </a>
-                                <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                                <script type="text/javascript"
+                                    src="../../transactions.sendowl.com/assets/sendowl.js"></script>
                             </p>
 
                         </div>
@@ -182,38 +215,43 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/xcel.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/xcel.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 <b>Commercial License - $1999</b>
-                                <br/> <b>*All Converters Included*</b>
-                                <br/>- JSON, CSV, Excel, XML, SQL, and more
-                                <br/>- Desktop and Command Line
-                                <br/>- Perpetual Product License for Small Business
-                                <br/>- Initial Setup Support
-                                <br/>- Free Product Upgrades for two years
-                                <br/>- Microsoft Windows Only
-                                <br/><a href="../contact.html">Contact Us</a>
-                                <axxx href="https://transactions.sendowl.com/products/78257034/90679281/purchase" rel="nofollow">
+                                <br /> <b>*All Converters Included*</b>
+                                <br />- JSON, CSV, Excel, XML, SQL, and more
+                                <br />- Desktop and Command Line
+                                <br />- Perpetual Product License for Small Business
+                                <br />- Initial Setup Support
+                                <br />- Free Product Upgrades for two years
+                                <br />- Microsoft Windows Only
+                                <br /><a href="../contact.html">Contact Us</a>
+                                <axxx href="https://transactions.sendowl.com/products/78257034/90679281/purchase"
+                                    rel="nofollow">
                                     <imgxxx src="../images/buynow.png" alt="Buy Now" title="Buy Now">
-                                </imgxxx></axxx>
-                                <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                                    </imgxxx>
+                                </axxx>
+                                <script type="text/javascript"
+                                    src="../../transactions.sendowl.com/assets/sendowl.js"></script>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/sql.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/sql.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 <b>Custom or Enterprise Solution</b>
-                                <br/>
-                                <br/>Do you need custom software solutions for your business?
+                                <br />
+                                <br />Do you need custom software solutions for your business?
                                 Do you need help with data conversions?
-                                <br/> We can help!
-                                <br/>
-                                <br/>Please <a href="../contact.html">contact us</a> or email us at <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cbb8aaa7aeb88ba8a4a5bdaeb9bfa8b8bde5a8a4a6">[email&#160;protected]</a>
+                                <br /> We can help!
+                                <br />
+                                <br />Please <a href="../contact.html">contact us</a> or email us at <a
+                                    href="../cdn-cgi/l/email-protection.html" class="__cf_email__"
+                                    data-cfemail="cbb8aaa7aeb88ba8a4a5bdaeb9bfa8b8bde5a8a4a6">[email&#160;protected]</a>
                             </p>
                         </div>
                     </div>
@@ -228,7 +266,7 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     <header>
                         Command Prompt
                     </header>
-<pre class="consolebody">C:\&gt; json2csvcmd -h
+                    <pre class="consolebody">C:\&gt; json2csvcmd -h
 usage: json2csvcmd [-h] [-i] [-o] [-e] [-d] [-k] [-l] [-N] [-X] [-U] [-S] [-c] [-L] [-V]
 ConvertCSV.com (c) 2020 - 2023--&gt; Convert JSON files to CSV/Excel
                 
@@ -248,20 +286,21 @@ optional arguments:
   -V, --verbose     Output helpful messages
 </pre>
                 </div>
-            </div><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
-         <div class="col-md col-lg">
-             <img src="../images/jsoncsvgui.jpg" height="90%" width="90%"/>
-         </div>
-    </div>
+            </div><span
+                class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+            <div class="col-md col-lg">
+                <img src="../images/jsoncsvgui.jpg" height="90%" width="90%" />
+            </div>
+        </div>
 
-</section>
+    </section>
     <section id="features">
         <h1>Notable Features</h1>
         <div class="container text-center mb-4 mb-md-0">
             <div class="row no-gutters">
                 <div class="col-12 col-md-6 col-lg-3 mb-3 my-lg-2">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/extract.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/extract.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Convert large files safely and with ease.
@@ -271,12 +310,12 @@ optional arguments:
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 my-lg-2">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/filter.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/filter.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Handles all common encoding types,
                                 including UTF-8, UTF-16, UTF-32,
-                                and many others. <br/>
+                                and many others. <br />
                                 Encoding type can be chosen at runtime.
                             </p>
                         </div>
@@ -284,7 +323,7 @@ optional arguments:
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 my-lg-2">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/quotes.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/quotes.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Easily customizable via the configuration file settings and command line options.
@@ -294,11 +333,11 @@ optional arguments:
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 my-lg-2">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/backslash.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/backslash.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Convert directly from URLs
-                                or REST APIs. <br/>
+                                or REST APIs. <br />
                                 Write directly to CSV or Excel.
                             </p>
                         </div>
@@ -308,7 +347,7 @@ optional arguments:
             <div class="row no-gutters">
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/engine.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/engine.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Choose which output fields you want and the order of fields.
@@ -318,7 +357,7 @@ optional arguments:
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/checks.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/checks.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
                                 Piping and redirection supported for input and output.
@@ -328,21 +367,23 @@ optional arguments:
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/support.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/support.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
-                                Fully supports<br/>
-                                <a href="http://tools.ietf.org/html/rfc4180">RFC 4180 CSV standard</a> for input and output.
+                                Fully supports<br />
+                                <a href="http://tools.ietf.org/html/rfc4180">RFC 4180 CSV standard</a> for input and
+                                output.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-0">
                     <div class="card">
-                        <img class="card-img-top" src="../assets/images/security.svg" alt="Card image cap"/>
+                        <img class="card-img-top" src="../assets/images/security.svg" alt="Card image cap" />
                         <div class="card-body">
                             <p class="card-text">
-                                Data privacy is assured as our tools run completely on the client-side. Your data never leaves your computer
+                                Data privacy is assured as our tools run completely on the client-side. Your data never
+                                leaves your computer
                             </p>
                         </div>
                     </div>
@@ -354,75 +395,85 @@ optional arguments:
         <h1 class="text-center">FAQ</h1>
         <div class="container mb-4 mb-lg-2">
             <p class="question-body">
-                <strong class="question-header">What Command-Line Conversions are supported?</strong> <br/>
-                We currently support <br/>
-                </p><ol>
-                    <li>JSON to CSV</li>
-                    <li>CSV to JSON</li>
-                    <li>CSV to XML</li>
-                    <li>XML to CSV</li>
-                    <li>
-                        CSV to CSV/Delimited/Excel ($399 USD) <a href="https://transactions.sendowl.com/products/78388667/82ADBE04/purchase" rel="nofollow"><img src="../../transactions.sendowl.com/assets/external/buy-now.png"/></a>
-                        <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
-                    </li>
-                    <li>JSON to XML *</li>
-                    <li>
-                        Windows Desktop CSV to Anything Using Templates ($399 USD)
-                        <a href="https://transactions.sendowl.com/products/78403864/FFC4DD23/purchase" rel="nofollow"><img src="../../transactions.sendowl.com/assets/external/buy-now.png"/></a>
-                        <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
-                    </li>
-                    <li>
-                        CSV to Anything Using Templates Windows Command Line ($399 USD)
-                        <a href="https://transactions.sendowl.com/products/78716181/AA1AEC36/purchase" rel="nofollow"><img src="../../transactions.sendowl.com/assets/external/buy-now.png"/></a>
-                        <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
-                    </li>
-                    <li>XML to JSON *</li>
-                    <li>CSV to Fixed Width *</li>
-                    <li>CSV to HTML *</li>
-                    <li>CSV to SQL  *</li>
-                    <li>YAML to CSV *</li>
-                    <li>YAML to JSON *</li>
-                    <li>YAML to XML  *</li>
+                <strong class="question-header">What Command-Line Conversions are supported?</strong> <br />
+                We currently support <br />
+            </p>
+            <ol>
+                <li>JSON to CSV</li>
+                <li>CSV to JSON</li>
+                <li>CSV to XML</li>
+                <li>XML to CSV</li>
+                <li>
+                    CSV to CSV/Delimited/Excel ($399 USD) <a
+                        href="https://transactions.sendowl.com/products/78388667/82ADBE04/purchase" rel="nofollow"><img
+                            src="../../transactions.sendowl.com/assets/external/buy-now.png" /></a>
+                    <script data-cfasync="false"
+                        src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                </li>
+                <li>JSON to XML *</li>
+                <li>
+                    Windows Desktop CSV to Anything Using Templates ($399 USD)
+                    <a href="https://transactions.sendowl.com/products/78403864/FFC4DD23/purchase" rel="nofollow"><img
+                            src="../../transactions.sendowl.com/assets/external/buy-now.png" /></a>
+                    <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                </li>
+                <li>
+                    CSV to Anything Using Templates Windows Command Line ($399 USD)
+                    <a href="https://transactions.sendowl.com/products/78716181/AA1AEC36/purchase" rel="nofollow"><img
+                            src="../../transactions.sendowl.com/assets/external/buy-now.png" /></a>
+                    <script type="text/javascript" src="../../transactions.sendowl.com/assets/sendowl.js"></script>
+                </li>
+                <li>XML to JSON *</li>
+                <li>CSV to Fixed Width *</li>
+                <li>CSV to HTML *</li>
+                <li>CSV to SQL *</li>
+                <li>YAML to CSV *</li>
+                <li>YAML to JSON *</li>
+                <li>YAML to XML *</li>
 
-                </ol>
-                *Available in Enterprise License (<a href="../contact.html">Contact Us</a>)
+            </ol>
+            *Available in Enterprise License (<a href="../contact.html">Contact Us</a>)
             <p></p>
             <p class="faq-question">
-                <strong class="question-header">Is my data secure?</strong><br/>
+                <strong class="question-header">Is my data secure?</strong><br />
                 Yes, your data never leaves your computer and all processing occurs on your computer.
                 You do not need Internet connectivity to run our tools.
             </p>
             <p class="faq-question">
-                <strong class="question-header">Can I buy your tools as a Desktop tool?</strong><br/>
+                <strong class="question-header">Can I buy your tools as a Desktop tool?</strong><br />
                 Yes - You may buy Desktop tools at the top of this page. See the Buy Now button.
             </p>
             <p class="faq-question">
-                <strong class="question-header">Do you have an API?</strong><br/>
+                <strong class="question-header">Do you have an API?</strong><br />
                 Not yet, but coming soon in 2020.
             </p>
             <p class="faq-question">
-                <strong class="question-header">How do I use this tool with web data?</strong><br/>
+                <strong class="question-header">How do I use this tool with web data?</strong><br />
                 Simply use the web address as your input file using parameter -i or --infile on the command line.
-                </p><div class="code-block">
-                    <code>
+            </p>
+            <div class="code-block">
+                <code>
                         c:\&gt;  json2csvcmd -i https://jsonplaceholder.typicode.com/posts
                     </code>
-                </div>
+            </div>
             <p></p>
 
             <p class="faq-question">
-                <strong class="question-header">What Operating Systems are supported?</strong><br/>
-                Microsoft Windows currently, Apple and Linux coming soon. <br/>
-        </p></div>
+                <strong class="question-header">What Operating Systems are supported?</strong><br />
+                Microsoft Windows currently, Apple and Linux coming soon. <br />
+            </p>
+        </div>
         <p></p>
 
-        <br/>
-        
+        <br />
+
         <footer id="footer">
             <div class="container-fluid d-flex align-items-center">
                 <div class="text-left d-flex flex-column w-25">
                     <a class="navbar-brand" href="../index.html" id="footerLogo">ConvertCSV</a>
-                    <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All rights reserved.</small></span>
+                    <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                            rights reserved.</small></span>
                 </div>
                 <div class="d-none d-lg-flex justify-content-center w-50">
                     <a class="nav-item nav-link" href="../PrivacyPolicy.html">Privacy Policy</a>
@@ -431,8 +482,10 @@ optional arguments:
                     <a class="nav-item nav-link" href="../EULA-ConvertCSV.pdf">EULA</a>
                 </div>
                 <div class="d-flex justify-content-end w-25">
-                    <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i class="fab fa-twitter"></i></a>
-                    <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i
+                            class="fab fa-facebook-f"></i></a>
                     <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
@@ -441,29 +494,42 @@ optional arguments:
 
 
     <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="../cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script src="../js/main-ui.js"></script>
 
-<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/products/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:38:16 GMT -->
+
 </html>

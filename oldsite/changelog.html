@@ -1,301 +1,340 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <!-- Mirrored from www.convertcsv.com/oldsite/changelog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:50:44 GMT -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"51f03985-a2e4-45c3-487f-bcbd82a25eb8","response_size_orig":54490,"response_time_orig":887,"template_id":5,"url":"https://www.convertcsv.com/oldsite/changelog.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-  
-<!-- Copyright 2013 - 2020 ConvertCsv.com -->
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="ConvertCSV.com Change Log"/>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-  <meta http-equiv="Pragma" content="no-cache"/>
-  <meta http-equiv="Expires" content="0"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 1, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "51f03985-a2e4-45c3-487f-bcbd82a25eb8", "response_size_orig": 54490, "response_time_orig": 887, "template_id": 5, "url": "https://www.convertcsv.com/oldsite/changelog.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("../detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("../index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("../index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("../porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("../index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
 
-  <title>Convertcsv.com Change Log</title>
+    <!-- Copyright 2013 - 2020 ConvertCsv.com -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ConvertCSV.com Change Log" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title>Convertcsv.com Change Log</title>
 
 
-  <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-  <link rel="stylesheet" type="text/css" href="Styles/tool-pages.html"/>
-  <link rel="stylesheet" type="text/css" href="Styles/main.html"/>
-<link rel='canonical' href='changelog.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"51f03985-a2e4-45c3-487f-bcbd82a25eb8","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":54490,"response_time_orig":887,"serverid":"i-0b2fbbf8ef00aa9b0","state":"KA","t_epoch":1700315439,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/oldsite/changelog.htm","word_count":3319,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="Styles/tool-pages.html" />
+    <link rel="stylesheet" type="text/css" href="Styles/main.html" />
+    <link rel='canonical' href='changelog.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 1, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "51f03985-a2e4-45c3-487f-bcbd82a25eb8", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 54490, "response_time_orig": 887, "serverid": "i-0b2fbbf8ef00aa9b0", "state": "KA", "t_epoch": 1700315439, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/oldsite/changelog.htm", "word_count": 3319, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head> 
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
 
 <body cz-shortcut-listen="true" style="padding-bottom:100px;padding-top:100px;">
 
-<nav class="navbar fixed-top navbar-expand-lg bg-dark" id="topNav" role="navigation">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index-2.html" id="logo">ConvertCSV</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon my-toggler"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-lg-auto">
-        <a class="nav-item nav-link" href="index-2.html" style="border:none;">Tools</a>
-        <a class="nav-item nav-link" href="index-2.html" style="border:none;">Features</a>
-        <a class="nav-item nav-link" href="index-2.html" style="border:none;">FAQ</a>
-        <a class="nav-item nav-link" href="Contact%20ConvertCsv.com.html" style="border:none;">Contact</a>
-        <a class="nav-item nav-link d-lg-none" href="PrivacyPolicy.html" style="border:none;">Privacy Policy</a>
-        <a class="nav-item nav-link d-lg-none" href="Convertcsv.com%20Change%20Log.html" style="border:none;">Change Log</a>
-        <a class="nav-item nav-link d-lg-none" href="terms-of-use.html" style="border:none;">Terms of Use</a>
-      </div>
-    </div> 
-  </div>
-</nav>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="topNav" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index-2.html" id="logo">ConvertCSV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon my-toggler"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-lg-auto">
+                    <a class="nav-item nav-link" href="index-2.html" style="border:none;">Tools</a>
+                    <a class="nav-item nav-link" href="index-2.html" style="border:none;">Features</a>
+                    <a class="nav-item nav-link" href="index-2.html" style="border:none;">FAQ</a>
+                    <a class="nav-item nav-link" href="Contact%20ConvertCsv.com.html" style="border:none;">Contact</a>
+                    <a class="nav-item nav-link d-lg-none" href="PrivacyPolicy.html" style="border:none;">Privacy
+                        Policy</a>
+                    <a class="nav-item nav-link d-lg-none" href="Convertcsv.com%20Change%20Log.html"
+                        style="border:none;">Change Log</a>
+                    <a class="nav-item nav-link d-lg-none" href="terms-of-use.html" style="border:none;">Terms of
+                        Use</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<section id="change-log" class="terms-page">
+    <section id="change-log" class="terms-page">
 
-  <h1 class="text-center">ConvertCsv.Com Change Log</h1>
-  <h2 class="text-center">See what has changed on our site</h2>
-  <p class="text-center">
-    View our latest changes and see what&#39;s new in this CSV conversion site!<br/>
-    Remember to Force Refresh your browser (F5 on most browsers) to load the latest page and code.
-  </p>
+        <h1 class="text-center">ConvertCsv.Com Change Log</h1>
+        <h2 class="text-center">See what has changed on our site</h2>
+        <p class="text-center">
+            View our latest changes and see what&#39;s new in this CSV conversion site!<br />
+            Remember to Force Refresh your browser (F5 on most browsers) to load the latest page and code.
+        </p>
 
-  <div class="container content-container">
-    <div class="output-content-wrap">
-      <div class="table-responsive">
-          <table class="table table-striped">
-              <tbody><tr><th>Date</th><th>Page</th><th>Change</th></tr>
+        <div class="container content-container">
+            <div class="output-content-wrap">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>Date</th>
+                                <th>Page</th>
+                                <th>Change</th>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2019-08-04</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON to CSV</a></td>
-                  <td>
-                      Enhanced -JSON Columnar Array input better supported. See example 6.
-                  </td>
-              </tr>
+                            <tr>
+                                <td nowrap="">2019-08-04</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON to CSV</a></td>
+                                <td>
+                                    Enhanced -JSON Columnar Array input better supported. See example 6.
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2018-07-04</td>
-                  <td nowrap=""><a href="../csv-to-flat-file.html">CSV to Fixed-Width</a></td>
-                  <td>
-                      Enhanced -Each field can now be lengthend and SHORTENED. See output options.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-04-25</td>
-                  <td nowrap="">Extract Phone Numbers/URLs/Emals from Web Pages</td>
-                  <td>
-                      Enhanced -Advanced users can filter the results by a regular expression.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-04-09</td>
-                  <td nowrap=""><a href="../phone-extractor.html">Extract Phone Numbers from Web Pages</a></td>
-                  <td>
-                      Enhanced - Extract phone numbers from a list of web pages. See [X] Scan list of web pages.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-03-31</td>
-                  <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
-                  <td>
-                      Changed to retain leading zeros on numerics unless you specify the number of decimal digits
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-03-02</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      Fixed a reported bug when creating an Excel file(thanks). Force Refresh your page please (usually via F5)
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-02-26</td>
-                  <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
-                  <td>Specify the output format for dates</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2018-01-28</td>
-                  <td nowrap=""><a href="../url-extractor.html">URL Extractor</a></td>
-                  <td>Enhanced to accept a list of web pages to scan</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-12-17</td>
-                  <td nowrap=""><a href="../csv-to-pdf.html">CSV To PDF</a></td>
-                  <td>
-                      NEW! Convert CSV to PDF in table format or plain text.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-12-12</td>
-                  <td nowrap=""><a href="../sql-to-csv.html">SQL To CSV/JSON/HTML</a></td>
-                  <td>
-                      NEW! You can now convert SQL into an HTML Table.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-12-10</td>
-                  <td nowrap="">All pages</td>
-                  <td>
-                      Turn BOMs off on on all file downloads except Excel.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-11-12</td>
-                  <td nowrap=""><a href="../query-csv.html">Query CSV via SQL</a></td>
-                  <td>
-                      New page to run SQL against CSV
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-11-07</td>
-                  <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer/Editor</a></td>
-                  <td>
-                      Per request - Increased size of grid.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-10-03</td>
-                  <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
-                  <td>Minor enhancement to Download file - you can specify your file extension.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-08-28</td>
-                  <td nowrap=""><a href="../url-extractor.html">URL Extractor</a></td>
-                  <td>Enhanced to find social media links like Facebook, Linked, .... See Output Options.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-08-27</td>
-                  <td nowrap=""><a href="../html-links-to-csv.html">HTML Links To CSV/Excel</a></td>
-                  <td>Enhanced to find more links and find social media links like Facebook, Linked, .... See Output Options.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-07-02</td>
-                  <td nowrap=""><a href="http://convertjson.com/xml-to-json.htm">Convert XML to JSON</a></td>
-                  <td>
-                      Added new option to remove top level root name from XML during conversion to JSON.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-06-24</td>
-                  <td nowrap=""><a href="http://convertjson.com/json-to-xml.htm">Convert JSON to XML</a></td>
-                  <td>
-                      Fixed bug that occurs when spaces are in JSON key names. Spaces are now converted to underscore in XML node names.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-05-04</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Fixed a minor bug that occurs when the input uses &#34;null&#34; and you want to equate null to a NULL value.
-                      The fix affects the algorythm for determining the data type and length of the field.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-03-23</td>
-                  <td nowrap="">All pages</td>
-                  <td>
-                      All pages that accept CSV file input can now read Excel (*.xlsx) files directly. By default, the first sheet is read.
-                      Future enhancements will allow you to specify the sheet.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-03-13</td>
-                  <td nowrap="">All pages</td>
-                  <td>
-                      New option to specify file encoding for input files. Leave blank for default behavior.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2017-02-04</td>
-                  <td nowrap=""><a href="../url-extractor.html">Extract URLs from Web</a></td>
-                  <td>
-                      New option to extract URLs from webpage and limit to URLS containing a string you specify.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-09-12</td>
-                  <td nowrap=""><a href="../kml-to-csv.html">KML To CSV</a></td>
-                  <td>
-                      Improved conversion of KML to CSV
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-08-07</td>
-                  <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
-                  <td>
-                      New feature - See Expert Mode in the template section.
-                      Also added CSV to LUA table support in the Template Writer.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-07-31</td>
-                  <td nowrap=""><a href="../phone-extractor.html">Extract Phone Numbers from Web Pages</a></td>
-                  <td>
-                      Enhanced - specify the minimum number of digits in phone numbers to extract, i.e. 10 digits
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-07-31</td>
-                  <td nowrap="">Most tools</td>
-                  <td>
-                      New option for numerics to specify the number of decimals places to output per field.
-                      You will find this under &#34;Output Options&#34; on most pages.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-07-10</td>
-                  <td nowrap=""><a href="../xml-to-csv.html">XML To CSV</a></td>
-                  <td>
-                      Improved conversion now supports generating CSV with column headers that reflect
-                      the nested structure of the XML. This makes it easy to export your XML to Excel,
-                      edit it, and convert it back to XML.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-07-07</td>
-                  <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
-                  <td>
-                      Improved conversion now supports generating nested XML if column headers use / notation.
-                      See CSV to JSON for an example.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-04-30</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      <b>Please refresh your browser CSV to JSON page!</b><br/>
-                      CSV to Keyed JSON enhanced to handle cases where the key values are not unique.
-                      If the key field value has duplicates, then arrays will be generated for the value.
-                      Example CSV:
-  <pre>id,first,last
+                            <tr>
+                                <td nowrap="">2018-07-04</td>
+                                <td nowrap=""><a href="../csv-to-flat-file.html">CSV to Fixed-Width</a></td>
+                                <td>
+                                    Enhanced -Each field can now be lengthend and SHORTENED. See output options.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-04-25</td>
+                                <td nowrap="">Extract Phone Numbers/URLs/Emals from Web Pages</td>
+                                <td>
+                                    Enhanced -Advanced users can filter the results by a regular expression.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-04-09</td>
+                                <td nowrap=""><a href="../phone-extractor.html">Extract Phone Numbers from Web Pages</a>
+                                </td>
+                                <td>
+                                    Enhanced - Extract phone numbers from a list of web pages. See [X] Scan list of web
+                                    pages.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-03-31</td>
+                                <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
+                                <td>
+                                    Changed to retain leading zeros on numerics unless you specify the number of decimal
+                                    digits
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-03-02</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    Fixed a reported bug when creating an Excel file(thanks). Force Refresh your page
+                                    please (usually via F5)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-02-26</td>
+                                <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
+                                <td>Specify the output format for dates</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2018-01-28</td>
+                                <td nowrap=""><a href="../url-extractor.html">URL Extractor</a></td>
+                                <td>Enhanced to accept a list of web pages to scan</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-12-17</td>
+                                <td nowrap=""><a href="../csv-to-pdf.html">CSV To PDF</a></td>
+                                <td>
+                                    NEW! Convert CSV to PDF in table format or plain text.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-12-12</td>
+                                <td nowrap=""><a href="../sql-to-csv.html">SQL To CSV/JSON/HTML</a></td>
+                                <td>
+                                    NEW! You can now convert SQL into an HTML Table.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-12-10</td>
+                                <td nowrap="">All pages</td>
+                                <td>
+                                    Turn BOMs off on on all file downloads except Excel.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-11-12</td>
+                                <td nowrap=""><a href="../query-csv.html">Query CSV via SQL</a></td>
+                                <td>
+                                    New page to run SQL against CSV
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-11-07</td>
+                                <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer/Editor</a></td>
+                                <td>
+                                    Per request - Increased size of grid.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-10-03</td>
+                                <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
+                                <td>Minor enhancement to Download file - you can specify your file extension.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-08-28</td>
+                                <td nowrap=""><a href="../url-extractor.html">URL Extractor</a></td>
+                                <td>Enhanced to find social media links like Facebook, Linked, .... See Output Options.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-08-27</td>
+                                <td nowrap=""><a href="../html-links-to-csv.html">HTML Links To CSV/Excel</a></td>
+                                <td>Enhanced to find more links and find social media links like Facebook, Linked, ....
+                                    See Output Options.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-07-02</td>
+                                <td nowrap=""><a href="http://convertjson.com/xml-to-json.htm">Convert XML to JSON</a>
+                                </td>
+                                <td>
+                                    Added new option to remove top level root name from XML during conversion to JSON.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-06-24</td>
+                                <td nowrap=""><a href="http://convertjson.com/json-to-xml.htm">Convert JSON to XML</a>
+                                </td>
+                                <td>
+                                    Fixed bug that occurs when spaces are in JSON key names. Spaces are now converted to
+                                    underscore in XML node names.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-05-04</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Fixed a minor bug that occurs when the input uses &#34;null&#34; and you want to
+                                    equate null to a NULL value.
+                                    The fix affects the algorythm for determining the data type and length of the field.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-03-23</td>
+                                <td nowrap="">All pages</td>
+                                <td>
+                                    All pages that accept CSV file input can now read Excel (*.xlsx) files directly. By
+                                    default, the first sheet is read.
+                                    Future enhancements will allow you to specify the sheet.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-03-13</td>
+                                <td nowrap="">All pages</td>
+                                <td>
+                                    New option to specify file encoding for input files. Leave blank for default
+                                    behavior.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2017-02-04</td>
+                                <td nowrap=""><a href="../url-extractor.html">Extract URLs from Web</a></td>
+                                <td>
+                                    New option to extract URLs from webpage and limit to URLS containing a string you
+                                    specify.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-09-12</td>
+                                <td nowrap=""><a href="../kml-to-csv.html">KML To CSV</a></td>
+                                <td>
+                                    Improved conversion of KML to CSV
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-08-07</td>
+                                <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
+                                <td>
+                                    New feature - See Expert Mode in the template section.
+                                    Also added CSV to LUA table support in the Template Writer.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-07-31</td>
+                                <td nowrap=""><a href="../phone-extractor.html">Extract Phone Numbers from Web Pages</a>
+                                </td>
+                                <td>
+                                    Enhanced - specify the minimum number of digits in phone numbers to extract, i.e. 10
+                                    digits
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-07-31</td>
+                                <td nowrap="">Most tools</td>
+                                <td>
+                                    New option for numerics to specify the number of decimals places to output per
+                                    field.
+                                    You will find this under &#34;Output Options&#34; on most pages.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-07-10</td>
+                                <td nowrap=""><a href="../xml-to-csv.html">XML To CSV</a></td>
+                                <td>
+                                    Improved conversion now supports generating CSV with column headers that reflect
+                                    the nested structure of the XML. This makes it easy to export your XML to Excel,
+                                    edit it, and convert it back to XML.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-07-07</td>
+                                <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
+                                <td>
+                                    Improved conversion now supports generating nested XML if column headers use /
+                                    notation.
+                                    See CSV to JSON for an example.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-04-30</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    <b>Please refresh your browser CSV to JSON page!</b><br />
+                                    CSV to Keyed JSON enhanced to handle cases where the key values are not unique.
+                                    If the key field value has duplicates, then arrays will be generated for the value.
+                                    Example CSV:
+                                    <pre>id,first,last
   1,tom,smoe
   2,tom,bell
   3,sue,smith
   </pre>
-                      Convert to Keyed JSON output using field 1 of id:
-  <pre>{
+                                    Convert to Keyed JSON output using field 1 of id:
+                                    <pre>{
     &#34;1&#34;: {
         &#34;first&#34;: &#34;tom&#34;,
         &#34;last&#34;: &#34;smoe&#34;
@@ -310,14 +349,14 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
     }
   }
   </pre>
-                      <br/>This time with first name which is not unique.
-  <pre>id,first,last
+                                    <br />This time with first name which is not unique.
+                                    <pre>id,first,last
   1,tom,smoe
   2,tom,bell
   3,sue,smith
   </pre>
-                      Convert to Keyed JSON output using 2nd field of first:
-  <pre>{
+                                    Convert to Keyed JSON output using 2nd field of first:
+                                    <pre>{
     &#34;tom&#34;: [
         {
           &#34;id&#34;: 1,
@@ -336,81 +375,86 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
     ]
   }
   </pre>
-                  </td>
-              </tr>
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2016-06-20</td>
-                  <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
-                  <td>
-                      Added capability to &#34;Save Form&#34; to disk and &#34;Load Form&#34; from disk.
-                      This feature will be added to ALL pages soon. &#34;Save Form&#34; - save the current
-                      input data, output data, and settings to a file. Use &#34;Save Form&#34; after you have
-                      generated output and want to use those settings again. &#34;Load Form&#34; - read data and settings previously
-                      saved. The default file name is &#34;template.json&#34;.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-06-13</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      When generating an INSERT statements with multiple VALUES clauses, you can
-                      now specify how many clauses per INSERT statement. See &#34;How Many?&#34;
-                      after &#34;Use One Insert/Replace ....&#34;.
-                  </td>
-              </tr>
+                            <tr>
+                                <td nowrap="">2016-06-20</td>
+                                <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
+                                <td>
+                                    Added capability to &#34;Save Form&#34; to disk and &#34;Load Form&#34; from disk.
+                                    This feature will be added to ALL pages soon. &#34;Save Form&#34; - save the current
+                                    input data, output data, and settings to a file. Use &#34;Save Form&#34; after you
+                                    have
+                                    generated output and want to use those settings again. &#34;Load Form&#34; - read
+                                    data and settings previously
+                                    saved. The default file name is &#34;template.json&#34;.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-06-13</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    When generating an INSERT statements with multiple VALUES clauses, you can
+                                    now specify how many clauses per INSERT statement. See &#34;How Many?&#34;
+                                    after &#34;Use One Insert/Replace ....&#34;.
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2016-05-28</td>
-                  <td nowrap="">All CSV To ... </td>
-                  <td>
-                      Convert caret delimited files!
-                      Careet ^ is now supported as a delimiter between fields.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-05-22</td>
-                  <td nowrap="">All YAML pages</td>
-                  <td>
-                      Updated YAML library to fix minor issue with YAML conversions.
-                      Updated CSV to YAML and YAML to CSV to better handle objects and arrays.
-                  </td>
-              </tr>
+                            <tr>
+                                <td nowrap="">2016-05-28</td>
+                                <td nowrap="">All CSV To ... </td>
+                                <td>
+                                    Convert caret delimited files!
+                                    Careet ^ is now supported as a delimiter between fields.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-05-22</td>
+                                <td nowrap="">All YAML pages</td>
+                                <td>
+                                    Updated YAML library to fix minor issue with YAML conversions.
+                                    Updated CSV to YAML and YAML to CSV to better handle objects and arrays.
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2016-04-30</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added Output Option to convert CSV to MongoDB JSON array format.
-                      See &#34;MongoDB Mode&#34; under Output Options. It is off by default.
-                      MongoDB JSON array format consists of one object per line and no commas separating the objects.
-                      This option only works with the [CSV to JSON] button.
-                      <b>Please refresh your browser page!</b><br/>
-                      Example CSV:
-  <pre>id,name/first,name/last
+                            <tr>
+                                <td nowrap="">2016-04-30</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added Output Option to convert CSV to MongoDB JSON array format.
+                                    See &#34;MongoDB Mode&#34; under Output Options. It is off by default.
+                                    MongoDB JSON array format consists of one object per line and no commas separating
+                                    the objects.
+                                    This option only works with the [CSV to JSON] button.
+                                    <b>Please refresh your browser page!</b><br />
+                                    Example CSV:
+                                    <pre>id,name/first,name/last
   1,joe,smoe
   2,tom,bell
   </pre>
-                      Convert to JSON output in MongoDB mode:
-  <pre>  {&#34;id&#34;: 1, &#34;name&#34;: { &#34;first&#34;: &#34;joe&#34;, &#34;last&#34;: &#34;smoe&#34;}}
+                                    Convert to JSON output in MongoDB mode:
+                                    <pre>  {&#34;id&#34;: 1, &#34;name&#34;: { &#34;first&#34;: &#34;joe&#34;, &#34;last&#34;: &#34;smoe&#34;}}
     {&#34;id&#34;: 2, &#34;name&#34;: { &#34;first&#34;: &#34;tom&#34;, &#34;last&#34;: &#34;bell&#34;}}
   </pre>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-04-24</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added Output Option to recreate JSON objects and arrays if column headers use / notation.
-                      See &#34;Recreate objects and arrays&#34;. It is on by default. The JSON to CSV uses / notation.
-                      <b>Please refresh your browser page!</b><br/>
-                      Example CSV:
-  <pre>id,name/first,name/last
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-04-24</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added Output Option to recreate JSON objects and arrays if column headers use /
+                                    notation.
+                                    See &#34;Recreate objects and arrays&#34;. It is on by default. The JSON to CSV uses
+                                    / notation.
+                                    <b>Please refresh your browser page!</b><br />
+                                    Example CSV:
+                                    <pre>id,name/first,name/last
   1,joe,smoe
   2,tom,bell
   </pre>
-                      Convert to JSON output:
-  <pre>[
+                                    Convert to JSON output:
+                                    <pre>[
     {
     &#34;id&#34;: 1,
     &#34;name&#34;: {
@@ -426,56 +470,59 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
     }
   }
   ]</pre>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2016-02-07</td>
-                  <td nowrap=""><a href="../email-extractor.html">Email Extractor</a></td>
-                  <td>
-                      Use this tool to find and extract email addresses from web pages, data files, or text.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-10-26</td>
-                  <td nowrap="">All &#34;... To CSV&#34; pages</td>
-                  <td>
-                      All pages that create CSV can also now directly create Excel files.
-                  </td>
-              </tr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2016-02-07</td>
+                                <td nowrap=""><a href="../email-extractor.html">Email Extractor</a></td>
+                                <td>
+                                    Use this tool to find and extract email addresses from web pages, data files, or
+                                    text.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-10-26</td>
+                                <td nowrap="">All &#34;... To CSV&#34; pages</td>
+                                <td>
+                                    All pages that create CSV can also now directly create Excel files.
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2015-10-24</td>
-                  <td nowrap=""><a href="../csv-to-geojson.html">CSV To GeoJSON</a></td>
-                  <td>
-                      The google map now pops up to show information about that marker.
-                      The information originates from the CSV file.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-10-18</td>
-                  <td nowrap="">All screens</td>
-                  <td>
-                      Updated the &#34;look and feel&#34; of the website for a better user experience on the web and mobile.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-09-13</td>
-                  <td nowrap="">All screens</td>
-                  <td>
-                      Added support for backslash escaping in CSV input data.
-                      If your data has \n, \r, \&#39;, \&#34;, \&#39; in it, then check the option for backslash escaping.
-                      <br/>Example:<code>
+                            <tr>
+                                <td nowrap="">2015-10-24</td>
+                                <td nowrap=""><a href="../csv-to-geojson.html">CSV To GeoJSON</a></td>
+                                <td>
+                                    The google map now pops up to show information about that marker.
+                                    The information originates from the CSV file.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-10-18</td>
+                                <td nowrap="">All screens</td>
+                                <td>
+                                    Updated the &#34;look and feel&#34; of the website for a better user experience on
+                                    the web and mobile.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-09-13</td>
+                                <td nowrap="">All screens</td>
+                                <td>
+                                    Added support for backslash escaping in CSV input data.
+                                    If your data has \n, \r, \&#39;, \&#34;, \&#39; in it, then check the option for
+                                    backslash escaping.
+                                    <br />Example:<code>
                           Field1,Field\nTwo\,and this too,Field 3
                       </code>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-09-09</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added ability to generate MERGE statements from CSV data.
-                      <br/>Example:<br/>
-                      <code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-09-09</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added ability to generate MERGE statements from CSV data.
+                                    <br />Example:<br />
+                                    <code>
                           CREATE VIEW myView AS
                           MERGE INTO mytable t
                           USING (
@@ -491,138 +538,152 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                           VALUES( s.a, s.b, s.c)
                           ;
                       </code>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-09-07</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added ability to generate SELECT statements from CSV data.
-                      Optionally CREATE VIEW from data along with supporting SELECT statements.
-                      <br/>Example:<br/>
-                      <code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-09-07</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added ability to generate SELECT statements from CSV data.
+                                    Optionally CREATE VIEW from data along with supporting SELECT statements.
+                                    <br />Example:<br />
+                                    <code>
                           CREATE VIEW myView AS
                           SELECT 1,&#39;Hello World&#39;
                           UNION ALL
                           SELECT 2,&#39;Goodbye!&#39;
                           ;
                       </code>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-08-31</td>
-                  <td nowrap="">All screens</td>
-                  <td>
-                      Added support for data files using a single quote instead of double as the quoting character.
-                      Small Improvement in the look of the forms.
-                      If you are an UI designer/developer and would like to help me redesign this site, contact me at <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="e3878784858f8c918a8782a3848e828a8fcd808c8e">[email&#160;protected]</a>.
-                      Please be able to showcase previous work. Must be an expert in HTML, CSS, and responsive design.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-08-17</td>
-                  <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
-                  <td>Added ability to generate a guid </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-08-16</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added field option to convert empty string value to null in JSON.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-08-13</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added option to convert value of null or NULL in CSV to be null in JSON.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-08-02</td>
-                  <td nowrap=""><a href="../pivot-csv.html">Pivot CSV Tool</a></td>
-                  <td>
-                      Rewrote the CSV Pivot Tool. Renamed the old pivot tool to be
-                      <a href="../transpose-csv.html">Transpose CSV Tool</a>.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-24</td>
-                  <td nowrap=""><a href="../geojson-to-csv.html">GeoJSON To CSV</a></td>
-                  <td>
-                      Improved conversion results.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-23</td>
-                  <td nowrap=""><a href="../csv-to-kml.html">CSV To KML</a></td>
-                  <td>
-                      Added support for altitude - identify the altitude/elevation field # and it will be included.
-                  </td>
-              </tr><tr><td colspan="3"><span class="ezoic-autoinsert-video ezoic-mid_content"></span><!-- ezoic_video_placeholder-mid_content-854x480-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-854x480-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-640x360-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-640x360-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-426x240-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-426x240-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-384x216-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-384x216-999996-nonexxxclearxxxblock --></td></tr>
-              <tr>
-                  <td nowrap="">2015-07-21</td>
-                  <td nowrap=""><a href="../kml-to-csv.html">KML To CSV</a></td>
-                  <td>
-                      New - Convert KML to CSV. Current version only supports Points with coordinates.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-19</td>
-                  <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
-                  <td>
-                      Added section for converting CSV to XML using a template.
-                      Pressing the standard button generates a template if you wish. You may then customize it.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-12</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added section for converting CSV to JSON using a template.
-                      Pressing the standard button generates a template if you wish. You may then customize it.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-12</td>
-                  <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
-                  <td>
-                      Simplified the interface by allowing multiple lines on the detail section.
-                      Added field and global field modifiers instead of requiring the user to add code.
-                      Added generator for LIRA wiki tables.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-07-05</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Instead of using &#39;&#39; for an empty character field value on INSERT and UPDATE,
-                      you have the choice of using the keyword NULL..
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-06-28</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      When converting delimited data to SQL, added support for SQL Server NCHAR and NVARCHAR datatypes
-                      and Unicode string literals, i.e. <code>N&#39;Hello World&#39;</code>.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-06-22</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added optional schema/owner name to be included with table name in scripts.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-06-17</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON Array</a></td>
-                  <td>
-                      Added a new option when converting to JSON array to output instead a structure with column names and data.
-                      You may specify the property names for the columns and data.
-                      Try it out! Here is what it looks like:
-  <pre>{
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-08-31</td>
+                                <td nowrap="">All screens</td>
+                                <td>
+                                    Added support for data files using a single quote instead of double as the quoting
+                                    character.
+                                    Small Improvement in the look of the forms.
+                                    If you are an UI designer/developer and would like to help me redesign this site,
+                                    contact me at <a href="../cdn-cgi/l/email-protection.html" class="__cf_email__"
+                                        data-cfemail="e3878784858f8c918a8782a3848e828a8fcd808c8e">[email&#160;protected]</a>.
+                                    Please be able to showcase previous work. Must be an expert in HTML, CSS, and
+                                    responsive design.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-08-17</td>
+                                <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
+                                <td>Added ability to generate a guid </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-08-16</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added field option to convert empty string value to null in JSON.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-08-13</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added option to convert value of null or NULL in CSV to be null in JSON.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-08-02</td>
+                                <td nowrap=""><a href="../pivot-csv.html">Pivot CSV Tool</a></td>
+                                <td>
+                                    Rewrote the CSV Pivot Tool. Renamed the old pivot tool to be
+                                    <a href="../transpose-csv.html">Transpose CSV Tool</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-24</td>
+                                <td nowrap=""><a href="../geojson-to-csv.html">GeoJSON To CSV</a></td>
+                                <td>
+                                    Improved conversion results.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-23</td>
+                                <td nowrap=""><a href="../csv-to-kml.html">CSV To KML</a></td>
+                                <td>
+                                    Added support for altitude - identify the altitude/elevation field # and it will be
+                                    included.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><span
+                                        class="ezoic-autoinsert-video ezoic-mid_content"></span><!-- ezoic_video_placeholder-mid_content-854x480-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-854x480-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-640x360-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-640x360-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-426x240-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-426x240-999996-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-mid_content-384x216-999996-clearholder --><!-- ezoic_video_placeholder-mid_content-384x216-999996-nonexxxclearxxxblock -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-21</td>
+                                <td nowrap=""><a href="../kml-to-csv.html">KML To CSV</a></td>
+                                <td>
+                                    New - Convert KML to CSV. Current version only supports Points with coordinates.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-19</td>
+                                <td nowrap=""><a href="../csv-to-xml.html">CSV To XML</a></td>
+                                <td>
+                                    Added section for converting CSV to XML using a template.
+                                    Pressing the standard button generates a template if you wish. You may then
+                                    customize it.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-12</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added section for converting CSV to JSON using a template.
+                                    Pressing the standard button generates a template if you wish. You may then
+                                    customize it.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-12</td>
+                                <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
+                                <td>
+                                    Simplified the interface by allowing multiple lines on the detail section.
+                                    Added field and global field modifiers instead of requiring the user to add code.
+                                    Added generator for LIRA wiki tables.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-07-05</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Instead of using &#39;&#39; for an empty character field value on INSERT and UPDATE,
+                                    you have the choice of using the keyword NULL..
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-06-28</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    When converting delimited data to SQL, added support for SQL Server NCHAR and
+                                    NVARCHAR datatypes
+                                    and Unicode string literals, i.e. <code>N&#39;Hello World&#39;</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-06-22</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added optional schema/owner name to be included with table name in scripts.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-06-17</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON Array</a></td>
+                                <td>
+                                    Added a new option when converting to JSON array to output instead a structure with
+                                    column names and data.
+                                    You may specify the property names for the columns and data.
+                                    Try it out! Here is what it looks like:
+                                    <pre>{
   &#34;fields&#34;: [&#34;id&#34;, &#34;name&#34;, &#34;amount&#34;, &#34;Remark&#34;],
   &#34;data&#34;: [
   [1,&#34;Johnson, Smith, and Jones Co.&#34;,345.33,&#34;Pays on time&#34;],
@@ -632,46 +693,53 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
   ]
   }
   </pre>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-06-14</td>
-                  <td>
-                      <a href="../csv-to-html.html">CSV To HTML</a> and
-                      <a href="../csv-to-multiline-data.html">CSV To Multi-Line</a>
-                  </td>
-                  <td>Added an option to display data one field per line. See  &#34;Display One Field/Value Per Line&#34; </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-06-13</td>
-                  <td nowrap="">CSV To ... tools</td>
-                  <td>
-                      Added WARNING if your first row is marked as column headers but the columns do not look like typical headings.
-                      Also added NOTE if the number of fields all do not match the header or first row if not header.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-05-04</td>
-                  <td nowrap=""><a href="../csv-to-html.html">CSV To MediaWiki</a></td>
-                  <td>You can now convert CSV to MediaWiki Table format.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-05-21</td>
-                  <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer/Editor</a></td>
-                  <td>
-                      CSV Viewer and Editor is now in beta mode for supporting editing of data. You can edit existing
-                      data or create new data. You can also save the data (of course).
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-05-20</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added a new option to output &#34;Keyed JSON&#34;.
-                      For this format, you pick a unique data field that is your key associated with the other data fields.
-                      Instead of having an array of structures, you will have one structure with each unique key and one structure
-                      for each line of data that is the other field values. Try it out! Here is what it looks like:
-  <pre>{
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-06-14</td>
+                                <td>
+                                    <a href="../csv-to-html.html">CSV To HTML</a> and
+                                    <a href="../csv-to-multiline-data.html">CSV To Multi-Line</a>
+                                </td>
+                                <td>Added an option to display data one field per line. See &#34;Display One Field/Value
+                                    Per Line&#34; </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-06-13</td>
+                                <td nowrap="">CSV To ... tools</td>
+                                <td>
+                                    Added WARNING if your first row is marked as column headers but the columns do not
+                                    look like typical headings.
+                                    Also added NOTE if the number of fields all do not match the header or first row if
+                                    not header.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-05-04</td>
+                                <td nowrap=""><a href="../csv-to-html.html">CSV To MediaWiki</a></td>
+                                <td>You can now convert CSV to MediaWiki Table format.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-05-21</td>
+                                <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer/Editor</a></td>
+                                <td>
+                                    CSV Viewer and Editor is now in beta mode for supporting editing of data. You can
+                                    edit existing
+                                    data or create new data. You can also save the data (of course).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-05-20</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added a new option to output &#34;Keyed JSON&#34;.
+                                    For this format, you pick a unique data field that is your key associated with the
+                                    other data fields.
+                                    Instead of having an array of structures, you will have one structure with each
+                                    unique key and one structure
+                                    for each line of data that is the other field values. Try it out! Here is what it
+                                    looks like:
+                                    <pre>{
     &#34;1&#34;: {
       &#34;name&#34;:&#34;Johnson, Smith, and Jones Co.&#34;,
       &#34;amount&#34;:345.33,
@@ -684,481 +752,531 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
     }
   }
   </pre>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-05-15</td>
-                  <td nowrap="">Save To Disk</td>
-                  <td>
-                      Added selection choice of EOL or newline value when saving files.
-                      Default is compatible with Windows and is CRLF (Carriage Return/Line Feed).
-                      LF is compatible with *Nix operating systems and Android.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-05-03</td>
-                  <td nowrap="">CSV To ... tools</td>
-                  <td>
-                      Added data cleanup capabilities on the CSV To .... tools. For each field, you may
-                      <ul>
-                          <li>Trim Left</li>
-                          <li>Trim Right</li>
-                          <li>Make UPPERCASE</li>
-                          <li>Make lowercase</li>
-                          <li>Make ProperCase</li>
-                          <li>Change multiple spaces to one space</li>
-                          <li>Remove punctuation</li>
-                      </ul>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-04-22</td>
-                  <td nowrap=""><a href="../pivot-csv.html">Pivot CSV Tool</a></td>
-                  <td>
-                      Added a new tool to pivot your csv data by turning the rows into columns and columns into rows.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-02-22</td>
-                  <td nowrap="">CSV To ...</td>
-                  <td>
-                      We now automatically save your last CSV data to browser storage (localStorage) if available.
-                      The data is saved when you do a data conversion.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-02-05</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added option to treat a CSV value of NULL as a SQL NULL.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-19</td>
-                  <td nowrap=""><a href="../geojson-to-csv.html">GeoJSON To CSV</a></td>
-                  <td>
-                      Added new Convert GeoJSON to CSV page.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-19</td>
-                  <td nowrap=""><a href="../csv-to-geojson.html">CSV To GeoJSON</a></td>
-                  <td>
-                      Added new Convert CSV to GeoJSON page. Also added a Google Map to display GeoJSON points.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-11</td>
-                  <td nowrap=""><a href="../yaml-to-csv.html">YAML To CSV</a></td>
-                  <td>
-                      Add Convert YAML to CSV and <a href="../csv-to-yaml.html">Convert CSV to YAML</a>.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-04</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      The conversion of JSON to CSV has been improved to better handle non-tabular data.
-                      The CSV results are also displayed as a table below the CSV text.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-03</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added option for INSERT/REPLACE statement that produces only ONE statement.
-                      All the data values are of that one statement as opposed to separate statements.
-                      MySql and Sql Server support this variant, Oracle does not.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2015-01-02</td>
-                  <td nowrap=""><a href="https://www.facebook.com/convertcsv">New Facebook Page</a></td>
-                  <td>
-                      Added a Facebook ConvertCsv page to support our users.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-12-30</td>
-                  <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
-                  <td>
-                      Expert mode added and last file layout is now saved and restored upon entering screen.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-12-29</td>
-                  <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
-                  <td>You can now convert/combine ALL tables into one CSV file.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-12-13</td>
-                  <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
-                  <td>
-                      Enhanced the user interface so defining your data layout is easier. You now can enter the
-                      column position, column width, and column name to define a column.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-10-30</td>
-                  <td nowrap=""><a href="../csv-to-kml.html">CSV To KML</a></td>
-                  <td>
-                      Added option to have 2 description fields in KML output.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-10-30</td>
-                  <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
-                  <td>
-                      Added option to force all fields to have double quotes.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-09-01</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Added option to replace diacritical marks/accent characters in your input.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-07-26</td>
-                  <td nowrap=""><a href="../xml-to-csv.html">XML To CSV</a></td>
-                  <td>
-                      Added new page for converting XML to CSV. Please refresh your browser.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-06-23</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      Added another example showing another level of JSON support. See example 3.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-06-23</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Added option to Force Wrap double-quotes around numeric values in JSON output.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-06-17</td>
-                  <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
-                  <td>
-                      Bug fix - For JSON numerics, change .5 to 0.5 and -.5 to -0.5
-                  </td>
-              </tr>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-05-15</td>
+                                <td nowrap="">Save To Disk</td>
+                                <td>
+                                    Added selection choice of EOL or newline value when saving files.
+                                    Default is compatible with Windows and is CRLF (Carriage Return/Line Feed).
+                                    LF is compatible with *Nix operating systems and Android.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-05-03</td>
+                                <td nowrap="">CSV To ... tools</td>
+                                <td>
+                                    Added data cleanup capabilities on the CSV To .... tools. For each field, you may
+                                    <ul>
+                                        <li>Trim Left</li>
+                                        <li>Trim Right</li>
+                                        <li>Make UPPERCASE</li>
+                                        <li>Make lowercase</li>
+                                        <li>Make ProperCase</li>
+                                        <li>Change multiple spaces to one space</li>
+                                        <li>Remove punctuation</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-04-22</td>
+                                <td nowrap=""><a href="../pivot-csv.html">Pivot CSV Tool</a></td>
+                                <td>
+                                    Added a new tool to pivot your csv data by turning the rows into columns and columns
+                                    into rows.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-02-22</td>
+                                <td nowrap="">CSV To ...</td>
+                                <td>
+                                    We now automatically save your last CSV data to browser storage (localStorage) if
+                                    available.
+                                    The data is saved when you do a data conversion.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-02-05</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added option to treat a CSV value of NULL as a SQL NULL.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-19</td>
+                                <td nowrap=""><a href="../geojson-to-csv.html">GeoJSON To CSV</a></td>
+                                <td>
+                                    Added new Convert GeoJSON to CSV page.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-19</td>
+                                <td nowrap=""><a href="../csv-to-geojson.html">CSV To GeoJSON</a></td>
+                                <td>
+                                    Added new Convert CSV to GeoJSON page. Also added a Google Map to display GeoJSON
+                                    points.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-11</td>
+                                <td nowrap=""><a href="../yaml-to-csv.html">YAML To CSV</a></td>
+                                <td>
+                                    Add Convert YAML to CSV and <a href="../csv-to-yaml.html">Convert CSV to YAML</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-04</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    The conversion of JSON to CSV has been improved to better handle non-tabular data.
+                                    The CSV results are also displayed as a table below the CSV text.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-03</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added option for INSERT/REPLACE statement that produces only ONE statement.
+                                    All the data values are of that one statement as opposed to separate statements.
+                                    MySql and Sql Server support this variant, Oracle does not.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2015-01-02</td>
+                                <td nowrap=""><a href="https://www.facebook.com/convertcsv">New Facebook Page</a></td>
+                                <td>
+                                    Added a Facebook ConvertCsv page to support our users.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-12-30</td>
+                                <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
+                                <td>
+                                    Expert mode added and last file layout is now saved and restored upon entering
+                                    screen.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-12-29</td>
+                                <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
+                                <td>You can now convert/combine ALL tables into one CSV file.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-12-13</td>
+                                <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
+                                <td>
+                                    Enhanced the user interface so defining your data layout is easier. You now can
+                                    enter the
+                                    column position, column width, and column name to define a column.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-10-30</td>
+                                <td nowrap=""><a href="../csv-to-kml.html">CSV To KML</a></td>
+                                <td>
+                                    Added option to have 2 description fields in KML output.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-10-30</td>
+                                <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
+                                <td>
+                                    Added option to force all fields to have double quotes.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-09-01</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Added option to replace diacritical marks/accent characters in your input.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-07-26</td>
+                                <td nowrap=""><a href="../xml-to-csv.html">XML To CSV</a></td>
+                                <td>
+                                    Added new page for converting XML to CSV. Please refresh your browser.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-06-23</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    Added another example showing another level of JSON support. See example 3.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-06-23</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Added option to Force Wrap double-quotes around numeric values in JSON output.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-06-17</td>
+                                <td nowrap=""><a href="../csv-to-json.html">CSV To JSON</a></td>
+                                <td>
+                                    Bug fix - For JSON numerics, change .5 to 0.5 and -.5 to -0.5
+                                </td>
+                            </tr>
 
-              <tr>
-                  <td nowrap="">2014-05-14</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>Fixed a bug - no longer remove underscores from field names</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-05-03</td>
-                  <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
-                  <td>
-                      Added date(3),date(4) to generate dates in YYYY/MM/DD and YYYYMMDD format plus
-                      added province and postal to support Canadian addresses.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-04-27</td>
-                  <td nowrap="">All CSV To ...</td>
-                  <td>
-                      If you know your data does not use double quotes or all double quotes are part of your data, then
-                      use the new option &#34;Treat double quotes are data&#34;. This will force double quotes (&#34;) to be treated like regular data.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-04-25</td>
-                  <td nowrap=""><a href="../csv-to-multiline-data.html">CSV To Multi-Line</a></td>
-                  <td>You can now optionally add the field name in front of the field value. This format is similar to LDIF.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-03-16</td>
-                  <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
-                  <td>You can now generate test/random data in CSV format. </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-27</td>
-                  <td nowrap="">All CSV To ....</td>
-                  <td>
-                      You can now save your output to disk instead of just copying and pasting.
-                      See the new &#34;Save to Disk&#34; button above the output.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-24</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      Add more support for dialects of databases by allowing you to specify an auto-increment option
-                      in the CREATE TABLE statement on the numeric primary key. Also allow option to
-                      include &#34;create table IF NOT EXISTS ...&#34; and &#34;drop table IF EXISTS ...&#34;. <br/>
-                      New feature - If you need to quote your columns - you can wrap your column names in double quotes or backticks
-                      by simply changing the field names in the area provided (ie. &#34;mycol&#34; ).
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-23</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>
-                      By default the column names will match the CSV header names if a header exists.
-                      You can convert to upper or lower case automatically by setting the new checkboxes
-                      next to the <b>First row is column names</b> message.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-22</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      Added support to convert an array of arrays like this:
-  <pre>[
+                            <tr>
+                                <td nowrap="">2014-05-14</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>Fixed a bug - no longer remove underscores from field names</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-05-03</td>
+                                <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
+                                <td>
+                                    Added date(3),date(4) to generate dates in YYYY/MM/DD and YYYYMMDD format plus
+                                    added province and postal to support Canadian addresses.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-04-27</td>
+                                <td nowrap="">All CSV To ...</td>
+                                <td>
+                                    If you know your data does not use double quotes or all double quotes are part of
+                                    your data, then
+                                    use the new option &#34;Treat double quotes are data&#34;. This will force double
+                                    quotes (&#34;) to be treated like regular data.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-04-25</td>
+                                <td nowrap=""><a href="../csv-to-multiline-data.html">CSV To Multi-Line</a></td>
+                                <td>You can now optionally add the field name in front of the field value. This format
+                                    is similar to LDIF.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-03-16</td>
+                                <td nowrap=""><a href="../generate-test-data.html">Generate Test Data</a></td>
+                                <td>You can now generate test/random data in CSV format. </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-27</td>
+                                <td nowrap="">All CSV To ....</td>
+                                <td>
+                                    You can now save your output to disk instead of just copying and pasting.
+                                    See the new &#34;Save to Disk&#34; button above the output.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-24</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    Add more support for dialects of databases by allowing you to specify an
+                                    auto-increment option
+                                    in the CREATE TABLE statement on the numeric primary key. Also allow option to
+                                    include &#34;create table IF NOT EXISTS ...&#34; and &#34;drop table IF EXISTS
+                                    ...&#34;. <br />
+                                    New feature - If you need to quote your columns - you can wrap your column names in
+                                    double quotes or backticks
+                                    by simply changing the field names in the area provided (ie. &#34;mycol&#34; ).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-23</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>
+                                    By default the column names will match the CSV header names if a header exists.
+                                    You can convert to upper or lower case automatically by setting the new checkboxes
+                                    next to the <b>First row is column names</b> message.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-22</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    Added support to convert an array of arrays like this:
+                                    <pre>[
     [1,&#34;Johnson, Smith, and Jones Co.&#34;,345.33,&#34;Pays on time&#34;],
     [2,&#34;Sam \&#34;Mad Dog\&#34; Smith&#34;,993.44,&#34;&#34;],
     [3,&#34;Barney &amp; Company&#34;,0,&#34;Great to work with\nand always pays.&#34;],
     [4,&#34;Johnson&#39;s Automotive&#34;,2344,&#34;&#34;]
   ]
   </pre>
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-18</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      Added a JSON formatter/prettifier for your convenience.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-16</td>
-                  <td nowrap=""><a href="../contact.html">Contact Form</a></td>
-                  <td>Added a Contact Form to communicate with us with suggestions, bug reports, etc.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-15</td>
-                  <td nowrap="">All Pages</td>
-                  <td>
-                      We now support loading data from a web page. If you know of a web page that returns CSV or one of the other
-                      formats supported then you can enter the URL and we&#39;ll load it and convert it for you.
-                      <br/>Added more examples on the JSON to CSV page.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-13</td>
-                  <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
-                  <td>You can now load data from an URL and work with the TABLE tags in it.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-09</td>
-                  <td nowrap="">Most Pages</td>
-                  <td>
-                      Added an Example button to load and run example data.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-05</td>
-                  <td nowrap=""><a href="../csv-viwer-editor.html">CSV Viewer</a></td>
-                  <td>
-                      CSV Viewer now sorts numerically on numeric columns and columns are formatted
-                      to the same number of decimal positions.
-                  </td>
-              </tr><tr><td colspan="3"><span class="ezoic-autoinsert-video ezoic-long_content"></span><!-- ezoic_video_placeholder-long_content-854x480-999995-clearholder --><!-- ezoic_video_placeholder-long_content-854x480-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-640x360-999995-clearholder --><!-- ezoic_video_placeholder-long_content-640x360-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-426x240-999995-clearholder --><!-- ezoic_video_placeholder-long_content-426x240-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-384x216-999995-clearholder --><!-- ezoic_video_placeholder-long_content-384x216-999995-nonexxxclearxxxblock --></td></tr>
-              <tr>
-                  <td nowrap="">2014-02-05</td>
-                  <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer</a></td>
-                  <td>
-                      CSV Viewer now supports most delimited formats and you can sort on any column by
-                      clicking on the column header. You can drag and drop columns in grid too.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-02-02</td>
-                  <td nowrap=""><a href="../csv-viwer-editor.html">CSV Viewer</a></td>
-                  <td>
-                      Online CSV Viewer - load files from disk or paste CSV/TSV into grid. Beta version.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-01-26</td>
-                  <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
-                  <td>
-                      You can now convert Fixed Width (Flat) text  to CSV.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-01-21</td>
-                  <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
-                  <td>
-                      You can now convert HTML text with TABLE tags to CSV.
-                      You must paste or load HTML into the text box and the table data will be extracted and
-                      converted into CSV. Future versions will allow you to load from an URL.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-01-11</td>
-                  <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
-                  <td>You can now add a default table heading if your data is missing a header row.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-01-06</td>
-                  <td nowrap="">... To CSV tools</td>
-                  <td>
-                      New option to suppress multi-line field values on all tools that convert to CSV.
-                      Look for <b>Suppress Line Breaks in Fields</b> option.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2014-01-04</td>
-                  <td nowrap="">ALL</td>
-                  <td>
-                      Spaces are now supported as a field delimiter for CSV text. So now you can have fields like:
-                      <pre>99 A14 testing
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-18</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    Added a JSON formatter/prettifier for your convenience.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-16</td>
+                                <td nowrap=""><a href="../contact.html">Contact Form</a></td>
+                                <td>Added a Contact Form to communicate with us with suggestions, bug reports, etc.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-15</td>
+                                <td nowrap="">All Pages</td>
+                                <td>
+                                    We now support loading data from a web page. If you know of a web page that returns
+                                    CSV or one of the other
+                                    formats supported then you can enter the URL and we&#39;ll load it and convert it
+                                    for you.
+                                    <br />Added more examples on the JSON to CSV page.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-13</td>
+                                <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
+                                <td>You can now load data from an URL and work with the TABLE tags in it.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-09</td>
+                                <td nowrap="">Most Pages</td>
+                                <td>
+                                    Added an Example button to load and run example data.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-05</td>
+                                <td nowrap=""><a href="../csv-viwer-editor.html">CSV Viewer</a></td>
+                                <td>
+                                    CSV Viewer now sorts numerically on numeric columns and columns are formatted
+                                    to the same number of decimal positions.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><span
+                                        class="ezoic-autoinsert-video ezoic-long_content"></span><!-- ezoic_video_placeholder-long_content-854x480-999995-clearholder --><!-- ezoic_video_placeholder-long_content-854x480-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-640x360-999995-clearholder --><!-- ezoic_video_placeholder-long_content-640x360-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-426x240-999995-clearholder --><!-- ezoic_video_placeholder-long_content-426x240-999995-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-long_content-384x216-999995-clearholder --><!-- ezoic_video_placeholder-long_content-384x216-999995-nonexxxclearxxxblock -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-05</td>
+                                <td nowrap=""><a href="../csv-viewer-editor.html">CSV Viewer</a></td>
+                                <td>
+                                    CSV Viewer now supports most delimited formats and you can sort on any column by
+                                    clicking on the column header. You can drag and drop columns in grid too.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-02-02</td>
+                                <td nowrap=""><a href="../csv-viwer-editor.html">CSV Viewer</a></td>
+                                <td>
+                                    Online CSV Viewer - load files from disk or paste CSV/TSV into grid. Beta version.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-01-26</td>
+                                <td nowrap=""><a href="../fixed-width-to-csv.html">Fixed Width To CSV</a></td>
+                                <td>
+                                    You can now convert Fixed Width (Flat) text to CSV.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-01-21</td>
+                                <td nowrap=""><a href="../html-table-to-csv.html">HTML Table To CSV</a></td>
+                                <td>
+                                    You can now convert HTML text with TABLE tags to CSV.
+                                    You must paste or load HTML into the text box and the table data will be extracted
+                                    and
+                                    converted into CSV. Future versions will allow you to load from an URL.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-01-11</td>
+                                <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
+                                <td>You can now add a default table heading if your data is missing a header row.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-01-06</td>
+                                <td nowrap="">... To CSV tools</td>
+                                <td>
+                                    New option to suppress multi-line field values on all tools that convert to CSV.
+                                    Look for <b>Suppress Line Breaks in Fields</b> option.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2014-01-04</td>
+                                <td nowrap="">ALL</td>
+                                <td>
+                                    Spaces are now supported as a field delimiter for CSV text. So now you can have
+                                    fields like:
+                                    <pre>99 A14 testing
   1  X12 failure
   </pre>
-                      and we can process those. Please verify the delimiter is set correctly. Sometimes Auto-Detect
-                      may not work if you have commas in your data.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-30</td>
-                  <td nowrap=""><a href="../sql-to-csv.html">SQL To CSV/JSON</a></td>
-                  <td>
-                      NEW! You can now convert SQL into CSV and JSON.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-23</td>
-                  <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
-                  <td>
-                      NEW! You can now convert JSON into CSV.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-21</td>
-                  <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
-                  <td>
-                      You can now append converted data to the output area by checking the &#34;Append Results Below&#34; check box.
-                      Sometimes this is useful if you have different data files and want one delimited file as results.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-16</td>
-                  <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
-                  <td>Numeric fields are now right aligned and the number of decimals are displayed consistently.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-14</td>
-                  <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
-                  <td>You can now generate CREATE TABLE from your CSV data, DROP TABLE too.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-09</td>
-                  <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
-                  <td>You can now total numeric fields and the results will be in the table footer.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-08</td>
-                  <td nowrap="">All</td>
-                  <td>Support added for colon as a CSV field separator/delimiter</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-12-07</td>
-                  <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
-                  <td>You can now choose another field separator besides the standard ones.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-11-27</td>
-                  <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
-                  <td>
-                      Added generators for CSV to Python Dictionary, CSV To VbScript, and CSV to Ruby language.
-                      I don&#39;t have much experience with Python and Ruby and pleasantly noticed the language syntax
-                      was similar to Javascript.
-                  </td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-11-25</td>
-                  <td nowrap="">All</td>
-                  <td>Added count of data input records and whether CSV header is specified. Look below input area to see counts.</td>
-              </tr>
-              <tr>
-                  <td nowrap="">2013-11-15</td>
-                  <td nowrap="">Template Engine</td>
-                  <td>The Template Generator can now generate URL query strings.</td>
-              </tr>
-              <tr>
-                  <td>2013-11-11</td>
-                  <td>All</td>
-                  <td>
-                      Added capability to query or filter CSV data to all pages. The current implementation allows
-                      you to compare a field to a constant value. I will enhance this in the future to include comparing
-                      fields.
-                  </td>
-              </tr>
-              <tr>
-                  <td>2013-11-08</td>
-                  <td>Template Engine</td>
-                  <td>Added capability to generate LDIF data using Template Generator.</td>
-              </tr>
-              <tr>
-                  <td>2013-11-05</td>
-                  <td>All</td>
-                  <td>
-                      Added capability to sort CSV data to all pages. You can now order your CSV data on any field.
-                      You can choose to sort each field as either a string or numeric value. Usually the default choice
-                      will be correct, unless your numeric field is really a string field.
-                  </td>
-              </tr>
-          </tbody>
-          </table>
-      </div>
-    </div>
-  </div>
+                                    and we can process those. Please verify the delimiter is set correctly. Sometimes
+                                    Auto-Detect
+                                    may not work if you have commas in your data.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-30</td>
+                                <td nowrap=""><a href="../sql-to-csv.html">SQL To CSV/JSON</a></td>
+                                <td>
+                                    NEW! You can now convert SQL into CSV and JSON.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-23</td>
+                                <td nowrap=""><a href="../json-to-csv.html">JSON To CSV</a></td>
+                                <td>
+                                    NEW! You can now convert JSON into CSV.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-21</td>
+                                <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
+                                <td>
+                                    You can now append converted data to the output area by checking the &#34;Append
+                                    Results Below&#34; check box.
+                                    Sometimes this is useful if you have different data files and want one delimited
+                                    file as results.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-16</td>
+                                <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
+                                <td>Numeric fields are now right aligned and the number of decimals are displayed
+                                    consistently.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-14</td>
+                                <td nowrap=""><a href="../csv-to-sql.html">CSV To SQL</a></td>
+                                <td>You can now generate CREATE TABLE from your CSV data, DROP TABLE too.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-09</td>
+                                <td nowrap=""><a href="../csv-to-html.html">CSV To HTML</a></td>
+                                <td>You can now total numeric fields and the results will be in the table footer.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-08</td>
+                                <td nowrap="">All</td>
+                                <td>Support added for colon as a CSV field separator/delimiter</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-12-07</td>
+                                <td nowrap=""><a href="../csv-to-csv.html">CSV To Delimited</a></td>
+                                <td>You can now choose another field separator besides the standard ones.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-11-27</td>
+                                <td nowrap=""><a href="../csv-to-template-output.html">CSV To Anything</a></td>
+                                <td>
+                                    Added generators for CSV to Python Dictionary, CSV To VbScript, and CSV to Ruby
+                                    language.
+                                    I don&#39;t have much experience with Python and Ruby and pleasantly noticed the
+                                    language syntax
+                                    was similar to Javascript.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-11-25</td>
+                                <td nowrap="">All</td>
+                                <td>Added count of data input records and whether CSV header is specified. Look below
+                                    input area to see counts.</td>
+                            </tr>
+                            <tr>
+                                <td nowrap="">2013-11-15</td>
+                                <td nowrap="">Template Engine</td>
+                                <td>The Template Generator can now generate URL query strings.</td>
+                            </tr>
+                            <tr>
+                                <td>2013-11-11</td>
+                                <td>All</td>
+                                <td>
+                                    Added capability to query or filter CSV data to all pages. The current
+                                    implementation allows
+                                    you to compare a field to a constant value. I will enhance this in the future to
+                                    include comparing
+                                    fields.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2013-11-08</td>
+                                <td>Template Engine</td>
+                                <td>Added capability to generate LDIF data using Template Generator.</td>
+                            </tr>
+                            <tr>
+                                <td>2013-11-05</td>
+                                <td>All</td>
+                                <td>
+                                    Added capability to sort CSV data to all pages. You can now order your CSV data on
+                                    any field.
+                                    You can choose to sort each field as either a string or numeric value. Usually the
+                                    default choice
+                                    will be correct, unless your numeric field is really a string field.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-  <footer id="footer">
-       <div class="container-fluid d-flex align-items-center">
-         <div class="text-left d-flex flex-column w-25">
-          <a class="navbar-brand" href="#" id="footerLogo">ConvertCSV</a>
-          <span><small>© 2013-2020 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All rights reserved.</small></span>
-         </div>
-           <div class="d-none d-lg-flex justify-content-center w-50">
-            <a class="nav-item nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
-            <a class="nav-item nav-link" href="Convertcsv.com%20Change%20Log.html">Change Log</a>
-            <a class="nav-item nav-link" href="terms-of-use.html">Terms of Use</a>
-          </div>
-           <div class="d-flex justify-content-end w-25">
-            <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i class="fab fa-twitter"></i></a>
-            <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i class="fab fa-facebook-f"></i></a>
-            <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
-          </div>
-       </div>
-  </footer>
-   
-</section>
+        <footer id="footer">
+            <div class="container-fluid d-flex align-items-center">
+                <div class="text-left d-flex flex-column w-25">
+                    <a class="navbar-brand" href="#" id="footerLogo">ConvertCSV</a>
+                    <span><small>© 2013-2020 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                            rights reserved.</small></span>
+                </div>
+                <div class="d-none d-lg-flex justify-content-center w-50">
+                    <a class="nav-item nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+                    <a class="nav-item nav-link" href="Convertcsv.com%20Change%20Log.html">Change Log</a>
+                    <a class="nav-item nav-link" href="terms-of-use.html">Terms of Use</a>
+                </div>
+                <div class="d-flex justify-content-end w-25">
+                    <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
 
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<scriptx src="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></scriptx>
-<script src="JS/main-ui.js"></script>
+    </section>
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <scriptx src="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></scriptx>
+    <script src="JS/main-ui.js"></script>
 
 
-<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/oldsite/changelog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:50:53 GMT -->
+
 </html>

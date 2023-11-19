@@ -1,19 +1,29 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <!-- Mirrored from www.convertcsv.com/newsite/fixed-width-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:41:11 GMT -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"2e313eb6-a97b-4f00-6813-2af09bd029b6","response_size_orig":42198,"response_time_orig":64,"template_id":5,"url":"https://www.convertcsv.com/newsite/fixed-width-to-csv.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-    
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 2, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "2e313eb6-a97b-4f00-6813-2af09bd029b6", "response_size_orig": 42198, "response_time_orig": 64, "template_id": 5, "url": "https://www.convertcsv.com/newsite/fixed-width-to-csv.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("../detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("../index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("../index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("../porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("../index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+
     <!-- Copyright 2013 - 2023 ConvertCsv.com -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Convert Fixed Width Flat File to CSV/Excel"/>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Convert Fixed Width Flat File to CSV/Excel" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Fixed Width To CSV Converter</title>
-    <script type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+    <script
+        type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
     <script src="JS/underscore-min.js"></script>
     <script src="JS/blob.js"></script>
     <script src="JS/filesaver.js"></script>
@@ -36,7 +46,7 @@
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -44,9 +54,10 @@
         gtag('config', 'UA-110011798-1');
     </script>
 
-    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="Styles/main.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css"/>
+    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css" />
     <script type="text/javascript">
         function assignText(s) {
             document.getElementById('txt1').value = s;
@@ -193,76 +204,75 @@
             document.getElementById("txtFields").value = s;
             showChoice();
         }
-    function guessColumns(s) {
-        var a = s.split(/\r\n|\r|\n/gm)
-        var maxlen = 0;
-        var spaces = [];
-        for (j = 0; j < a.length; j++)if (a[j].length > maxlen) maxlen = a[j].length;
-        for (j = 0; j < a.length; j++)if (a[j].length < maxlen) a[j] = a[j].rpad(maxlen);
-        for (j = 0; j < maxlen; j++)spaces.push(0);
-        for (j = 0; j < maxlen; j++) {
-            for (k = 0; k < a.length; k++) {
-                if (a[k].charAt(j) == ' ') spaces[j]++;
+        function guessColumns(s) {
+            var a = s.split(/\r\n|\r|\n/gm)
+            var maxlen = 0;
+            var spaces = [];
+            for (j = 0; j < a.length; j++)if (a[j].length > maxlen) maxlen = a[j].length;
+            for (j = 0; j < a.length; j++)if (a[j].length < maxlen) a[j] = a[j].rpad(maxlen);
+            for (j = 0; j < maxlen; j++)spaces.push(0);
+            for (j = 0; j < maxlen; j++) {
+                for (k = 0; k < a.length; k++) {
+                    if (a[k].charAt(j) == ' ') spaces[j]++;
+                }
             }
+            prevcol = 0;
+            rows = a.length;
+            var columnPos = [0];
+            for (j = 1; j < spaces.length; j++) {
+                if (spaces[j] < rows) continue;
+                while (j < maxlen && spaces[j] == rows) j++;
+                if (j < maxlen && spaces[j] < rows) columnPos.push(j);
+            }
+            columnPos.push(maxlen - 1)
+            for (j = 0; j < columnPos.length - 1; j++) {
+                columnPos[j] = { "start": columnPos[j] + 1, "end": columnPos[j + 1], "len": columnPos[j + 1] - columnPos[j] }
+                if (columnPos[j].len <= 0) columnPos[j].len = 1;
+            }
+            columnPos.pop();
+            //alert("in guess:" + JSON.stringify(columnPos));
+            return columnPos;
         }
-        prevcol = 0;
-        rows = a.length;
-        var columnPos = [0];
-        for (j = 1; j < spaces.length; j++) {
-            if (spaces[j] < rows) continue;
-            while (j < maxlen && spaces[j] == rows) j++;
-            if (j < maxlen && spaces[j] < rows) columnPos.push(j);
+        function setupGuess(data) {
+            var j, k;
+            var a;
+            var btnAddRows = document.getElementById("btnAddRows");
+            var fpositions = document.getElementsByName('txtCol');
+            var flengths = document.getElementsByName('txtLen');
+            var fnames = document.getElementsByName('txtName');
+            //alert("data in setupGuess is" + JSON.stringify(data));
+            deleteAllRows('dataTable');
+            for (j = 1; j < data.length; j++)btnAddRows.click();
+            for (j = 0; j < data.length; j++) {
+                fpositions[j + 1].value = data[j].start;
+                flengths[j + 1].value = data[j].len;
+                fnames[j + 1].value = "fld" + (j + 1);
+            }
+            postit();
         }
-        columnPos.push(maxlen - 1)
-        for (j = 0; j < columnPos.length - 1; j++) {
-            columnPos[j] = { "start": columnPos[j] + 1, "end": columnPos[j + 1], "len": columnPos[j + 1] - columnPos[j] }
-            if (columnPos[j].len <= 0) columnPos[j].len = 1;
-        }
-        columnPos.pop();
-        //alert("in guess:" + JSON.stringify(columnPos));
-        return columnPos;
-    }
-    function setupGuess(data) {
-        var j, k;
-        var a;
-        var btnAddRows = document.getElementById("btnAddRows");
-        var fpositions = document.getElementsByName('txtCol');
-        var flengths = document.getElementsByName('txtLen');
-        var fnames = document.getElementsByName('txtName');
-        //alert("data in setupGuess is" + JSON.stringify(data));
-        deleteAllRows('dataTable');
-        for (j = 1; j < data.length; j++)btnAddRows.click();
-        for (j = 0; j < data.length; j++) {
-            fpositions[j + 1].value = data[j].start;
-            flengths[j + 1].value = data[j].len;
-            fnames[j + 1].value = "fld" + (j+1);
-        }
-        postit();
-    }
- function setupExample()
- {
-   var j,k;
-   var a;
-   var btnAddRows = document.getElementById("btnAddRows");
-   var fpositions = document.getElementsByName('txtCol');
-   var flengths = document.getElementsByName('txtLen');
-   var fnames = document.getElementsByName('txtName');
-     data = [
-         { "start": 1,  "len": 6,  "name": "id" },
-         { "start": 7,  "len": 31, "name": "company" },
-         { "start": 38, "len": 11, "name": "amount" },
-         { "start": 49, "len": 80, "name": "remark" }
-         ];
+        function setupExample() {
+            var j, k;
+            var a;
+            var btnAddRows = document.getElementById("btnAddRows");
+            var fpositions = document.getElementsByName('txtCol');
+            var flengths = document.getElementsByName('txtLen');
+            var fnames = document.getElementsByName('txtName');
+            data = [
+                { "start": 1, "len": 6, "name": "id" },
+                { "start": 7, "len": 31, "name": "company" },
+                { "start": 38, "len": 11, "name": "amount" },
+                { "start": 49, "len": 80, "name": "remark" }
+            ];
 
-   deleteAllRows('dataTable');
-   for(j=1;j<data.length;j++)btnAddRows.click();
-   for(j=0;j<data.length;j++) {
-       fpositions[j+1].value=data[j].start;
-       flengths[j+1].value=data[j].len;
-       fnames[j+1].value=data[j].name;
-   }
-   postit();
- }
+            deleteAllRows('dataTable');
+            for (j = 1; j < data.length; j++)btnAddRows.click();
+            for (j = 0; j < data.length; j++) {
+                fpositions[j + 1].value = data[j].start;
+                flengths[j + 1].value = data[j].len;
+                fnames[j + 1].value = data[j].name;
+            }
+            postit();
+        }
         function startup() {
             //document.getElementById("txtFields").value = readCookie("ddgFixAdv") || "";
         }
@@ -304,479 +314,557 @@
         }
     </script>
 
-<link rel='canonical' href='fixed-width-to-csv.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"2e313eb6-a97b-4f00-6813-2af09bd029b6","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":42198,"response_time_orig":64,"serverid":"i-089faf155c9714864","state":"KA","t_epoch":1700314723,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/newsite/fixed-width-to-csv.htm","word_count":410,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel='canonical' href='fixed-width-to-csv.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 2, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "2e313eb6-a97b-4f00-6813-2af09bd029b6", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 42198, "response_time_orig": 64, "serverid": "i-089faf155c9714864", "state": "KA", "t_epoch": 1700314723, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/newsite/fixed-width-to-csv.htm", "word_count": 410, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head> 
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
+
 <body onload="startup()" cz-shortcut-listen="true">
-<form id="frm1" class="w-100" name="frm1" role="form" saveform="true" onsubmit="return false">
+    <form id="frm1" class="w-100" name="frm1" role="form" saveform="true" onsubmit="return false">
 
-    <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="tool-nav" role="navigation">
-        <a class="navbar-brand text-center text-sm-left mr-0" href="index.html" id="logo">
-            <img class="mb-3 mb-sm-0" src="../Images/convertcsvlogo-2.png" alt="Convert CSV Logo"/>
-        </a>
-        <div class="tool-nav-button-wrap d-flex justify-content-center">
-            <div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert CSV to another format">
-                    <div class="d-flex align-items-center">
-                        <span class="d-none d-xl-inline">CSV to File</span>
-                        <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon"/>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="tool-nav" role="navigation">
+            <a class="navbar-brand text-center text-sm-left mr-0" href="index.html" id="logo">
+                <img class="mb-3 mb-sm-0" src="../Images/convertcsvlogo-2.png" alt="Convert CSV Logo" />
+            </a>
+            <div class="tool-nav-button-wrap d-flex justify-content-center">
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        title="Convert CSV to another format">
+                        <div class="d-flex align-items-center">
+                            <span class="d-none d-xl-inline">CSV to File</span>
+                            <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon" />
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="csv-to-csv.html">CSV to Delimited</a>
+                        <a class="dropdown-item" href="csv-to-flat-file.html">CSV to Flat File</a>
+                        <a class="dropdown-item" href="csv-to-geojson.html">CSV to GeoJSON</a>
+                        <a class="dropdown-item" href="csv-to-html.html">CSV to HTML Table</a>
+                        <a class="dropdown-item" href="csv-to-json.html">CSV to JSON</a>
+                        <a class="dropdown-item" href="csv-to-kml.html">CSV to KML</a>
+                        <a class="dropdown-item" href="csv-to-markdown.html">CSV to Markdown</a>
+                        <a class="dropdown-item" href="csv-to-pdf.html">CSV to PDF</a>
+                        <a class="dropdown-item" href="csv-to-sql.html">CSV to SQL</a>
+                        <a class="dropdown-item" href="csv-to-xml.html">CSV to XML</a>
+                        <a class="dropdown-item" href="csv-to-yaml.html">CSV to YAML</a>
                     </div>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="csv-to-csv.html">CSV to Delimited</a>
-                    <a class="dropdown-item" href="csv-to-flat-file.html">CSV to Flat File</a>
-                    <a class="dropdown-item" href="csv-to-geojson.html">CSV to GeoJSON</a>
-                    <a class="dropdown-item" href="csv-to-html.html">CSV to HTML Table</a>
-                    <a class="dropdown-item" href="csv-to-json.html">CSV to JSON</a>
-                    <a class="dropdown-item" href="csv-to-kml.html">CSV to KML</a>
-                    <a class="dropdown-item" href="csv-to-markdown.html">CSV to Markdown</a>
-                    <a class="dropdown-item" href="csv-to-pdf.html">CSV to PDF</a>
-                    <a class="dropdown-item" href="csv-to-sql.html">CSV to SQL</a>
-                    <a class="dropdown-item" href="csv-to-xml.html">CSV to XML</a>
-                    <a class="dropdown-item" href="csv-to-yaml.html">CSV to YAML</a>
+                </div>
+                <div class="btn-group mx-1 mx-md-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
+                        <div class="d-flex align-items-center">
+                            <span class="d-none d-xl-inline">File to CSV</span>
+                            <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon" />
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item active" href="fixed-width-to-csv.html">Flat File to CSV</a>
+                        <a class="dropdown-item" href="geojson-to-csv.html">GeoJSON to CSV</a>
+                        <a class="dropdown-item" href="html-links-to-csv-2.html">HTML Links to CSV</a>
+                        <a class="dropdown-item" href="html-table-to-csv.html">HTML Table to CSV</a>
+                        <a class="dropdown-item" href="json-to-csv.html">JSON to CSV</a>
+                        <a class="dropdown-item" href="kml-to-csv.html">KML to CSV</a>
+                        <a class="dropdown-item" href="sql-to-csv.html">SQL to CSV</a>
+                        <a class="dropdown-item" href="xml-to-csv.html">XML to CSV</a>
+                        <a class="dropdown-item" href="yaml-to-csv.html">YAML to CSV</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
+                        <div class="d-flex align-items-center">
+                            <span class="d-none d-xl-inline">CSV Tools</span>
+                            <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon" />
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="csv-escape-tool.html">CSV Escape Tool</a>
+                        <a class="dropdown-item" href="pivot-csv.html">CSV Pivot Tool</a>
+                        <a class="dropdown-item" href="csv-viewer-editor.html">CSV Viewer and Editor</a>
+                        <a class="dropdown-item" href="transpose-csv.html">CSV Transpose Tool</a>
+                        <a class="dropdown-item" href="csv-to-template-output.html">CSV Template Engine</a>
+                        <a class="dropdown-item" href="generate-test-data.html">Generate Test Data</a>
+                        <a class="dropdown-item" href="email-extractor.html">Email Extractor</a>
+                        <a class="dropdown-item" href="phone-extractor.html">Phone Number Extractor</a>
+                        <a class="dropdown-item" href="url-extractor.html">URL Extractor</a>
+                        <a class="dropdown-item" href="query-csv.html">Query CSV</a>
+                        <a class="dropdown-item" href="split-pdf.html">Split PDF</a>
+                    </div>
                 </div>
             </div>
-            <div class="btn-group mx-1 mx-md-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
-                    <div class="d-flex align-items-center">
-                        <span class="d-none d-xl-inline">File to CSV</span>
-                        <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon"/>
-                    </div>
+            <div class="btn-group btn-save-restore d-flex mt-2 mt-sm-0 justify-content-center justify-content-sm-end">
+                <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()"
+                    title="Save settings and data on page to local file">
+                    <span class="d-inline d-sm-none d-md-inline">Save</span>
+                    <i class="far fa-save"></i>
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item active" href="fixed-width-to-csv.html">Flat File to CSV</a>
-                    <a class="dropdown-item" href="geojson-to-csv.html">GeoJSON to CSV</a>
-                    <a class="dropdown-item" href="html-links-to-csv-2.html">HTML Links to CSV</a>
-                    <a class="dropdown-item" href="html-table-to-csv.html">HTML Table to CSV</a>
-                    <a class="dropdown-item" href="json-to-csv.html">JSON to CSV</a>
-                    <a class="dropdown-item" href="kml-to-csv.html">KML to CSV</a>
-                    <a class="dropdown-item" href="sql-to-csv.html">SQL to CSV</a>
-                    <a class="dropdown-item" href="xml-to-csv.html">XML to CSV</a>
-                    <a class="dropdown-item" href="yaml-to-csv.html">YAML to CSV</a>
-                </div>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal"
+                    title="Restore settings and data from file">
+                    <span class="d-inline d-sm-none d-md-inline">Restore</span>
+                    <i class="far fa-window-restore"></i>
+                </button>
             </div>
-            <div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
-                    <div class="d-flex align-items-center">
-                        <span class="d-none d-xl-inline">CSV Tools</span>
-                        <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon"/>
+        </nav>
+
+        <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Restore Data</h5>
+                        <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="csv-escape-tool.html">CSV Escape Tool</a>
-                    <a class="dropdown-item" href="pivot-csv.html">CSV Pivot Tool</a>
-                    <a class="dropdown-item" href="csv-viewer-editor.html">CSV Viewer and Editor</a>
-                    <a class="dropdown-item" href="transpose-csv.html">CSV Transpose Tool</a>
-                    <a class="dropdown-item" href="csv-to-template-output.html">CSV Template Engine</a>
-                    <a class="dropdown-item" href="generate-test-data.html">Generate Test Data</a>
-                    <a class="dropdown-item" href="email-extractor.html">Email Extractor</a>
-                    <a class="dropdown-item" href="phone-extractor.html">Phone Number Extractor</a>
-                    <a class="dropdown-item" href="url-extractor.html">URL Extractor</a>
-                    <a class="dropdown-item" href="query-csv.html">Query CSV</a>
-                    <a class="dropdown-item" href="split-pdf.html">Split PDF</a>
+                    <div class="modal-body">
+                        <p>You can save the complete data and settings, and then load them from your saved file.</p>
+                        <label class="fsave" for="fsave">Choose File <i class="fas fa-file-upload"></i></label>
+                        <input type="file" id="fsave" class="form-control" accept=".json"
+                            onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings" />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="btn-group btn-save-restore d-flex mt-2 mt-sm-0 justify-content-center justify-content-sm-end">
-            <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()" title="Save settings and data on page to local file">
-                <span class="d-inline d-sm-none d-md-inline">Save</span>
-                <i class="far fa-save"></i>
-            </button>
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal" title="Restore settings and data from file">
-                <span class="d-inline d-sm-none d-md-inline">Restore</span>
-                <i class="far fa-window-restore"></i>
-            </button>
-        </div>
-    </nav>
 
-  <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Restore Data</h5>
-          <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>You can save the complete data and settings, and then load them from your saved file.</p>
-            <label class="fsave" for="fsave">Choose File <i class="fas fa-file-upload"></i></label>
-            <input type="file" id="fsave" class="form-control" accept=".json" onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings"/>
-        </div>
-      </div>
-    </div>
-  </div>
+        <section class="step-one">
+            <div id="step-text" class="mx-auto">
+                <h1 class="text-center">Convert Fixed-Width to CSV</h1>
+                <h2 class="text-center">Use this tool to convert Fixed Width into CSV (Comma Separated Values).</h2>
+                <p class="text-center mb-3">
+                    Fixed width (or flat file) is column oriented data where each field starts in a certain column and
+                    is a fixed length.<br />
+                    For each field, you must enter the position (starting at 1), followed by the field length, followed
+                    by the field name.<br />
+                    This can be repeated several times. See the example below.
+                    See also <a href="csv-to-flat-file.html" target="_blank">CSV to Fixed Width</a>
+                </p>
+                <center>
+                    <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                    <!-- ResponsiveAd -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                        data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </center>
 
-  <section class="step-one">
-      <div id="step-text" class="mx-auto">
-          <h1 class="text-center">Convert Fixed-Width to CSV</h1>
-          <h2 class="text-center">Use this tool to convert Fixed Width into CSV (Comma Separated Values).</h2>
-          <p class="text-center mb-3">
-              Fixed width (or flat file) is column oriented data where each field starts in a certain column and is a fixed length.<br/>
-              For each field, you must enter the position (starting at 1), followed by the field length, followed by the field name.<br/>
-              This can be repeated several times. See the example below.
-              See also <a href="csv-to-flat-file.html" target="_blank">CSV to Fixed Width</a>
-          </p>
-          <center>
-              <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-              <!-- ResponsiveAd -->
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
-              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-          </center>
+                <div class="mt-1">
+                    <h3 class="text-center mb-2">Step 1: Choose Your Input Method</h3>
+                    <div class="container content-container">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="defaultTabLink" data-toggle="tab" href="#inputtext">
+                                    Paste/Enter Data
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#inputfile">
+                                    Choose File
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a data-toggle="tab" href="#inputurl" class="nav-link">
+                                    Enter URL
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="inputtext" class="container tab-pane active fade show active">
+                                <label for="txt1">Enter or paste data:</label>
+                                <textarea class="form-control text-area-shadow"
+                                    style="font-size:smaller;font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;"
+                                    rows="8" id="txt1" onchange="showChoice();runit(this.value)" wrap="off"
+                                    placeholder="Enter or paste Fixed-Width Data Here"></textarea>
+                                <div class="button-wrapper mt-4 mb-4 mb-sm-0 d-block d-sm-flex justify-content-left">
+                                    <input type="button" class="btn btn-primary my-2 mr-2 my-sm-0" value="Example"
+                                        onclick="runExample()" />
+                                    <input type="button" class="btn btn-danger" value="Clear Input"
+                                        onclick="clearPage()" />
+                                </div>
+                            </div>
+                            <div id="inputfile" class="container tab-pane fade">
+                                <label>Get Fixed-Width data from file:</label>
+                                <div id="file-drop">
+                                    <i class="fas fa-upload fa-5x my-2"></i>
+                                    <p class="file-drop-text my-0 text-center">
+                                        Drag and drop your file or
+                                        <label class="button" for="f1">
+                                            click here
+                                        </label>
+                                        <input type="file" id="f1" onchange="loadTextFile(this,assignText,event)" />
+                                    </p>
+                                </div>
+                                <label for="txtEncoding"></label><label id="spanEncoding">Encoding: </label>
+                                <select id="txtEncoding" class="form-control custom-select mb-2"
+                                    title="Enter encoding for input file"
+                                    onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                    <option value="" selected="selected">-Default-</option>
+                                    <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                                    <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                                    <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                                    <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                                    <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                                    <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                                    <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                                    <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                                    <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                                    <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                                    <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                                    <option value="macintosh">Mac OS Roman</option>
+                                    <option value="UTF-8">UTF-8</option>
+                                    <option value="UTF-16">UTF-16</option>
+                                    <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                                    <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                                    <option value="UTF-32">UTF-32</option>
+                                    <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                                    <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                                    <option value="windows-1250">windows-1250 (Win East European)</option>
+                                    <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                                    <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                                    <option value="windows-1253">windows-1253 (WinGreek)</option>
+                                    <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                                    <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                                    <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                                    <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                                    <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                                </select>
+                                <div class="button-wrap d-block d-sm-flex justify-content-left mt-3 mb-4">
+                                    <input type="button" class="btn btn-primary mr-sm-2" value="Example"
+                                        onclick="runExample()" />
+                                    <input type="button" class="btn btn-danger my-2 my-sm-0 ml-sm-2" value="Clear Input"
+                                        onclick="clearPage()" />
+                                </div>
+                            </div>
+                            <div id="inputurl" class="container tab-pane fade">
+                                <label for="url">
+                                    Enter URL as data source and press <b>Load URL</b>:
+                                </label>
+                                <div class="d-flex flex-column justify-content-center" style="height:290px;">
+                                    <input type="text" size="40" value="" name="url" id="url"
+                                        class="form-control text-area-shadow"
+                                        placeholder="Enter the URL of a web page returning Fixed-Width" />
+                                    <div class="button-wrap d-block d-sm-flex justify-content-between mt-3">
+                                        <input type="button" id="Button1" class="btn btn-primary" value="Load URL"
+                                            title="Load Fixed-Width via URL"
+                                            onclick="loadURL(document.getElementById(&#39;url&#39;).value)" />
+                                        <input type="button" class="btn btn-primary my-2 my-sm-0" value="Example"
+                                            onclick="runExample()" />
+                                        <input type="button" class="btn btn-danger" value="Clear Input"
+                                            onclick="clearPage()" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divInputCounts" class="w-100"></div>
+                        <input type="hidden" name="txtCol" />
+                        <input type="hidden" name="txtLen" />
+                        <input type="hidden" name="txtName" />
+                        <div class="output-content-wrap w-100">
+                            <p class="options-text">Define Field Layout</p>
+                            <table id="dataTable" class="table table-bordered table-hover table-condensed">
+                                <tbody>
+                                    <tr>
+                                        <th>Del</th>
+                                        <th title="Column position starting at 1,2,3,...">
+                                            Column Position
+                                        </th>
+                                        <th>
+                                            Field Length
+                                        </th>
+                                        <th>
+                                            Field Name
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check"><label
+                                                    class="custom-checkbox input-options-checkbox"
+                                                    style="top:-8px;"><input type="checkbox" name="chkDel" /><span
+                                                        class="checkmark"></span></label></div>
+                                        </td>
+                                        <td><input type="text" class="text-area-shadow" name="txtCol" size="4"
+                                                maxlength="4" value="" onchange="postit()" required="" /></td>
+                                        <td><input type="text" class="text-area-shadow" name="txtLen" size="4"
+                                                maxlength="4" value="" onchange="postit()" required="" /></td>
+                                        <td><input type="text" class="text-area-shadow" name="txtName" size="20"
+                                                value="" onchange="postit()" required="" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="mb-1">
+                                Advanced Use:
+                            </p>
+                            <div class="form-group">
+                                <label for="txtFields">
+                                    Position,Length,Name <small>(Separated by |)</small>:
+                                </label>
+                                <input id="txtFields" class="text-area-shadow form-control w-50" type="text" size="40"
+                                    value="" onkeyup="showChoice()" />
+                            </div>
+                            <div id="divSpanFeedback"></div>
+                            <div class="button-wrap mt-3">
+                                <input type="button" class="btn btn-primary mr-2" id="btnAddRows" value="Add Row"
+                                    onclick="addRow(&#39;dataTable&#39;)" />
+                                <input type="button" class="btn btn-danger" id="btnDelRows" value="Delete Row(s)"
+                                    onclick="deleteRow(&#39;dataTable&#39;);postit()" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="mt-1">
-              <h3 class="text-center mb-2">Step 1: Choose Your Input Method</h3>
-              <div class="container content-container">
-                  <ul class="nav nav-tabs">
-                      <li class="nav-item">
-                          <a class="nav-link active" id="defaultTabLink" data-toggle="tab" href="#inputtext">
-                              Paste/Enter Data
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" data-toggle="tab" href="#inputfile">
-                              Choose File
-                          </a>
-                      </li>
-                      <li class="nav-item">
-                          <a data-toggle="tab" href="#inputurl" class="nav-link">
-                              Enter URL
-                          </a>
-                      </li>
-                  </ul>
-                  <div class="tab-content">
-                      <div id="inputtext" class="container tab-pane active fade show active">
-                          <label for="txt1">Enter or paste data:</label>
-                          <textarea class="form-control text-area-shadow" style="font-size:smaller;font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;" rows="8" id="txt1" onchange="showChoice();runit(this.value)" wrap="off" placeholder="Enter or paste Fixed-Width Data Here"></textarea>
-                          <div class="button-wrapper mt-4 mb-4 mb-sm-0 d-block d-sm-flex justify-content-left">
-                              <input type="button" class="btn btn-primary my-2 mr-2 my-sm-0" value="Example" onclick="runExample()"/>
-                              <input type="button" class="btn btn-danger" value="Clear Input" onclick="clearPage()"/>
-                          </div>
-                      </div>
-                      <div id="inputfile" class="container tab-pane fade">
-                          <label>Get Fixed-Width data from file:</label>
-                          <div id="file-drop">
-                              <i class="fas fa-upload fa-5x my-2"></i>
-                              <p class="file-drop-text my-0 text-center">
-                                  Drag and drop your file or
-                                  <label class="button" for="f1">
-                                      click here
-                                  </label>
-                                  <input type="file" id="f1" onchange="loadTextFile(this,assignText,event)"/>
-                              </p>
-                          </div>
-                          <label for="txtEncoding"></label><label id="spanEncoding">Encoding: </label>
-                          <select id="txtEncoding" class="form-control custom-select mb-2" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
-                              <option value="" selected="selected">-Default-</option>
-                              <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
-                              <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
-                              <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
-                              <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
-                              <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
-                              <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
-                              <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
-                              <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
-                              <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
-                              <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
-                              <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
-                              <option value="macintosh">Mac OS Roman</option>
-                              <option value="UTF-8">UTF-8</option>
-                              <option value="UTF-16">UTF-16</option>
-                              <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
-                              <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
-                              <option value="UTF-32">UTF-32</option>
-                              <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
-                              <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
-                              <option value="windows-1250">windows-1250 (Win East European)</option>
-                              <option value="windows-1251">windows-1251 (WinCyrillic)</option>
-                              <option value="windows-1252">windows-1252 (WinLatin-1)</option>
-                              <option value="windows-1253">windows-1253 (WinGreek)</option>
-                              <option value="windows-1254">windows-1254 (Win Turkish)</option>
-                              <option value="windows-1255">windows-1255 (Win Hebrew)</option>
-                              <option value="windows-1256">windows-1256 (Win Arabic)</option>
-                              <option value="windows-1257">windows-1257 (Win Baltic)</option>
-                              <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
-                          </select>
-                          <div class="button-wrap d-block d-sm-flex justify-content-left mt-3 mb-4">
-                              <input type="button" class="btn btn-primary mr-sm-2" value="Example" onclick="runExample()"/>
-                              <input type="button" class="btn btn-danger my-2 my-sm-0 ml-sm-2" value="Clear Input" onclick="clearPage()"/>
-                          </div>
-                      </div>
-                      <div id="inputurl" class="container tab-pane fade">
-                          <label for="url">
-                              Enter URL as data source and press <b>Load URL</b>:
-                          </label>
-                          <div class="d-flex flex-column justify-content-center" style="height:290px;">
-                              <input type="text" size="40" value="" name="url" id="url" class="form-control text-area-shadow" placeholder="Enter the URL of a web page returning Fixed-Width"/>
-                              <div class="button-wrap d-block d-sm-flex justify-content-between mt-3">
-                                  <input type="button" id="Button1" class="btn btn-primary" value="Load URL" title="Load Fixed-Width via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
-                                  <input type="button" class="btn btn-primary my-2 my-sm-0" value="Example" onclick="runExample()"/>
-                                  <input type="button" class="btn btn-danger" value="Clear Input" onclick="clearPage()"/>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div id="divInputCounts" class="w-100"></div>
-                  <input type="hidden" name="txtCol"/>
-                  <input type="hidden" name="txtLen"/>
-                  <input type="hidden" name="txtName"/>
-                  <div class="output-content-wrap w-100">
-                      <p class="options-text">Define Field Layout</p>
-                      <table id="dataTable" class="table table-bordered table-hover table-condensed">
-                          <tbody>
-                              <tr>
-                                  <th>Del</th>
-                                  <th title="Column position starting at 1,2,3,...">
-                                      Column Position
-                                  </th>
-                                  <th>
-                                      Field Length
-                                  </th>
-                                  <th>
-                                      Field Name
-                                  </th>
-                              </tr>
-                              <tr>
-                                  <td><div class="form-check"><label class="custom-checkbox input-options-checkbox" style="top:-8px;"><input type="checkbox" name="chkDel"/><span class="checkmark"></span></label></div></td>
-                                  <td><input type="text" class="text-area-shadow" name="txtCol" size="4" maxlength="4" value="" onchange="postit()" required=""/></td>
-                                  <td><input type="text" class="text-area-shadow" name="txtLen" size="4" maxlength="4" value="" onchange="postit()" required=""/></td>
-                                  <td><input type="text" class="text-area-shadow" name="txtName" size="20" value="" onchange="postit()" required=""/></td>
-                              </tr>
-                          </tbody>
-                      </table>
-                      <p class="mb-1">
-                          Advanced Use:
-                      </p>
-                      <div class="form-group">
-                          <label for="txtFields">
-                              Position,Length,Name <small>(Separated by |)</small>:
-                          </label>
-                          <input id="txtFields" class="text-area-shadow form-control w-50" type="text" size="40" value="" onkeyup="showChoice()"/>
-                      </div>
-                      <div id="divSpanFeedback"></div>
-                      <div class="button-wrap mt-3">
-                          <input type="button" class="btn btn-primary mr-2" id="btnAddRows" value="Add Row" onclick="addRow(&#39;dataTable&#39;)"/>
-                          <input type="button" class="btn btn-danger" id="btnDelRows" value="Delete Row(s)" onclick="deleteRow(&#39;dataTable&#39;);postit()"/>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+        <section class="step-two more-margin">
+            <h3 class="text-center mb-1">Step 2: Generate Output</h3>
+            <div class="container content-container">
+                <button class="btn btn-default collapsible">
+                    Modify Output Options
+                </button>
 
-  <section class="step-two more-margin">
-      <h3 class="text-center mb-1">Step 2: Generate Output</h3>
-      <div class="container content-container">
-          <button class="btn btn-default collapsible">
-              Modify Output Options
-          </button>
+                <div class="content">
+                    <div class="row px-4 pt-4">
+                        <div class="col-sm-12">
+                            <div class="option-content-wrap mb-2">
 
-          <div class="content">
-              <div class="row px-4 pt-4">
-                  <div class="col-sm-12">
-                      <div class="option-content-wrap mb-2">
-                          
-                          <div class="d-flex flex-wrap justify-content-between align-items-center mt-2 mb-0">
-                              <span class="options-title my-2">Field Separator Options:</span>
-                              <div class="form-check">
-                                  <label class="custom-radio" for="outSepComma">
-                                      ,
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepComma" value="," checked="checked"/>
-                                      <span class="radio"></span>
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <label class="custom-radio" for="outSepSemicolon">
-                                      ;
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepSemicolon" value=";"/>
-                                      <span class="radio"></span>
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <label class="custom-radio" for="outSepColon">
-                                      :
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepColon" value=":"/>
-                                      <span class="radio"></span>
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <label class="custom-radio" for="outSepPipe">
-                                      Bar
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepPipe" value="|"/>
-                                      <span class="radio"></span>
-                                  </label>
-                              </div>
-                              <div class="form-check">
-                                  <label class="custom-radio" for="outSepTab">
-                                      Tab
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepTab" value=" " onclick="this.value=&#39;\t&#39;"/>
-                                      <span class="radio"></span>
-                                  </label>
-                              </div>
-                              <div class="form-check d-flex inherit">
-                                  <label class="custom-radio mr-2" for="outSepOther">
-                                      Other:
-                                      <input type="radio" name="outsep" class="form-check-input" id="outSepOther" value="o"/>
-                                      <span class="radio other-radio"></span>
-                                  </label>
-                                  <input type="text" size="2" id="outSepOtherVal" class="form-control text-area-shadow" value="*" onchange="if(this.value!=&#39;&#39;)frm1.outSepOther.checked=true"/>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row pb-4 px-4">
-                  <div class="col-sm-12">
-                      <div class="option-content-wrap my-2">
-                          <p class="options-title my-2">CSV Options:</p>
-                          <div class="form-check">
-                              <label class="custom-checkbox input-option-checkbox" for="chkCsvQuotes">
-                                  Force Wrap values in double quotes
-                                  <input id="chkCsvQuotes" type="checkbox"/>
-                                  <span class="checkmark"></span>
-                              </label>
-                          </div>
-                          <div class="form-check">
-                              <label for="chkNoTrim" class="custom-checkbox input-options-checkbox">
-                                  Do not trim spaces
-                                  <input type="checkbox" id="chkNoTrim" value="Y"/>
-                                  <span class="checkmark"></span>
-                              </label>
-                          </div>
-                          <div class="form-check">
-                              <label class="custom-checkbox input-option-checkbox">
-                                  Never Wrap values in double quotes (use with caution)
-                                  <input type="checkbox" id="chkNeverQuote" value="Y"/>
-                                  <span class="checkmark"></span>
-                              </label>
-                          </div>
-                          <div class="form-check">
-                              <label class="custom-checkbox input-option-checkbox">
-                                  Include header in first row
-                                  <input id="chkCsvHeader" type="checkbox" checked="checked"/>
-                                  <span class="checkmark"></span>
-                              </label>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="output-content-wrap my-3">
-              <p class="text-left">Choose Conversion Format:</p><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
-              <div class="w-100 d-sm-flex">
-                  <input type="button" id="btnRun" class="btn btn-primary conversion-btn mr-sm-1" value="Convert Fixed Width To CSV" title="Convert Flat File To CSV" onclick="runit(document.getElementById(&#39;txt1&#39;).value);return false"/>
-                  <input type="button" id="btnRun2" class="btn btn-primary conversion-btn my-2 my-sm-0 ml-sm-1" value="Convert Fixed-Width to Excel" title="Save Fixed-Width as Excel" onclick="runit(document.getElementById(&#39;txt1&#39;).value);saveExcel(&#39;txta&#39;,false);return false"/>
-              </div>
-          </div>
-          <div class="output-content-wrap mb-3">
-              <label for="txta" class="control-label d-block">Converted Data:</label>
-              <textarea id="txta" rows="8" style="width:100%" wrap="off" placeholder="Output Results" class="form-control text-area-shadow mb-1"></textarea>
-              <div class="copytooltip">
-                  <button class="btn btn-success mt-3" onclick="copyPaste(&#39;txta&#39;)" onmouseout="copyComplete()">
-                      <span class="copytooltiptext" id="clipboardToolTip">Copy to clipboard</span>
-                      Copy Results <i class="fa fa-copy"></i>
-                  </button>
-              </div>
-          </div>
-          <div class="output-content-wrap mb-3">
-              <label for="fn" class="control-label">Save Results:</label>
-              <div class="w-50 d-flex align-items-center">
-                  <input type="text" id="fn" value="convertcsv" class="form-control text-area-shadow mb-2" title="Enter filename without extension"/>
-                  <span class="ml-2">.csv</span>
-              </div>
-              <div class="mt-2">
-                  <button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false">
-                      Download Result <i class="fas fa-download"></i>
-                  </button>
-                  <label title="End-of-Line" class="ml-2">
-                      EOL:
-                      <select id="eol" class="custom-select" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
-                          <option value="">CRLF</option>
-                          <option value="LF">LF</option>
-                      </select>
-                  </label>
-              </div>
-          </div>
-      </div>
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mt-2 mb-0">
+                                    <span class="options-title my-2">Field Separator Options:</span>
+                                    <div class="form-check">
+                                        <label class="custom-radio" for="outSepComma">
+                                            ,
+                                            <input type="radio" name="outsep" class="form-check-input" id="outSepComma"
+                                                value="," checked="checked" />
+                                            <span class="radio"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-radio" for="outSepSemicolon">
+                                            ;
+                                            <input type="radio" name="outsep" class="form-check-input"
+                                                id="outSepSemicolon" value=";" />
+                                            <span class="radio"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-radio" for="outSepColon">
+                                            :
+                                            <input type="radio" name="outsep" class="form-check-input" id="outSepColon"
+                                                value=":" />
+                                            <span class="radio"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-radio" for="outSepPipe">
+                                            Bar
+                                            <input type="radio" name="outsep" class="form-check-input" id="outSepPipe"
+                                                value="|" />
+                                            <span class="radio"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="custom-radio" for="outSepTab">
+                                            Tab
+                                            <input type="radio" name="outsep" class="form-check-input" id="outSepTab"
+                                                value=" " onclick="this.value=&#39;\t&#39;" />
+                                            <span class="radio"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-flex inherit">
+                                        <label class="custom-radio mr-2" for="outSepOther">
+                                            Other:
+                                            <input type="radio" name="outsep" class="form-check-input" id="outSepOther"
+                                                value="o" />
+                                            <span class="radio other-radio"></span>
+                                        </label>
+                                        <input type="text" size="2" id="outSepOtherVal"
+                                            class="form-control text-area-shadow" value="*"
+                                            onchange="if(this.value!=&#39;&#39;)frm1.outSepOther.checked=true" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-4 px-4">
+                        <div class="col-sm-12">
+                            <div class="option-content-wrap my-2">
+                                <p class="options-title my-2">CSV Options:</p>
+                                <div class="form-check">
+                                    <label class="custom-checkbox input-option-checkbox" for="chkCsvQuotes">
+                                        Force Wrap values in double quotes
+                                        <input id="chkCsvQuotes" type="checkbox" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label for="chkNoTrim" class="custom-checkbox input-options-checkbox">
+                                        Do not trim spaces
+                                        <input type="checkbox" id="chkNoTrim" value="Y" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="custom-checkbox input-option-checkbox">
+                                        Never Wrap values in double quotes (use with caution)
+                                        <input type="checkbox" id="chkNeverQuote" value="Y" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="custom-checkbox input-option-checkbox">
+                                        Include header in first row
+                                        <input id="chkCsvHeader" type="checkbox" checked="checked" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="output-content-wrap my-3">
+                    <p class="text-left">Choose Conversion Format:</p><span
+                        class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
+                    <div class="w-100 d-sm-flex">
+                        <input type="button" id="btnRun" class="btn btn-primary conversion-btn mr-sm-1"
+                            value="Convert Fixed Width To CSV" title="Convert Flat File To CSV"
+                            onclick="runit(document.getElementById(&#39;txt1&#39;).value);return false" />
+                        <input type="button" id="btnRun2" class="btn btn-primary conversion-btn my-2 my-sm-0 ml-sm-1"
+                            value="Convert Fixed-Width to Excel" title="Save Fixed-Width as Excel"
+                            onclick="runit(document.getElementById(&#39;txt1&#39;).value);saveExcel(&#39;txta&#39;,false);return false" />
+                    </div>
+                </div>
+                <div class="output-content-wrap mb-3">
+                    <label for="txta" class="control-label d-block">Converted Data:</label>
+                    <textarea id="txta" rows="8" style="width:100%" wrap="off" placeholder="Output Results"
+                        class="form-control text-area-shadow mb-1"></textarea>
+                    <div class="copytooltip">
+                        <button class="btn btn-success mt-3" onclick="copyPaste(&#39;txta&#39;)"
+                            onmouseout="copyComplete()">
+                            <span class="copytooltiptext" id="clipboardToolTip">Copy to clipboard</span>
+                            Copy Results <i class="fa fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="output-content-wrap mb-3">
+                    <label for="fn" class="control-label">Save Results:</label>
+                    <div class="w-50 d-flex align-items-center">
+                        <input type="text" id="fn" value="convertcsv" class="form-control text-area-shadow mb-2"
+                            title="Enter filename without extension" />
+                        <span class="ml-2">.csv</span>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-primary"
+                            onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false">
+                            Download Result <i class="fas fa-download"></i>
+                        </button>
+                        <label title="End-of-Line" class="ml-2">
+                            EOL:
+                            <select id="eol" class="custom-select" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
+                                <option value="">CRLF</option>
+                                <option value="LF">LF</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
 
-      <center>
-          <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-          <!-- ResponsiveAd -->
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </center>
+            <center>
+                <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                <!-- ResponsiveAd -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </center>
 
-      <footer id="footer">
-          <div class="container-fluid d-flex align-items-center">
-              <div class="text-left d-flex flex-column w-25">
-                  <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo"/>
-                  <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All rights reserved.</small></span>
-              </div>
-              <div class="d-none d-lg-flex justify-content-center w-50">
-                  <a class="nav-item nav-link" href="../PrivacyPolicy.html">Privacy Policy</a>
-                  <a class="nav-item nav-link" href="../changelog.html">Change Log</a>
-                  <a class="nav-item nav-link" href="../terms-of-use.html">Terms of Use</a>
-              </div>
-              <div class="d-flex justify-content-end w-25">
-                  <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i class="fab fa-twitter"></i></a>
-                  <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i class="fab fa-facebook-f"></i></a>
-                  <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
-              </div>
-          </div>
-      </footer>
-  </section>
-</form>
+            <footer id="footer">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="text-left d-flex flex-column w-25">
+                        <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo" />
+                        <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                                rights reserved.</small></span>
+                    </div>
+                    <div class="d-none d-lg-flex justify-content-center w-50">
+                        <a class="nav-item nav-link" href="../PrivacyPolicy.html">Privacy Policy</a>
+                        <a class="nav-item nav-link" href="../changelog.html">Change Log</a>
+                        <a class="nav-item nav-link" href="../terms-of-use.html">Terms of Use</a>
+                    </div>
+                    <div class="d-flex justify-content-end w-25">
+                        <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </form>
 
-  <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="JS/main-ui3860.js?v=1"></script>
+    <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="JS/main-ui3860.js?v=1"></script>
 
 
-<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/newsite/fixed-width-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:41:16 GMT -->
+
 </html>

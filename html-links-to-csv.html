@@ -1,75 +1,90 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <!-- Mirrored from www.convertcsv.com/html-links-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:18 GMT -->
-<head><meta charset="utf-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"1eb3b6a0-b337-41b1-545a-96c2eaa75add","response_size_orig":32641,"response_time_orig":873,"template_id":5,"url":"https://www.convertcsv.com/html-links-to-csv.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-<!-- Copyright 2014-2023 ConvertCsv.com -->
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Extract Links from web pages to CSV/Excel"/>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta http-equiv="Pragma" content="no-cache"/>
-<meta http-equiv="Expires" content="0"/>
+<head>
+    <meta charset="utf-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 1, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "1eb3b6a0-b337-41b1-545a-96c2eaa75add", "response_size_orig": 32641, "response_time_orig": 873, "template_id": 5, "url": "https://www.convertcsv.com/html-links-to-csv.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+    <!-- Copyright 2014-2023 ConvertCsv.com -->
 
-<title>HTML Links To CSV/Excel Converter</title>
-<script src="js/underscore-min.js"></script>
-<script src="js/blob.js"></script>
-<script src="js/filesaver.js"></script>
-<script src="json2.js"></script>
-<script src="strsupbea6.js?v=7"></script>
-<script src="localreadc164.js?v=9"></script>
-<script src="csvparsebea6.js?v=7"></script>
-<script src="csvsup7893.js?v=24"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Extract Links from web pages to CSV/Excel" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<script src="ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-<script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="cdnjs.cloudflare.com/ajax/libs/alasql/0.6.1/alasql.min.js"></script>
-<link rel='canonical' href='html-links-to-csv.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"1eb3b6a0-b337-41b1-545a-96c2eaa75add","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":32641,"response_time_orig":873,"serverid":"i-0f29cd831f3f05137","state":"KA","t_epoch":1700314579,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/html-links-to-csv.htm","word_count":438,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <title>HTML Links To CSV/Excel Converter</title>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/blob.js"></script>
+    <script src="js/filesaver.js"></script>
+    <script src="json2.js"></script>
+    <script src="strsupbea6.js?v=7"></script>
+    <script src="localreadc164.js?v=9"></script>
+    <script src="csvparsebea6.js?v=7"></script>
+    <script src="csvsup7893.js?v=24"></script>
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head><body onload="document.getElementById(&#39;btnRun&#39;).click()"><scriptx src="cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></scriptx>
-<scriptx src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></scriptx>
-<script src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.7/xlsx.full.min.js"></script>
-<link rel="stylesheet" href="js/custom3860.css?v=1"/>
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/alasql/0.6.1/alasql.min.js"></script>
+    <link rel='canonical' href='html-links-to-csv.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 1, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "1eb3b6a0-b337-41b1-545a-96c2eaa75add", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 32641, "response_time_orig": 873, "serverid": "i-0f29cd831f3f05137", "state": "KA", "t_epoch": 1700314579, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/html-links-to-csv.htm", "word_count": 438, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-<script type="text/javascript">
-    var _0x37bb = ['txtAbsoluteUrl', 'igm', 'slice', 'hostname', 'btnRun', '(Links\x20found:\x20', 'chkAbsoluteUrls', 'No\x20links\x20found\x20in\x20HTML.\x20Please\x20check\x20your\x20input.', 'every', 'chkAnchorText', 'HTML', 'txta', 'cawso', 'toCsv', 'ckNHq', 'startsWith', 'unescape', 'href', 'value', 'https://www.tournamentmaps.com/florida-tennis-colleges.htm', 'URL', 'spanCount', 'replace', '<linkzzz', 'nyXsj', 'trim', 'uniq', '<a\x20href=\x22', 'alert', 'getAttribute', 'urlTabLink', 'outSepOtherVal', 'LINK', 'Text', 'protocol', 'gQrYz', 'toLowerCase', 'port', 'getElementsByTagName', 'innerText', 'DQrCT', 'createElement', 'split', 'txt1', 'url', 'indexOf', 'tagName', 'click', 'chkCsvQuotes', 'push', 'yKpnH', '<aa\x20', 'http', 'filter', 'any', '<yyyyy', 'LINKS', 'length', 'chkCreateTags', 'XRksJ', 'https:///', '</a>', 'checked', 'No\x20links\x20found.', 'toUpperCase', '</?\x5cw+((\x5cs+\x5cw+(\x5cs*=\x5cs*(?:\x22.*?\x22|\x27.*?\x27|[^\x27\x22>\x5cs]+))?)+\x5cs*|\x5cs*)/?>', 'chkSocial', 'chkSort', 'chkAppend', '<xxxxx', 'getElementById', 'btnUrl', 'txtSocial', '[href]', 'anchorText', 'querySelectorAll', 'GkMXU', '</aa>', 'chkNoBreaks', 'reject', 'endsWith', 'chkDup', 'chkRemoveTags', 'innerHTML', 'fCOjr', 'sort']; (function (_0x59d802, _0x37bb5b) { var _0x272368 = function (_0x290caf) { while (--_0x290caf) { _0x59d802['push'](_0x59d802['shift']()); } }; _0x272368(++_0x37bb5b); }(_0x37bb, 0x11c)); var _0x2723 = function (_0x59d802, _0x37bb5b) { _0x59d802 = _0x59d802 - 0x0; var _0x272368 = _0x37bb[_0x59d802]; return _0x272368; }; function assignText(_0x31b2bb) { var _0x34b53f = _0x2723; document[_0x34b53f('0x2c')](_0x34b53f('0x11'))[_0x34b53f('0x4e')] = _0x31b2bb, document[_0x34b53f('0x2c')](_0x34b53f('0x40'))[_0x34b53f('0x15')](); } function runit() { var _0x5c65b5 = _0x2723, _0x1b6c77 = '', _0x24cb6f = radiovalue(document[_0x5c65b5('0x2c')]('frm1')['outsep']); if (_0x24cb6f == 'o') _0x24cb6f = document[_0x5c65b5('0x2c')](_0x5c65b5('0x5'))[_0x5c65b5('0x4e')]; var _0x44a88d = document[_0x5c65b5('0x2c')](_0x5c65b5('0x16'))[_0x5c65b5('0x24')], _0x16893d = document[_0x5c65b5('0x2c')](_0x5c65b5('0x34'))[_0x5c65b5('0x24')], _0x440f48 = document['getElementById'](_0x5c65b5('0x45'))[_0x5c65b5('0x24')], _0x5b1ab2 = document['getElementById'](_0x5c65b5('0x20'))['checked']; if (_0x5b1ab2) _0x440f48 = !![]; var _0x5a881c = document[_0x5c65b5('0x2c')]('chkSepAnchor')[_0x5c65b5('0x24')], _0xaec17c = document[_0x5c65b5('0x2c')](_0x5c65b5('0x3c'))[_0x5c65b5('0x4e')], _0x447457 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x42'))[_0x5c65b5('0x24')]; if (_0xaec17c === '') _0x447457 = ![]; var _0x840cc8 = document['getElementById'](_0x5c65b5('0x38'))[_0x5c65b5('0x24')], _0x1841f6 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x29'))[_0x5c65b5('0x24')], _0x2eb858 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x37'))['checked'], _0x467ea6 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x28'))[_0x5c65b5('0x24')], _0x5d85c2 = document[_0x5c65b5('0x2c')]('radShow')['checked'], _0x38de4e = document[_0x5c65b5('0x2c')](_0x5c65b5('0x2a'))[_0x5c65b5('0x24')], _0x30bbdf = document[_0x5c65b5('0x2c')](_0x5c65b5('0x2e'))[_0x5c65b5('0x4e')][_0x5c65b5('0x10')](/[ ,]/); _0x30bbdf = _[_0x5c65b5('0x1b')](_0x30bbdf, function (_0x19fb5a) { var _0xe1b30a = _0x5c65b5; return _0x19fb5a[_0xe1b30a('0x55')]()[_0xe1b30a('0x1f')] > 0x0; }); var _0x1a2073 = '', _0x5078d6 = document[_0x5c65b5('0xf')]('div'); _0x5078d6[_0x5c65b5('0x39')] = _0x1a2073 + document[_0x5c65b5('0x2c')](_0x5c65b5('0x11'))[_0x5c65b5('0x4e')][_0x5c65b5('0x52')](/<script/gmi, _0x5c65b5('0x2b'))[_0x5c65b5('0x52')](/<style/gmi, _0x5c65b5('0x1d'))[_0x5c65b5('0x52')](/<link/gmi, _0x5c65b5('0x53'))[_0x5c65b5('0x52')](/<a /gmi, _0x5c65b5('0x19'))[_0x5c65b5('0x52')](/<\/a>/gmi, _0x5c65b5('0x33')); var _0x263209 = _0x5c65b5('0x50'); if (_0x5b1ab2) _0x263209 = _0x5c65b5('0x46'); if (_0x5a881c) _0x263209 = _0x5c65b5('0x1e'); var _0x917355 = '', _0x33929b, _0x42b506 = [], _0x4f8fc5, _0x26e45f = new RegExp(_0x5c65b5('0x27'), _0x5c65b5('0x3d')), _0x3782bf = location[_0x5c65b5('0x8')] + '//' + location[_0x5c65b5('0x3f')] + (location[_0x5c65b5('0xb')] ? ':' + location[_0x5c65b5('0xb')] : ''); if (_0x5078d6['querySelectorAll']) _0x4f8fc5 = _0x5078d6[_0x5c65b5('0x31')](_0x5c65b5('0x2f')); else _0x4f8fc5 = _0x5078d6[_0x5c65b5('0xc')]('aa'); for (var _0x2bf550 = 0x0; _0x2bf550 < _0x4f8fc5[_0x5c65b5('0x1f')]; _0x2bf550++) { if (_0x5c65b5('0x18') === _0x5c65b5('0x18')) { var _0x5acae4 = {}; if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')]) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')][_0x5c65b5('0x52')](location[_0x5c65b5('0x4d')], ''); else { if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x3')](_0x5c65b5('0x4d'))) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550]['getAttribute'](_0x5c65b5('0x4d'))[_0x5c65b5('0x52')](location[_0x5c65b5('0x4d')], ''); } if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] == null) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = ''; else _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] += ''; _0x5acae4[_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')][_0x5c65b5('0x52')](_0x3782bf, ''); if (_0x447457 && _0x5acae4[_0x5c65b5('0x4d')] != '' && !_0x5acae4[_0x5c65b5('0x4d')]['startsWith']('http')) _0x5acae4[_0x5c65b5('0x4d')] = urljoin(_0xaec17c, _0x5acae4['href']); _0x1b6c77 = (_0x4f8fc5[_0x2bf550]['text'] || _0x4f8fc5[_0x2bf550][_0x5c65b5('0xd')] || '')[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x20')[_0x5c65b5('0x55')](); if (_0x16893d) _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x20'); else _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x0a'); if (_0x840cc8) _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](_0x26e45f, ''); _0x5acae4[_0x5c65b5('0x30')] = _0x1b6c77, _0x5acae4[_0x5c65b5('0x14')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x14')]; if (_0x5acae4['href'] === '' && _0x5acae4[_0x5c65b5('0x30')] === '') continue; _0x42b506[_0x5c65b5('0x17')](_0x5acae4); } else { function _0x281a0f() { var _0x4543db = _0x5c65b5; if (!_0x2c885b) _0x3af117[_0x4543db('0x2')](_0x4543db('0x43')); else _0x23b8e8(_0x4543db('0x25')); } } } _0x4f8fc5 = null; if (_0x2eb858) _0x42b506 = _[_0x5c65b5('0x0')](_0x42b506, function (_0x8ac10, _0x1afc49, _0x2f403a) { var _0x1272cc = _0x5c65b5; if (_0x1272cc('0x9') === _0x1272cc('0x9')) return _0x8ac10[_0x1272cc('0x4d')] + _0x8ac10['anchorText']; else { function _0x474800() { var _0x56a036 = _0x1272cc; _0x31fb9c += _0x124619[_0x56a036('0x49')](_0x5c446b, '\x22'); if (_0x2a5bf3) _0x3a4040 += _0x44a730 + _0x5c608f['toCsv'](_0x375265, '\x22'); } } }); _0x467ea6 && _0x30bbdf[_0x5c65b5('0x1f')] > 0x0 && (_0x42b506 = _[_0x5c65b5('0x35')](_0x42b506, function (_0x5cf5ff) { var _0x3a6d22 = _0x5c65b5; if ('fCOjr' === _0x3a6d22('0x3a')) { if (_0x5d85c2) return _[_0x3a6d22('0x44')](_0x30bbdf, function (_0x5d34df) { var _0x1cd9ed = _0x3a6d22; if (_0x1cd9ed('0x21') !== _0x1cd9ed('0x21')) { function _0x3ee683() { var _0x63fcf1 = _0x1cd9ed; _0x178577 += '\x22' + _0x49aaaf[_0x63fcf1('0x52')](/"/gmi, '\x22\x22') + '\x22'; if (_0xfc7d6c) _0x28ff86 += _0xd8682f + '\x22' + _0x390b9e[_0x63fcf1('0x52')](/"/gmi, '\x22\x22') + '\x22'; } } else return _0x5cf5ff[_0x1cd9ed('0x4d')]['toLowerCase']()[_0x1cd9ed('0x13')](_0x5d34df[_0x1cd9ed('0x55')]()[_0x1cd9ed('0xa')]()) == -0x1; }); else return _[_0x3a6d22('0x1c')](_0x30bbdf, function (_0x1685d6) { var _0x475cd5 = _0x3a6d22; return _0x5cf5ff[_0x475cd5('0x4d')]['toLowerCase']()[_0x475cd5('0x13')](_0x1685d6[_0x475cd5('0x55')]()[_0x475cd5('0xa')]()) >= 0x0; }); } else { function _0x4a8776() { var _0x3098d4 = _0x3a6d22; if (_0x4d52e2['getElementById']('urlTabLink')) _0x3bf6c3[_0x3098d4('0x2c')](_0x3098d4('0x4'))[_0x3098d4('0x15')](); _0x5e98a2['getElementById']('url')['value'] = _0x3098d4('0x4f'), _0x270b17[_0x3098d4('0x2c')](_0x3098d4('0x2d'))[_0x3098d4('0x15')](); } } })); _0x1841f6 && _0x42b506[_0x5c65b5('0x3b')](function (_0x414a95, _0x33e166) { var _0x190c92 = _0x5c65b5; if (_0x190c92('0x48') !== 'LEJCL') return _0x414a95[_0x190c92('0x4d')][_0x190c92('0x26')]() < _0x33e166[_0x190c92('0x4d')][_0x190c92('0x26')]() ? -0x1 : _0x414a95['href'][_0x190c92('0x26')]() > _0x33e166[_0x190c92('0x4d')]['toUpperCase']() ? 0x1 : 0x0; else { function _0xcb7337() { var _0x1822a7 = _0x190c92; return _0x473f72['href'][_0x1822a7('0xa')]()['indexOf'](_0x38cade['trim']()[_0x1822a7('0xa')]()) == -0x1; } } }); var _0x281913 = _0x42b506[_0x5c65b5('0x1f')], _0x431f21 = _0x281913; if (_0x440f48 && !_0x5b1ab2 && !_0x5a881c) _0x263209 += _0x24cb6f + _0x5c65b5('0x7'); _0x263209 += '\x0a'; for (var _0x257f5a = 0x0; _0x257f5a < _0x42b506[_0x5c65b5('0x1f')]; _0x257f5a++) { if (_0x5c65b5('0x4a') !== _0x5c65b5('0x54')) { if (_0x42b506[_0x257f5a][_0x5c65b5('0x14')]['substring'](0x0, 0x4) === _0x5c65b5('0x6')) { _0x431f21--; continue; } _0x33929b = _0x42b506[_0x257f5a][_0x5c65b5('0x4d')], _0x1b6c77 = _0x42b506[_0x257f5a]['anchorText']; if (_0x5a881c) _0x917355 += _0x33929b + '\x0a' + _0x1b6c77 + '\x0a\x20'; else { if (_0x5b1ab2) _0x917355 += _0x5c65b5('0x1') + _0x33929b + '\x22>' + _0x1b6c77 + _0x5c65b5('0x23'); else { _0x1b6c77 = _[_0x5c65b5('0x4c')](_0x1b6c77); if (_0x44a88d) { if (_0x5c65b5('0xe') === 'MMESN') { function _0x1520d0() { var _0x12e770 = _0x5c65b5; if (_0x18b83b[_0x12e770('0x4b')]('index.html') && _0x15979e[_0x12e770('0x36')]('index.html')) return _0x567fcf + _0x385bb7['substring'](0x1); if (_0x4edf6b['startsWith']('index.html') && !_0x5b4be1[_0x12e770('0x36')]('index.html')) return _0x286e49 + _0xd1c865; if (!_0x3d9071[_0x12e770('0x4b')]('index.html') && !_0x2db125[_0x12e770('0x36')]('index.html')) return _0x341ed7 + '/' + _0x1aaedf; if (!_0x1fc9e7[_0x12e770('0x4b')]('index.html') && _0x41382a[_0x12e770('0x36')]('index.html')) return _0x50b23f + _0x10ee52; return _0x51214b + _0x58073b; } } else { _0x917355 += '\x22' + _0x33929b[_0x5c65b5('0x52')](/"/gmi, '\x22\x22') + '\x22'; if (_0x440f48) _0x917355 += _0x24cb6f + '\x22' + _0x1b6c77['replace'](/"/gmi, '\x22\x22') + '\x22'; } } else { if (_0x5c65b5('0x32') !== _0x5c65b5('0x32')) { function _0x398859() { var _0x46bd97 = _0x5c65b5; return _0x2cd47a[_0x46bd97('0x55')]()[_0x46bd97('0x1f')] > 0x0; } } else { _0x917355 += _0x33929b[_0x5c65b5('0x49')](_0x24cb6f, '\x22'); if (_0x440f48) _0x917355 += _0x24cb6f + _0x1b6c77[_0x5c65b5('0x49')](_0x24cb6f, '\x22'); } } _0x917355 += _0x24cb6f, _0x917355 = _0x917355[_0x5c65b5('0x3e')](0x0, _0x24cb6f[_0x5c65b5('0x1f')] * -0x1); } } _0x917355 += '\x0a'; } else { function _0x181135() { var _0x2f2ee4 = _0x5c65b5; return _0x32b4c9[_0x2f2ee4('0x4d')]['toUpperCase']() < _0x3b6976[_0x2f2ee4('0x4d')][_0x2f2ee4('0x26')]() ? -0x1 : _0x475465[_0x2f2ee4('0x4d')]['toUpperCase']() > _0x261565[_0x2f2ee4('0x4d')][_0x2f2ee4('0x26')]() ? 0x1 : 0x0; } } } if (!_0x38de4e) document['getElementById'](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] = _0x263209 + _0x917355; else document['getElementById'](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] += (document[_0x5c65b5('0x2c')](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] == '' ? _0x263209 : '') + _0x917355; if (_0x281913 < 0x1 && document['getElementById'](_0x5c65b5('0x11'))['value'][_0x5c65b5('0x55')]() != '') { if (!_0x467ea6) window[_0x5c65b5('0x2')](_0x5c65b5('0x43')); else alert(_0x5c65b5('0x25')); } document[_0x5c65b5('0x2c')](_0x5c65b5('0x51'))[_0x5c65b5('0x39')] = _0x5c65b5('0x41') + _0x431f21 + ')'; } function runExample() { var _0x58f090 = _0x2723; if (document[_0x58f090('0x2c')]('urlTabLink')) document[_0x58f090('0x2c')](_0x58f090('0x4'))[_0x58f090('0x15')](); document[_0x58f090('0x2c')](_0x58f090('0x12'))['value'] = _0x58f090('0x4f'), document[_0x58f090('0x2c')](_0x58f090('0x2d'))[_0x58f090('0x15')](); } function urlDomain(_0x3be7e8) { var _0xa194ef = _0x2723; if (!_0x3be7e8[_0xa194ef('0x4b')](_0xa194ef('0x1a'))) _0x3be7e8 = _0xa194ef('0x22') + _0x3be7e8; var _0x38e9b4 = document[_0xa194ef('0xf')]('a'); return _0x38e9b4[_0xa194ef('0x4d')] = _0x3be7e8, _0x38e9b4[_0xa194ef('0x8')] + '//' + _0x38e9b4[_0xa194ef('0x3f')]; } function urljoin(_0x59fd56, _0x57e7e5) { var _0x383654 = _0x2723; if (_0x57e7e5[_0x383654('0x4b')]('index.html') && _0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + _0x57e7e5['substring'](0x1); if (_0x57e7e5[_0x383654('0x4b')]('index.html') && !_0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + _0x57e7e5; if (!_0x57e7e5[_0x383654('0x4b')]('index.html') && !_0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + '/' + _0x57e7e5; if (!_0x57e7e5['startsWith']('index.html') && _0x59fd56['endsWith']('index.html')) return _0x59fd56 + _0x57e7e5; return _0x59fd56 + _0x57e7e5; }
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
 
-</script>
-<script type="text/javascript" src="../cdn.thisiswaldo.com/static/js/9400.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<body onload="document.getElementById(&#39;btnRun&#39;).click()">
+    <scriptx src="cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></scriptx>
+    <scriptx src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></scriptx>
+    <script src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.7/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="js/custom3860.css?v=1" />
+
+    <script type="text/javascript">
+        var _0x37bb = ['txtAbsoluteUrl', 'igm', 'slice', 'hostname', 'btnRun', '(Links\x20found:\x20', 'chkAbsoluteUrls', 'No\x20links\x20found\x20in\x20HTML.\x20Please\x20check\x20your\x20input.', 'every', 'chkAnchorText', 'HTML', 'txta', 'cawso', 'toCsv', 'ckNHq', 'startsWith', 'unescape', 'href', 'value', 'https://www.tournamentmaps.com/florida-tennis-colleges.htm', 'URL', 'spanCount', 'replace', '<linkzzz', 'nyXsj', 'trim', 'uniq', '<a\x20href=\x22', 'alert', 'getAttribute', 'urlTabLink', 'outSepOtherVal', 'LINK', 'Text', 'protocol', 'gQrYz', 'toLowerCase', 'port', 'getElementsByTagName', 'innerText', 'DQrCT', 'createElement', 'split', 'txt1', 'url', 'indexOf', 'tagName', 'click', 'chkCsvQuotes', 'push', 'yKpnH', '<aa\x20', 'http', 'filter', 'any', '<yyyyy', 'LINKS', 'length', 'chkCreateTags', 'XRksJ', 'https:///', '</a>', 'checked', 'No\x20links\x20found.', 'toUpperCase', '</?\x5cw+((\x5cs+\x5cw+(\x5cs*=\x5cs*(?:\x22.*?\x22|\x27.*?\x27|[^\x27\x22>\x5cs]+))?)+\x5cs*|\x5cs*)/?>', 'chkSocial', 'chkSort', 'chkAppend', '<xxxxx', 'getElementById', 'btnUrl', 'txtSocial', '[href]', 'anchorText', 'querySelectorAll', 'GkMXU', '</aa>', 'chkNoBreaks', 'reject', 'endsWith', 'chkDup', 'chkRemoveTags', 'innerHTML', 'fCOjr', 'sort']; (function (_0x59d802, _0x37bb5b) { var _0x272368 = function (_0x290caf) { while (--_0x290caf) { _0x59d802['push'](_0x59d802['shift']()); } }; _0x272368(++_0x37bb5b); }(_0x37bb, 0x11c)); var _0x2723 = function (_0x59d802, _0x37bb5b) { _0x59d802 = _0x59d802 - 0x0; var _0x272368 = _0x37bb[_0x59d802]; return _0x272368; }; function assignText(_0x31b2bb) { var _0x34b53f = _0x2723; document[_0x34b53f('0x2c')](_0x34b53f('0x11'))[_0x34b53f('0x4e')] = _0x31b2bb, document[_0x34b53f('0x2c')](_0x34b53f('0x40'))[_0x34b53f('0x15')](); } function runit() { var _0x5c65b5 = _0x2723, _0x1b6c77 = '', _0x24cb6f = radiovalue(document[_0x5c65b5('0x2c')]('frm1')['outsep']); if (_0x24cb6f == 'o') _0x24cb6f = document[_0x5c65b5('0x2c')](_0x5c65b5('0x5'))[_0x5c65b5('0x4e')]; var _0x44a88d = document[_0x5c65b5('0x2c')](_0x5c65b5('0x16'))[_0x5c65b5('0x24')], _0x16893d = document[_0x5c65b5('0x2c')](_0x5c65b5('0x34'))[_0x5c65b5('0x24')], _0x440f48 = document['getElementById'](_0x5c65b5('0x45'))[_0x5c65b5('0x24')], _0x5b1ab2 = document['getElementById'](_0x5c65b5('0x20'))['checked']; if (_0x5b1ab2) _0x440f48 = !![]; var _0x5a881c = document[_0x5c65b5('0x2c')]('chkSepAnchor')[_0x5c65b5('0x24')], _0xaec17c = document[_0x5c65b5('0x2c')](_0x5c65b5('0x3c'))[_0x5c65b5('0x4e')], _0x447457 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x42'))[_0x5c65b5('0x24')]; if (_0xaec17c === '') _0x447457 = ![]; var _0x840cc8 = document['getElementById'](_0x5c65b5('0x38'))[_0x5c65b5('0x24')], _0x1841f6 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x29'))[_0x5c65b5('0x24')], _0x2eb858 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x37'))['checked'], _0x467ea6 = document[_0x5c65b5('0x2c')](_0x5c65b5('0x28'))[_0x5c65b5('0x24')], _0x5d85c2 = document[_0x5c65b5('0x2c')]('radShow')['checked'], _0x38de4e = document[_0x5c65b5('0x2c')](_0x5c65b5('0x2a'))[_0x5c65b5('0x24')], _0x30bbdf = document[_0x5c65b5('0x2c')](_0x5c65b5('0x2e'))[_0x5c65b5('0x4e')][_0x5c65b5('0x10')](/[ ,]/); _0x30bbdf = _[_0x5c65b5('0x1b')](_0x30bbdf, function (_0x19fb5a) { var _0xe1b30a = _0x5c65b5; return _0x19fb5a[_0xe1b30a('0x55')]()[_0xe1b30a('0x1f')] > 0x0; }); var _0x1a2073 = '', _0x5078d6 = document[_0x5c65b5('0xf')]('div'); _0x5078d6[_0x5c65b5('0x39')] = _0x1a2073 + document[_0x5c65b5('0x2c')](_0x5c65b5('0x11'))[_0x5c65b5('0x4e')][_0x5c65b5('0x52')](/<script/gmi, _0x5c65b5('0x2b'))[_0x5c65b5('0x52')](/<style/gmi, _0x5c65b5('0x1d'))[_0x5c65b5('0x52')](/<link/gmi, _0x5c65b5('0x53'))[_0x5c65b5('0x52')](/<a /gmi, _0x5c65b5('0x19'))[_0x5c65b5('0x52')](/<\/a>/gmi, _0x5c65b5('0x33')); var _0x263209 = _0x5c65b5('0x50'); if (_0x5b1ab2) _0x263209 = _0x5c65b5('0x46'); if (_0x5a881c) _0x263209 = _0x5c65b5('0x1e'); var _0x917355 = '', _0x33929b, _0x42b506 = [], _0x4f8fc5, _0x26e45f = new RegExp(_0x5c65b5('0x27'), _0x5c65b5('0x3d')), _0x3782bf = location[_0x5c65b5('0x8')] + '//' + location[_0x5c65b5('0x3f')] + (location[_0x5c65b5('0xb')] ? ':' + location[_0x5c65b5('0xb')] : ''); if (_0x5078d6['querySelectorAll']) _0x4f8fc5 = _0x5078d6[_0x5c65b5('0x31')](_0x5c65b5('0x2f')); else _0x4f8fc5 = _0x5078d6[_0x5c65b5('0xc')]('aa'); for (var _0x2bf550 = 0x0; _0x2bf550 < _0x4f8fc5[_0x5c65b5('0x1f')]; _0x2bf550++) { if (_0x5c65b5('0x18') === _0x5c65b5('0x18')) { var _0x5acae4 = {}; if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')]) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')][_0x5c65b5('0x52')](location[_0x5c65b5('0x4d')], ''); else { if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x3')](_0x5c65b5('0x4d'))) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550]['getAttribute'](_0x5c65b5('0x4d'))[_0x5c65b5('0x52')](location[_0x5c65b5('0x4d')], ''); } if (_0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] == null) _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] = ''; else _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')] += ''; _0x5acae4[_0x5c65b5('0x4d')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x4d')][_0x5c65b5('0x52')](_0x3782bf, ''); if (_0x447457 && _0x5acae4[_0x5c65b5('0x4d')] != '' && !_0x5acae4[_0x5c65b5('0x4d')]['startsWith']('http')) _0x5acae4[_0x5c65b5('0x4d')] = urljoin(_0xaec17c, _0x5acae4['href']); _0x1b6c77 = (_0x4f8fc5[_0x2bf550]['text'] || _0x4f8fc5[_0x2bf550][_0x5c65b5('0xd')] || '')[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x20')[_0x5c65b5('0x55')](); if (_0x16893d) _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x20'); else _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](/\n|<br>|<br\/>|<br \/>/gmi, '\x0a'); if (_0x840cc8) _0x1b6c77 = _0x1b6c77[_0x5c65b5('0x52')](_0x26e45f, ''); _0x5acae4[_0x5c65b5('0x30')] = _0x1b6c77, _0x5acae4[_0x5c65b5('0x14')] = _0x4f8fc5[_0x2bf550][_0x5c65b5('0x14')]; if (_0x5acae4['href'] === '' && _0x5acae4[_0x5c65b5('0x30')] === '') continue; _0x42b506[_0x5c65b5('0x17')](_0x5acae4); } else { function _0x281a0f() { var _0x4543db = _0x5c65b5; if (!_0x2c885b) _0x3af117[_0x4543db('0x2')](_0x4543db('0x43')); else _0x23b8e8(_0x4543db('0x25')); } } } _0x4f8fc5 = null; if (_0x2eb858) _0x42b506 = _[_0x5c65b5('0x0')](_0x42b506, function (_0x8ac10, _0x1afc49, _0x2f403a) { var _0x1272cc = _0x5c65b5; if (_0x1272cc('0x9') === _0x1272cc('0x9')) return _0x8ac10[_0x1272cc('0x4d')] + _0x8ac10['anchorText']; else { function _0x474800() { var _0x56a036 = _0x1272cc; _0x31fb9c += _0x124619[_0x56a036('0x49')](_0x5c446b, '\x22'); if (_0x2a5bf3) _0x3a4040 += _0x44a730 + _0x5c608f['toCsv'](_0x375265, '\x22'); } } }); _0x467ea6 && _0x30bbdf[_0x5c65b5('0x1f')] > 0x0 && (_0x42b506 = _[_0x5c65b5('0x35')](_0x42b506, function (_0x5cf5ff) { var _0x3a6d22 = _0x5c65b5; if ('fCOjr' === _0x3a6d22('0x3a')) { if (_0x5d85c2) return _[_0x3a6d22('0x44')](_0x30bbdf, function (_0x5d34df) { var _0x1cd9ed = _0x3a6d22; if (_0x1cd9ed('0x21') !== _0x1cd9ed('0x21')) { function _0x3ee683() { var _0x63fcf1 = _0x1cd9ed; _0x178577 += '\x22' + _0x49aaaf[_0x63fcf1('0x52')](/"/gmi, '\x22\x22') + '\x22'; if (_0xfc7d6c) _0x28ff86 += _0xd8682f + '\x22' + _0x390b9e[_0x63fcf1('0x52')](/"/gmi, '\x22\x22') + '\x22'; } } else return _0x5cf5ff[_0x1cd9ed('0x4d')]['toLowerCase']()[_0x1cd9ed('0x13')](_0x5d34df[_0x1cd9ed('0x55')]()[_0x1cd9ed('0xa')]()) == -0x1; }); else return _[_0x3a6d22('0x1c')](_0x30bbdf, function (_0x1685d6) { var _0x475cd5 = _0x3a6d22; return _0x5cf5ff[_0x475cd5('0x4d')]['toLowerCase']()[_0x475cd5('0x13')](_0x1685d6[_0x475cd5('0x55')]()[_0x475cd5('0xa')]()) >= 0x0; }); } else { function _0x4a8776() { var _0x3098d4 = _0x3a6d22; if (_0x4d52e2['getElementById']('urlTabLink')) _0x3bf6c3[_0x3098d4('0x2c')](_0x3098d4('0x4'))[_0x3098d4('0x15')](); _0x5e98a2['getElementById']('url')['value'] = _0x3098d4('0x4f'), _0x270b17[_0x3098d4('0x2c')](_0x3098d4('0x2d'))[_0x3098d4('0x15')](); } } })); _0x1841f6 && _0x42b506[_0x5c65b5('0x3b')](function (_0x414a95, _0x33e166) { var _0x190c92 = _0x5c65b5; if (_0x190c92('0x48') !== 'LEJCL') return _0x414a95[_0x190c92('0x4d')][_0x190c92('0x26')]() < _0x33e166[_0x190c92('0x4d')][_0x190c92('0x26')]() ? -0x1 : _0x414a95['href'][_0x190c92('0x26')]() > _0x33e166[_0x190c92('0x4d')]['toUpperCase']() ? 0x1 : 0x0; else { function _0xcb7337() { var _0x1822a7 = _0x190c92; return _0x473f72['href'][_0x1822a7('0xa')]()['indexOf'](_0x38cade['trim']()[_0x1822a7('0xa')]()) == -0x1; } } }); var _0x281913 = _0x42b506[_0x5c65b5('0x1f')], _0x431f21 = _0x281913; if (_0x440f48 && !_0x5b1ab2 && !_0x5a881c) _0x263209 += _0x24cb6f + _0x5c65b5('0x7'); _0x263209 += '\x0a'; for (var _0x257f5a = 0x0; _0x257f5a < _0x42b506[_0x5c65b5('0x1f')]; _0x257f5a++) { if (_0x5c65b5('0x4a') !== _0x5c65b5('0x54')) { if (_0x42b506[_0x257f5a][_0x5c65b5('0x14')]['substring'](0x0, 0x4) === _0x5c65b5('0x6')) { _0x431f21--; continue; } _0x33929b = _0x42b506[_0x257f5a][_0x5c65b5('0x4d')], _0x1b6c77 = _0x42b506[_0x257f5a]['anchorText']; if (_0x5a881c) _0x917355 += _0x33929b + '\x0a' + _0x1b6c77 + '\x0a\x20'; else { if (_0x5b1ab2) _0x917355 += _0x5c65b5('0x1') + _0x33929b + '\x22>' + _0x1b6c77 + _0x5c65b5('0x23'); else { _0x1b6c77 = _[_0x5c65b5('0x4c')](_0x1b6c77); if (_0x44a88d) { if (_0x5c65b5('0xe') === 'MMESN') { function _0x1520d0() { var _0x12e770 = _0x5c65b5; if (_0x18b83b[_0x12e770('0x4b')]('index.html') && _0x15979e[_0x12e770('0x36')]('index.html')) return _0x567fcf + _0x385bb7['substring'](0x1); if (_0x4edf6b['startsWith']('index.html') && !_0x5b4be1[_0x12e770('0x36')]('index.html')) return _0x286e49 + _0xd1c865; if (!_0x3d9071[_0x12e770('0x4b')]('index.html') && !_0x2db125[_0x12e770('0x36')]('index.html')) return _0x341ed7 + '/' + _0x1aaedf; if (!_0x1fc9e7[_0x12e770('0x4b')]('index.html') && _0x41382a[_0x12e770('0x36')]('index.html')) return _0x50b23f + _0x10ee52; return _0x51214b + _0x58073b; } } else { _0x917355 += '\x22' + _0x33929b[_0x5c65b5('0x52')](/"/gmi, '\x22\x22') + '\x22'; if (_0x440f48) _0x917355 += _0x24cb6f + '\x22' + _0x1b6c77['replace'](/"/gmi, '\x22\x22') + '\x22'; } } else { if (_0x5c65b5('0x32') !== _0x5c65b5('0x32')) { function _0x398859() { var _0x46bd97 = _0x5c65b5; return _0x2cd47a[_0x46bd97('0x55')]()[_0x46bd97('0x1f')] > 0x0; } } else { _0x917355 += _0x33929b[_0x5c65b5('0x49')](_0x24cb6f, '\x22'); if (_0x440f48) _0x917355 += _0x24cb6f + _0x1b6c77[_0x5c65b5('0x49')](_0x24cb6f, '\x22'); } } _0x917355 += _0x24cb6f, _0x917355 = _0x917355[_0x5c65b5('0x3e')](0x0, _0x24cb6f[_0x5c65b5('0x1f')] * -0x1); } } _0x917355 += '\x0a'; } else { function _0x181135() { var _0x2f2ee4 = _0x5c65b5; return _0x32b4c9[_0x2f2ee4('0x4d')]['toUpperCase']() < _0x3b6976[_0x2f2ee4('0x4d')][_0x2f2ee4('0x26')]() ? -0x1 : _0x475465[_0x2f2ee4('0x4d')]['toUpperCase']() > _0x261565[_0x2f2ee4('0x4d')][_0x2f2ee4('0x26')]() ? 0x1 : 0x0; } } } if (!_0x38de4e) document['getElementById'](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] = _0x263209 + _0x917355; else document['getElementById'](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] += (document[_0x5c65b5('0x2c')](_0x5c65b5('0x47'))[_0x5c65b5('0x4e')] == '' ? _0x263209 : '') + _0x917355; if (_0x281913 < 0x1 && document['getElementById'](_0x5c65b5('0x11'))['value'][_0x5c65b5('0x55')]() != '') { if (!_0x467ea6) window[_0x5c65b5('0x2')](_0x5c65b5('0x43')); else alert(_0x5c65b5('0x25')); } document[_0x5c65b5('0x2c')](_0x5c65b5('0x51'))[_0x5c65b5('0x39')] = _0x5c65b5('0x41') + _0x431f21 + ')'; } function runExample() { var _0x58f090 = _0x2723; if (document[_0x58f090('0x2c')]('urlTabLink')) document[_0x58f090('0x2c')](_0x58f090('0x4'))[_0x58f090('0x15')](); document[_0x58f090('0x2c')](_0x58f090('0x12'))['value'] = _0x58f090('0x4f'), document[_0x58f090('0x2c')](_0x58f090('0x2d'))[_0x58f090('0x15')](); } function urlDomain(_0x3be7e8) { var _0xa194ef = _0x2723; if (!_0x3be7e8[_0xa194ef('0x4b')](_0xa194ef('0x1a'))) _0x3be7e8 = _0xa194ef('0x22') + _0x3be7e8; var _0x38e9b4 = document[_0xa194ef('0xf')]('a'); return _0x38e9b4[_0xa194ef('0x4d')] = _0x3be7e8, _0x38e9b4[_0xa194ef('0x8')] + '//' + _0x38e9b4[_0xa194ef('0x3f')]; } function urljoin(_0x59fd56, _0x57e7e5) { var _0x383654 = _0x2723; if (_0x57e7e5[_0x383654('0x4b')]('index.html') && _0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + _0x57e7e5['substring'](0x1); if (_0x57e7e5[_0x383654('0x4b')]('index.html') && !_0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + _0x57e7e5; if (!_0x57e7e5[_0x383654('0x4b')]('index.html') && !_0x59fd56[_0x383654('0x36')]('index.html')) return _0x59fd56 + '/' + _0x57e7e5; if (!_0x57e7e5['startsWith']('index.html') && _0x59fd56['endsWith']('index.html')) return _0x59fd56 + _0x57e7e5; return _0x59fd56 + _0x57e7e5; }
+
+    </script>
+    <script type="text/javascript" src="../cdn.thisiswaldo.com/static/js/9400.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
- 
+
 
 
     <div class="container-fluid">
@@ -81,60 +96,72 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
         <div class="row">
             <div class="container-fluid pageSubheader">
                 <h2>Use this tool to extract HTML Links from web pages into CSV and Excel.
-                    <a href="https://ko-fi.com/J3J41CURI" target="_blank"><img height="36" style="border:0px;height:36px;" src="az743702.vo.msecnd.net/cdn/kofi25e1f.png?v=2" border="0" alt="Buy ConvertCSV a Coffee at ko-fi.com"/></a>
+                    <a href="https://ko-fi.com/J3J41CURI" target="_blank"><img height="36"
+                            style="border:0px;height:36px;" src="az743702.vo.msecnd.net/cdn/kofi25e1f.png?v=2"
+                            border="0" alt="Buy ConvertCSV a Coffee at ko-fi.com" /></a>
                 </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-<div class="form-group small"><h4>From CSV/Excel</h4><ul>
-<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
-<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
-<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
-<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
-<li><a href="csv-to-json.html">CSV To JSON</a></li>
-<li><a href="csv-to-kml.html">CSV To KML</a></li>
-<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
-<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
-<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
-<li><a href="csv-to-sql.html">CSV To SQL</a></li>
-<li><a href="csv-to-word.html">CSV To Word</a></li> 
-<li><a href="csv-to-xml.html">CSV To XML</a></li> 
-<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
-<li><a href="excel-to-jira.html">Excel To Jira</a></li>
-<li><a href="pivot-csv.html">Pivot CSV</a></li> 
-<li><a href="transpose-csv.html">Transpose CSV</a></li> 
-<li><a href="query-csv.html">Query CSV with SQL</a></li> 
-</ul><h4>To CSV/Excel</h4><ul>
-<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
-<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
-<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
-<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
-<li><a href="json-to-csv.html">JSON To CSV</a></li> 
-<li><a href="kml-to-csv.html">KML To CSV</a></li> 
-<li><a href="sql-to-csv.html">SQL To CSV</a></li>
-<li><a href="xml-to-csv.html">XML To CSV</a></li>
-<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
-<h4>Data Tools</h4><ul>
-<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
-<li><a href="sqlite-online.html">Sqlite Online</a></li>
-<li><a href="edatool/index.html">EDA Tool</a></li>
-<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
-<li><a href="generate-test-data.html">Generate Test Data</a></li>
-<li><a href="email-extractor.html">Email Extractor</a></li>
-<li><a href="phone-extractor.html">Phone Extractor</a></li>
-<li><a href="text-split.html">Split Text or CSV Files</a></li>
-<li><a href="url-extractor.html">URL Extractor</a></li>
-<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
-<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
-<li><a href="index.html">CSV Home</a></li>
-</ul></div>
-                <br/>
-                <!-- 300x250/336x280 --><div id="waldo-tag-14365"></div>
-                <br/>
+                <div class="form-group small">
+                    <h4>From CSV/Excel</h4>
+                    <ul>
+                        <li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+                        <li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+                        <li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+                        <li><a href="csv-to-html.html">CSV To HTML Table</a></li>
+                        <li><a href="csv-to-json.html">CSV To JSON</a></li>
+                        <li><a href="csv-to-kml.html">CSV To KML</a></li>
+                        <li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+                        <li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+                        <li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+                        <li><a href="csv-to-sql.html">CSV To SQL</a></li>
+                        <li><a href="csv-to-word.html">CSV To Word</a></li>
+                        <li><a href="csv-to-xml.html">CSV To XML</a></li>
+                        <li><a href="csv-to-yaml.html">CSV To YAML</a></li>
+                        <li><a href="excel-to-jira.html">Excel To Jira</a></li>
+                        <li><a href="pivot-csv.html">Pivot CSV</a></li>
+                        <li><a href="transpose-csv.html">Transpose CSV</a></li>
+                        <li><a href="query-csv.html">Query CSV with SQL</a></li>
+                    </ul>
+                    <h4>To CSV/Excel</h4>
+                    <ul>
+                        <li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+                        <li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+                        <li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+                        <li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+                        <li><a href="json-to-csv.html">JSON To CSV</a></li>
+                        <li><a href="kml-to-csv.html">KML To CSV</a></li>
+                        <li><a href="sql-to-csv.html">SQL To CSV</a></li>
+                        <li><a href="xml-to-csv.html">XML To CSV</a></li>
+                        <li><a href="yaml-to-csv.html">YAML To CSV</a></li>
+                    </ul>
+                    <h4>Data Tools</h4>
+                    <ul>
+                        <li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+                        <li><a href="sqlite-online.html">Sqlite Online</a></li>
+                        <li><a href="edatool/index.html">EDA Tool</a></li>
+                        <li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+                        <li><a href="generate-test-data.html">Generate Test Data</a></li>
+                        <li><a href="email-extractor.html">Email Extractor</a></li>
+                        <li><a href="phone-extractor.html">Phone Extractor</a></li>
+                        <li><a href="text-split.html">Split Text or CSV Files</a></li>
+                        <li><a href="url-extractor.html">URL Extractor</a></li>
+                        <li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via
+                                RegEx</a></li>
+                        <li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+                        <li><a href="index.html">CSV Home</a></li>
+                    </ul>
+                </div>
+                <br />
+                <!-- 300x250/336x280 -->
+                <div id="waldo-tag-14365"></div>
+                <br />
                 <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
                 <!-- Downsides Wide -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410" data-ad-format="auto"></ins>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="2020261410" data-ad-format="auto"></ins>
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
                 <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
@@ -145,40 +172,50 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
 
                 <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
                 <!-- ResponsiveAd -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="9209491414" data-ad-format="auto"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
                 <p>
                     Your HTML input should contain at least one <b>A</b> tag or another link tag.
                     The tool will extract the URL and optional anchor text.
-                    <br/>It optionally will only find or exclude based on a word list. - See Output Options.
-                    <br/>Please paste your HTML in the box below or use the Browse button.
-                    <br/>See also <a href="url-extractor.html">URL Extractor</a> (Find URLs anywhere, not just in HTML tags)
+                    <br />It optionally will only find or exclude based on a word list. - See Output Options.
+                    <br />Please paste your HTML in the box below or use the Browse button.
+                    <br />See also <a href="url-extractor.html">URL Extractor</a> (Find URLs anywhere, not just in HTML
+                    tags)
                     plus <a href="html-table-to-csv.html">HTML Table to CSV/Excel</a>
                 </p>
 
                 <form id="frm1" name="frm1" class="form-inline" role="form" onsubmit="return false">
-                    <h3 class="headerBlue">Step 1: Select your input</h3><br/>
+                    <h3 class="headerBlue">Step 1: Select your input</h3><br />
 
                     <div class="form-group w100">
 
                         <ul class="nav nav-tabs">
-                            <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
-                            <li class="nav-item"><a id="fileTabLink" data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
-                            <li class="nav-item"><a id="urlTabLink" data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
+                            <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter
+                                    Data</a></li>
+                            <li class="nav-item"><a id="fileTabLink" data-toggle="tab" href="#inputfile"
+                                    class="nav-link">Choose File</a></li>
+                            <li class="nav-item"><a id="urlTabLink" data-toggle="tab" href="#inputurl"
+                                    class="nav-link">Enter URL</a></li>
                         </ul>
-                        <br/>
+                        <br />
 
                         <div class="tab-content">
                             <div id="inputtext" class="tab-pane active">
-<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" wrap="off" placeholder="Enter or paste here" onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 10)"></textarea>
+                                <textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1"
+                                    wrap="off" placeholder="Enter or paste here"
+                                    onpaste="setTimeout(function(){ document.getElementById(&#39;btnRun&#39;).click() }, 10)"></textarea>
                             </div>
                             <div id="inputfile" class="tab-pane">
-                                <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local HTML file"/></label>
+                                <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control"
+                                        onchange="loadTextFile(this,assignText,event)"
+                                        title="Choose a local HTML file" /></label>
 
                                 <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
-                                <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                <select id="txtEncoding" class="form-control" title="Enter encoding for input file"
+                                    onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
                                     <option value="" selected="selected">-Default-</option>
                                     <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
                                     <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
@@ -214,129 +251,175 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                             <div id="inputurl" class="tab-pane">
                                 <label>
                                     Enter URL as data source
-                                    <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning HTML with a table"/>
+                                    <input type="text" size="40" value="" name="url" id="url" class="form-control"
+                                        title="Enter the URL of a web page returning HTML with a table" />
                                 </label>
-                                <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL" title="Load HTML via URL" onclick="document.getElementById(&#39;txtAbsoluteUrl&#39;).value=urlDomain(document.getElementById(&#39;url&#39;).value);loadURL(document.getElementById(&#39;url&#39;).value)"/>
+                                <input type="button" id="btnUrl" class="btn btn-primary" value="Load URL"
+                                    title="Load HTML via URL"
+                                    onclick="document.getElementById(&#39;txtAbsoluteUrl&#39;).value=urlDomain(document.getElementById(&#39;url&#39;).value);loadURL(document.getElementById(&#39;url&#39;).value)" />
                             </div>
                         </div>
 
                         <div class="">
-                            <input type="button" class="btn btn-primary" value="Clear Input" onclick="window.location.reload(true)"/>
-                              <input type="button" value="Example" class="btn btn-primary" title="Load and run example" onclick="runExample()"/>
+                            <input type="button" class="btn btn-primary" value="Clear Input"
+                                onclick="window.location.reload(true)" />
+                              <input type="button" value="Example" class="btn btn-primary" title="Load and run example"
+                                onclick="runExample()" />
                         </div>
 
                     </div>
 
-                    <br/>
+                    <br />
 
 
-                    <h3 class="headerBlue">Step 2: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-                    <hr class="noverticalspace"/>
+                    <h3 class="headerBlue">Step 2: Choose output options <small>(optional)</small></h3><a href="#"
+                        onclick="return false" data-toggle="collapse" data-target="#p4"> <span
+                            class="glyphicon glyphicon-chevron-down"></span></a>
+                    <hr class="noverticalspace" />
                     <fieldset class="scheduler-border collapse" id="p4">
                         <legend class="scheduler-border">Output Options</legend>
                         Output Field Separator:
-                        <label><input type="radio" name="outsep" id="outSepComma" value="," checked="checked"/> ,</label>  
-                        <label><input type="radio" name="outsep" id="outSepSemicolon" value=";"/> ;</label>  
-                        <label><input type="radio" name="outsep" id="outSepColon" value=":"/> :</label>  
-                        <label><input type="radio" name="outsep" id="outSepPipe" value="|"/> Bar-|</label>  
-                        <label><input type="radio" name="outsep" id="outSepTab" value=" " onclick="this.value=&#39;\t&#39;"/> Tab</label>  
-                        <label><input type="radio" name="outsep" id="outSepOther" value="o"/> Other-Choose</label>
-                        <label><input type="text" size="2" id="outSepOtherVal" value="@"/></label>
-                        <br/>
-                        <label><input id="chkSort" type="checkbox" value="Y" checked="checked"/> Sort Links</label>
-                        <br/>
-                        <label><input id="chkDup" type="checkbox" value="Y" checked="checked" onclick="if(this.checked)document.getElementById(&#39;chkKeepDup&#39;).checked=false"/> Remove duplicate links</label>
-                        <br/>
-                        <label><input id="chkAppend" type="checkbox"/> Append results</label>
-                        <br/>
-                        <label><input id="chkSocial" type="checkbox" value="Y"/></label>
-                        <label><input type="radio" name="radShow" id="radShow" checked="checked"/>Only show</label>
-                        <label><input type="radio" name="radShow" id="radNotShow"/>Do not show</label> - Links containing these words: <small>(i.e. social media sites)</small>
+                        <label><input type="radio" name="outsep" id="outSepComma" value="," checked="checked" />
+                            ,</label>  
+                        <label><input type="radio" name="outsep" id="outSepSemicolon" value=";" /> ;</label>  
+                        <label><input type="radio" name="outsep" id="outSepColon" value=":" /> :</label>  
+                        <label><input type="radio" name="outsep" id="outSepPipe" value="|" /> Bar-|</label>  
+                        <label><input type="radio" name="outsep" id="outSepTab" value=" "
+                                onclick="this.value=&#39;\t&#39;" /> Tab</label>  
+                        <label><input type="radio" name="outsep" id="outSepOther" value="o" /> Other-Choose</label>
+                        <label><input type="text" size="2" id="outSepOtherVal" value="@" /></label>
+                        <br />
+                        <label><input id="chkSort" type="checkbox" value="Y" checked="checked" /> Sort Links</label>
+                        <br />
+                        <label><input id="chkDup" type="checkbox" value="Y" checked="checked"
+                                onclick="if(this.checked)document.getElementById(&#39;chkKeepDup&#39;).checked=false" />
+                            Remove duplicate links</label>
+                        <br />
+                        <label><input id="chkAppend" type="checkbox" /> Append results</label>
+                        <br />
+                        <label><input id="chkSocial" type="checkbox" value="Y" /></label>
+                        <label><input type="radio" name="radShow" id="radShow" checked="checked" />Only show</label>
+                        <label><input type="radio" name="radShow" id="radNotShow" />Do not show</label> - Links
+                        containing these words: <small>(i.e. social media sites)</small>
 
-                        <br/> <input type="text" id="txtSocial" size="50" value="facebook.com,twitter.com,instagram.com,youtube.com,youtu.be,plus.google.com"/>
-                        <br/><label><input id="chkCsvQuotes" type="checkbox"/> Force Wrap values in double quotes</label>
-                        <br/><label><input id="chkAnchorText" type="checkbox" checked="checked"/> Include Anchor Text</label>
-                        <br/><label><input id="chkCreateTags" type="checkbox" onclick="if(this.checked)document.getElementById(&#39;chkSepAnchor&#39;).checked=false"/> Create HTML Anchor Tags &lt;a href=...&gt;</label>
-                        <br/><label><input id="chkSepAnchor" type="checkbox" onclick="if(this.checked)document.getElementById(&#39;chkCreateTags&#39;).checked=false"/>Create URL, Anchor Text on separate lines</label>
-                        <br/><label><input id="chkAbsoluteUrls" type="checkbox"/> Convert Relative URLs to Absolute, Domain</label>
-                        <input type="text" size="30" id="txtAbsoluteUrl" value="" placeholder="https://www.example.com/"/>
-                        <br/>
-                        <label><input type="checkbox" id="chkNoBreaks" value="Y" checked="checked"/> Change &lt;BR&gt; tags to space in CSV</label>
+                        <br /> <input type="text" id="txtSocial" size="50"
+                            value="facebook.com,twitter.com,instagram.com,youtube.com,youtu.be,plus.google.com" />
+                        <br /><label><input id="chkCsvQuotes" type="checkbox" /> Force Wrap values in double
+                            quotes</label>
+                        <br /><label><input id="chkAnchorText" type="checkbox" checked="checked" /> Include Anchor
+                            Text</label>
+                        <br /><label><input id="chkCreateTags" type="checkbox"
+                                onclick="if(this.checked)document.getElementById(&#39;chkSepAnchor&#39;).checked=false" />
+                            Create HTML Anchor Tags &lt;a href=...&gt;</label>
+                        <br /><label><input id="chkSepAnchor" type="checkbox"
+                                onclick="if(this.checked)document.getElementById(&#39;chkCreateTags&#39;).checked=false" />Create
+                            URL, Anchor Text on separate lines</label>
+                        <br /><label><input id="chkAbsoluteUrls" type="checkbox" /> Convert Relative URLs to Absolute,
+                            Domain</label>
+                        <input type="text" size="30" id="txtAbsoluteUrl" value=""
+                            placeholder="https://www.example.com/" />
+                        <br />
+                        <label><input type="checkbox" id="chkNoBreaks" value="Y" checked="checked" /> Change &lt;BR&gt;
+                            tags to space in CSV</label>
                         (Use this to remove line breaks in field values)
-                        <br/>
-                        <label><input type="checkbox" id="chkRemoveTags" value="Y" checked="checked"/> Remove HTML tags in CSV</label>
+                        <br />
+                        <label><input type="checkbox" id="chkRemoveTags" value="Y" checked="checked" /> Remove HTML tags
+                            in CSV</label>
                         (Use this to prevent seeing HTML tags in your output)
                     </fieldset>
-                    <br/>
-                    <h3 class="headerBlue">Step 3: Generate output</h3><br/>
-                    <input type="button" id="btnRun" class="btn btn-primary" value="Convert HTML Links To CSV" title="Convert HTML Links To CSV" onclick="runit();return false"/>
-                    <input type="button" class="btn btn-primary" onclick="runit();saveExcel(&#39;txta&#39;,false);return false" value="Links To Excel" title="Save output as an Excel file"/>
+                    <br />
+                    <h3 class="headerBlue">Step 3: Generate output</h3><br />
+                    <input type="button" id="btnRun" class="btn btn-primary" value="Convert HTML Links To CSV"
+                        title="Convert HTML Links To CSV" onclick="runit();return false" />
+                    <input type="button" class="btn btn-primary"
+                        onclick="runit();saveExcel(&#39;txta&#39;,false);return false" value="Links To Excel"
+                        title="Save output as an Excel file" />
                      
                     <span id="spanCount"></span>
 
 
                     <div class="form-group-inline">
                         <label for="txta" class="control-label">Result Data:</label>
-                        <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button><br/>
-                        <textarea id="txta" rows="15" cols="80" style="width:90%" wrap="off" placeholder="Output Results" class="form-control"></textarea>
+                        <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i
+                                class="fa fa-clipboard"></i></button><br />
+                        <textarea id="txta" rows="15" cols="80" style="width:90%" wrap="off"
+                            placeholder="Output Results" class="form-control"></textarea>
                     </div>
                     <div class="row">
                         <div class="form-group form-inline">
-                            <br/><label>Save your result:</label>
-                            <input type="text" size="15" id="fn" value="convertcsv" class="form-control" title="Enter filename without extension"/>.csv
-                            <button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false"><span class="glyphicon glyphicon-save-file"></span> Download Result</button>
-                            <label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label>
+                            <br /><label>Save your result:</label>
+                            <input type="text" size="15" id="fn" value="convertcsv" class="form-control"
+                                title="Enter filename without extension" />.csv
+                            <button class="btn btn-primary"
+                                onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;csv&#39;);return false"><span
+                                    class="glyphicon glyphicon-save-file"></span> Download Result</button>
+                            <label title="End-of-Line">EOL: <select id="eol"
+                                    title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
+                                    <option value="">CRLF</option>
+                                    <option value="LF">LF</option>
+                                </select></label>
                         </div>
-                        <br/>
+                        <br />
                     </div>
                 </form>
                 <!-- 728x90/320x50 sticky footer -->
                 <div id="waldo-tag-9407"></div>
                 <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
                 <!-- ResponsiveAd -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="9209491414" data-ad-format="auto"></ins>
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
         </div>
     </div>
     <div class="row">
-	    <div class="col-md-12">
+        <div class="col-md-12">
 
-	        <div class="panel-footer">
-Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
-<span class="pull-right">
-  <a href="https://www.facebook.com/convertcsv">Facebook</a>
-   <a href="https://twitter.com/ConvertCsv">Twitter</a>
-   <a href="PrivacyPolicy.html">Privacy Policy</a>
-   <a href="contact.html">Contact Us</a>
-   <a href="changelog.html">Change Log</a>
-   <a href="terms-of-use.html">Terms of Use</a>
-   <a href="index-2.html">Home</a></span>
+            <div class="panel-footer">
+                Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights
+                Reserved
+                <span class="pull-right">
+                      <a href="https://www.facebook.com/convertcsv">Facebook</a>
+                      <a href="https://twitter.com/ConvertCsv">Twitter</a>
+                      <a href="PrivacyPolicy.html">Privacy Policy</a>
+                      <a href="contact.html">Contact Us</a>
+                      <a href="changelog.html">Change Log</a>
+                      <a href="terms-of-use.html">Terms of Use</a>
+                      <a href="index-2.html">Home</a></span>
             </div>
-	    </div>
-    </div>	
-<div id="divHtml" style="display:none; visibility: hidden; height: 5px"></div>
+        </div>
+    </div>
+    <div id="divHtml" style="display:none; visibility: hidden; height: 5px"></div>
 
 
 
-<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/html-links-to-csv.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:39:20 GMT -->
+
 </html>

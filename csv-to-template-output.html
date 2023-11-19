@@ -1,1072 +1,1373 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <!-- Mirrored from www.convertcsv.com/csv-to-template-output.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:40:12 GMT -->
-<head><meta charset="utf-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":2,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"215f9637-49b7-4a81-7e2c-989b79b1284e","response_size_orig":61544,"response_time_orig":58,"template_id":5,"url":"https://www.convertcsv.com/csv-to-template-output.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-<!-- Copyright 2013 - 2023 ConvertCsv.com -->
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Reformat CSV via Template Engine"/>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta http-equiv="Pragma" content="no-cache"/>
-<meta http-equiv="Expires" content="0"/>
+<head>
+    <meta charset="utf-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('detroitchicago/boise.js', 'detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 2, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "215f9637-49b7-4a81-7e2c-989b79b1284e", "response_size_orig": 61544, "response_time_orig": 58, "template_id": 5, "url": "https://www.convertcsv.com/csv-to-template-output.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('porpoiseant/et.js', 'porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('detroitchicago/raleigh.js', 'detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('detroitchicago/vista.js', 'detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('detroitchicago/tampa.js', 'detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+    <!-- Copyright 2013 - 2023 ConvertCsv.com -->
 
-<title>CSV Templates</title>
-<script src="js/underscore-min.js"></script>
-<script src="strsupbea6.js?v=7"></script>
-<script src="localreadc164.js?v=9"></script>
-<script src="csvparsebea6.js?v=7"></script>
-<script src="csvsup7893.js?v=24"></script>
-<script src="js/blob.js"></script>
-<script src="js/filesaver.js"></script>
-<script src="js/storagesup.js"></script>
-<script src="js/csvdatesup.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Reformat CSV via Template Engine" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<script src="ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-<script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
-<script src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
-<script src="cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
-<link rel="stylesheet" href="js/custom3860.css?v=1"/>
+    <title>CSV Templates</title>
+    <script src="js/underscore-min.js"></script>
+    <script src="strsupbea6.js?v=7"></script>
+    <script src="localreadc164.js?v=9"></script>
+    <script src="csvparsebea6.js?v=7"></script>
+    <script src="csvsup7893.js?v=24"></script>
+    <script src="js/blob.js"></script>
+    <script src="js/filesaver.js"></script>
+    <script src="js/storagesup.js"></script>
+    <script src="js/csvdatesup.js"></script>
 
-<script type="text/javascript">
-    function assignText(s) {
-        if(document.getElementById("chkReplaceAccents")){
-           if((document.getElementById('chkReplaceAccents')).checked)s = s.removeDiacritics();  
-        }
-        document.getElementById('txt1').value = s;
-        parseAndOptions(CSV);
-        setupSortDD();
-        document.getElementById('btnRun').click();
-    }
-    function reprocessCsv() {
-        parseAndOptions(CSV);
-        setupSortDD();
-    }
-    function runit() {
-        var cond = document.getElementById('txtCond').value.trim();
-        var options = {"global":[]};
-        var chks = "".split(",");
-        var v="";
-        var i,j;
-        var len=chks.length;
-        for(i=0;i<len;i++) {
-            if(document.getElementById(chks[i]) && (document.getElementById(chks[i])).checked) {
-                options.global.push((document.getElementById(chks[i])).value);
-            }        
-        }
-        v=radiovalue(document.frm1.radOutput);
-        if(v != "") {
-            if(v==="toCsv()") {
-                v=radiovalue(document.frm1.outsep);
-                if(v!="")v="toCsv('" + v + "')";
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="cdn.jsdelivr.net/alasql/0.3.8/alasql.min.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.5/xlsx.full.min.js"></script>
+    <script src="cdn.jsdelivr.net/npm/moment%402.20.1/moment.js"></script>
+    <link rel="stylesheet" href="js/custom3860.css?v=1" />
+
+    <script type="text/javascript">
+        function assignText(s) {
+            if (document.getElementById("chkReplaceAccents")) {
+                if ((document.getElementById('chkReplaceAccents')).checked) s = s.removeDiacritics();
             }
-            //
-            options.global.push(v);
+            document.getElementById('txt1').value = s;
+            parseAndOptions(CSV);
+            setupSortDD();
+            document.getElementById('btnRun').click();
         }
-        if (cond.length > 0 && !cond.startsWith("{")) cond = '{' + cond;
-        if (cond.length > 0 && !cond.endsWith("}")) cond += '}';
-        if (CSV.mySortNeeded) parseAndOptions(CSV);
-        expertMode();
-        if (!document.getElementById('chkHtml').checked) {
-            document.getElementById('diva').style.visibility = "hidden";
-            document.getElementById('diva').innerHTML = "";
-            document.getElementById('txta').value = csvFromTem(CSV, document.getElementById('txtHeader').value, document.getElementById('txtTemplate').value, document.getElementById('txtBetweenTemplate').value, document.getElementById('txtFooter').value, cond, options);
+        function reprocessCsv() {
+            parseAndOptions(CSV);
+            setupSortDD();
         }
-        else {
-            document.getElementById('diva').style.visibility = "visible";
-            document.getElementById('txta').value = csvFromTem(CSV, document.getElementById('txtHeader').value, document.getElementById('txtTemplate').value, document.getElementById('txtBetweenTemplate').value, document.getElementById('txtFooter').value, cond, options);
-            document.getElementById('diva').innerHTML = document.getElementById('txta').value;
-        }
-        saveCsv();
-        //saveCurrentScript();
-    } // runit()
-    function genTemplate() {
-        document.getElementById("txtHeadPre").value = "";
-        document.getElementById("txtHeadEach").value = "";
-        document.getElementById("txtHeadBetween").value = "";
-        document.getElementById("txtHeadPost").value = "{br}";
-        document.getElementById("txtFieldPre").value = "";
-        document.getElementById("txtFieldEach").value = "";
-        document.getElementById("txtFieldBetween").value = "";
-        document.getElementById("txtFieldPost").value = "{br}";
-        setRadioValue(document.getElementById('frm1').radOutput,"");
-        var ttype = document.getElementById('selType').value;
-        var s = "";
-        switch (ttype) {
-            case 'HTML':
-                setRadioValue(document.getElementById('frm1').radOutput,"toHtml()");
-                document.getElementById("txtHeadPre").value = '<table border="1"><tr>';
-                document.getElementById("txtHeadEach").value = "<th>{h}</th>";
-                document.getElementById("txtHeadPost").value = "</tr>{br}";
-                document.getElementById("txtFieldPre").value = "<tr>";
-                document.getElementById("txtFieldEach").value = "<td>{f}</td>";
-                document.getElementById("txtFieldBetween").value = "";
-                document.getElementById("txtFieldPost").value = "</tr>{br}";
+        function runit() {
+            var cond = document.getElementById('txtCond').value.trim();
+            var options = { "global": [] };
+            var chks = "".split(",");
+            var v = "";
+            var i, j;
+            var len = chks.length;
+            for (i = 0; i < len; i++) {
+                if (document.getElementById(chks[i]) && (document.getElementById(chks[i])).checked) {
+                    options.global.push((document.getElementById(chks[i])).value);
+                }
+            }
+            v = radiovalue(document.frm1.radOutput);
+            if (v != "") {
+                if (v === "toCsv()") {
+                    v = radiovalue(document.frm1.outsep);
+                    if (v != "") v = "toCsv('" + v + "')";
+                }
+                //
+                options.global.push(v);
+            }
+            if (cond.length > 0 && !cond.startsWith("{")) cond = '{' + cond;
+            if (cond.length > 0 && !cond.endsWith("}")) cond += '}';
+            if (CSV.mySortNeeded) parseAndOptions(CSV);
+            expertMode();
+            if (!document.getElementById('chkHtml').checked) {
+                document.getElementById('diva').style.visibility = "hidden";
+                document.getElementById('diva').innerHTML = "";
+                document.getElementById('txta').value = csvFromTem(CSV, document.getElementById('txtHeader').value, document.getElementById('txtTemplate').value, document.getElementById('txtBetweenTemplate').value, document.getElementById('txtFooter').value, cond, options);
+            }
+            else {
+                document.getElementById('diva').style.visibility = "visible";
+                document.getElementById('txta').value = csvFromTem(CSV, document.getElementById('txtHeader').value, document.getElementById('txtTemplate').value, document.getElementById('txtBetweenTemplate').value, document.getElementById('txtFooter').value, cond, options);
+                document.getElementById('diva').innerHTML = document.getElementById('txta').value;
+            }
+            saveCsv();
+            //saveCurrentScript();
+        } // runit()
+        function genTemplate() {
+            document.getElementById("txtHeadPre").value = "";
+            document.getElementById("txtHeadEach").value = "";
+            document.getElementById("txtHeadBetween").value = "";
+            document.getElementById("txtHeadPost").value = "{br}";
+            document.getElementById("txtFieldPre").value = "";
+            document.getElementById("txtFieldEach").value = "";
+            document.getElementById("txtFieldBetween").value = "";
+            document.getElementById("txtFieldPost").value = "{br}";
+            setRadioValue(document.getElementById('frm1').radOutput, "");
+            var ttype = document.getElementById('selType').value;
+            var s = "";
+            switch (ttype) {
+                case 'HTML':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toHtml()");
+                    document.getElementById("txtHeadPre").value = '<table border="1"><tr>';
+                    document.getElementById("txtHeadEach").value = "<th>{h}</th>";
+                    document.getElementById("txtHeadPost").value = "</tr>{br}";
+                    document.getElementById("txtFieldPre").value = "<tr>";
+                    document.getElementById("txtFieldEach").value = "<td>{f}</td>";
+                    document.getElementById("txtFieldBetween").value = "";
+                    document.getElementById("txtFieldPost").value = "</tr>{br}";
 
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</table>';
-                document.getElementById("chkHtml").checked = true;
-                document.getElementById('btnRun').click();
-                break;
-            case 'HTML#':
-                setRadioValue(document.getElementById('frm1').radOutput,"toHtml()");
-                document.getElementById("txtHeadPre").value = '<table border="1"><tr><th>#</th>';
-                document.getElementById("txtHeadEach").value = "<th>{h}</th>";
-                document.getElementById("txtHeadPost").value = "</tr>{br}";
-                document.getElementById("txtFieldPre").value = "<tr><td>{seq}</td>";
-                document.getElementById("txtFieldEach").value = "<td>{f}</td>";
-                document.getElementById("txtFieldBetween").value = "";
-                document.getElementById("txtFieldPost").value = "</tr>{br}";
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</table>';
+                    document.getElementById("chkHtml").checked = true;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'HTML#':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toHtml()");
+                    document.getElementById("txtHeadPre").value = '<table border="1"><tr><th>#</th>';
+                    document.getElementById("txtHeadEach").value = "<th>{h}</th>";
+                    document.getElementById("txtHeadPost").value = "</tr>{br}";
+                    document.getElementById("txtFieldPre").value = "<tr><td>{seq}</td>";
+                    document.getElementById("txtFieldEach").value = "<td>{f}</td>";
+                    document.getElementById("txtFieldBetween").value = "";
+                    document.getElementById("txtFieldPost").value = "</tr>{br}";
 
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</table>';
-                document.getElementById("chkHtml").checked = true;
-                document.getElementById('btnRun').click();
-                break;
-            case 'DL':
-                setRadioValue(document.getElementById('frm1').radOutput,"toHtml()");
-                s = '<dl>{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '  <dt> Record {seq}\n';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '    <dd>{h' + j + '}: {f' + j + '}</dd>\n';
-                }
-                s += '  </dt>\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</dl>{br}';
-                document.getElementById("chkHtml").checked = true;
-                document.getElementById('btnRun').click();
-                break;
-            case 'UL':
-                setRadioValue(document.getElementById('frm1').radOutput,"toHtml()");
-                s = '<ul>{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '  <li> Record {seq}\n  <ul>\n';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '    <li>{h' + j + '}: {f' + j + '}</li>\n';
-                }
-                s += '  </ul></li>\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</ul>{br}';
-                document.getElementById("chkHtml").checked = true;
-                document.getElementById('btnRun').click();
-                break;
-            case 'XML':
-                setRadioValue(document.getElementById('frm1').radOutput,"toXml()");
-                s = '<?xml version="1.0"?>{br}<rowset>{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '<row>\n';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '<{h' + j + '}>{f' + j + '}</{h' + j + '}>\n';
-                }
-                s += '</row>\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</rowset>';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'JSON': // array of structures
-                setRadioValue(document.getElementById('frm1').radOutput,"toJson()");
-                s = 'var myvar = [{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '{lb}\n   ';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '"{h' + j + '}":';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '}"';
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</table>';
+                    document.getElementById("chkHtml").checked = true;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'DL':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toHtml()");
+                    s = '<dl>{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '  <dt> Record {seq}\n';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '    <dd>{h' + j + '}: {f' + j + '}</dd>\n';
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '"null"' + ':f' + j + '}';
+                    s += '  </dt>\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</dl>{br}';
+                    document.getElementById("chkHtml").checked = true;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'UL':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toHtml()");
+                    s = '<ul>{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '  <li> Record {seq}\n  <ul>\n';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '    <li>{h' + j + '}: {f' + j + '}</li>\n';
                     }
-                    s += "\n";
-                    if (j != CSV.arHeaderRow.length) s += "  ,";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '];';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'ROWS':
-                s = '';
-                document.getElementById('txtHeader').value = s;
-                s = '';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '{f' + j + '.replace(/\\r\\n|\\r|\\n/," ")}\n';
-                }
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'LUAA': // lua array table 
-                s = 'local myvar = {lb}{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '  [{rn}]={lb}';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '["{h' + j + '.removePunctuation()}"]=';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '  </ul></li>\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</ul>{br}';
+                    document.getElementById("chkHtml").checked = true;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'XML':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toXml()");
+                    s = '<?xml version="1.0"?>{br}<rowset>{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '<row>\n';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '<{h' + j + '}>{f' + j + '}</{h' + j + '}>\n';
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                    s += '</row>\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</rowset>';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'JSON': // array of structures
+                    setRadioValue(document.getElementById('frm1').radOutput, "toJson()");
+                    s = 'var myvar = [{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '{lb}\n   ';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '"{h' + j + '}":';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '"null"' + ':f' + j + '}';
+                        }
+                        s += "\n";
+                        if (j != CSV.arHeaderRow.length) s += "  ,";
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '{rb}';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'LUAB': // lua dictionary table 
-                s = 'local myvar = {lb}{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '  ["{f1}"]={lb}';
-                for (j = 2; j <= CSV.arHeaderRow.length; j++) {
-                    s += '["{h' + j + '.removePunctuation()}"]=';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '];';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'ROWS':
+                    s = '';
+                    document.getElementById('txtHeader').value = s;
+                    s = '';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '{f' + j + '.replace(/\\r\\n|\\r|\\n/," ")}\n';
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'LUAA': // lua array table 
+                    s = 'local myvar = {lb}{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '  [{rn}]={lb}';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '["{h' + j + '.removePunctuation()}"]=';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '{rb}';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'PHPARR': // PHP Array
-                s = '$myvar = Array({br}';
-                document.getElementById('txtHeader').value = s;
-                s = ' Array(';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '{rb}';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'LUAB': // lua dictionary table 
+                    s = 'local myvar = {lb}{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '  ["{f1}"]={lb}';
+                    for (j = 2; j <= CSV.arHeaderRow.length; j++) {
+                        s += '["{h' + j + '.removePunctuation()}"]=';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '{rb}';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'PHPARR': // PHP Array
+                    s = '$myvar = Array({br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = ' Array(';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '){if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = ');';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'PHPKEY': // PHP Associative Array
-                s = '$myvar = Array({br}';
-                document.getElementById('txtHeader').value = s;
-                s = ' Array(';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '"{h' + j + '}" =>';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '){if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = ');';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'PHPKEY': // PHP Associative Array
+                    s = '$myvar = Array({br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = ' Array(';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '"{h' + j + '}" =>';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                    s += '){if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = ');';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'PYTHON': // Python Language Dictionary
+                    s = 'myvar = [{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '{lb}';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '"{h' + j + '}":';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '"None"' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '){if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = ');';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'PYTHON': // Python Language Dictionary
-                s = 'myvar = [{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '{lb}';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '"{h' + j + '}":';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '];';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'RUBY': // ruby language
+                    s = 'myvar = [{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '{lb}';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '"{h' + j + '}"=>';
+                        if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '.toJson()}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                        }
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '"None"' + ':f' + j + '}';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '];';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'VB': // VbScript
+                    s = 'Dim myvar({nr},{nh}){br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '';
+                    for (j = 1; j <= CSV.dataRowsFound; j++) {
+                        s += 'myvar({seq-1},' + (j - 1) + ') = {f' + j + ".enclose('\"','\"')}" + '\n';
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '];';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'RUBY': // ruby language
-                s = 'myvar = [{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '{lb}';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '"{h' + j + '}"=>';
-                    if (CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '.toJson()}"';
+                    s += '\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'C': // C
+                    setRadioValue(document.getElementById('frm1').radOutput, "toJson()");
+                    s = 'const char myvar[][] = {lb}{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '{lb} ';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        if (1 == 1 || CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
+                            s += '"{f' + j + '}"';
+                        }
+                        else {
+                            s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                        }
+                        //s += "{br}";
+                        if (j != CSV.arHeaderRow.length) s += ",";
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '"nil"' + ':f' + j + '}';
+                    s += '{rb}{if(rn<nr)","}\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '{rb};';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'LDIF': // name:value
+                    document.getElementById('txtHeader').value = "";
+                    s = '';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '{h' + j + '}:{f' + j + '.replace(/\\r\\n|\\r|\\n/," ")}\n';
                     }
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '];';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'VB': // VbScript
-                s = 'Dim myvar({nr},{nh}){br}';
-                document.getElementById('txtHeader').value = s;
-                s = '';
-                for (j = 1; j <= CSV.dataRowsFound; j++) {
-                    s += 'myvar({seq-1},' + (j-1) + ') = {f' + j + ".enclose('\"','\"')}" + '\n';
-                }
-                s += '\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'C': // C
-                setRadioValue(document.getElementById('frm1').radOutput,"toJson()");
-                s = 'const char myvar[][] = {lb}{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '{lb} ';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    if (1==1 || CSV.statsCnt[j - 1].fieldType != "N" && CSV.statsCnt[j - 1].fieldType != "I") {
-                        s += '"{f' + j + '}"';
+                    s += '{br}';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'URL': // ?name=value&name=value
+                    document.getElementById('txtHeader').value = "";
+                    s = '?';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        if (j > 1) s += "&";
+                        s += '{escape(h' + j + ')}={escape(f' + j + ')}';
                     }
-                    else {
-                        s += '{(f' + j + ')==""?' + '""' + ':f' + j + '}';
+                    document.getElementById('txtTemplate').value = s + '\n';
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'OPTION':
+                    setRadioValue(document.getElementById('frm1').radOutput, "toHtml()");
+                    s = 'Choose: <select>{br}';
+                    document.getElementById('txtHeader').value = s;
+                    s = '<option value="{f1}">{f2}</option>\n';
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '</select>';
+                    document.getElementById("chkHtml").checked = true;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'CSV': // semi-colons
+                    setRadioValue(document.getElementById('frm1').radOutput, "toCsv()");
+                    setRadioValue(document.getElementById('frm1').outsep, ";");
+                    document.getElementById("txtHeadEach").value = "{h}";
+                    document.getElementById("txtHeadBetween").value = ";";
+                    document.getElementById("txtHeadPost").value = "{br}";
+                    document.getElementById("txtFieldEach").value = "{f}";
+                    document.getElementById("txtFieldBetween").value = ";";
+                    document.getElementById("txtFieldPost").value = "{br}";
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'CSVU': // to with comma to upper case
+                    setRadioValue(document.getElementById('frm1').radOutput, "toCsv()");
+                    setRadioValue(document.getElementById('frm1').outsep, ",");
+                    document.getElementById("txtHeadEach").value = "{H}";
+                    document.getElementById("txtHeadBetween").value = ",";
+                    document.getElementById("txtHeadPost").value = "{br}";
+                    document.getElementById("txtFieldEach").value = "{F}";
+                    document.getElementById("txtFieldBetween").value = ",";
+                    document.getElementById("txtFieldPost").value = "{br}";
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'JIRA': // JIRA wiki table
+                    s = '||';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '{h' + j + '.replace("\\\\","\\\\\\\\").replace("|","\\\\|")}';
+                        s += "||";
                     }
-                    //s += "{br}";
-                    if (j != CSV.arHeaderRow.length) s += ",";
-                }
-                s += '{rb}{if(rn<nr)","}\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '{rb};';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'LDIF': // name:value
-                document.getElementById('txtHeader').value = "";
-                s = '';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '{h' + j + '}:{f' + j + '.replace(/\\r\\n|\\r|\\n/," ")}\n';
-                }
-                s += '{br}';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'URL': // ?name=value&name=value
-                document.getElementById('txtHeader').value = "";
-                s = '?';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    if (j > 1) s += "&";
-                    s += '{escape(h' + j + ')}={escape(f' + j + ')}';
-                }
-                document.getElementById('txtTemplate').value = s + '\n';
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'OPTION':
-                setRadioValue(document.getElementById('frm1').radOutput,"toHtml()");
-                s = 'Choose: <select>{br}';
-                document.getElementById('txtHeader').value = s;
-                s = '<option value="{f1}">{f2}</option>\n';
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '</select>';
-                document.getElementById("chkHtml").checked = true;
-                document.getElementById('btnRun').click();
-                break;
-            case 'CSV': // semi-colons
-                setRadioValue(document.getElementById('frm1').radOutput,"toCsv()");
-                setRadioValue(document.getElementById('frm1').outsep,";");
-                document.getElementById("txtHeadEach").value = "{h}";
-                document.getElementById("txtHeadBetween").value = ";";
-                document.getElementById("txtHeadPost").value = "{br}";
-                document.getElementById("txtFieldEach").value = "{f}";
-                document.getElementById("txtFieldBetween").value = ";";
-                document.getElementById("txtFieldPost").value = "{br}";
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'CSVU': // to with comma to upper case
-                setRadioValue(document.getElementById('frm1').radOutput,"toCsv()");
-                setRadioValue(document.getElementById('frm1').outsep,",");
-                document.getElementById("txtHeadEach").value = "{H}";
-                document.getElementById("txtHeadBetween").value = ",";
-                document.getElementById("txtHeadPost").value = "{br}";
-                document.getElementById("txtFieldEach").value = "{F}";
-                document.getElementById("txtFieldBetween").value = ",";
-                document.getElementById("txtFieldPost").value = "{br}";
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'JIRA': // JIRA wiki table
-                s = '||';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '{h' + j + '.replace("\\\\","\\\\\\\\").replace("|","\\\\|")}';
-                    s += "||";
-                }
-                s += "{br}";
-                document.getElementById('txtHeader').value = s;
-                s = '|';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '{f' + j + '.replace("\\\\","\\\\\\\\").replace("|","\\\\|")}';
-                    s += "|";
-                }
-                s += "{br}";
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = '';
-                document.getElementById('txtFooter').value = '';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
-            case 'SQLIN': // SQL IN CLAUSE
-                setRadioValue(document.getElementById('frm1').radOutput,"");
-                setRadioValue(document.getElementById('frm1').outsep,",");
-                s = CSV.arHeaderRow.length>1 ? '(' : '';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    s += '{h' + j + '.toCsv()}';
-                    if (j < CSV.arHeaderRow.length) s += ",";
-                }
-                s += (CSV.arHeaderRow.length>1 ? ")":"") + " IN ({br}";
-                document.getElementById('txtHeader').value = s;
-                s = CSV.arHeaderRow.length>1 ? '  (' : '   ';
-                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                    if(CSV.statsCnt[j-1] && CSV.statsCnt[j-1].fieldType==="VC")
-                    s += '{/NULL|null/.test(f' + j + ')?"NULL":f' + j + '.toSql(true)}'; 
-                    else
-                    s += '{f' + j + '||"NULL"}'; 
-                    if (j < CSV.arHeaderRow.length) s += ",";
-                }
-                s += (CSV.arHeaderRow.length>1 ? ")":"") + "\n";
-                document.getElementById('txtTemplate').value = s;
-                document.getElementById('txtBetweenTemplate').value = ',';
-                document.getElementById('txtFooter').value = ')';
-                document.getElementById("chkHtml").checked = false;
-                document.getElementById('btnRun').click();
-                break;
+                    s += "{br}";
+                    document.getElementById('txtHeader').value = s;
+                    s = '|';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '{f' + j + '.replace("\\\\","\\\\\\\\").replace("|","\\\\|")}';
+                        s += "|";
+                    }
+                    s += "{br}";
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = '';
+                    document.getElementById('txtFooter').value = '';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+                case 'SQLIN': // SQL IN CLAUSE
+                    setRadioValue(document.getElementById('frm1').radOutput, "");
+                    setRadioValue(document.getElementById('frm1').outsep, ",");
+                    s = CSV.arHeaderRow.length > 1 ? '(' : '';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        s += '{h' + j + '.toCsv()}';
+                        if (j < CSV.arHeaderRow.length) s += ",";
+                    }
+                    s += (CSV.arHeaderRow.length > 1 ? ")" : "") + " IN ({br}";
+                    document.getElementById('txtHeader').value = s;
+                    s = CSV.arHeaderRow.length > 1 ? '  (' : '   ';
+                    for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                        if (CSV.statsCnt[j - 1] && CSV.statsCnt[j - 1].fieldType === "VC")
+                            s += '{/NULL|null/.test(f' + j + ')?"NULL":f' + j + '.toSql(true)}';
+                        else
+                            s += '{f' + j + '||"NULL"}';
+                        if (j < CSV.arHeaderRow.length) s += ",";
+                    }
+                    s += (CSV.arHeaderRow.length > 1 ? ")" : "") + "\n";
+                    document.getElementById('txtTemplate').value = s;
+                    document.getElementById('txtBetweenTemplate').value = ',';
+                    document.getElementById('txtFooter').value = ')';
+                    document.getElementById("chkHtml").checked = false;
+                    document.getElementById('btnRun').click();
+                    break;
+            }
         }
-    }
-    function runExample()
-    {
-        if (document.getElementById("defaultTabLink")) document.getElementById("defaultTabLink").click();
-        clearAll();
-        document.getElementById('chkHeader').checked = true;
-        document.getElementById('txt1').value=getExampleCsv();
-        parseAndOptions(CSV,true);
-        genTemplate();
-        document.getElementById('btnRun').click();
-        setupSortDD(); 
-    }
-    function expertMode(name,value)
-    {
-        var j;
-        var s="";
-        var v="";
-        var b="";
-        //txtHeadPre, txtHeadEach, txtHeadBetween, txtHeadPost
-        //txtFieldPre,txtFieldEach,txtFieldBetween,txtFieldPost
-        //txtHeader txtTemplate txtBetweenTemplate txtFooter
-        if (document.getElementById("chkExpertEnabled") && !document.getElementById("chkExpertEnabled").checked) return;
-        // Heading first
-        s = document.getElementById("txtHeadPre").value;
-        v = document.getElementById("txtHeadEach").value;
-        b = document.getElementById("txtHeadBetween").value;
-        if(s!="" ||v!="" || b!= "") {
+        function runExample() {
+            if (document.getElementById("defaultTabLink")) document.getElementById("defaultTabLink").click();
+            clearAll();
+            document.getElementById('chkHeader').checked = true;
+            document.getElementById('txt1').value = getExampleCsv();
+            parseAndOptions(CSV, true);
+            genTemplate();
+            document.getElementById('btnRun').click();
+            setupSortDD();
+        }
+        function expertMode(name, value) {
+            var j;
+            var s = "";
+            var v = "";
+            var b = "";
+            //txtHeadPre, txtHeadEach, txtHeadBetween, txtHeadPost
+            //txtFieldPre,txtFieldEach,txtFieldBetween,txtFieldPost
+            //txtHeader txtTemplate txtBetweenTemplate txtFooter
+            if (document.getElementById("chkExpertEnabled") && !document.getElementById("chkExpertEnabled").checked) return;
+            // Heading first
+            s = document.getElementById("txtHeadPre").value;
+            v = document.getElementById("txtHeadEach").value;
+            b = document.getElementById("txtHeadBetween").value;
+            if (s != "" || v != "" || b != "") {
+                for (j = 1; j <= CSV.arHeaderRow.length; j++) {
+                    if (v.indexOf("{h}") >= 0) { s += v.replace("{h}", "{h" + j + "}"); }
+                    else if (v.indexOf("{H}") >= 0) { s += v.replace("{H}", "{H" + j + "}"); }
+                    else { s += v; }
+                    if (j < CSV.arHeaderRow.length) s += b;
+                }
+                s += document.getElementById("txtHeadPost").value;
+                if (s != "") document.getElementById("txtHeader").value = s;
+            }
+            // Now field
+            s = document.getElementById("txtFieldPre").value;
+            v = document.getElementById("txtFieldEach").value;
+            b = document.getElementById("txtFieldBetween").value;
+            if (s == "" && v == "" && b == "") return;
+            //alert("v="+v)
             for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-                if(v.indexOf("{h}")>=0){s += v.replace("{h}","{h"+j+"}");}
-                else if(v.indexOf("{H}")>=0){s += v.replace("{H}","{H"+j+"}");}
-                else {s += v;}
-                if(j<CSV.arHeaderRow.length)s += b;
+                if (v.indexOf("{f}") >= 0) { s += v.replace("{f}", "{f" + j + "}").replace("{h}", "{h" + j + "}"); }
+                else if (v.indexOf("{F}") >= 0) { s += v.replace("{F}", "{F" + j + "}").replace("{H}", "{H" + j + "}"); }
+                else { s += v; }
+                if (j < CSV.arHeaderRow.length) s += b;
             }
-            s+= document.getElementById("txtHeadPost").value;
-            if(s!="")document.getElementById("txtHeader").value = s;
+            s += document.getElementById("txtFieldPost").value;
+            document.getElementById("txtTemplate").value = s;
+
         }
-        // Now field
-        s = document.getElementById("txtFieldPre").value;
-        v = document.getElementById("txtFieldEach").value;
-        b = document.getElementById("txtFieldBetween").value;
-        if (s == "" && v == "" && b == "") return;
-        //alert("v="+v)
-        for (j = 1; j <= CSV.arHeaderRow.length; j++) {
-            if (v.indexOf("{f}") >= 0) { s += v.replace("{f}", "{f" + j + "}").replace("{h}", "{h" + j + "}");}
-            else if (v.indexOf("{F}") >= 0) { s += v.replace("{F}", "{F" + j + "}").replace("{H}", "{H" + j + "}");}
-            else { s += v; }
-            if(j<CSV.arHeaderRow.length)s += b;
+        function loadLastScript(name) {
+            ddgForm2Storage.restoreForm(name || 'csvTemplate',
+                function (fldObj) {
+                    if (fldObj.id === "txt1") {
+                        parseAndOptions(CSV);
+                        setupSortDD();
+                    }
+                }
+            );
+            assignText(document.getElementById("txt1").value);
         }
-        s+= document.getElementById("txtFieldPost").value;
-        document.getElementById("txtTemplate").value = s;
-
-    }
-    function loadLastScript(name)
-    {
-         ddgForm2Storage.restoreForm(name || 'csvTemplate',
-               function(fldObj) 
-               { 
-                   if(fldObj.id==="txt1") {
-                       parseAndOptions(CSV);
-                       setupSortDD();
-                   }
-               }
+        function saveCurrentScript(name) {
+            ddgForm2Storage.saveForm(name || 'csvTemplate');
+        }
+        function loadForm(s) {
+            document.frm1.reset();
+            var frms = JSON.parse(s);
+            ddgFormSerializer.restoreForm(frms,
+                function (fldObj) {
+                    if (fldObj.id === "txt1") {
+                        parseAndOptions(CSV);
+                        setupSortDD()
+                    }
+                }
             );
-         assignText(document.getElementById("txt1").value);
-    }
-    function saveCurrentScript(name)
-    {
-        ddgForm2Storage.saveForm(name || 'csvTemplate');
-    }
-    function loadForm(s)
-    {
-       document.frm1.reset();
-       var frms = JSON.parse(s);
-       ddgFormSerializer.restoreForm(frms,
-               function(fldObj) 
-               { 
-                   if(fldObj.id==="txt1") {
-                       parseAndOptions(CSV);
-                       setupSortDD()
-                   }
-               }
-            );
-         assignText(document.getElementById("txt1").value);
-    }
-    function saveForm(fn)
-    {
-        fn=fn||"template.json";
-        var frms=ddgFormSerializer.saveForm();
-        saveOutput(JSON.stringify(frms,null,3),fn,"");
-    }
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+            assignText(document.getElementById("txt1").value);
+        }
+        function saveForm(fn) {
+            fn = fn || "template.json";
+            var frms = ddgFormSerializer.saveForm();
+            saveOutput(JSON.stringify(frms, null, 3), fn, "");
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-<link rel='canonical' href='csv-to-template-output.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":2,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"215f9637-49b7-4a81-7e2c-989b79b1284e","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":61544,"response_time_orig":58,"serverid":"i-0d02e0c815a82de98","state":"KA","t_epoch":1700314587,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/csv-to-template-output.htm","word_count":1175,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel='canonical' href='csv-to-template-output.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 2, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "215f9637-49b7-4a81-7e2c-989b79b1284e", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 61544, "response_time_orig": 58, "serverid": "i-0d02e0c815a82de98", "state": "KA", "t_epoch": 1700314587, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/csv-to-template-output.htm", "word_count": 1175, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head> 
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
+
 <body onload="CSV.mySortNeeded=true;loadCsv()">
 
-<div class="container-fluid">
-    <div class="row">
-	    <div class="jumbotron pageHeader">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="jumbotron pageHeader">
                 <h1 class="text-center">Generate Anything from CSV using Templates</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="container-fluid pageSubheader">
-            <h2>Use templates to generate data from your CSV</h2>
-        </div>
-    </div>
-	<div class="row">
-        <div class="col-md-3">
-<div class="form-group small"><h4>From CSV/Excel</h4><ul>
-<li><a href="csv-to-csv.html">CSV To Delimited</a></li>
-<li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
-<li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
-<li><a href="csv-to-html.html">CSV To HTML Table</a></li> 
-<li><a href="csv-to-json.html">CSV To JSON</a></li>
-<li><a href="csv-to-kml.html">CSV To KML</a></li>
-<li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
-<li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
-<li><a href="csv-to-pdf.html">CSV To PDF</a></li>
-<li><a href="csv-to-sql.html">CSV To SQL</a></li>
-<li><a href="csv-to-word.html">CSV To Word</a></li> 
-<li><a href="csv-to-xml.html">CSV To XML</a></li> 
-<li><a href="csv-to-yaml.html">CSV To YAML</a></li> 
-<li><a href="excel-to-jira.html">Excel To Jira</a></li>
-<li><a href="pivot-csv.html">Pivot CSV</a></li> 
-<li><a href="transpose-csv.html">Transpose CSV</a></li> 
-<li><a href="query-csv.html">Query CSV with SQL</a></li> 
-</ul><h4>To CSV/Excel</h4><ul>
-<li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
-<li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
-<li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
-<li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
-<li><a href="json-to-csv.html">JSON To CSV</a></li> 
-<li><a href="kml-to-csv.html">KML To CSV</a></li> 
-<li><a href="sql-to-csv.html">SQL To CSV</a></li>
-<li><a href="xml-to-csv.html">XML To CSV</a></li>
-<li><a href="yaml-to-csv.html">YAML To CSV</a></li></ul>
-<h4>Data Tools</h4><ul>
-<li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
-<li><a href="sqlite-online.html">Sqlite Online</a></li>
-<li><a href="edatool/index.html">EDA Tool</a></li>
-<li><a href="csv-viewer-editor.html">CSV Editor</a></li>
-<li><a href="generate-test-data.html">Generate Test Data</a></li>
-<li><a href="email-extractor.html">Email Extractor</a></li>
-<li><a href="phone-extractor.html">Phone Extractor</a></li>
-<li><a href="text-split.html">Split Text or CSV Files</a></li>
-<li><a href="url-extractor.html">URL Extractor</a></li>
-<li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via RegEx</a></li>
-<li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
-<li><a href="index.html">CSV Home</a></li>
-</ul></div>
-            <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-            <!-- Downsides Wide -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="2020261410" data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
-        </div>
-    <div class="col-md-9">
-            <div class="alert alert-info">
-                This conversion is now available as an API at <a href="https://www.convertcsv.io/" target="_blank">ConvertCsv.io</a>
             </div>
-<script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-<!-- ResponsiveAd -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-    <div class="bg-gray">
-    <h3>What can this tool do?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p0"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-    <div id="p0" class="collapse">
-       This tool allows you to create output based on a template.
-    You specify what you want to output by using a template for the Header, Repeating Detail, and Footer.
-     The Header is displayed once. The Repeating Detail is displayed once for each record of CSV data.
-        The Footer is displayed once at the end.
-
-      </div><span class="ezoic-autoinsert-video ezoic-under_second_paragraph"></span><!-- ezoic_video_placeholder-under_second_paragraph-1280x720-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-1280x720-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-854x480-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-854x480-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-640x360-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-640x360-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-426x240-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-426x240-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-384x216-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-384x216-999997-nonexxxclearxxxblock -->
-        <hr/>
-        <h3>What are my options?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p1"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <hr/>
-        <ul class="collapse" id="p1">
-            <li>You can manually create your template.</li>
-            <li>Or let us create your template via the <a href="#tWriter">Template Writer</a>. </li>
-            <li>Here are a few of the templates we can create for you:
-                 <ul>
-                     <li>CSV Columns to Rows</li>
-                     <li>CSV to C Array</li>
-                     <li>CSV to LDIF</li>
-                     <li>CSV to HTML Description List - DL/DD/DT tags</li>
-                     <li>CSV TO JIRA Table</li>
-                     <li>CSV to List (Unordered) - UL/LI tags</li>
-                     <li>CSV to LUA Array Table and Dictionary</li>
-                     <li>CSV to Python Dictionary</li>
-                     <li>CSV to RUBY Language</li>
-                     <li>CSV to URL Query String</li>
-                     <li>CSV to VbScript Array</li>
-                  </ul></li>
-        </ul>
-        <h3>What else?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p2"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <hr/>
-        <ul class="collapse" id="p2">    
-            <li> Refer to <a href="#tblHelp">Template Help</a> as a reference Guide.</li>
-        </ul>
-    </div>
-        <br/>
-<form id="frm1" name="frm1" saveform="true" class="form-inline" role="form" onsubmit="return false">
-
-   <div class="panel panel-default">
-       <div class="form-group">
-       <sup>NEW -</sup>You can now Save the complete data and settings, and then later Load them from your saved file.<br/>
-       <label>Load Form <input type="file" id="fsave" class="form-control" accept=".json" onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings"/></label>
-     <br/><label>   Save Form (data and settings) <input type="button" class="btn btn-primary" value="Save Form" onclick="saveForm()"/></label>
-      </div>
-   </div>
-
-    <div class="form-group">
-        <h3 class="headerBlue">Step 1: Select your input</h3><br/>
-        <div class="form-group w100">
-
-            <ul class="nav nav-tabs">
-                <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab" href="#inputtext">Enter Data</a></li>
-                <li class="nav-item"><a data-toggle="tab" href="#inputfile" class="nav-link">Choose File</a></li>
-                <li class="nav-item"><a data-toggle="tab" href="#inputurl" class="nav-link">Enter URL</a></li>
-            </ul>
-            <br/>
-
-            <div class="tab-content">
-                <div id="inputtext" class="tab-pane active">
-<textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1" onchange="if((document.getElementById(&#39;chkReplaceAccents&#39;)).checked)this.value=this.value.removeDiacritics();reprocessCsv()" wrap="off" placeholder="Enter or paste CSV here"></textarea>
-                </div>
-                <div id="inputfile" class="tab-pane">
-                    <label xclass="form-control">Choose File<input type="file" id="f1" class="form-control" onchange="loadTextFile(this,assignText,event)" title="Choose a local CSV file"/></label>
-
-                    <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
-                    <select id="txtEncoding" class="form-control" title="Enter encoding for input file" onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
-                        <option value="" selected="selected">-Default-</option>
-                        <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
-                        <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
-                        <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
-                        <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
-                        <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
-                        <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
-                        <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
-                        <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
-                        <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
-                        <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
-                        <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
-                        <option value="macintosh">Mac OS Roman</option>
-                        <option value="UTF-8">UTF-8</option>
-                        <option value="UTF-16">UTF-16</option>
-                        <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
-                        <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
-                        <option value="UTF-32">UTF-32</option>
-                        <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
-                        <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
-                        <option value="windows-1250">windows-1250 (Win East European)</option>
-                        <option value="windows-1251">windows-1251 (WinCyrillic)</option>
-                        <option value="windows-1252">windows-1252 (WinLatin-1)</option>
-                        <option value="windows-1253">windows-1253 (WinGreek)</option>
-                        <option value="windows-1254">windows-1254 (Win Turkish)</option>
-                        <option value="windows-1255">windows-1255 (Win Hebrew)</option>
-                        <option value="windows-1256">windows-1256 (Win Arabic)</option>
-                        <option value="windows-1257">windows-1257 (Win Baltic)</option>
-                        <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
-                    </select>
-
-                </div>
-                <div id="inputurl" class="tab-pane">
-                    <label>
-                        Enter URL as data source
-                        <input type="text" size="40" value="" name="url" id="url" class="form-control" title="Enter the URL of a web page returning CSV"/>
-                    </label>
-                    <input type="button" id="Button1" class="btn btn-primary" value="Load URL" title="Load CSV via URL" onclick="loadURL(document.getElementById(&#39;url&#39;).value)"/>
-                </div>
-            </div>
-            <div class="">
-                <input type="button" class="btn btn-primary" value="Clear Input" onclick="clearPage()"/>
-                  <input type="button" class="btn btn-primary" value="Example" onclick="runExample()"/>
-            </div>
-            <div class="panel panel-default"><div id="divInputCounts" class="panel-heading"> </div></div>
-
         </div>
-
-        <h3 class="headerBlue">Step 2: Choose input options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p3"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <hr class="noverticalspace"/>
-        <fieldset class="scheduler-border collapse" id="p3">
-            <legend class="scheduler-border">Input Options</legend>
-            <label><input type="checkbox" name="chkHeader" id="chkHeader" value="Y" onclick="parseAndOptions(CSV,true)" checked=""/> First row is column names- Make: </label>
-            <label><input type="checkbox" id="chkHeaderUpper" onclick="if(this.checked)document.getElementById(&#39;chkHeaderLower&#39;).checked=false;parseAndOptions(CSV);"/> Upper</label>
-            <label><input type="checkbox" id="chkHeaderLower" onclick="if(this.checked)document.getElementById(&#39;chkHeaderUpper&#39;).checked=false;parseAndOptions(CSV);"/> Lower</label>
-              
-            Limit # of lines: <input type="text" id="txtRowLimit" size="5" maxlength="5" onblur="CSV.limit=this.value;parseAndOptions(CSV)" title="Specify how many records of input to convert"/>
-            <label>Skip # of Lines<input type="text" id="txtSkipLimit" class="form-control" size="3" maxlength="2" value="0" onblur="if (this.value != CSV.skip) { CSV.skip = this.value; parseAndOptions(CSV) }" title="Specify how many line to skip at the beginning of input"/></label>
-            <br/>Field Separator:
-            <label><input type="radio" name="sep" id="sepAuto" value="" onclick="CSV.autodetect=true;parseAndOptions(CSV)" checked=""/> Auto Detect</label>
-            <label><input type="radio" name="sep" id="sepComma" value="," onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> ,</label>
-            <label><input type="radio" name="sep" id="sepSemicolon" value=";" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> ;</label>
-            <label><input type="radio" name="sep" id="sepColon" value=":" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> :</label>
-            <label><input type="radio" name="sep" id="sepPipe" value="|" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Bar-|</label>
-            <label><input type="radio" name="sep" id="sepTab" value="\t" onclick="CSV.autodetect=false;CSV.delimiter = &#39;\t&#39;; parseAndOptions(CSV)"/> Tab</label>
-            <label><input type="radio" name="sep" id="sepCaret" value="^" onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Caret-^</label>
-            <label><input type="radio" name="sep" id="sepSpace" value=" " onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)"/> Space</label>
-
-            <br/><label><input type="checkbox" value="Y" id="chkReplaceAccents" title="Replace Accent/Diacritical marks" onclick="if(this.checked)document.getElementById(&#39;txt1&#39;).value = document.getElementById(&#39;txt1&#39;).value.removeDiacritics();parseAndOptions(CSV)"/> Replace Accents/Diacriticals</label>
-            <br/><label><input type="checkbox" value="Y" id="chkIgnoreDoubleQuote" onclick="CSV.ignoreQuote=this.checked;parseAndOptions(CSV)" title="All double quotes are data"/> Treat all double quotes as data</label>
-            <br/><label><input type="checkbox" value="&#39;" id="chkInputQuote" onclick="setInputSingleQuote(this.checked)" title="Uses single quote for quoting character"/> Input CSV Quoting Character is Apostrophe</label>
-            <br/><label><input type="checkbox" value="Y" id="chkDecodeLiterals" onclick="CSV.decodeBackslashLiterals=this.checked;parseAndOptions(CSV,true)" title="Input CSV uses backslash escaping like \n and \t"/> CSV contains backslash escaping like \n, \t, and \,</label>
-
-        </fieldset>
-
-        <h3 class="headerBlue">Step 3: Choose output options <small>(optional)</small></h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p4"> <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <hr class="noverticalspace"/>
-        <fieldset class="scheduler-border collapse" id="p4">
-            <br/><label>
-                Filter CSV Template - Query CSV by entering expression<br/>
-                <small>Enter an expression that returns true(keep row) or false(discard), i.e. f3==4,   f2&gt;=&#39;A&#39; &amp;&amp; f2&lt;=&#39;B&#39;</small><br/>
-                <input type="text" id="txtCond" size="90" value=""/>
-            </label>
-            <br/><br/>Global Options on each field:
-            <br/><label><input type="radio" name="radOutput" id="radNone" value="" checked="checked"/> No Choice, </label>
-            <label><input type="radio" name="radOutput" id="radCsv" value="toCsv()" title="toCsv()"/> CSV output</label>
-            <label> with Separator: </label>
-            <label><input type="radio" name="outsep" id="outSepComma" value=","/> ,</label>  
-            <label><input type="radio" name="outsep" id="outSepSemicolon" value=";" checked="checked"/> ;</label>  
-            <label><input type="radio" name="outsep" id="outSepColon" value=":"/> :</label>  
-            <label><input type="radio" name="outsep" id="outSepPipe" value="|"/> Bar-|</label>  
-            <label><input type="radio" name="outsep" id="outSepTab" value=" " onclick="this.value=&#39;\\t&#39;"/> Tab</label>  
-
-            <br/> <label><input type="radio" name="radOutput" id="radHtml" value="toHtml()" title="toHtml()"/> HTML output, </label>
-            <label><input type="radio" name="radOutput" id="radJson" value="toJson()" title="toJson()"/> JSON output, </label>
-            <label><input type="radio" name="radOutput" id="radSql" value="toSql()" title="toSql()"/> SQL output, </label>
-            <label><input type="radio" name="radOutput" id="radXml" value="toXml()" title="toXml"/> XML output</label>
-            <br/>
-            <div id="divMinOptions"></div> <br/>
-
-        </fieldset>
-        <h3 class="headerBlue">Step 4: Use our Sample Templates on Your Data <small>(optional)</small></h3>
-        <hr class="noverticalspace"/>
-        <div>
-            <span id="tWriter"><strong>Let us write your template for you! Use these below with your data.</strong></span>
-            <br/><label for="selType">Template Writer</label>
-            <select id="selType" onchange="genTemplate()" title="Choose a template and we will write it!">
-                <option value="">--Choose Template--</option>
-                <option value="C">C Array</option>
-                <option value="ROWS">Columns to Rows</option>
-                <option value="CSV">CSV with Semi-colons</option>
-                <option value="CSVU">CSV with Commas to Upper Case</option>
-                <option value="OPTION">HTML SELECT tag for first 2 fields</option>
-                <option value="HTML">HTML Table</option>
-                <option value="HTML#">HTML Table with Line Numbers</option>
-                <option value="UL">HTML Unordered List (UL/LI)</option>
-                <option value="DL">HTML Description List (DL/DD/DT)</option>
-                <option value="XML">XML</option>
-                <option value="JIRA">JIRA Table</option>
-                <option value="JSON">JSON</option>
-                <option value="LDIF">LDIF</option>
-                <option value="LUAA">LUA Array Table</option>
-                <option value="LUAB">LUA Dictionary Table</option>
-                <option value="PHPKEY">PHP Associative Array</option>
-                <option value="PHPARR">PHP Array</option>
-                <option value="PYTHON">Python Dictionary</option>
-                <option value="RUBY">RUBY Language</option>
-                <option value="SQLIN">SQL IN clause</option>
-                <option value="VB">VbScript Array</option>
-                <option value="URL">URL Query String</option>
-            </select> <small>Pre-built Templates</small>
+        <div class="row">
+            <div class="container-fluid pageSubheader">
+                <h2>Use templates to generate data from your CSV</h2>
+            </div>
         </div>
-        <h3 class="headerBlue">Step 5: Create a Template</h3>
-        <hr/>
-        <fieldset id="p5" class="scheduler-border c">
-            <legend class="scheduler-border">Enter Template Here</legend>
-            <label>Heading Template - text at beginning of output</label><br/>
-            <fieldset class="scheduler-border">
-                <legend class="scheduler-border">Expert Usage</legend>
-                For generating heading and field template below, use {h} for each heading field, and {f} for each field.
-                <br/><label><input type="checkbox" value="Y" id="chkExpertEnabled" checked="checked"/> Enabled</label>
-                <br/>Heading : <label>Before <input type="text" id="txtHeadPre" name="txtHeadPre" size="8" value="" onchange="expertMode(this.name,this.value)"/> </label>  
-                <label>Each <input id="txtHeadEach" name="txtHeadEach" type="text" size="8" value="" onchange="expertMode(this.name,this.value)" title="{h}"/></label>
-                <label>Between <input id="txtHeadBetween" name="txtHeadBetween" type="text" size="5" value="" onchange="expertMode(this.name,this.value)"/></label>  
-                <label>After <input id="txtHeadPost" name="txtHeadPost" type="text" size="8" value="{br}" onchange="expertMode(this.name,this.value)"/> </label><br/>
-                Field : <label>Before <input id="txtFieldPre" name="txtFieldPre" type="text" size="8" value="" onchange="expertMode(this.name,this.value)"/> </label>  
-                <label>Each <input id="txtFieldEach" name="txtFieldEach" type="text" size="8" value="" onchange="expertMode(this.name,this.value)" title="{f}"/></label>
-                <label>Between <input id="txtFieldBetween" name="txtFieldBetween" type="text" size="5" value="" onchange="expertMode(this.name,this.value)"/></label>  
-                <label>After <input id="txtFieldPost" name="txtFieldPost" type="text" size="8" value="{br}" onchange="expertMode(this.name,this.value)"/> </label><br/>
-            </fieldset>
-            <strong>Regular Usage</strong> - use {h1} {h2} ... {f1} {f2} .... <br/>
-            <label>Heading: <input type="text" id="txtHeader" size="90" value="{h1};{h3};{h2}{br}"/></label>
-            <br/><br/><label>
-                Each Record Template - text for each line in CSV<br/>
-                <textarea id="txtTemplate" rows="5" cols="70" wrap="off">{f1};{f3.toDollar()};{f2.toUpperCase().toCsv()}
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group small">
+                    <h4>From CSV/Excel</h4>
+                    <ul>
+                        <li><a href="csv-to-csv.html">CSV To Delimited</a></li>
+                        <li><a href="csv-to-flat-file.html">CSV To Flat File</a></li>
+                        <li><a href="csv-to-geojson.html">CSV To GeoJSON</a></li>
+                        <li><a href="csv-to-html.html">CSV To HTML Table</a></li>
+                        <li><a href="csv-to-json.html">CSV To JSON</a></li>
+                        <li><a href="csv-to-kml.html">CSV To KML</a></li>
+                        <li><a href="csv-to-markdown.html">CSV To Markdown</a></li>
+                        <li><a href="csv-to-multiline-data.html">CSV To Multi-line Data</a></li>
+                        <li><a href="csv-to-pdf.html">CSV To PDF</a></li>
+                        <li><a href="csv-to-sql.html">CSV To SQL</a></li>
+                        <li><a href="csv-to-word.html">CSV To Word</a></li>
+                        <li><a href="csv-to-xml.html">CSV To XML</a></li>
+                        <li><a href="csv-to-yaml.html">CSV To YAML</a></li>
+                        <li><a href="excel-to-jira.html">Excel To Jira</a></li>
+                        <li><a href="pivot-csv.html">Pivot CSV</a></li>
+                        <li><a href="transpose-csv.html">Transpose CSV</a></li>
+                        <li><a href="query-csv.html">Query CSV with SQL</a></li>
+                    </ul>
+                    <h4>To CSV/Excel</h4>
+                    <ul>
+                        <li><a href="fixed-width-to-csv.html">Flat File to CSV</a></li>
+                        <li><a href="geojson-to-csv.html">GeoJSON To CSV</a></li>
+                        <li><a href="html-links-to-csv.html">HTML Links To CSV</a></li>
+                        <li><a href="html-table-to-csv.html">HTML Table To CSV</a></li>
+                        <li><a href="json-to-csv.html">JSON To CSV</a></li>
+                        <li><a href="kml-to-csv.html">KML To CSV</a></li>
+                        <li><a href="sql-to-csv.html">SQL To CSV</a></li>
+                        <li><a href="xml-to-csv.html">XML To CSV</a></li>
+                        <li><a href="yaml-to-csv.html">YAML To CSV</a></li>
+                    </ul>
+                    <h4>Data Tools</h4>
+                    <ul>
+                        <li><a href="csv-to-template-output.html">CSV Template Engine</a></li>
+                        <li><a href="sqlite-online.html">Sqlite Online</a></li>
+                        <li><a href="edatool/index.html">EDA Tool</a></li>
+                        <li><a href="csv-viewer-editor.html">CSV Editor</a></li>
+                        <li><a href="generate-test-data.html">Generate Test Data</a></li>
+                        <li><a href="email-extractor.html">Email Extractor</a></li>
+                        <li><a href="phone-extractor.html">Phone Extractor</a></li>
+                        <li><a href="text-split.html">Split Text or CSV Files</a></li>
+                        <li><a href="url-extractor.html">URL Extractor</a></li>
+                        <li><a href="text-extractor.html" title="Text Extractor using Regular Expressions">Extract via
+                                RegEx</a></li>
+                        <li><a href="csv-escape-tool.html">CSV Escape Tool</a></li>
+                        <li><a href="index.html">CSV Home</a></li>
+                    </ul>
+                </div>
+                <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                <!-- Downsides Wide -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="2020261410" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+            </div>
+            <div class="col-md-9">
+                <div class="alert alert-info">
+                    This conversion is now available as an API at <a href="https://www.convertcsv.io/"
+                        target="_blank">ConvertCsv.io</a>
+                </div>
+                <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                <!-- ResponsiveAd -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                    data-ad-slot="9209491414" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+                <div class="bg-gray">
+                    <h3>What can this tool do?</h3><a href="#" onclick="return false" data-toggle="collapse"
+                        data-target="#p0"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <div id="p0" class="collapse">
+                        This tool allows you to create output based on a template.
+                        You specify what you want to output by using a template for the Header, Repeating Detail, and
+                        Footer.
+                        The Header is displayed once. The Repeating Detail is displayed once for each record of CSV
+                        data.
+                        The Footer is displayed once at the end.
+
+                    </div><span
+                        class="ezoic-autoinsert-video ezoic-under_second_paragraph"></span><!-- ezoic_video_placeholder-under_second_paragraph-1280x720-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-1280x720-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-854x480-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-854x480-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-640x360-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-640x360-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-426x240-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-426x240-999997-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_second_paragraph-384x216-999997-clearholder --><!-- ezoic_video_placeholder-under_second_paragraph-384x216-999997-nonexxxclearxxxblock -->
+                    <hr />
+                    <h3>What are my options?</h3><a href="#" onclick="return false" data-toggle="collapse"
+                        data-target="#p1"> <span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <hr />
+                    <ul class="collapse" id="p1">
+                        <li>You can manually create your template.</li>
+                        <li>Or let us create your template via the <a href="#tWriter">Template Writer</a>. </li>
+                        <li>Here are a few of the templates we can create for you:
+                            <ul>
+                                <li>CSV Columns to Rows</li>
+                                <li>CSV to C Array</li>
+                                <li>CSV to LDIF</li>
+                                <li>CSV to HTML Description List - DL/DD/DT tags</li>
+                                <li>CSV TO JIRA Table</li>
+                                <li>CSV to List (Unordered) - UL/LI tags</li>
+                                <li>CSV to LUA Array Table and Dictionary</li>
+                                <li>CSV to Python Dictionary</li>
+                                <li>CSV to RUBY Language</li>
+                                <li>CSV to URL Query String</li>
+                                <li>CSV to VbScript Array</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>What else?</h3><a href="#" onclick="return false" data-toggle="collapse" data-target="#p2">
+                        <span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <hr />
+                    <ul class="collapse" id="p2">
+                        <li> Refer to <a href="#tblHelp">Template Help</a> as a reference Guide.</li>
+                    </ul>
+                </div>
+                <br />
+                <form id="frm1" name="frm1" saveform="true" class="form-inline" role="form" onsubmit="return false">
+
+                    <div class="panel panel-default">
+                        <div class="form-group">
+                            <sup>NEW -</sup>You can now Save the complete data and settings, and then later Load them
+                            from your saved file.<br />
+                              <label>Load Form <input type="file" id="fsave" class="form-control" accept=".json"
+                                    onchange="loadTextFile(this,loadForm)"
+                                    title="Load Form Data and Settings" /></label>
+                            <br /><label>   Save Form (data and settings) <input type="button" class="btn btn-primary"
+                                    value="Save Form" onclick="saveForm()" /></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h3 class="headerBlue">Step 1: Select your input</h3><br />
+                        <div class="form-group w100">
+
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item active"><a id="defaultTabLink" data-toggle="tab"
+                                        href="#inputtext">Enter Data</a></li>
+                                <li class="nav-item"><a data-toggle="tab" href="#inputfile" class="nav-link">Choose
+                                        File</a></li>
+                                <li class="nav-item"><a data-toggle="tab" href="#inputurl" class="nav-link">Enter
+                                        URL</a></li>
+                            </ul>
+                            <br />
+
+                            <div class="tab-content">
+                                <div id="inputtext" class="tab-pane active">
+                                    <textarea class="form-control" style="width: 90%;" rows="10" cols="80" id="txt1"
+                                        onchange="if((document.getElementById(&#39;chkReplaceAccents&#39;)).checked)this.value=this.value.removeDiacritics();reprocessCsv()"
+                                        wrap="off" placeholder="Enter or paste CSV here"></textarea>
+                                </div>
+                                <div id="inputfile" class="tab-pane">
+                                    <label xclass="form-control">Choose File<input type="file" id="f1"
+                                            class="form-control" onchange="loadTextFile(this,assignText,event)"
+                                            title="Choose a local CSV file" /></label>
+
+                                    <label for="txtEncoding"></label><span id="spanEncoding">Encoding</span>
+                                    <select id="txtEncoding" class="form-control" title="Enter encoding for input file"
+                                        onchange="loadTextFile(document.getElementById(&#39;f1&#39;),assignText)">
+                                        <option value="" selected="selected">-Default-</option>
+                                        <option value="ISO-8859-1">ISO-8859-1 (Latin No. 1)</option>
+                                        <option value="ISO-8859-2">ISO-8859-2 (Latin No. 2)</option>
+                                        <option value="ISO-8859-3">ISO-8859-3 (Latin No. 3)</option>
+                                        <option value="ISO-8859-4">ISO-8859-4 (Latin No. 4)</option>
+                                        <option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic)</option>
+                                        <option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic)</option>
+                                        <option value="ISO-8859-7">ISO-8859-7 (Latin/Greek)</option>
+                                        <option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew)</option>
+                                        <option value="ISO-8859-9">ISO-8859-9 (Latin No. 5)</option>
+                                        <option value="ISO-8859-13">ISO-8859-13 (Latin No. 7)</option>
+                                        <option value="ISO-8859-15">ISO-8859-15 (Latin No. 9)</option>
+                                        <option value="macintosh">Mac OS Roman</option>
+                                        <option value="UTF-8">UTF-8</option>
+                                        <option value="UTF-16">UTF-16</option>
+                                        <option value="UTF-16BE">UTF-16 (Big-Endian)</option>
+                                        <option value="UTF-16LE">UTF-16 (Little-Endian)</option>
+                                        <option value="UTF-32">UTF-32</option>
+                                        <option value="UTF-32BE">UTF-32 (Big-Endian)</option>
+                                        <option value="UTF-32LE">UTF-32 (Little-Endian)</option>
+                                        <option value="windows-1250">windows-1250 (Win East European)</option>
+                                        <option value="windows-1251">windows-1251 (WinCyrillic)</option>
+                                        <option value="windows-1252">windows-1252 (WinLatin-1)</option>
+                                        <option value="windows-1253">windows-1253 (WinGreek)</option>
+                                        <option value="windows-1254">windows-1254 (Win Turkish)</option>
+                                        <option value="windows-1255">windows-1255 (Win Hebrew)</option>
+                                        <option value="windows-1256">windows-1256 (Win Arabic)</option>
+                                        <option value="windows-1257">windows-1257 (Win Baltic)</option>
+                                        <option value="windows-1258">windows-1257 (Win Vietnamese)</option>
+                                    </select>
+
+                                </div>
+                                <div id="inputurl" class="tab-pane">
+                                    <label>
+                                        Enter URL as data source
+                                        <input type="text" size="40" value="" name="url" id="url" class="form-control"
+                                            title="Enter the URL of a web page returning CSV" />
+                                    </label>
+                                    <input type="button" id="Button1" class="btn btn-primary" value="Load URL"
+                                        title="Load CSV via URL"
+                                        onclick="loadURL(document.getElementById(&#39;url&#39;).value)" />
+                                </div>
+                            </div>
+                            <div class="">
+                                <input type="button" class="btn btn-primary" value="Clear Input"
+                                    onclick="clearPage()" />
+                                  <input type="button" class="btn btn-primary" value="Example" onclick="runExample()" />
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="divInputCounts" class="panel-heading"> </div>
+                            </div>
+
+                        </div>
+
+                        <h3 class="headerBlue">Step 2: Choose input options <small>(optional)</small></h3><a href="#"
+                            onclick="return false" data-toggle="collapse" data-target="#p3"> <span
+                                class="glyphicon glyphicon-chevron-down"></span></a>
+                        <hr class="noverticalspace" />
+                        <fieldset class="scheduler-border collapse" id="p3">
+                            <legend class="scheduler-border">Input Options</legend>
+                            <label><input type="checkbox" name="chkHeader" id="chkHeader" value="Y"
+                                    onclick="parseAndOptions(CSV,true)" checked="" /> First row is column names- Make:
+                            </label>
+                            <label><input type="checkbox" id="chkHeaderUpper"
+                                    onclick="if(this.checked)document.getElementById(&#39;chkHeaderLower&#39;).checked=false;parseAndOptions(CSV);" />
+                                Upper</label>
+                            <label><input type="checkbox" id="chkHeaderLower"
+                                    onclick="if(this.checked)document.getElementById(&#39;chkHeaderUpper&#39;).checked=false;parseAndOptions(CSV);" />
+                                Lower</label>
+                              
+                            Limit # of lines: <input type="text" id="txtRowLimit" size="5" maxlength="5"
+                                onblur="CSV.limit=this.value;parseAndOptions(CSV)"
+                                title="Specify how many records of input to convert" />
+                            <label>Skip # of Lines<input type="text" id="txtSkipLimit" class="form-control" size="3"
+                                    maxlength="2" value="0"
+                                    onblur="if (this.value != CSV.skip) { CSV.skip = this.value; parseAndOptions(CSV) }"
+                                    title="Specify how many line to skip at the beginning of input" /></label>
+                            <br />Field Separator:
+                            <label><input type="radio" name="sep" id="sepAuto" value=""
+                                    onclick="CSV.autodetect=true;parseAndOptions(CSV)" checked="" /> Auto Detect</label>
+                            <label><input type="radio" name="sep" id="sepComma" value=","
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                ,</label>
+                            <label><input type="radio" name="sep" id="sepSemicolon" value=";"
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                ;</label>
+                            <label><input type="radio" name="sep" id="sepColon" value=":"
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                :</label>
+                            <label><input type="radio" name="sep" id="sepPipe" value="|"
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                Bar-|</label>
+                            <label><input type="radio" name="sep" id="sepTab" value="\t"
+                                    onclick="CSV.autodetect=false;CSV.delimiter = &#39;\t&#39;; parseAndOptions(CSV)" />
+                                Tab</label>
+                            <label><input type="radio" name="sep" id="sepCaret" value="^"
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                Caret-^</label>
+                            <label><input type="radio" name="sep" id="sepSpace" value=" "
+                                    onclick="CSV.autodetect=false;CSV.delimiter = this.value; parseAndOptions(CSV)" />
+                                Space</label>
+
+                            <br /><label><input type="checkbox" value="Y" id="chkReplaceAccents"
+                                    title="Replace Accent/Diacritical marks"
+                                    onclick="if(this.checked)document.getElementById(&#39;txt1&#39;).value = document.getElementById(&#39;txt1&#39;).value.removeDiacritics();parseAndOptions(CSV)" />
+                                Replace Accents/Diacriticals</label>
+                            <br /><label><input type="checkbox" value="Y" id="chkIgnoreDoubleQuote"
+                                    onclick="CSV.ignoreQuote=this.checked;parseAndOptions(CSV)"
+                                    title="All double quotes are data" /> Treat all double quotes as data</label>
+                            <br /><label><input type="checkbox" value="&#39;" id="chkInputQuote"
+                                    onclick="setInputSingleQuote(this.checked)"
+                                    title="Uses single quote for quoting character" /> Input CSV Quoting Character is
+                                Apostrophe</label>
+                            <br /><label><input type="checkbox" value="Y" id="chkDecodeLiterals"
+                                    onclick="CSV.decodeBackslashLiterals=this.checked;parseAndOptions(CSV,true)"
+                                    title="Input CSV uses backslash escaping like \n and \t" /> CSV contains backslash
+                                escaping like \n, \t, and \,</label>
+
+                        </fieldset>
+
+                        <h3 class="headerBlue">Step 3: Choose output options <small>(optional)</small></h3><a href="#"
+                            onclick="return false" data-toggle="collapse" data-target="#p4"> <span
+                                class="glyphicon glyphicon-chevron-down"></span></a>
+                        <hr class="noverticalspace" />
+                        <fieldset class="scheduler-border collapse" id="p4">
+                            <br /><label>
+                                Filter CSV Template - Query CSV by entering expression<br />
+                                <small>Enter an expression that returns true(keep row) or false(discard), i.e. f3==4,  
+                                    f2&gt;=&#39;A&#39; &amp;&amp; f2&lt;=&#39;B&#39;</small><br />
+                                <input type="text" id="txtCond" size="90" value="" />
+                            </label>
+                            <br /><br />Global Options on each field:
+                            <br /><label><input type="radio" name="radOutput" id="radNone" value="" checked="checked" />
+                                No Choice, </label>
+                            <label><input type="radio" name="radOutput" id="radCsv" value="toCsv()" title="toCsv()" />
+                                CSV output</label>
+                            <label> with Separator: </label>
+                            <label><input type="radio" name="outsep" id="outSepComma" value="," /> ,</label>  
+                            <label><input type="radio" name="outsep" id="outSepSemicolon" value=";" checked="checked" />
+                                ;</label>  
+                            <label><input type="radio" name="outsep" id="outSepColon" value=":" /> :</label>  
+                            <label><input type="radio" name="outsep" id="outSepPipe" value="|" /> Bar-|</label>  
+                            <label><input type="radio" name="outsep" id="outSepTab" value=" "
+                                    onclick="this.value=&#39;\\t&#39;" /> Tab</label>  
+
+                            <br /> <label><input type="radio" name="radOutput" id="radHtml" value="toHtml()"
+                                    title="toHtml()" /> HTML output, </label>
+                            <label><input type="radio" name="radOutput" id="radJson" value="toJson()"
+                                    title="toJson()" /> JSON output, </label>
+                            <label><input type="radio" name="radOutput" id="radSql" value="toSql()" title="toSql()" />
+                                SQL output, </label>
+                            <label><input type="radio" name="radOutput" id="radXml" value="toXml()" title="toXml" /> XML
+                                output</label>
+                            <br />
+                            <div id="divMinOptions"></div> <br />
+
+                        </fieldset>
+                        <h3 class="headerBlue">Step 4: Use our Sample Templates on Your Data <small>(optional)</small>
+                        </h3>
+                        <hr class="noverticalspace" />
+                        <div>
+                            <span id="tWriter"><strong>Let us write your template for you! Use these below with your
+                                    data.</strong></span>
+                            <br /><label for="selType">Template Writer</label>
+                            <select id="selType" onchange="genTemplate()"
+                                title="Choose a template and we will write it!">
+                                <option value="">--Choose Template--</option>
+                                <option value="C">C Array</option>
+                                <option value="ROWS">Columns to Rows</option>
+                                <option value="CSV">CSV with Semi-colons</option>
+                                <option value="CSVU">CSV with Commas to Upper Case</option>
+                                <option value="OPTION">HTML SELECT tag for first 2 fields</option>
+                                <option value="HTML">HTML Table</option>
+                                <option value="HTML#">HTML Table with Line Numbers</option>
+                                <option value="UL">HTML Unordered List (UL/LI)</option>
+                                <option value="DL">HTML Description List (DL/DD/DT)</option>
+                                <option value="XML">XML</option>
+                                <option value="JIRA">JIRA Table</option>
+                                <option value="JSON">JSON</option>
+                                <option value="LDIF">LDIF</option>
+                                <option value="LUAA">LUA Array Table</option>
+                                <option value="LUAB">LUA Dictionary Table</option>
+                                <option value="PHPKEY">PHP Associative Array</option>
+                                <option value="PHPARR">PHP Array</option>
+                                <option value="PYTHON">Python Dictionary</option>
+                                <option value="RUBY">RUBY Language</option>
+                                <option value="SQLIN">SQL IN clause</option>
+                                <option value="VB">VbScript Array</option>
+                                <option value="URL">URL Query String</option>
+                            </select> <small>Pre-built Templates</small>
+                        </div>
+                        <h3 class="headerBlue">Step 5: Create a Template</h3>
+                        <hr />
+                        <fieldset id="p5" class="scheduler-border c">
+                            <legend class="scheduler-border">Enter Template Here</legend>
+                            <label>Heading Template - text at beginning of output</label><br />
+                            <fieldset class="scheduler-border">
+                                <legend class="scheduler-border">Expert Usage</legend>
+                                For generating heading and field template below, use {h} for each heading field, and {f}
+                                for each field.
+                                <br /><label><input type="checkbox" value="Y" id="chkExpertEnabled" checked="checked" />
+                                    Enabled</label>
+                                <br />Heading : <label>Before <input type="text" id="txtHeadPre" name="txtHeadPre"
+                                        size="8" value="" onchange="expertMode(this.name,this.value)" /> </label>  
+                                <label>Each <input id="txtHeadEach" name="txtHeadEach" type="text" size="8" value=""
+                                        onchange="expertMode(this.name,this.value)" title="{h}" /></label>
+                                <label>Between <input id="txtHeadBetween" name="txtHeadBetween" type="text" size="5"
+                                        value="" onchange="expertMode(this.name,this.value)" /></label>  
+                                <label>After <input id="txtHeadPost" name="txtHeadPost" type="text" size="8"
+                                        value="{br}" onchange="expertMode(this.name,this.value)" /> </label><br />
+                                Field : <label>Before <input id="txtFieldPre" name="txtFieldPre" type="text" size="8"
+                                        value="" onchange="expertMode(this.name,this.value)" /> </label>  
+                                <label>Each <input id="txtFieldEach" name="txtFieldEach" type="text" size="8" value=""
+                                        onchange="expertMode(this.name,this.value)" title="{f}" /></label>
+                                <label>Between <input id="txtFieldBetween" name="txtFieldBetween" type="text" size="5"
+                                        value="" onchange="expertMode(this.name,this.value)" /></label>  
+                                <label>After <input id="txtFieldPost" name="txtFieldPost" type="text" size="8"
+                                        value="{br}" onchange="expertMode(this.name,this.value)" /> </label><br />
+                            </fieldset>
+                            <strong>Regular Usage</strong> - use {h1} {h2} ... {f1} {f2} .... <br />
+                            <label>Heading: <input type="text" id="txtHeader" size="90"
+                                    value="{h1};{h3};{h2}{br}" /></label>
+                            <br /><br /><label>
+                                Each Record Template - text for each line in CSV<br />
+                                <textarea id="txtTemplate" rows="5" cols="70" wrap="off">{f1};{f3.toDollar()};{f2.toUpperCase().toCsv()}
 </textarea>
-            </label>
-            <br/><br/><label>
-                Between Each Record Template - text between each line in CSV<br/>
-                <input type="text" id="txtBetweenTemplate" value="" size="90"/>
-            </label>
-            <br/><br/><label>
-                Footer Template - text at end of output<br/>
-                <input type="text" id="txtFooter" size="90" value="#----------------------------------{br}# of Records: {seq}"/>
-            </label>
-        </fieldset>
-        <br/><br/>
-        <table class="table table-bordered table-hover table-condensed">
-            <tbody><tr>
-                <th colspan="4" class="text-center">
-                    Sort CSV  
-                    <label><input type="checkbox" id="chkIgnoreCase" value="Y" onclick="CSV.sortIgnoreCase=this.checked"/> Ignore Case</label>
-                </th>
-            </tr>
-            <tr><td> </td><th>Field #</th><th>Type</th><th>Direction</th></tr>
-            <tr>
-                <td>First By</td>
-                <td><select id="selSortFld1" onchange="sortStr()"><option value="">-Choose-</option></select></td>
-                <td><select id="selSortType1" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
-                <td><select id="selSortAsc1" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
-            </tr>
-            <tr>
-                <td>Then By</td>
-                <td><select id="selSortFld2" onchange="sortStr()"><option value="">-Choose-</option></select></td>
-                <td><select id="selSortType2" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
-                <td><select id="selSortAsc2" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
-            </tr>
-            <tr>
-                <td>Then By</td>
-                <td><select id="selSortFld3" onchange="sortStr()"><option value="">-Choose-</option></select></td>
-                <td><select id="selSortType3" onchange="sortStr()"><option value="">-Default-</option><option value="C">String</option><option value="N">Numeric</option></select></td>
-                <td><select id="selSortAsc3" onchange="sortStr()"><option value="">Ascending</option><option value="D">Descending</option></select></td>
-            </tr>
-        </tbody></table>
-        <br/>
-        <h3 class="headerBlue">Step 6: Generate Output from Template</h3>
-        <hr/>
-        <input type="button" id="btnRun" class="btn btn-primary" value="Convert CSV Using Template" title="Reformat CSV Using Template Language" onclick="runit();return false"/>
-        <label><input type="checkbox" id="chkHtml" value="Y"/> Render as HTML below</label>
+                            </label>
+                            <br /><br /><label>
+                                Between Each Record Template - text between each line in CSV<br />
+                                <input type="text" id="txtBetweenTemplate" value="" size="90" />
+                            </label>
+                            <br /><br /><label>
+                                Footer Template - text at end of output<br />
+                                <input type="text" id="txtFooter" size="90"
+                                    value="#----------------------------------{br}# of Records: {seq}" />
+                            </label>
+                        </fieldset>
+                        <br /><br />
+                        <table class="table table-bordered table-hover table-condensed">
+                            <tbody>
+                                <tr>
+                                    <th colspan="4" class="text-center">
+                                        Sort CSV  
+                                        <label><input type="checkbox" id="chkIgnoreCase" value="Y"
+                                                onclick="CSV.sortIgnoreCase=this.checked" /> Ignore Case</label>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <th>Field #</th>
+                                    <th>Type</th>
+                                    <th>Direction</th>
+                                </tr>
+                                <tr>
+                                    <td>First By</td>
+                                    <td><select id="selSortFld1" onchange="sortStr()">
+                                            <option value="">-Choose-</option>
+                                        </select></td>
+                                    <td><select id="selSortType1" onchange="sortStr()">
+                                            <option value="">-Default-</option>
+                                            <option value="C">String</option>
+                                            <option value="N">Numeric</option>
+                                        </select></td>
+                                    <td><select id="selSortAsc1" onchange="sortStr()">
+                                            <option value="">Ascending</option>
+                                            <option value="D">Descending</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>Then By</td>
+                                    <td><select id="selSortFld2" onchange="sortStr()">
+                                            <option value="">-Choose-</option>
+                                        </select></td>
+                                    <td><select id="selSortType2" onchange="sortStr()">
+                                            <option value="">-Default-</option>
+                                            <option value="C">String</option>
+                                            <option value="N">Numeric</option>
+                                        </select></td>
+                                    <td><select id="selSortAsc2" onchange="sortStr()">
+                                            <option value="">Ascending</option>
+                                            <option value="D">Descending</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>Then By</td>
+                                    <td><select id="selSortFld3" onchange="sortStr()">
+                                            <option value="">-Choose-</option>
+                                        </select></td>
+                                    <td><select id="selSortType3" onchange="sortStr()">
+                                            <option value="">-Default-</option>
+                                            <option value="C">String</option>
+                                            <option value="N">Numeric</option>
+                                        </select></td>
+                                    <td><select id="selSortAsc3" onchange="sortStr()">
+                                            <option value="">Ascending</option>
+                                            <option value="D">Descending</option>
+                                        </select></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                        <h3 class="headerBlue">Step 6: Generate Output from Template</h3>
+                        <hr />
+                        <input type="button" id="btnRun" class="btn btn-primary" value="Convert CSV Using Template"
+                            title="Reformat CSV Using Template Language" onclick="runit();return false" />
+                        <label><input type="checkbox" id="chkHtml" value="Y" /> Render as HTML below</label>
 
-    </div>
-   </form>
+                    </div>
+                </form>
 
-<div id="divb">
+                <div id="divb">
 
-	<div class="form-group-inline">
-		<label for="txta" class="control-label">Result Data:</label>
-        <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i class="fa fa-clipboard"></i></button><br/>
-		<textarea id="txta" rows="10" cols="80" style="width:90%" wrap="off" placeholder="Output Results" class="form-control"></textarea>
-	</div>
-	<div class="form-group form-inline">
-		<label>Save your result:</label>
-			<input type="text" size="15" id="fn" value="convertcsv" class="form-control" title="Enter filename WITH extension"/>
-			<button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;&#39;);return false"><span class="glyphicon glyphicon-save-file"></span> Download Result</button>
-			<label title="End-of-Line">EOL: <select id="eol" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android"><option value="">CRLF</option><option value="LF">LF</option></select></label><br/>
-    </div> 
+                    <div class="form-group-inline">
+                        <label for="txta" class="control-label">Result Data:</label>
+                        <button title="Copy Result to Clipboard" onclick="copyPaste(&#39;txta&#39;)"><i
+                                class="fa fa-clipboard"></i></button><br />
+                        <textarea id="txta" rows="10" cols="80" style="width:90%" wrap="off"
+                            placeholder="Output Results" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label>Save your result:</label>
+                        <input type="text" size="15" id="fn" value="convertcsv" class="form-control"
+                            title="Enter filename WITH extension" />
+                        <button class="btn btn-primary"
+                            onclick="saveFile(document.getElementById(&#39;txta&#39;).value,&#39;&#39;);return false"><span
+                                class="glyphicon glyphicon-save-file"></span> Download Result</button>
+                        <label title="End-of-Line">EOL: <select id="eol"
+                                title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
+                                <option value="">CRLF</option>
+                                <option value="LF">LF</option>
+                            </select></label><br />
+                    </div>
 
-</div>
-   <div class="panel panel-default"><div id="diva" align="left" class="panel-body"></div></div>
-</div>
-        <br/>
-    <div class="row">
-	    <div class="col-md-12">
-    <table id="tblHelp" class="table table-bordered table-hover table-condensed">
-        <tbody><tr><th colspan="2" class="text-center">Template Help<br/>Note - the Template Engine evaluates text between { and } as Javascript and substitutes the expression value.</th></tr>
-        <tr><th>Value</th><th>Description</th></tr>
-        <tr><th colspan="2">Heading and Fields Variables</th></tr>
-        <tr><td>{h1} {h2} {h3} ....</td><td>Heading for field 1,2,3 ...</td></tr>
-        <tr><td>{H1} {H2} {H3} ....</td><td>Heading for field 1,2,3 as upper case...</td></tr>
-        <tr><td>{f1} {f2} {f3} ....</td><td>Field value 1,2,3 ... or you can use the name of the field in the heading</td></tr>
-        <tr><td>{F1} {F2} {F3} ....</td><td>Field value 1,2,3 as upper case...</td></tr>
-        <tr><td>{fieldname}</td><td>Alternative to {f1},{f2}... use the field name instead. i.e. {id},{amount}</td></tr>
-        <tr><th colspan="2">String Constants and Counters</th></tr>
-        <tr><td>{nf} </td><td>Number of fields in current row</td></tr>
-        <tr><td>{nr} </td><td>Number of data rows in CSV before filtering</td></tr>
-        <tr><td>{nh} </td><td>Number of fields in heading row</td></tr>
-        <tr><td>{rn} </td><td>Current data row number</td></tr>
-        <tr><td>{br}</td><td>Line break</td></tr>
-        <tr><td>{lb}</td><td>Left bracket {</td></tr>
-        <tr><td>{rb}</td><td>Right bracket }</td></tr>
-        <tr><td>{seq}</td><td>Sequence 1,2,3,...</td></tr>
-        <tr><td>{tab}</td><td>Tab</td></tr>
-        <tr><th colspan="2">Functions</th></tr>
-        <tr><td>{f1.function()}</td>
-            <td>Where function is a valid Javascript string method or built-in function.
-            Multiple functions are supported via appending to the end <br/>(i.e. f1.trim().toUpperCase()). 
-            Partial list of functions below.</td></tr>
-        <tr><td>{f1.toUpperCase()}</td><td>Field value to upper case letters</td></tr>
-        <tr><td>{f1.toLowerCase()}</td><td>Field value to lower case letters</td></tr>
-        <tr><td>{f1.toCsv()}</td><td>convert field to a CSV field by enclosing in double-quotes.</td></tr>
-        <tr><td>{f1.toDollar()}</td><td>Format field value as dollar amount</td></tr>
-        <tr><td>{f1.toFixed(n)}</td><td>Field value to numeric value with n decimal places</td></tr>
-        <tr><td>{f1.toHtml()}</td><td>Make field suitable for viewing as HTML</td></tr>
-        <tr><td>{f1.toInteger()}</td><td>Field value to integer value</td></tr>
-        <tr><td>{f1.toJson()}</td><td>Make field suitable for JSON value</td></tr>
-        <tr><td>{f1.toNumber()}</td><td>Field value to numeric value</td></tr>
-        <tr><td>{f1.rpad(n)}</td><td>Right pad field value with spaces until n characters long</td></tr>
-        <tr><td>{f1.lpad(n)}</td><td>Left pad field value with spaces until n characters long</td></tr>
-        <tr><td>{f1.ltrim()}</td><td>Trim spaces from left side of field</td></tr>
-        <tr><td>{f1.rtrim()}</td><td>Trim spaces from right side of field</td></tr>
-        <tr><td>{f1.rjust(n)}</td><td>Right justify text to size n. i.e. {f1.rjust(20)}</td></tr>
-        <tr><td>{f1.ljust(n)}</td><td>Trim and Left justify text to size n. i.e. {f1.ljust(20)}</td></tr>
-        <tr><td>{f1.rjust(n)}</td><td>Trim and Right justify text to size n. i.e. {f1.rjust(20)}</td></tr>
-        <tr><td>{f1.enclose(ch)}</td><td>Enclose field by character ch</td></tr>
-        <tr><td>{f1.cjust(n)}</td><td>Trim and Center justify text to size n. i.e. {f1.cjust(20)}</td></tr>
-        <tr><td>{f1.left(n)}</td><td>Return n characters from left side of field</td></tr>
-        <tr><td>{f1.right(n)}</td><td>Return n characters from right side of field</td></tr>
-        <tr><td>{f1.trim()}</td><td>Trim spaces from both sides of field</td></tr>
-        <tr><td>{f1.toSql()}</td><td>Make field suitable for SQL string value</td></tr>
-        <tr><td>{f1.toXml()}</td><td>Make field suitable for viewing as XML</td></tr>
-        <tr><td>{f1.startsWith(s)}</td><td>Field starts with string s, i.e. f2.startsWith(&#39;Jo&#39;). Returns true or false.</td></tr>
-        <tr><td>{f1.endsWith(s)}</td><td>Field end with string s, i.e. f2.endsWith(&#39;son&#39;). Returns true or false.</td></tr>
-    </tbody></table>
-</div>
-</div>
-    <div class="row">
-	    <div class="col-md-12">
-
-<script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-<!-- ResponsiveAd -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-	        <div class="panel-footer">
-Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All Rights Reserved
-<span class="pull-right">
-  <a href="https://www.facebook.com/convertcsv">Facebook</a>
-   <a href="https://twitter.com/ConvertCsv">Twitter</a>
-   <a href="PrivacyPolicy.html">Privacy Policy</a>
-   <a href="contact.html">Contact Us</a>
-   <a href="changelog.html">Change Log</a>
-   <a href="terms-of-use.html">Terms of Use</a>
-   <a href="index-2.html">Home</a></span>
+                </div>
+                <div class="panel panel-default">
+                    <div id="diva" align="left" class="panel-body"></div>
+                </div>
             </div>
-	    </div>
-    </div>	
-</div>
-</div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="tblHelp" class="table table-bordered table-hover table-condensed">
+                        <tbody>
+                            <tr>
+                                <th colspan="2" class="text-center">Template Help<br />Note - the Template Engine
+                                    evaluates text between { and } as Javascript and substitutes the expression value.
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Heading and Fields Variables</th>
+                            </tr>
+                            <tr>
+                                <td>{h1} {h2} {h3} ....</td>
+                                <td>Heading for field 1,2,3 ...</td>
+                            </tr>
+                            <tr>
+                                <td>{H1} {H2} {H3} ....</td>
+                                <td>Heading for field 1,2,3 as upper case...</td>
+                            </tr>
+                            <tr>
+                                <td>{f1} {f2} {f3} ....</td>
+                                <td>Field value 1,2,3 ... or you can use the name of the field in the heading</td>
+                            </tr>
+                            <tr>
+                                <td>{F1} {F2} {F3} ....</td>
+                                <td>Field value 1,2,3 as upper case...</td>
+                            </tr>
+                            <tr>
+                                <td>{fieldname}</td>
+                                <td>Alternative to {f1},{f2}... use the field name instead. i.e. {id},{amount}</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">String Constants and Counters</th>
+                            </tr>
+                            <tr>
+                                <td>{nf} </td>
+                                <td>Number of fields in current row</td>
+                            </tr>
+                            <tr>
+                                <td>{nr} </td>
+                                <td>Number of data rows in CSV before filtering</td>
+                            </tr>
+                            <tr>
+                                <td>{nh} </td>
+                                <td>Number of fields in heading row</td>
+                            </tr>
+                            <tr>
+                                <td>{rn} </td>
+                                <td>Current data row number</td>
+                            </tr>
+                            <tr>
+                                <td>{br}</td>
+                                <td>Line break</td>
+                            </tr>
+                            <tr>
+                                <td>{lb}</td>
+                                <td>Left bracket {</td>
+                            </tr>
+                            <tr>
+                                <td>{rb}</td>
+                                <td>Right bracket }</td>
+                            </tr>
+                            <tr>
+                                <td>{seq}</td>
+                                <td>Sequence 1,2,3,...</td>
+                            </tr>
+                            <tr>
+                                <td>{tab}</td>
+                                <td>Tab</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Functions</th>
+                            </tr>
+                            <tr>
+                                <td>{f1.function()}</td>
+                                <td>Where function is a valid Javascript string method or built-in function.
+                                    Multiple functions are supported via appending to the end <br />(i.e.
+                                    f1.trim().toUpperCase()).
+                                    Partial list of functions below.</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toUpperCase()}</td>
+                                <td>Field value to upper case letters</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toLowerCase()}</td>
+                                <td>Field value to lower case letters</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toCsv()}</td>
+                                <td>convert field to a CSV field by enclosing in double-quotes.</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toDollar()}</td>
+                                <td>Format field value as dollar amount</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toFixed(n)}</td>
+                                <td>Field value to numeric value with n decimal places</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toHtml()}</td>
+                                <td>Make field suitable for viewing as HTML</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toInteger()}</td>
+                                <td>Field value to integer value</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toJson()}</td>
+                                <td>Make field suitable for JSON value</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toNumber()}</td>
+                                <td>Field value to numeric value</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.rpad(n)}</td>
+                                <td>Right pad field value with spaces until n characters long</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.lpad(n)}</td>
+                                <td>Left pad field value with spaces until n characters long</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.ltrim()}</td>
+                                <td>Trim spaces from left side of field</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.rtrim()}</td>
+                                <td>Trim spaces from right side of field</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.rjust(n)}</td>
+                                <td>Right justify text to size n. i.e. {f1.rjust(20)}</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.ljust(n)}</td>
+                                <td>Trim and Left justify text to size n. i.e. {f1.ljust(20)}</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.rjust(n)}</td>
+                                <td>Trim and Right justify text to size n. i.e. {f1.rjust(20)}</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.enclose(ch)}</td>
+                                <td>Enclose field by character ch</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.cjust(n)}</td>
+                                <td>Trim and Center justify text to size n. i.e. {f1.cjust(20)}</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.left(n)}</td>
+                                <td>Return n characters from left side of field</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.right(n)}</td>
+                                <td>Return n characters from right side of field</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.trim()}</td>
+                                <td>Trim spaces from both sides of field</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toSql()}</td>
+                                <td>Make field suitable for SQL string value</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.toXml()}</td>
+                                <td>Make field suitable for viewing as XML</td>
+                            </tr>
+                            <tr>
+                                <td>{f1.startsWith(s)}</td>
+                                <td>Field starts with string s, i.e. f2.startsWith(&#39;Jo&#39;). Returns true or false.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{f1.endsWith(s)}</td>
+                                <td>Field end with string s, i.e. f2.endsWith(&#39;son&#39;). Returns true or false.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <script async="" src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                    <!-- ResponsiveAd -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                        data-ad-slot="9209491414" data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                    <div class="panel-footer">
+                        Copyright © 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                        Rights Reserved
+                        <span class="pull-right">
+                              <a href="https://www.facebook.com/convertcsv">Facebook</a>
+                              <a href="https://twitter.com/ConvertCsv">Twitter</a>
+                              <a href="PrivacyPolicy.html">Privacy Policy</a>
+                              <a href="contact.html">Contact Us</a>
+                              <a href="changelog.html">Change Log</a>
+                              <a href="terms-of-use.html">Terms of Use</a>
+                              <a href="index-2.html">Home</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('tardisrocinante/vitals.js', 'tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('beardeddragon/drake.js', 'beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('porpoiseant/jellyfish.js', 'porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/csv-to-template-output.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:40:12 GMT -->
+
 </html>

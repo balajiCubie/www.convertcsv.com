@@ -1,19 +1,29 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <!-- Mirrored from www.convertcsv.com/newsite/generate-test-data.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:41:59 GMT -->
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,o=[],r=[],s=!0,a=function(e,i,n,o,r,s,a){var l=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,d=this;this.name=e,this.funcName=i,this.parameters=null===n?null:p(n)?n:[n],this.isBlock=o,this.blockedBy=r,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.fWindow=l,this.isTimeDelay=!1,this.process=function(){f("... func = "+e),d.isInitialized=!0,d.isComplete=!0,f("... func.apply: "+e);var i=d.funcName.split("."),n=null,o=this.fWindow||window;i.length>3||(n=3===i.length?o[i[0]][i[1]][i[2]]:2===i.length?o[i[0]][i[1]]:o[d.funcName]),null!=n&&n.apply(null,this.parameters),!0===d.deleteWhenComplete&&delete t[e],!0===d.isBlock&&(f("----- F'D: "+d.name),u())}},l=function(e,i,t,n,o,r,s){var a=arguments.length>7&&void 0!==arguments[7]?arguments[7]:window,l=this;this.name=e,this.path=i,this.async=o,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.fWindow=a,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)&&"banger.js"!==this.name?window.__ezScriptHost+e:e},this.process=function(){l.isInitialized=!0,f("... file = "+e);var i=this.fWindow?this.fWindow.document:document,t=i.createElement("script");t.src=this.getSrc(this.path),!0===o?t.async=!0:!0===r&&(t.defer=!0),t.onerror=function(){var e={url:window.location.href,name:l.name,path:l.path,user_agent:window.navigator.userAgent};"undefined"!=typeof _ezaq&&(e.pageview_id=_ezaq.page_view_id);var i=encodeURIComponent(JSON.stringify(e)),t=new XMLHttpRequest;t.open("GET.html","//g.ezoic.net/ezqlog?d="+i,!0),t.send(),f("----- ERR'D: "+l.name),l.isError=!0,!0===l.isBlock&&u()},t.onreadystatechange=t.onload=function(){var e=t.readyState;f("----- F'D: "+l.name),e&&!/loaded|complete/.test(e)||(l.isComplete=!0,!0===l.isBlock&&u())},i.getElementsByTagName("head")[0].appendChild(t)}},d=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function c(e){!0!==h(e)&&0!=s&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return f(e.name+" blocked = TIME DELAY!"),!0;if(p(e.blockedBy))for(var i=0;i<e.blockedBy.length;i++){var o=e.blockedBy[i];if(!1===t.hasOwnProperty(o))return f(e.name+" blocked = "+o),!0;if(!0===e.proceedIfError&&!0===t[o].isError)return!1;if(!1===t[o].isComplete)return f(e.name+" blocked = "+o),!0}return!1}function f(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function u(){++e>200||(f("let's go"),m(o),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?f(t.name+": error"):!0===t.isComplete?f(t.name+": complete already"):!0===t.isInitialized&&f(t.name+": initialized already"):t.process()}}function p(e){return"[object Array]"==Object.prototype.toString.call(e)}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,f("TDELAY -----"),u()}),5e3)}),!1),{addFile:function(e,i,n,s,a,d,h,f,u){var m=new l(e,i,n,s,a,d,h,u);!0===f?o[e]=m:r[e]=m,t[e]=m,c(m)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,f(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,c(n)},addFunc:function(e,n,s,l,d,h,f,u,m,p){!0===h&&(e=e+"_"+i++);var w=new a(e,n,s,l,d,f,u,p);!0===m?o[e]=w:r[e]=w,t[e]=w,c(w)},addDelayFunc:function(e,i,n){var o=new a(e,i,n,!1,[],!0,!0);o.isTimeDelay=!0,f(e+" ...  FUNCTION! TDELAY"),r[e]=o,t[e]=o,c(o)},items:t,processAll:u,setallowLoad:function(e){s=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?f(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new d(e,!0);f("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};__ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false);__ez.queue.addFile('../parsonsmaize/abilene.js', '../parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ad_cache_level":0,"domain_id":423391,"ezcache_level":1,"ezcache_skip_code":0,"has_bad_image":0,"has_bad_words":0,"is_sitespeed":0,"lt_cache_level":0,"page_view_id":"d238d620-0ff9-4376-7926-f9c84c2225e6","response_size_orig":41701,"response_time_orig":861,"template_id":5,"url":"https://www.convertcsv.com/newsite/generate-test-data.htm","word_count":0,"worst_bad_word_level":0});__ez.queue.markLoaded('ezaqBaseReady');</script>
-<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.queue.addFile('../parsonsmaize/mulvane.js', '../parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../parsonsmaize/olathe.js', '../parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js','/parsonsmaize/mulvane.js'], true, false, true, false);__ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false);!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("../detroitchicago/grapefruit.html")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>!function(){function e(i){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(i)}__ez.pel=function(){var i=[];function t(t,o,d,n,_,r,a,p){if(__ez.dot.isDefined(t)&&0!=__ez.dot.isAnyDefined(t.getSlotElementId,t.ElementId)){void 0===p&&(p=!1),parseInt(__ez.dot.getTargeting(t,"ap"));var s=__ez.dot.getSlotIID(t),f=__ez.dot.getAdUnit(t,p),u=parseInt(__ez.dot.getTargeting(t,"compid")),g=0,z=0,l=function(i){if("undefined"==typeof _ezim_d)return!1;var t=__ez.dot.getAdUnitPath(i).split("../index.html").pop();if("object"===("undefined"==typeof _ezim_d?"undefined":e(_ezim_d))&&_ezim_d.hasOwnProperty(t))return _ezim_d[t];for(var o in _ezim_d)if(o.split("../index.html").pop()===t)return _ezim_d[o];return!1}(t);"object"==e(l)&&(void 0!==l.creative_id&&(z=l.creative_id),void 0!==l.line_item_id&&(g=l.line_item_id)),__ez.dot.isDefined(s,f)&&__ez.dot.isValid(o)&&("0"===s&&!0!==p||""===f||i.push({type:"impression",impression_id:s,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),revenue:d,bid_floor_filled:_,stat_source_id:a,pageview_id:__ez.dot.getPageviewId(),comp_id:u,line_item_id:g,creative_id:z,data:__ez.dot.dataToStr(o),is_orig:p||__ez.template.isOrig}))}}function o(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(i)&&i.length>0&&[i.filter((function(e){return e.is_orig})),i.filter((function(e){return!e.is_orig}))].forEach((function(e){for(;e.length>0;){var i=e[0].is_orig||!1,t=5;t>e.length&&(t=e.length);var o=e.splice(0,t),d=__ez.dot.getURL("../porpoiseant/army.html")+"?orig="+(!0===i?1:0)+"&sts="+btoa(JSON.stringify(o));(void 0!==window.isAmp&&isAmp||void 0!==window.ezWp&&ezWp)&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(d+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(d)}})),i=[])}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),o()},AddAndFireOrig:function(e,i){t(e,i,0,0,0,0,0,!0),o()},AddById:function(e,t,o,d){var n=e.split("../index.html");if(__ez.dot.isDefined(e)&&3===n.length&&__ez.dot.isValid(t)){var _=n[0],r={type:"impression",impression_id:n[2],domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(t),is_orig:o||__ez.template.isOrig};void 0!==d&&(r.revenue=d),i.push(r)}},Fire:o,GetPixels:function(){return i}}}()}();__ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);__ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script><base />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Generate Test Data to CSV or JSON"/>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>var __ez = __ez || {}; __ez.stms = Date.now(); __ez.evt = {}; __ez.script = {}; __ez.ck = __ez.ck || {}; __ez.template = {}; __ez.template.isOrig = true; __ez.queue = function () { var e = 0, i = 0, t = [], n = !1, o = [], r = [], s = !0, a = function (e, i, n, o, r, s, a) { var l = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, d = this; this.name = e, this.funcName = i, this.parameters = null === n ? null : p(n) ? n : [n], this.isBlock = o, this.blockedBy = r, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.fWindow = l, this.isTimeDelay = !1, this.process = function () { f("... func = " + e), d.isInitialized = !0, d.isComplete = !0, f("... func.apply: " + e); var i = d.funcName.split("."), n = null, o = this.fWindow || window; i.length > 3 || (n = 3 === i.length ? o[i[0]][i[1]][i[2]] : 2 === i.length ? o[i[0]][i[1]] : o[d.funcName]), null != n && n.apply(null, this.parameters), !0 === d.deleteWhenComplete && delete t[e], !0 === d.isBlock && (f("----- F'D: " + d.name), u()) } }, l = function (e, i, t, n, o, r, s) { var a = arguments.length > 7 && void 0 !== arguments[7] ? arguments[7] : window, l = this; this.name = e, this.path = i, this.async = o, this.defer = r, this.isBlock = t, this.blockedBy = n, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.fWindow = a, this.isTimeDelay = !1, this.isPath = function (e) { return "/" === e[0] && "/" !== e[1] }, this.getSrc = function (e) { return void 0 !== window.__ezScriptHost && this.isPath(e) && "banger.js" !== this.name ? window.__ezScriptHost + e : e }, this.process = function () { l.isInitialized = !0, f("... file = " + e); var i = this.fWindow ? this.fWindow.document : document, t = i.createElement("script"); t.src = this.getSrc(this.path), !0 === o ? t.async = !0 : !0 === r && (t.defer = !0), t.onerror = function () { var e = { url: window.location.href, name: l.name, path: l.path, user_agent: window.navigator.userAgent }; "undefined" != typeof _ezaq && (e.pageview_id = _ezaq.page_view_id); var i = encodeURIComponent(JSON.stringify(e)), t = new XMLHttpRequest; t.open("GET.html", "//g.ezoic.net/ezqlog?d=" + i, !0), t.send(), f("----- ERR'D: " + l.name), l.isError = !0, !0 === l.isBlock && u() }, t.onreadystatechange = t.onload = function () { var e = t.readyState; f("----- F'D: " + l.name), e && !/loaded|complete/.test(e) || (l.isComplete = !0, !0 === l.isBlock && u()) }, i.getElementsByTagName("head")[0].appendChild(t) } }, d = function (e, i) { this.name = e, this.path = "", this.async = !1, this.defer = !1, this.isBlock = !1, this.blockedBy = [], this.isInitialized = !0, this.isError = !1, this.isComplete = i, this.proceedIfError = !1, this.isTimeDelay = !1, this.process = function () { } }; function c(e) { !0 !== h(e) && 0 != s && e.process() } function h(e) { if (!0 === e.isTimeDelay && !1 === n) return f(e.name + " blocked = TIME DELAY!"), !0; if (p(e.blockedBy)) for (var i = 0; i < e.blockedBy.length; i++) { var o = e.blockedBy[i]; if (!1 === t.hasOwnProperty(o)) return f(e.name + " blocked = " + o), !0; if (!0 === e.proceedIfError && !0 === t[o].isError) return !1; if (!1 === t[o].isComplete) return f(e.name + " blocked = " + o), !0 } return !1 } function f(e) { var i = window.location.href, t = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i); "1" === (t ? t[1] : null) && console.debug(e) } function u() { ++e > 200 || (f("let's go"), m(o), m(r)) } function m(e) { for (var i in e) if (!1 !== e.hasOwnProperty(i)) { var t = e[i]; !0 === t.isComplete || h(t) || !0 === t.isInitialized || !0 === t.isError ? !0 === t.isError ? f(t.name + ": error") : !0 === t.isComplete ? f(t.name + ": complete already") : !0 === t.isInitialized && f(t.name + ": initialized already") : t.process() } } function p(e) { return "[object Array]" == Object.prototype.toString.call(e) } return window.addEventListener("load", (function () { setTimeout((function () { n = !0, f("TDELAY -----"), u() }), 5e3) }), !1), { addFile: function (e, i, n, s, a, d, h, f, u) { var m = new l(e, i, n, s, a, d, h, u); !0 === f ? o[e] = m : r[e] = m, t[e] = m, c(m) }, addDelayFile: function (e, i) { var n = new l(e, i, !1, [], !1, !1, !0); n.isTimeDelay = !0, f(e + " ...  FILE! TDELAY"), r[e] = n, t[e] = n, c(n) }, addFunc: function (e, n, s, l, d, h, f, u, m, p) { !0 === h && (e = e + "_" + i++); var w = new a(e, n, s, l, d, f, u, p); !0 === m ? o[e] = w : r[e] = w, t[e] = w, c(w) }, addDelayFunc: function (e, i, n) { var o = new a(e, i, n, !1, [], !0, !0); o.isTimeDelay = !0, f(e + " ...  FUNCTION! TDELAY"), r[e] = o, t[e] = o, c(o) }, items: t, processAll: u, setallowLoad: function (e) { s = e }, markLoaded: function (e) { if (e && 0 !== e.length) { if (e in t) { var i = t[e]; !0 === i.isComplete ? f(i.name + " " + e + ": error loaded duplicate") : (i.isComplete = !0, i.isInitialized = !0) } else t[e] = new d(e, !0); f("markLoaded dummyfile: " + t[e].name) } }, logWhatsBlocked: function () { for (var e in t) !1 !== t.hasOwnProperty(e) && h(t[e]) } } }(); __ez.evt.add = function (e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n() }, __ez.evt.remove = function (e, t, n) { e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t] }; __ez.script.add = function (e) { var t = document.createElement("script"); t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t) }; __ez.dot = {}; __ez.queue.addFile('../detroitchicago/boise.js', '../detroitchicago/boise420f.js?gcb=195-0&amp;cb=2', true, [], true, false, true, false); __ez.queue.addFile('parsonsmaize/abilene.js', 'parsonsmaize/abilene9a5c.js?gcb=195-0&amp;cb=30', true, [], true, false, true, false);</script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ad_cache_level": 0, "domain_id": 423391, "ezcache_level": 1, "ezcache_skip_code": 0, "has_bad_image": 0, "has_bad_words": 0, "is_sitespeed": 0, "lt_cache_level": 0, "page_view_id": "d238d620-0ff9-4376-7926-f9c84c2225e6", "response_size_orig": 41701, "response_time_orig": 861, "template_id": 5, "url": "https://www.convertcsv.com/newsite/generate-test-data.htm", "word_count": 0, "worst_bad_word_level": 0 }); __ez.queue.markLoaded('ezaqBaseReady');</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>__ez.queue.addFile('parsonsmaize/mulvane.js', 'parsonsmaize/mulvane45f7.js?gcb=195-0&amp;cb=5', true, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('parsonsmaize/olathe.js', 'parsonsmaize/olathed472.js?gcb=195-0&amp;cb=23', false, ['/parsonsmaize/abilene.js', '/parsonsmaize/mulvane.js'], true, false, true, false); __ez.queue.addFile('../porpoiseant/et.js', '../porpoiseant/et420f.js?gcb=195-0&amp;cb=2', false, [], true, false, true, false); !function () { var e; __ez.vep = (e = [], { Add: function (i, t) { __ez.dot.isDefined(i) && __ez.dot.isValid(t) && e.push({ type: "video", video_impression_id: i, domain_id: __ez.dot.getDID(), t_epoch: __ez.dot.getEpoch(0), data: __ez.dot.dataToStr(t) }) }, Fire: function () { if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) { if (__ez.dot.isDefined(e) && e.length > 0) for (; e.length > 0;) { var i = 5; i > e.length && (i = e.length); var t = e.splice(0, i), o = __ez.dot.getURL("../detroitchicago/grapefruit.html") + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&v=" + btoa(JSON.stringify(t)); __ez.dot.Fire(o) } e = [] } } }) }();</script>
+    <script data-ezscrex='false' data-cfasync='false'
+        data-pagespeed-no-defer>!function () { function e(i) { return e = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e(i) } __ez.pel = function () { var i = []; function t(t, o, d, n, _, r, a, p) { if (__ez.dot.isDefined(t) && 0 != __ez.dot.isAnyDefined(t.getSlotElementId, t.ElementId)) { void 0 === p && (p = !1), parseInt(__ez.dot.getTargeting(t, "ap")); var s = __ez.dot.getSlotIID(t), f = __ez.dot.getAdUnit(t, p), u = parseInt(__ez.dot.getTargeting(t, "compid")), g = 0, z = 0, l = function (i) { if ("undefined" == typeof _ezim_d) return !1; var t = __ez.dot.getAdUnitPath(i).split("../index.html").pop(); if ("object" === ("undefined" == typeof _ezim_d ? "undefined" : e(_ezim_d)) && _ezim_d.hasOwnProperty(t)) return _ezim_d[t]; for (var o in _ezim_d) if (o.split("../index.html").pop() === t) return _ezim_d[o]; return !1 }(t); "object" == e(l) && (void 0 !== l.creative_id && (z = l.creative_id), void 0 !== l.line_item_id && (g = l.line_item_id)), __ez.dot.isDefined(s, f) && __ez.dot.isValid(o) && ("0" === s && !0 !== p || "" === f || i.push({ type: "impression", impression_id: s, domain_id: __ez.dot.getDID(), unit: f, t_epoch: __ez.dot.getEpoch(0), revenue: d, bid_floor_filled: _, stat_source_id: a, pageview_id: __ez.dot.getPageviewId(), comp_id: u, line_item_id: g, creative_id: z, data: __ez.dot.dataToStr(o), is_orig: p || __ez.template.isOrig })) } } function o() { void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(i) && i.length > 0 && [i.filter((function (e) { return e.is_orig })), i.filter((function (e) { return !e.is_orig }))].forEach((function (e) { for (; e.length > 0;) { var i = e[0].is_orig || !1, t = 5; t > e.length && (t = e.length); var o = e.splice(0, t), d = __ez.dot.getURL("../porpoiseant/army.html") + "?orig=" + (!0 === i ? 1 : 0) + "&sts=" + btoa(JSON.stringify(o)); (void 0 !== window.isAmp && isAmp || void 0 !== window.ezWp && ezWp) && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (d += "&visit_uuid=" + _ezaq.visit_uuid), __ez.dot.Fire(d) } })), i = []) } return { Add: t, AddAndFire: function (e, i) { t(e, i, 0, 0, 0, 0, 0), o() }, AddAndFireOrig: function (e, i) { t(e, i, 0, 0, 0, 0, 0, !0), o() }, AddById: function (e, t, o, d) { var n = e.split("../index.html"); if (__ez.dot.isDefined(e) && 3 === n.length && __ez.dot.isValid(t)) { var _ = n[0], r = { type: "impression", impression_id: n[2], domain_id: __ez.dot.getDID(), unit: _, t_epoch: __ez.dot.getEpoch(0), pageview_id: __ez.dot.getPageviewId(), data: __ez.dot.dataToStr(t), is_orig: o || __ez.template.isOrig }; void 0 !== d && (r.revenue = d), i.push(r) } }, Fire: o, GetPixels: function () { return i } } }() }(); __ez.queue.addFile('../detroitchicago/raleigh.js', '../detroitchicago/raleigh2693.js?gcb=195-0&amp;cb=6', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/vista.js', '../detroitchicago/vista45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false); __ez.queue.addFile('../detroitchicago/tampa.js', '../detroitchicago/tampa45f7.js?gcb=195-0&amp;cb=5', false, ['/parsonsmaize/abilene.js'], true, false, true, false);</script>
+    <base />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Generate Test Data to CSV or JSON" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <!-- Copyright 2013 - 2023 ConvertCsv.com -->
     <title>Generate Test CSV or JSON Data</title>
-    <script type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+    <script
+        type="text/javascript">(function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
     <script src="JS/underscore-min.js"></script>
     <script src="JS/localread.js"></script>
     <script src="JS/csvparse.js"></script>
@@ -40,7 +50,7 @@
         });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -48,9 +58,10 @@
         gtag('config', 'UA-110011798-1');
     </script>
 
-    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="Styles/main.css"/>
-    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css"/>
+    <link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/tool-pages-new.css" />
     <script type="text/javascript">
         // Copyright 2017-2019 by Data Design Group, Inc. All Rights Reserved.
         // Copying of this code is strictly prohibited.
@@ -66,49 +77,55 @@
         var _0x1498 = ['reverse', 'seq', 'arg', 'seqObj', 'age', 'alpha', 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 'string', 'birthday', 'toCsv', 'bool', 'city', 'ccnumber', 'character', 'char', 'getDate', 'slice', 'getMonth', 'integer', 'date', 'getFullYear', 'digit', '0123456789', 'dollar', 'domain', 'floating', 'float', 'gender', 'guid', 'latitude', 'longitude', 'upper', 'natural', 'paragraph', 'left', 'phone', 'pick', 'postal', 'province', 'sentence', 'next', 'state', 'street', 'suffix', 'word', 'zip', 'zip9', 'nameaddressbundle', 'substring', 'chance', 'FIELD', 'replace', 'seq,name/first,name/last,age,street,city,state,zip,dollar,pick(RED|BLUE|YELLOW|GREEN|WHITE),date', 'click', 'frm1', 'parse', 'restoreForm', 'saveForm', 'stringify', 'length', 'keyword', 'push', 'name', 'first', 'last', 'email', 'getElementById', 'txt2', 'value', 'trim', 'txta', 'checked', 'JSON', 'join', 'fieldnames', 'delimiter', 'Please\x20enter\x20keywords\x20that\x20describes\x20your\x20test\x20data.', 'txtRows', 'isKeyed', 'tryToObject', 'mongoDbMode', 'chkMongoDbMode', 'txt1', 'autodetect', 'arHeaderRow', 'split']; (function (_0x14098f, _0x266719) { var _0x1ddec8 = function (_0x4d9cd8) { while (--_0x4d9cd8) { _0x14098f['push'](_0x14098f['shift']()); } }; _0x1ddec8(++_0x266719); }(_0x1498, 0x1e9)); var _0x2931 = function (_0x111927, _0x142355) { _0x111927 = _0x111927 - 0x0; var _0x5d4d28 = _0x1498[_0x111927]; return _0x5d4d28; }; var chance = new Chance(); var hdr = []; function genHeader() { var _0x36ad3f = []; for (k = 0x0; k < hdr[_0x2931('0x0')]; k++) { if (hdr[k][_0x2931('0x1')] === 'nameaddressbundle') { _0x36ad3f[_0x2931('0x2')](_0x2931('0x3')); _0x36ad3f[_0x2931('0x2')](_0x2931('0x4')); _0x36ad3f['push'](_0x2931('0x5')); _0x36ad3f[_0x2931('0x2')](_0x2931('0x6')); } else { _0x36ad3f[_0x2931('0x2')](hdr[k]['hdrname']); } } return _0x36ad3f; } function runitprep() { var _0x565645 = 0x0; var _0x33c843 = ''; if (document[_0x2931('0x7')](_0x2931('0x8'))[_0x2931('0x9')][_0x2931('0xa')]() == '') { return ![]; } document[_0x2931('0x7')](_0x2931('0xb'))['value'] = ''; genData(0x0); if (document['getElementById']('chkDefaultHeader')[_0x2931('0xc')] || outMode === _0x2931('0xd')) { _0x33c843 = genHeader()[_0x2931('0xe')](CSV['delimiter']); if (document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')] === '') document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')] = _0x33c843; else if (document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')]['split'](CSV[_0x2931('0x10')])['length'] !== CSV['arHeaderRow'][_0x2931('0x0')]) { document[_0x2931('0x7')]('fieldnames')['value'] = _0x33c843; } else { _0x33c843 = document[_0x2931('0x7')]('fieldnames')[_0x2931('0x9')]; } document['getElementById'](_0x2931('0xb'))[_0x2931('0x9')] = _0x33c843 + '\x0a'; } } function runit() { var _0x42f239 = 0x0; var _0x7d3916 = ''; if (document[_0x2931('0x7')](_0x2931('0x8'))[_0x2931('0x9')][_0x2931('0xa')]() == '') { alert(_0x2931('0x11')); document[_0x2931('0x7')](_0x2931('0x8'))['focus'](); return ![]; } var _0x1ece42 = document[_0x2931('0x7')]('selOutFormat')['value']; document['getElementById'](_0x2931('0xb'))[_0x2931('0x9')] = ''; var _0x1329d5 = document['getElementById'](_0x2931('0x12'))[_0x2931('0x9')] * 0x1; runitprep(); document[_0x2931('0x7')]('txta')[_0x2931('0x9')] += genData(_0x1329d5); var _0x3ee812 = {}; if (_0x1ece42 === 'JSON') { _0x3ee812['nullIsNull'] = !![]; _0x3ee812[_0x2931('0x13')] = ![]; _0x3ee812[_0x2931('0x14')] = !![]; _0x3ee812['linemode'] = !![]; _0x3ee812[_0x2931('0x15')] = document['getElementById'](_0x2931('0x16'))[_0x2931('0xc')]; document[_0x2931('0x7')](_0x2931('0x17'))[_0x2931('0x9')] = document[_0x2931('0x7')]('txta')[_0x2931('0x9')]; CSV[_0x2931('0x18')] = !![]; parseAndOptions(CSV); document[_0x2931('0x7')]('txta')[_0x2931('0x9')] = csvToJSON(CSV, _0x3ee812); } } function genData(_0x58a4f1) { var _0x44011b; var _0x3c49d7 = CSV[_0x2931('0x19')][_0x2931('0x0')]; var _0x351fea = ''; var _0x122140 = ''; var _0x3b1c83 = ''; var _0x77c0b = 0x0; var _0x8f135c = ''; hdr = []; _0x3b1c83 = document[_0x2931('0x7')](_0x2931('0x8'))[_0x2931('0x9')]['split'](CSV[_0x2931('0x10')]); if (_0x58a4f1 >= 0x0) _0x58a4f1 = _0x58a4f1 * 0x1; if (_0x58a4f1 === null || _0x58a4f1 == '' || _0x58a4f1 < 0x0) _0x58a4f1 = 0x64; for (k = 0x0; k < _0x3c49d7; k++) { _0x122140 = CSV['arHeaderRow'][k][_0x2931('0x1a')](/[()]/); _0x122140 = _0x3b1c83[k]['split'](/[()]/); if (_0x122140[_0x2931('0x0')] > 0x1) _0x77c0b = _0x122140[0x1]; hdr[_0x2931('0x2')]({ 'seqObj': null, 'hdrname': _0x3b1c83[k][_0x2931('0x1a')]('(')[0x0]['toLowerCase'](), 'keyword': _0x3b1c83[k]['split']('(')[0x0][_0x2931('0x1a')]('../index.html')[_0x2931('0x1b')]()[0x0]['toLowerCase']()['trim'](), 'arg': _0x122140[_0x2931('0x0')] > 0x1 ? _0x122140[0x1] : '' }); if (hdr[hdr[_0x2931('0x0')] - 0x1]['keyword'] == _0x2931('0x1c')) { if (_0x122140[_0x2931('0x0')] > 0x1 && !isNaN(hdr[hdr[_0x2931('0x0')] - 0x1][_0x2931('0x1d')])) { hdr[hdr[_0x2931('0x0')] - 0x1][_0x2931('0x1e')] = new SeqObj(hdr[hdr[_0x2931('0x0')] - 0x1][_0x2931('0x1d')]); } else { hdr[hdr[_0x2931('0x0')] - 0x1][_0x2931('0x1e')] = new SeqObj(); } } } var _0x7647c1; for (_0x44011b = 0x1; _0x44011b <= _0x58a4f1; _0x44011b++) { for (k = 0x0; k < _0x3c49d7; k++) { try { _0x7647c1 = {}; _0x7647c1 = eval('(' + hdr[k][_0x2931('0x1d')] + ')'); } catch (_0x16595c) { } switch (hdr[k][_0x2931('0x1')]) { case _0x2931('0x1f'): _0x351fea += chance[_0x2931('0x1f')](_0x7647c1); break; case _0x2931('0x20'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '') { _0x351fea += chance['string']({ 'pool': _0x2931('0x21'), 'length': _0x77c0b }); } else { _0x351fea += chance[_0x2931('0x22')]({ 'pool': _0x2931('0x21') }); } break; case _0x2931('0x23'): _0x77c0b = hdr[k][_0x2931('0x1d')]; switch (_0x77c0b) { case '2': _0x351fea += chance[_0x2931('0x23')]({ 'string': !![], 'american': ![] })[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; default: _0x351fea += chance['birthday']({ 'string': !![] })[_0x2931('0x24')](CSV['delimiter']); break; }break; case 'bool': _0x351fea += chance[_0x2931('0x25')](_0x7647c1); break; case _0x2931('0x26'): _0x351fea += chance[_0x2931('0x26')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x27'): _0x351fea += chance['cc'](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x28'): case _0x2931('0x29'): _0x351fea += chance[_0x2931('0x28')](_0x7647c1); break; case 'date': _0x77c0b = hdr[k]['arg']; switch (_0x77c0b) { case '2': _0x8f135c = chance['date'](); _0x8f135c = ('0' + _0x8f135c[_0x2931('0x2a')]())[_0x2931('0x2b')](-0x2) + '/' + ('0' + (_0x8f135c[_0x2931('0x2c')]() + 0x1))[_0x2931('0x2b')](-0x2) + '/' + chance[_0x2931('0x2d')]({ 'min': 0x76c, 'max': 0x816 }); _0x351fea += _0x8f135c; break; case '3': _0x8f135c = chance[_0x2931('0x2e')](); _0x8f135c = _0x8f135c[_0x2931('0x2f')]() + '/' + ('0' + (_0x8f135c[_0x2931('0x2c')]() + 0x1))['slice'](-0x2) + '/' + ('0' + _0x8f135c[_0x2931('0x2a')]())['slice'](-0x2); _0x351fea += _0x8f135c; break; case '4': _0x8f135c = chance[_0x2931('0x2e')](); _0x8f135c = _0x8f135c[_0x2931('0x2f')]() + ('0' + (_0x8f135c[_0x2931('0x2c')]() + 0x1))[_0x2931('0x2b')](-0x2) + ('0' + _0x8f135c['getDate']())[_0x2931('0x2b')](-0x2); _0x351fea += _0x8f135c; break; default: _0x8f135c = chance[_0x2931('0x2e')](); _0x8f135c = ('0' + (_0x8f135c[_0x2931('0x2c')]() + 0x1))[_0x2931('0x2b')](-0x2) + '/' + ('0' + _0x8f135c[_0x2931('0x2a')]())['slice'](-0x2) + '/' + chance[_0x2931('0x2d')]({ 'min': 0x76c, 'max': 0x816 }); _0x351fea += _0x8f135c; break; }break; case _0x2931('0x30'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '' && _0x77c0b > 0x0) { _0x351fea += chance['string']({ 'pool': _0x2931('0x31'), 'length': _0x77c0b }); } else { _0x351fea += chance[_0x2931('0x22')]({ 'pool': _0x2931('0x31') }); } break; case _0x2931('0x32'): _0x351fea += chance[_0x2931('0x32')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x33'): _0x351fea += chance[_0x2931('0x33')](_0x7647c1)['toCsv'](CSV['delimiter']); break; case _0x2931('0x6'): _0x351fea += chance[_0x2931('0x6')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case 'first': _0x351fea += chance[_0x2931('0x4')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x34'): case _0x2931('0x35'): _0x351fea += chance[_0x2931('0x34')](_0x7647c1); break; case _0x2931('0x36'): _0x351fea += chance[_0x2931('0x36')](_0x7647c1); break; case _0x2931('0x37'): _0x351fea += chance[_0x2931('0x37')](_0x7647c1); break; case 'integer': _0x351fea += chance[_0x2931('0x2d')]({ 'min': -0xf423f, 'max': 0xf423f }); break; case _0x2931('0x5'): _0x351fea += chance[_0x2931('0x5')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x38'): _0x351fea += chance['latitude'](_0x7647c1); break; case _0x2931('0x39'): _0x351fea += chance[_0x2931('0x39')](_0x7647c1); break; case 'mi': _0x351fea += chance[_0x2931('0x28')]({ 'alpha': !![], 'casing': _0x2931('0x3a') }); break; case _0x2931('0x3'): _0x351fea += chance[_0x2931('0x3')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x3b'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '' && _0x77c0b * 0x1 >= 0x0) { _0x351fea += chance[_0x2931('0x3b')]({ 'max': _0x77c0b }); } else { _0x351fea += chance[_0x2931('0x3b')](_0x7647c1); } break; case _0x2931('0x3c'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '' && _0x77c0b * 0x1 > 0x0) { _0x351fea += chance[_0x2931('0x3c')]()[_0x2931('0x3d')](_0x77c0b)['toCsv'](CSV[_0x2931('0x10')]); } else { _0x351fea += chance[_0x2931('0x3c')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); } break; case _0x2931('0x3e'): _0x351fea += chance[_0x2931('0x3e')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case _0x2931('0x3f'): _0x122140 = hdr[k][_0x2931('0x1d')]; _0x351fea += chance[_0x2931('0x3f')](_0x122140[_0x2931('0x1a')]('|'))[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case 'postal': _0x351fea += chance[_0x2931('0x40')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case _0x2931('0x41'): _0x351fea += chance[_0x2931('0x41')](_0x7647c1)['toCsv'](CSV[_0x2931('0x10')]); break; case _0x2931('0x42'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '' && _0x77c0b * 0x1 > 0x0) { _0x351fea += chance[_0x2931('0x42')]()[_0x2931('0x3d')](_0x77c0b)[_0x2931('0x24')](CSV['delimiter']); } else { _0x351fea += chance[_0x2931('0x42')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); } break; case _0x2931('0x1c'): _0x351fea += hdr[k][_0x2931('0x1e')][_0x2931('0x43')](); break; case _0x2931('0x44'): _0x351fea += chance[_0x2931('0x44')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case _0x2931('0x45'): _0x351fea += chance['street'](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case _0x2931('0x22'): _0x77c0b = hdr[k][_0x2931('0x1d')]; if (_0x77c0b != '' && _0x77c0b * 0x1 > 0x0) { _0x351fea += chance['string']({ 'length': _0x77c0b })[_0x2931('0x24')](CSV[_0x2931('0x10')]); } else { _0x351fea += chance[_0x2931('0x22')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); } break; case _0x2931('0x46'): _0x351fea += chance[_0x2931('0x46')](_0x7647c1)[_0x2931('0x24')](CSV['delimiter']); break; case _0x2931('0x47'): _0x351fea += chance[_0x2931('0x47')](_0x7647c1)[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; case 'yn': _0x351fea += chance[_0x2931('0x28')]({ 'pool': 'YN' }); break; case _0x2931('0x48'): _0x351fea += chance[_0x2931('0x48')](_0x7647c1); break; case _0x2931('0x49'): _0x351fea += chance[_0x2931('0x48')]({ 'plusfour': !![] }); break; case 'yn': _0x351fea += chance[_0x2931('0x28')]({ 'pool': 'YN' }); break; case _0x2931('0x4a'): var _0x700a66 = chance['first'](); var _0x4a2314 = chance[_0x2931('0x5')](); var _0x111cdc = _0x700a66 + '\x20' + _0x4a2314; _0x351fea += _0x111cdc[_0x2931('0x24')](CSV[_0x2931('0x10')]) + ',' + _0x700a66[_0x2931('0x24')](CSV[_0x2931('0x10')]) + ',' + _0x4a2314[_0x2931('0x24')](CSV[_0x2931('0x10')]); var _0x215001 = _0x700a66[_0x2931('0x4b')](0x0, 0x1) + _0x4a2314 + '@' + chance[_0x2931('0x33')](); _0x351fea += ',' + _0x215001['toCsv'](CSV[_0x2931('0x10')]); break; default: try { if (hdr[k][_0x2931('0x1')][_0x2931('0x1a')]('.')[0x0] != _0x2931('0x4c')) { _0x8f135c = 'chance.' + hdr[k][_0x2931('0x1')] + '(' + hdr[k][_0x2931('0x1d')] + ')'; } else { _0x8f135c = hdr[k][_0x2931('0x1')] + '(' + hdr[k][_0x2931('0x1d')] + ')'; } _0x8f135c = eval('(' + _0x8f135c + ')'); _0x351fea += (_0x8f135c + '')[_0x2931('0x24')](CSV[_0x2931('0x10')]); break; } catch (_0x3da981) { _0x122140 = CSV[_0x2931('0x19')][k]; if (_0x122140 == _0x2931('0x4d') + (k + 0x1)) _0x122140 = ''; _0x351fea += _0x122140[_0x2931('0x24')](CSV[_0x2931('0x10')]); } break; }if (k < _0x3c49d7 - 0x1) { _0x351fea += CSV[_0x2931('0x10')]; } } _0x351fea += '\x0a'; } return _0x351fea; } function setup() { document['getElementById'](_0x2931('0x17'))[_0x2931('0x9')] = document[_0x2931('0x7')]('txt2')[_0x2931('0x9')][_0x2931('0x4e')](/ *\([^)]*\) */g, ''); if (document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')] === '') document[_0x2931('0x7')](_0x2931('0xf'))['value'] = document[_0x2931('0x7')](_0x2931('0x17'))[_0x2931('0x9')]; else if (document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')][_0x2931('0x1a')](CSV[_0x2931('0x10')])[_0x2931('0x0')] !== document[_0x2931('0x7')](_0x2931('0x17'))[_0x2931('0x9')]['split'](CSV[_0x2931('0x10')])['length']) { document['getElementById'](_0x2931('0xf'))[_0x2931('0x9')] = document[_0x2931('0x7')](_0x2931('0x17'))[_0x2931('0x9')]; } else { document[_0x2931('0x7')](_0x2931('0x17'))[_0x2931('0x9')] = document[_0x2931('0x7')](_0x2931('0xf'))[_0x2931('0x9')]; } CSV[_0x2931('0x18')] = !![]; parseAndOptions(CSV); CSV['autodetect'] = ![]; document['getElementById'](_0x2931('0x17'))['value'] = document[_0x2931('0x7')]('txt2')[_0x2931('0x9')]; parseAndOptions(CSV); } function genTestExample(_0x78aa87) { var _0x4d2d35 = _0x2931('0x4f'); document[_0x2931('0x7')](_0x2931('0x8'))[_0x2931('0x9')] = _0x4d2d35; setup(); document[_0x2931('0x7')]('btnRun')[_0x2931('0x50')](); } function loadForm(_0x1c22c9) { document[_0x2931('0x51')]['reset'](); var _0x2bbce1 = JSON[_0x2931('0x52')](_0x1c22c9); ddgFormSerializer[_0x2931('0x53')](_0x2bbce1, function (_0x282ff5) { if (_0x282ff5['id'] === _0x2931('0x8')) { setup(); } }); runit(); } function saveForm(_0x13bbcd) { _0x13bbcd = _0x13bbcd || 'gendata.json'; var _0x17b589 = ddgFormSerializer[_0x2931('0x54')](); saveOutput(JSON[_0x2931('0x55')](_0x17b589, null, 0x3), _0x13bbcd, ''); }
 
     </script>
-<link rel='canonical' href='generate-test-data.html' />
-<script type='text/javascript'>
-var ezoTemplate = 'orig_site';
-var ezouid = '1';
-var ezoFormfactor = '1';
-</script><script data-ezscrex="false" type='text/javascript'>
-var soc_app_id = '0';
-var did = 423391;
-var ezdomain = 'convertcsv.com';
-var ezoicSearchable = 1;
-</script>
-<script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, {"ab_test_id":"mod253","ad_cache_level":0,"ad_lazyload_version":0,"ad_load_version":0,"city":"Bengaluru","country":"IN","days_since_last_visit":-1,"domain_id":423391,"engaged_time_visit":0,"ezcache_level":1,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"is_embed":false,"is_return_visitor":false,"is_sitespeed":0,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":0,"page_view_id":"d238d620-0ff9-4376-7926-f9c84c2225e6","position_selection_id":0,"postal_code":"560049","pv_event_count":0,"response_size_orig":41701,"response_time_orig":861,"serverid":"i-0fb23aa3c21095292","state":"KA","t_epoch":1700314738,"template_id":5,"time_on_site_visit":0,"url":"https://www.convertcsv.com/newsite/generate-test-data.htm","word_count":588,"worst_bad_word_level":0});var _ezExtraQueries = "&ez_orig=1";</script>
-<script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
-function create_ezolpl() {
-	var d = new Date();
-	d.setTime(d.getTime() + (365*24*60*60*1000));
-	var expires = "expires="+d.toUTCString();
-	__ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
-}
-function attach_ezolpl() {
-	if (document.readyState === "complete") {
-		create_ezolpl();
-		return;
-	}
-	window.addEventListener("load", create_ezolpl);
-}
+    <link rel='canonical' href='generate-test-data.html' />
+    <script type='text/javascript'>
+        var ezoTemplate = 'orig_site';
+        var ezouid = '1';
+        var ezoFormfactor = '1';
+    </script>
+    <script data-ezscrex="false" type='text/javascript'>
+        var soc_app_id = '0';
+        var did = 423391;
+        var ezdomain = 'convertcsv.com';
+        var ezoicSearchable = 1;
+    </script>
+    <script data-ezscrex="false" type="text/javascript"
+        data-cfasync="false">var _ezaq = window._ezaq = Object.assign({}, typeof window._ezaq !== "undefined" ? window._ezaq : {}, { "ab_test_id": "mod253", "ad_cache_level": 0, "ad_lazyload_version": 0, "ad_load_version": 0, "city": "Bengaluru", "country": "IN", "days_since_last_visit": -1, "domain_id": 423391, "engaged_time_visit": 0, "ezcache_level": 1, "ezcache_skip_code": 0, "form_factor_id": 1, "framework_id": 1, "has_bad_image": 0, "has_bad_words": 0, "is_embed": false, "is_return_visitor": false, "is_sitespeed": 0, "last_page_load": "", "last_pageview_id": "", "lt_cache_level": 0, "metro_code": 0, "page_ad_positions": "", "page_view_count": 0, "page_view_id": "d238d620-0ff9-4376-7926-f9c84c2225e6", "position_selection_id": 0, "postal_code": "560049", "pv_event_count": 0, "response_size_orig": 41701, "response_time_orig": 861, "serverid": "i-0fb23aa3c21095292", "state": "KA", "t_epoch": 1700314738, "template_id": 5, "time_on_site_visit": 0, "url": "https://www.convertcsv.com/newsite/generate-test-data.htm", "word_count": 588, "worst_bad_word_level": 0 }); var _ezExtraQueries = "&ez_orig=1";</script>
+    <script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+        function create_ezolpl() {
+            var d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            __ez.ck.setByCat("ezux_lpl_423391=" + new Date().getTime() + "|" + _ezaq.page_view_id + "|" + _ezaq.is_return_visitor + "; " + expires, 3);
+        }
+        function attach_ezolpl() {
+            if (document.readyState === "complete") {
+                create_ezolpl();
+                return;
+            }
+            window.addEventListener("load", create_ezolpl);
+        }
 
-__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
-</script></head>
+        __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchicago/boise.js'], true, false, false, false);
+    </script>
+</head>
 
 <body cz-shortcut-listen="true">
 
-    <form id="frm1" name="frm1" saveform="true" class="form-inline justify-content-center" role="form" onsubmit="return false">
+    <form id="frm1" name="frm1" saveform="true" class="form-inline justify-content-center" role="form"
+        onsubmit="return false">
         <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="tool-nav" role="navigation">
             <a class="navbar-brand text-center text-sm-left mr-0" href="index.html" id="logo">
-                <img class="mb-3 mb-sm-0" src="../Images/convertcsvlogo-2.png" alt="Convert CSV Logo"/>
+                <img class="mb-3 mb-sm-0" src="../Images/convertcsvlogo-2.png" alt="Convert CSV Logo" />
             </a>
             <div class="tool-nav-button-wrap d-flex justify-content-center">
                 <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert CSV to another format">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        title="Convert CSV to another format">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">CSV to File</span>
-                            <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon"/>
+                            <img src="Images/csv-to-file-icon.svg" alt="CSV to File icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -126,10 +143,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     </div>
                 </div>
                 <div class="btn-group mx-1 mx-md-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Convert data to CSV">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">File to CSV</span>
-                            <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon"/>
+                            <img src="Images/file-to-csv-icon.svg" alt="File to CSV icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -145,10 +163,11 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     </div>
                 </div>
                 <div class="btn-group">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Useful CSV Tools">
                         <div class="d-flex align-items-center">
                             <span class="d-none d-xl-inline">CSV Tools</span>
-                            <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon"/>
+                            <img src="Images/csv-tools-icon.svg" alt="CSV Tool icon" />
                         </div>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -167,29 +186,34 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                 </div>
             </div>
             <div class="btn-group btn-save-restore d-flex mt-2 mt-sm-0 justify-content-center justify-content-sm-end">
-                <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()" title="Save settings and data on page to local file">
+                <button type="button" class="btn btn-dark mr-3 mr-md-0" onclick="saveForm()"
+                    title="Save settings and data on page to local file">
                     <span class="d-inline d-sm-none d-md-inline">Save</span>
                     <i class="far fa-save"></i>
                 </button>
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal" title="Restore settings and data from file">
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#file-restore-modal"
+                    title="Restore settings and data from file">
                     <span class="d-inline d-sm-none d-md-inline">Restore</span>
                     <i class="far fa-window-restore"></i>
                 </button>
             </div>
         </nav>
-        <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="file-restore-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Restore Data</h5>
-                        <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" id="btnRestoreClose" class="close" data-dismiss="modal"
+                            aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body">
                         <p>You can save the complete data and settings, and then load them from your saved file.</p>
                         <label class="fsave" for="fsave">Choose File <i class="fas fa-file-upload"></i></label>
-                        <input type="file" id="fsave" class="form-control" accept=".json" onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings"/>
+                        <input type="file" id="fsave" class="form-control" accept=".json"
+                            onchange="loadTextFile(this,loadForm)" title="Load Form Data and Settings" />
                     </div>
                 </div>
             </div>
@@ -198,7 +222,8 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
         <center>
             <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
             <!-- ResponsiveAd -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </center>
 
@@ -207,8 +232,8 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                 <h1 class="text-center">Generate Test Data</h1>
                 <h2 class="text-center">Use this tool to generate test data in CSV or JSON format.</h2>
                 <p class="text-center my-2">
-                    The random data generated is based on the header record you enter below.<br/>
-                    Each header keyword is a special word that indicates what type of data to generate.<br/>
+                    The random data generated is based on the header record you enter below.<br />
+                    Each header keyword is a special word that indicates what type of data to generate.<br />
                 </p>
             </div>
             <div class="container content-container">
@@ -219,29 +244,39 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     <div class="form-group">
                         <label for="txt2">
                             Keywords:
-                            <input type="text" id="txt2" size="100" class="form-control w-100 text-area-shadow" style="margin-left:6px" value="" onchange="setup()" placeholder="Enter Keywords, i.e. seq,first,last" title="Enter each field you want to generate separated by a comma or delimiter"/>
+                            <input type="text" id="txt2" size="100" class="form-control w-100 text-area-shadow"
+                                style="margin-left:6px" value="" onchange="setup()"
+                                placeholder="Enter Keywords, i.e. seq,first,last"
+                                title="Enter each field you want to generate separated by a comma or delimiter" />
                         </label>
                     </div>
                     <div class="form-group">
-                        <input type="hidden" id="txt1" class="form-control w-100 text-area-shadow" value=""/>
+                        <input type="hidden" id="txt1" class="form-control w-100 text-area-shadow" value="" />
                         <label for="fieldnames">
                             Names:
-                            <input type="text" size="100" id="fieldnames" class="form-control w-100 my-3" style="margin-left:25px;" value="" placeholder="Enter Optional Field Names separated by comma or delimiters" title="Field Names separated by comma or delimiter (optional)"/>
+                            <input type="text" size="100" id="fieldnames" class="form-control w-100 my-3"
+                                style="margin-left:25px;" value=""
+                                placeholder="Enter Optional Field Names separated by comma or delimiters"
+                                title="Field Names separated by comma or delimiter (optional)" />
                         </label>
                     </div>
                     <div class="form-group d-flex flex-column align-items-start text-left">
                         <label for="selOutFormat" class="mb-1">
                             Output Format:
                         </label>
-                        <select id="selOutFormat" class="custom-select" onchange="setOutFilename(this.value); document.getElementById(&#39;btnRun&#39;).click()">
+                        <select id="selOutFormat" class="custom-select"
+                            onchange="setOutFilename(this.value); document.getElementById(&#39;btnRun&#39;).click()">
                             <option value="CSV">CSV</option>
                             <option value="JSON">JSON</option>
                         </select>
                     </div>
                     <div class="button-wrapper mt-4 mb-4 mb-sm-0 d-block d-sm-flex justify-content-between w-100">
-                        <input type="button" id="btnRun" class="btn btn-primary" value="Generate Test Data" title="Generate Test Data" onclick="runit();return false"/>
-                        <input type="button" class="btn btn-primary my-2 mr-2 my-sm-0" value="Example" onclick="genTestExample()"/>
-                        <input type="button" class="btn btn-danger my-2 mr-2 my-sm-0" value="Clear Input" onclick="window.location.reload(true)"/>
+                        <input type="button" id="btnRun" class="btn btn-primary" value="Generate Test Data"
+                            title="Generate Test Data" onclick="runit();return false" />
+                        <input type="button" class="btn btn-primary my-2 mr-2 my-sm-0" value="Example"
+                            onclick="genTestExample()" />
+                        <input type="button" class="btn btn-danger my-2 mr-2 my-sm-0" value="Clear Input"
+                            onclick="window.location.reload(true)" />
                     </div>
                     <div class="option-content-wrap w-100 my-3">
                         <p class="option-text">Test Data Options:</p>
@@ -249,20 +284,21 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                             <label for="txtRows" class="mr-2">
                                 # of Records:
                             </label>
-                            <input type="number" class="form-control text-area-shadow w-25" id="txtRows" size="5" maxlength="5" value="100" title="How many record do you want to generate?"/>
+                            <input type="number" class="form-control text-area-shadow w-25" id="txtRows" size="5"
+                                maxlength="5" value="100" title="How many record do you want to generate?" />
                         </div>
                         <div class="d-flex flex-row justify-content-left my-3">
                             <div class="form-check mr-3">
                                 <label class="custom-checkbox input-options-checkbox">
                                     Include header line for CSV
-                                    <input type="checkbox" id="chkDefaultHeader" value="Y" checked=""/>
+                                    <input type="checkbox" id="chkDefaultHeader" value="Y" checked="" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="custom-checkbox input-options-checkbox">
                                     MongoDB Mode for JSON
-                                    <input type="checkbox" value="Y" id="chkMongoDbMode"/>
+                                    <input type="checkbox" value="Y" id="chkMongoDbMode" />
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -270,202 +306,327 @@ __ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", null, false, ['/detroitchic
                     </div>
                 </div>
             </div>
-            
+
         </section>
     </form>
 
-  <section class="escape-section">
-    <div class="container content-container">
-       <div class="output-content-wrap mb-3">
-        <label for="txta" class="control-label d-block">Converted Data:</label>
-        <textarea id="txta" rows="8" style="width:100%" wrap="off" placeholder="Output Results" class="form-control text-area-shadow mb-1"></textarea>
-          <div class="copytooltip">
-            <button class="btn btn-success mt-3" onclick="copyPaste(&#39;txta&#39;)" onmouseout="copyComplete()">
-              <span class="copytooltiptext" id="clipboardToolTip">Copy to clipboard</span>
-              Copy Results <i class="fa fa-copy"></i>
-            </button>
-          </div>
-      </div>
-       <div class="output-content-wrap mb-3">
-        <label for="fn" class="control-label">Save Results:</label>
-        <div class="w-50 d-flex align-items-center">
-          <input type="text" id="fn" value="convertcsv" class="form-control text-area-shadow mb-2" placeholder="Enter filename WITH extension"/>
+    <section class="escape-section">
+        <div class="container content-container">
+            <div class="output-content-wrap mb-3">
+                <label for="txta" class="control-label d-block">Converted Data:</label>
+                <textarea id="txta" rows="8" style="width:100%" wrap="off" placeholder="Output Results"
+                    class="form-control text-area-shadow mb-1"></textarea>
+                <div class="copytooltip">
+                    <button class="btn btn-success mt-3" onclick="copyPaste(&#39;txta&#39;)"
+                        onmouseout="copyComplete()">
+                        <span class="copytooltiptext" id="clipboardToolTip">Copy to clipboard</span>
+                        Copy Results <i class="fa fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="output-content-wrap mb-3">
+                <label for="fn" class="control-label">Save Results:</label>
+                <div class="w-50 d-flex align-items-center">
+                    <input type="text" id="fn" value="convertcsv" class="form-control text-area-shadow mb-2"
+                        placeholder="Enter filename WITH extension" />
+                </div>
+                <div class="mt-2">
+                    <button class="btn btn-primary"
+                        onclick="saveFile(document.getElementById(&#39;txta&#39;).value,null)">
+                        Download CSV <i class="fas fa-download"></i>
+                    </button>
+                    <label title="End-of-Line" class="ml-2">
+                        EOL:
+                        <select id="eol" class="custom-select" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
+                            <option value="">CRLF</option>
+                            <option value="LF">LF</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="mt-2">
-          <button class="btn btn-primary" onclick="saveFile(document.getElementById(&#39;txta&#39;).value,null)">
-            Download CSV <i class="fas fa-download"></i>
-          </button>
-          <label title="End-of-Line" class="ml-2">
-            EOL:
-            <select id="eol" class="custom-select" title="CRLF=Windows,LF=Unix/Linux/New Apple/Android">
-                <option value="">CRLF</option>
-                <option value="LF">LF</option>
-            </select>
-          </label>
+
+    </section>
+
+    <section class="escape-section">
+        <div class="container content-container">
+            <div class="output-content-wrap">
+                <a id="keywords"></a>
+                <div class="table-responsive">
+                    <p>Allowable Keywords:</p>
+                    <table class="table table-bordered table-hover table-condensed">
+
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>age</td>
+                                <td>person&#39;s age 1 to 120</td>
+                            </tr>
+                            <tr>
+                                <td>alpha<br />alpha(n)</td>
+                                <td>string of letters a to z mixed case<br />and if n specified then exactly n length
+                                    long, i.e. alpha(5)</td>
+                            </tr>
+                            <tr>
+                                <td>birthday</td>
+                                <td>date of birth in mm/dd/yyyy format or birthday(2) for dd/mm/yyyy</td>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>true or false</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>1 single character of a letter or digits or !@#$%^&amp;*()</td>
+                            </tr>
+                            <tr>
+                                <td>city</td>
+                                <td>cities</td>
+                            </tr>
+                            <tr>
+                                <td>ccnumber</td>
+                                <td>Credit Card Number</td>
+                            </tr>
+                            <tr>
+                                <td>date<br />date(2)<br />or date(3)<br />or date(4)</td>
+                                <td>
+                                    date in mm/dd/yyyy format or<br />date(2) for dd/mm/yyyy
+                                    <br />or date(3) for yyyy/mm/dd
+                                    <br />or date(4) for yyyymmdd
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>digit<br />digit(n)</td>
+                                <td>
+                                    digit - 5-20 digits<br />digits(n) where n is a number will generate a string
+                                    exactly that long, i.e. digit(5)
+                                    <br /> See also: integer,float,natural, seq
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>dollar</td>
+                                <td>Dollar amount in format of $99999.99</td>
+                            </tr>
+                            <tr>
+                                <td>domain</td>
+                                <td>domain name</td>
+                            </tr>
+                            <tr>
+                                <td>email</td>
+                                <td>dummy email address</td>
+                            </tr>
+                            <tr>
+                                <td>first</td>
+                                <td>First name</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>
+                                    Floating/Real number with at most 4 digits to right of decimal
+                                    <br /> See also: integer,natural,seq,digit
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>gender</td>
+                                <td>Male or Female</td>
+                            </tr>
+                            <tr>
+                                <td>guid</td>
+                                <td>Globally Unique Identifier</td>
+                            </tr>
+                            <tr>
+                                <td>integer</td>
+                                <td>
+                                    Integer value - includes negatives.
+                                    <br />See also: natural,float,seq,digit
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>last</td>
+                                <td>Last name</td>
+                            </tr>
+                            <tr>
+                                <td>latitude</td>
+                                <td>Latitude</td>
+                            </tr>
+                            <tr>
+                                <td>longitude</td>
+                                <td>Longitude</td>
+                            </tr>
+                            <tr>
+                                <td>mi</td>
+                                <td>middle initial - 1 letter</td>
+                            </tr>
+                            <tr>
+                                <td>name</td>
+                                <td>full person&#39;s name</td>
+                            </tr>
+                            <tr>
+                                <td>natural<br />natural(n)</td>
+                                <td>
+                                    Integer value 0 or above, or<br /> natural(n) where n is maximum integer value
+                                    <br /> See also: integer,float,seq,digit
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>paragraph</td>
+                                <td>paragraph of words - 3 to 7 sentences</td>
+                            </tr>
+                            <tr>
+                                <td>phone</td>
+                                <td>US phone number 999-999-9999</td>
+                            </tr>
+                            <tr>
+                                <td>pick(pick1|pick2|...)</td>
+                                <td>choose one of choices separated by |</td>
+                            </tr>
+                            <tr>
+                                <td>postal</td>
+                                <td>Canadian postal (see also province)</td>
+                            </tr>
+                            <tr>
+                                <td>province</td>
+                                <td>Canadian pronvince (see also postal)</td>
+                            </tr>
+                            <tr>
+                                <td>seq<br />seq(n)</td>
+                                <td>
+                                    numeric integer sequence starting at 1 or n and incremented by 1
+                                    <br /> seq(n) - sequence starts at integer n, i.e. seq(1000)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>sentence</td>
+                                <td>sentence words - 12 to 18 words</td>
+                            </tr>
+                            <tr>
+                                <td>state</td>
+                                <td>state</td>
+                            </tr>
+                            <tr>
+                                <td>street</td>
+                                <td>street address</td>
+                            </tr>
+                            <tr>
+                                <td>string<br />string(n)</td>
+                                <td>
+                                    random string value of letters,digits, and !@#$%^&amp;*()<br />
+                                    string(n) where n is length.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>word</td>
+                                <td>words - 5-6 letters</td>
+                            </tr>
+                            <tr>
+                                <td>yn</td>
+                                <td>Y or N</td>
+                            </tr>
+                            <tr>
+                                <td>zip</td>
+                                <td>5 digit US zip code</td>
+                            </tr>
+                            <tr>
+                                <td>zip9</td>
+                                <td>9 digit US zip code in 99999-9999 format</td>
+                            </tr>
+                            <tr>
+                                <td>NOTE</td>
+                                <td>
+                                    Most functions in the chancejs.com library can be run if not listed above.
+                                    <br /> Enter the name of the function without the prefix &#34;chance.&#34; i.e.
+                                    prefix.
+                                    There is limited support to pass parameters to the chance function, i.e.
+                                    age({type:&#39;child&#39;}).
+                                    if you have a comma in the function - wrap the function in double quotes.
+                                    <br />  <small>Thanks to <a href="http://chancejs.com/"> Chancejs.com Javascript
+                                            library</a></small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><span
+                class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
         </div>
-      </div>
-    </div>
 
-  </section>
+        <center>
+            <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+            <!-- ResponsiveAd -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268"
+                data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </center>
 
-  <section class="escape-section">
-      <div class="container content-container">
-          <div class="output-content-wrap">
-              <a id="keywords"></a>
-              <div class="table-responsive">
-                  <p>Allowable Keywords:</p><table class="table table-bordered table-hover table-condensed">
-                      
-                      <thead><tr><th>Keyword</th><th>Description</th></tr></thead>
-                      <tbody>
-                          <tr><td>age</td><td>person&#39;s age 1 to 120</td></tr>
-                          <tr><td>alpha<br/>alpha(n)</td><td>string of letters a to z mixed case<br/>and if n specified then exactly n length long, i.e. alpha(5)</td></tr>
-                          <tr><td>birthday</td><td>date of birth in mm/dd/yyyy format or birthday(2) for dd/mm/yyyy</td></tr>
-                          <tr><td>bool</td><td>true or false</td></tr>
-                          <tr><td>char</td><td>1 single character of a letter or digits or !@#$%^&amp;*()</td></tr>
-                          <tr><td>city</td><td>cities</td></tr>
-                          <tr><td>ccnumber</td><td>Credit Card Number</td></tr>
-                          <tr>
-                              <td>date<br/>date(2)<br/>or date(3)<br/>or date(4)</td>
-                              <td>
-                                  date in mm/dd/yyyy format or<br/>date(2) for dd/mm/yyyy
-                                  <br/>or date(3) for yyyy/mm/dd
-                                  <br/>or date(4) for yyyymmdd
-                              </td>
-                          </tr>
-                          <tr>
-                              <td>digit<br/>digit(n)</td>
-                              <td>
-                                  digit - 5-20 digits<br/>digits(n) where n is a number will generate a string exactly that long, i.e. digit(5)
-                                  <br/> See also: integer,float,natural, seq
-                              </td>
-                          </tr>
-                          <tr><td>dollar</td><td>Dollar amount in format of $99999.99</td></tr>
-                          <tr><td>domain</td><td>domain name</td></tr>
-                          <tr><td>email</td><td>dummy email address</td></tr>
-                          <tr><td>first</td><td>First name</td></tr>
-                          <tr>
-                              <td>float</td>
-                              <td>
-                                  Floating/Real number with at most 4 digits to right of decimal
-                                  <br/> See also: integer,natural,seq,digit
-                              </td>
-                          </tr>
-                          <tr><td>gender</td><td>Male or Female</td></tr>
-                          <tr><td>guid</td><td>Globally Unique Identifier</td></tr>
-                          <tr>
-                              <td>integer</td>
-                              <td>
-                                  Integer value - includes negatives.
-                                  <br/>See also: natural,float,seq,digit
-                              </td>
-                          </tr>
-                          <tr><td>last</td><td>Last name</td></tr>
-                          <tr><td>latitude</td><td>Latitude</td></tr>
-                          <tr><td>longitude</td><td>Longitude</td></tr>
-                          <tr><td>mi</td><td>middle initial - 1 letter</td></tr>
-                          <tr><td>name</td><td>full person&#39;s name</td></tr>
-                          <tr>
-                              <td>natural<br/>natural(n)</td>
-                              <td>
-                                  Integer value 0 or above, or<br/> natural(n) where n is maximum integer value
-                                  <br/> See also: integer,float,seq,digit
-                              </td>
-                          </tr>
-                          <tr><td>paragraph</td><td>paragraph of words - 3 to 7 sentences</td></tr>
-                          <tr><td>phone</td><td>US phone number 999-999-9999</td></tr>
-                          <tr><td>pick(pick1|pick2|...)</td><td>choose one of choices separated by |</td></tr>
-                          <tr><td>postal</td><td>Canadian postal (see also province)</td></tr>
-                          <tr><td>province</td><td>Canadian pronvince (see also postal)</td></tr>
-                          <tr>
-                              <td>seq<br/>seq(n)</td>
-                              <td>
-                                  numeric integer sequence starting at 1 or n and incremented by 1
-                                  <br/> seq(n) - sequence starts at integer n, i.e. seq(1000)
-                              </td>
-                          </tr>
-                          <tr><td>sentence</td><td>sentence words - 12 to 18 words</td></tr>
-                          <tr><td>state</td><td>state</td></tr>
-                          <tr><td>street</td><td>street address</td></tr>
-                          <tr>
-                              <td>string<br/>string(n)</td>
-                              <td>
-                                  random string value of letters,digits, and !@#$%^&amp;*()<br/>
-                                  string(n) where n is length.
-                              </td>
-                          </tr>
-                          <tr><td>word</td><td>words - 5-6 letters</td></tr>
-                          <tr><td>yn</td><td>Y or N</td></tr>
-                          <tr><td>zip</td><td>5 digit US zip code</td></tr>
-                          <tr><td>zip9</td><td>9 digit US zip code in 99999-9999 format</td></tr>
-                          <tr>
-                              <td>NOTE</td>
-                              <td>
-                                  Most functions in the chancejs.com library can be run if not listed above.
-                                  <br/> Enter the name of the function without the prefix &#34;chance.&#34; i.e. prefix.
-                                  There is limited support to pass parameters to the chance function, i.e. age({type:&#39;child&#39;}).
-                                  if you have a comma in the function - wrap the function in double quotes.
-                                  <br/>  <small>Thanks to <a href="http://chancejs.com/"> Chancejs.com Javascript library</a></small>
-                              </td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div><span class="ezoic-autoinsert-video ezoic-under_first_paragraph"></span><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-854x480-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-640x360-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-426x240-999998-nonexxxclearxxxblock --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-clearholder --><!-- ezoic_video_placeholder-under_first_paragraph-384x216-999998-nonexxxclearxxxblock -->
-      </div>
+        <footer id="footer">
+            <div class="container-fluid d-flex align-items-center">
+                <div class="text-left d-flex flex-column w-25">
+                    <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo" />
+                    <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All
+                            rights reserved.</small></span>
+                </div>
+                <div class="d-none d-lg-flex justify-content-center w-50">
+                    <a class="nav-item nav-link" href="privacypolicy.html">Privacy Policy</a>
+                    <a class="nav-item nav-link" href="changelog.html">Change Log</a>
+                    <a class="nav-item nav-link" href="terms-of-use.html">Terms of Use</a>
+                </div>
+                <div class="d-flex justify-content-end w-25">
+                    <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
 
-      <center>
-          <script async="" src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
-          <!-- ResponsiveAd -->
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2674404638298268" data-ad-slot="9209491414" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </center>
-  
-      <footer id="footer">
-          <div class="container-fluid d-flex align-items-center">
-              <div class="text-left d-flex flex-column w-25">
-                  <img class="footer-nav" src="Images/convert-csv-logo.svg" alt="Convert CSV Logo"/>
-                  <span><small>© 2013-2023 <a href="https://www.ddginc-usa.com/">Data Design Group, Inc.</a> All rights reserved.</small></span>
-              </div>
-              <div class="d-none d-lg-flex justify-content-center w-50">
-                  <a class="nav-item nav-link" href="privacypolicy.html">Privacy Policy</a>
-                  <a class="nav-item nav-link" href="changelog.html">Change Log</a>
-                  <a class="nav-item nav-link" href="terms-of-use.html">Terms of Use</a>
-              </div>
-              <div class="d-flex justify-content-end w-25">
-                  <a class="nav-item nav-link" href="https://twitter.com/ConvertCsv"><i class="fab fa-twitter"></i></a>
-                  <a class="nav-item nav-link" href="https://www.facebook.com/convertcsv"><i class="fab fa-facebook-f"></i></a>
-                  <a class="nav-item nav-link" href="../contact.html"><i class="fas fa-envelope"></i></a>
-              </div>
-          </div>
-      </footer>
-  </section>
-
-<script src="../../code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<scriptx src="JS/jquery.min.js" type="text/javascript"></scriptx>
-<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="JS/main-ui3860.js?v=1"></script>
+    <script src="../../code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="../cdn.jsdelivr.net/npm/popper.js%401.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <scriptx src="JS/jquery.min.js" type="text/javascript"></scriptx>
+    <script src="../../stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="JS/main-ui3860.js?v=1"></script>
 
 
 
-<script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
-<script>var _audins_dom="convertcsv_com",_audins_did=423391;__ez.queue.addDelayFunc("audins.html","__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script><noscript><div style="display:none;"><img src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>
-<script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
-<script type="text/javascript" style='display:none;'>var __ez_dims = (function() {
-		var setCookie = function( name, content, expiry ) {
-			return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'')+';path=/';
-		};
-		var ffid = 1;
-		var oh = window.screen.height;
-		var ow = window.screen.width;
-		var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
-		var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
-		var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-		var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
-		setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
-		setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
-	})();</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../parsonsmaize/chanute.js', '../parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
-<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script></body>
+    <script>__ez.queue.addFile('../tardisrocinante/vitals.js', '../tardisrocinante/vitals5038.js?gcb=0&amp;cb=3', false, ['/parsonsmaize/mulvane.js'], true, false, true, false);</script>
+    <script>var _audins_dom = "convertcsv_com", _audins_did = 423391; __ez.queue.addDelayFunc("audins.html", "__ez.script.add", "../../go.ezodn.com/detroitchicago/audins0d9f.js?cb=195-0");</script>
+    <noscript>
+        <div style="display:none;"><img
+                src="../../pixel.quantserve.com/pixel/p-31iz6hfFutd169470.gif?labels=Domain.convertcsv_com,DomainId.423391"
+                border="0" height="1" width="1" alt="Quantcast" /></div>
+    </noscript>
+    <script>__ez.queue.addFile('../beardeddragon/drake.js', '../beardeddragon/drakeadb4.js?gcb=0&amp;cb=6', false, [], true, false, true, false);</script>
+    <script type="text/javascript" style='display:none;'>var __ez_dims = (function () {
+            var setCookie = function (name, content, expiry) {
+                return document.cookie = name + '=' + content + ((expiry) ? ';expires=' + (new Date(Math.floor(new Date().getTime() + expiry * 1000)).toUTCString()) : '') + ';path=/';
+            };
+            var ffid = 1;
+            var oh = window.screen.height;
+            var ow = window.screen.width;
+            var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+            var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+            var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+            var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+            setCookie('ezds', encodeURIComponent('ffid=' + ffid + ',w=' + w + ',h=' + h), (31536e3 * 7));
+            setCookie('ezohw', encodeURIComponent('w=' + uw + ',h=' + uh), (31536e3 * 7));
+        })();</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('parsonsmaize/chanute.js', 'parsonsmaize/chanute521b.js?a=a&amp;cb=7&amp;dcb=195-0&amp;shcb=34', true, ['/parsonsmaize/mulvane.js'], true, false, false, false);</script>
+    <script type='text/javascript' style='display:none;'
+        async>__ez.queue.addFile('../porpoiseant/jellyfish.js', '../porpoiseant/jellyfishac66.js?a=a&amp;cb=11&amp;dcb=195-0&amp;shcb=34', false, [], true, false, false, false);</script>
+</body>
 <!-- Mirrored from www.convertcsv.com/newsite/generate-test-data.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 13:42:01 GMT -->
+
 </html>
